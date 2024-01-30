@@ -1,0 +1,73 @@
+/* pc brand */
+
+.text-pc {
+    color: #f0beb4;
+}
+
+.text-pc-dark {
+    color: #a1655c;
+}
+
+.bg-pc {
+    background-color: #f0beb4;
+}
+
+.bg-pc-dark {
+    background-color: #a1655c;
+}
+
+.bg-midnight-blue {
+    background: #061E51;
+}
+.bg-sky-blue {
+    background: #56C3FF;
+}
+.bg-electric-blue {
+    background: #2364F6;
+}
+.bg-logo-blue {
+    background: #224B9A;
+}
+.bg-ice-blue {
+    background: #DCF1FF;
+}
+.bg-green {
+    background: #05B487;
+}
+.bg-magenta {
+    background: #AA206D;
+}
+.bg-purple {
+    background: #7B53F5;
+}
+.bg-light-grey {
+    background: #EFEFEF;
+}
+
+.text-midnight-blue {
+    color: #061E51;
+}
+.text-sky-blue {
+    color: #56C3FF;
+}
+.text-electric-blue {
+    color: #2364F6;
+}
+.text-logo-blue {
+    color: #224B9A;
+}
+.text-ice-blue {
+    color: #DCF1FF;
+}
+.text-green {
+   color: #05B487;
+}
+.text-magenta {
+   color: #AA206D;
+}
+.text-purple {
+   color: #7B53F5;
+}
+.text-light-grey {
+   color: #EFEFEF;
+}

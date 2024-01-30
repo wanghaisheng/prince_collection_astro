@@ -1,0 +1,79 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+---
+
+<Layout title="Welcome to Prince Collection" description="About Prince Collection">
+	<main>
+		<div class="container-fluid px-0 pt-3">
+			<div class="row row-cols-1 row-cols-lg-2 min-vh-100">
+				<div class="col d-flex flex-column justify-content-center align-items-center text-center p-5 min-vh-50">
+					<img style="width: 80px; height: 80px;" src="src/assets/img/logos/logo-crown.png" alt="Prince of Travel crown logo">
+					<h1 class="display-4 fw-bold lh-1 mb-3 mt-3">Get more out of your hotel stays.</h1>
+					<p class="fs-4">Through our access to the world’s best hotel preferred partner programs, you’ll enjoy exclusive benefits when staying at luxury properties</p>
+					<nav class="nav nav-fill d-flex mx-auto">
+						<a class="nav-link p-0 me-2" href="/book">
+							<button class="btn btn-pc">Book your hotel</button>
+						</a>
+						<a class="nav-link p-0 me-2" href="/">
+							<button class="btn btn-pc">Contact us</button>
+						</a>
+					</nav>
+				</div>
+				<div class="col min-vh-50 p-5">
+                     <Image src="https://images.unsplash.com/photo-1469796466635-455ede028aca?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A bird." class="w-100 h-100 rounded-4" style="object-fit: cover" width="1200" height="500" alt="descriptive text"/>
+				</div>
+			</div>
+
+			<div class="row py-5">
+				<div class="col-lg-8 offset-lg-2 text-center border-bottom p-5">
+					<img style="width: 80px; height: 80px;" src="src/assets/img/logos/logo-crown.png" alt="">
+					<h2 class="display-4 fw-900 my-3">Book your next hotel stay with us and enjoy an elevated experience along your trip.</h2>
+				</div>
+			</div>
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 px-5 pb-5">
+				<div class="col">
+					<div class="p-5 border rounded-4 shadow bg-pc">
+						<i class="bi bi-sunrise bg-pc-dark text-pc rounded-3 p-3 fs-3 shadow"></i>
+						<h4 class="my-4">Daily breakfast for two people</h4>
+					</div>
+				</div>
+				<div class="col">
+					<div class="p-5 border rounded-4 shadow bg-pc">
+						<i class="bi bi-cash-coin bg-pc-dark text-pc rounded-3 p-3 fs-3 shadow"></i>
+						<h4 class="my-4">$100 (USD) hotel credit</h4>
+					</div>
+				</div>
+				<div class="col">
+					<div class="p-5 border rounded-4 shadow bg-pc">
+						<i class="bi bi-house-heart bg-pc-dark text-pc rounded-3 p-3 fs-3 shadow"></i>
+						<h4 class="my-4">Welcome amenity</h4>
+					</div>
+				</div>
+				<div class="col">
+					<div class="p-5 border rounded-4 shadow bg-pc">
+					<h4>One-category room upgrade, subject to availability</h4>
+					</div>
+				</div>
+				<div class="col">
+					<div class="p-5 border rounded-4 shadow bg-pc">
+					<h4>Early check-in/late check-out, subject to availability</h4>
+					</div>
+				</div>
+				<div class="col">
+					<div class="p-5 border rounded-4 shadow bg-pc">
+					<h4>Property-specific 3rd/4th/5th Night Free promotions</h4>
+					</div>
+				</div>
+				<div class="col-6 flex-fill p-5">
+					<h4>Eligible hotels include luxury brands like Four Seasons, Rosewood, Mandarin Oriental, St. Regis, Waldorf Astoria, Park Hyatt, as well as a wide range of independent boutique luxury properties.</h4>
+				</div>
+				<div class="col-6 flex-fill p-5">
+					<h4>Feel free to submit an inquiry through our booking form to get started.
+					</h4>
+				</div>
+			</div>
+		</div>
+		
+	</main>
+</Layout>

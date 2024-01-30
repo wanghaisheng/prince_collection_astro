@@ -1,0 +1,261 @@
+---
+import Drawer from './TheDrawer.astro';
+import BookingForm from '../components/BookingForm.astro';
+
+const navData = 
+		[
+          {
+            title: 'Home',
+            path: '/',
+			icon: "bi-grid"
+          },
+          {
+            title: 'About us',
+            path: '/about',
+			icon: "bi-info-square"
+          },
+          {
+            title: 'Concierge',
+            path: '/concierge',
+			icon: "bi-suitcase-lg"
+          },
+          {
+            title: 'Guides',
+            path: '/guides',
+			icon: "bi-book"
+          },
+          {
+            title: 'Reviews',
+            path: '/reviews',
+			icon: "bi-hand-thumbs-up"
+          },
+          {
+            title: 'News',
+            path: '/news',
+			icon: "bi-newspaper"
+          },
+          {
+            title: 'FAQ',
+            path: '/faq',
+			icon: "bi-question-square"
+          },
+          {
+            title: 'Newsletter',
+            path: '/newsletter',
+			icon: "bi-send-plus"
+          },
+		  {
+            title: 'Plan your trip',
+            path: '/contact',
+			icon: "bi-envelope-at"
+          },
+        ]
+
+const { icon, modalTrigger } = Astro.props 
+---
+
+<header>
+	<nav class="navbar bg-transparent fixed-top">
+		<div class="container-fluid">
+			<a class="navbar-brand me-auto mt-1 ms-2" href="/">
+				<img style="width: 30px; height: 30px;" src="src/assets/img/logos/logo-crown.png" alt="">
+			</a>
+			<!-- <div class="d-flex justify-content-center align-items-center me-auto">
+				<img style="width: 30px; height: 30px;" src="src/assets/img/logos/logo-crown.png" alt="">
+				<a class="navbar-brand me-auto mt-1 ms-2" href="/">Prince Collection</a>
+			</div> -->
+
+			<Drawer drawerTitle="Book with Prince Collection" drawerId="bookingDrawer" drawerAriaLabel="Book with Prince Collection">
+				<BookingForm />
+			</Drawer>
+			
+			<ul class="nav justify-content-end align-items-center">
+				<li class="nav-item">
+					<button data-bs-toggle="offcanvas" data-bs-target="#bookingDrawer" aria-controls="offcanvasBottom" class="btn btn-dark me-2 rounded-3 px-3">
+						<i class="bi bi-airplane"></i>
+					</button>
+				</li>
+				<li class="nav-item">
+					<button class="btn btn-dark me-2 px-3 rounded-3">
+						<i class="bi bi-envelope-plus"></i>
+					</button>
+				</li>
+				<li class="nav-item">
+					<button class="btn btn-dark me-2">Contact us</button>
+				</li>
+				<li class="nav-item dropdown">
+					
+					<!-- <button class="btn btn-dark dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-water" viewBox="0 0 16 16">
+						<path d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65"/>
+						</svg>
+					</button>
+				
+					<div class="dropdown-menu dropdown-menu-end rounded-4 shadow-lg bg-pc p-3 animate slideIn" aria-labelledby="navbarDropdown" style="top: 50px; width: 350px; height: 75vh;">
+						<div class="text-pc-dark fw-bold">Menu</div>
+					
+					  {
+						navData.map((item) => (
+							<a class="dropdown-item shadow rounded-4 p-3 mt-2 text-dark bg-pc" href={item.path}><i class="bi-grid text-dark" style=""></i>
+ {item.title}</a>
+						))
+					  }
+					</div>
+				  </li>
+			</ul> -->
+
+			<button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-water" viewBox="0 0 16 16">
+					<path d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65"/>
+				  </svg>
+			  </button>
+		  
+		 
+		  <div class="offcanvas offcanvas-end bg-dark text-pc" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+			  <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Prince Collection</h5> -->
+			  <img style="width: 30px; height: 30px;" src="src/assets/img/logos/logo-crown.png" alt="">
+			  <button type="button" class="btn p-0" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-circle-fill fs-2 text-pc-dark"></i></button>
+			</div>
+			<div class="offcanvas-body offcanvas-body d-flex flex-column justify-content-end align-items-start">
+			  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+				{
+					navData.map((item) => (
+					<li class="nav-item pb-0">
+						<a class="dropdown-item fw-light pb-2" href={item.path}>
+							<h2 class="fs-4 fw-bold">
+								<i class:list={["bi text-pc-dark me-2", item.icon || ""]} ></i>
+								{item.title}</h2>
+
+						</a>
+					</li>
+					))
+				  }
+				<!-- <li class="nav-item">
+				  <a class="nav-link" href="/about">About</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="/blog">Blog</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="/guides">Guides</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="/about">Reviews</a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Dropdown
+				  </a>
+				  <ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">Action</a></li>
+					<li><a class="dropdown-item" href="#">Another action</a></li>
+					<li>
+					  <hr class="dropdown-divider">
+					</li>
+					<li><a class="dropdown-item" href="#">Something else here</a></li>
+				  </ul>
+				</li> -->
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	  </nav>
+
+	  
+	<!-- offcanvas only
+		 <nav class="position-relative">
+		<div class="position-absolute top-0 end-0 m-3">
+		<button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-water" viewBox="0 0 16 16">
+				<path d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65"/>
+			  </svg>
+		  </button>
+		  </div>
+		  
+		  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+			<div class="offcanvas-header">
+			  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+			  <div>
+				Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+			  </div>
+			  <div class="dropdown mt-3">
+				<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+				  Dropdown button
+				</button>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="#">Action</a></li>
+				  <li><a class="dropdown-item" href="#">Another action</a></li>
+				  <li><a class="dropdown-item" href="#">Something else here</a></li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+	</nav> -->
+
+
+	<!-- <nav class="navbar navbar-expand-lg fixed-top border-bottom p-3" style="background-color: #ffffffCC;">
+		<div class="container-fluid">
+		<a class="navbar-brand" href="/">Prince Collection</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+			  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+			  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+				<li class="nav-item">
+				  <a class="nav-link" aria-current="page" href="/">Home</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="/about">About</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="/blog">Blog</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="/guides">Guides</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="/reviews">Reviews</a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Dropdown
+				  </a>
+				  <ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">Action</a></li>
+					<li><a class="dropdown-item" href="#">Another action</a></li>
+					<li>
+					  <hr class="dropdown-divider">
+					</li>
+					<li><a class="dropdown-item" href="#">Something else here</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	  </nav> -->
+</div>
+	<!-- <ViewTransitions /> -->
+</header>
+<style>
+
+.dropdown-toggle::after {
+    display: none;
+}
+.dropdown-item {
+	padding: 10px;
+}
+.dropdown-divider {
+	margin: 0;
+}
+</style>

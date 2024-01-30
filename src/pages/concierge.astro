@@ -1,0 +1,89 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+---
+
+<Layout title="Prince Collection | Concierge" description="Prince Collection Concierge services">
+	<main>
+		<div class="container-fluid px-0 pt-3">
+			<div class="row min-vh-100">
+				<div class="col-lg-12 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center p-5">
+                    <img style="width: 80px; height: 80px;" src="src/assets/img/logos/logo-crown.png" alt="">
+					<h1 class="display-4 fw-bold lh-1 mb-2 mt-3">Your Luxury Travel Concierge</h1>
+                    
+					<p class="col-md-8 fs-5 mt-3 mb-4">Prince Collection’s Travel Concierge is designed exclusively for companies and individuals who require exclusive travel arrangements handled for them. Our expertise lies in handling the nuances of travel, ensuring a seamless and extraordinary journey from start to finish.</p>
+					<button class="btn px-4 btn-pc">Book your hotel</button>
+
+                    <!-- <iframe src="https://www2.paymentus.com/l/48232/2024-01-25/8p8gqh" width="100%" height="500" type="text/html" frameborder="0" allowtransparency="true" style="border: 0"></iframe> -->
+
+
+<!-- <form action="https://www2.paymentus.com/l/48232/2024-01-25/8p8grz" method="post">
+    <label for="name">Name</label>
+<input type="text" name="name">
+<label for="name">Email</label>
+<input type="email" name="email">
+
+<button type="submit">Submit</button>
+</form> -->
+
+					<!-- <h4 class="fw-900 lh-1">Prince Collection</h4> -->
+				</div>
+				<div class="col-lg-12 p-0">
+                    <Image src="/src/assets/img/concierge/hut.jpeg" alt="A bird." class="w-100 h-100 rounded-4" style="object-fit: cover" width="1200" height="500" alt="descriptive text"/>
+				</div>
+			</div>
+
+            <div class="row g-2 p-5">
+                <div class="col-lg-12 py-5 border-bottom">
+                    <h1 class="display-1 lh-1 fw-900">What does Prince Collection offer?</h1>
+                </div>
+                <div class="col">
+                    <div class="p-4 m-3 border border-secondary rounded-5 min-vh-50">
+                    <h3 class="fw-bold">Comprehensive onboarding & annual travel strategy</h3>
+                    <p>We conduct a thorough evaluation of clients' credit cards, Elite status, and travel habits. This process aids us in developing a full travel strategy document to optimize the clients' travel experiences. Furthermore, our account managers gain access to clients' loyalty accounts to manage bookings, monitor progress to elite status, and ensure all optimized strategies are being implemented.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-4 m-3 border border-secondary rounded-5 min-vh-50">
+                    <h3 class="fw-bold">Customized trip booking</h3>
+                    <p>Clients communicate their travel requirements to their account manager, who will then research and suggest the best flight and hotel options, keeping in mind the clients' preferences, travel goals, and points balances. Clients only need to sign off on trip proposals, after which the account manager proceeds with the bookings.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-4 m-3 border border-secondary rounded-5 min-vh-50">
+                        <h3 class="fw-bold">24/7 emergency travel support</h3>
+                        <p>Our Concierge team is available 24/7 to assist in emergency travel situations. In case of flight cancellations, delays, missed connections, or any other unexpected circumstances, our team adeptly navigates airline systems to achieve the best possible outcomes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-12 p-0">
+                        <Image src="https://images.unsplash.com/photo-1604601600542-c751186db4a3?q=80&w=2652&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A bird." class="w-100 h-100 rounded-4" style="object-fit: cover" width="1200" height="500" alt="descriptive text"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 p-5">
+                <div class="col-lg-5">
+                    <h3 class="fw-bold">We are NOT a standard travel agency</h3>
+                </div>
+                <div class="col-lg-7">
+                    <p class="fs-4">Our Concierge does not offer basic booking services in the same way a traditional agent might. Our services are more personalized and complex. Since Concierge does not rely on commissions, we are always able to keep our clients best interests front of mind.</p>
+                    </div>
+                </div>
+
+                <div class="row g-5 p-5">
+                    <div class="col-lg-5">
+                        <h3 class="fw-bold">Independent travel planningy</h3>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="fs-4">Our services may not be suitable for those who prefer to plan their travel independently and prefer to do things themselves.</p>
+                     </div>
+                   
+                </div>
+		</div>
+		
+	</main>
+</Layout>
