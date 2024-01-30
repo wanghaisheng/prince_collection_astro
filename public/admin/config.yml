@@ -6,10 +6,10 @@ backend: # The two following lines need to be indented
 media_folder: "public/images/uploads" # Exact path where we store the uploaded media
 public_folder: "/images/uploads" # We do not need to specify the /public part as all the files from it are stored in the root directory after the build step
 
-site_url: https://astro-netlifycms.andrijan.xyz # Replace with site's URL
-display_url: https://astro-netlifycms.andrijan.xyz # Replace with site's URL
+site_url: https://prince-collection.netlify.app/ # Replace with site's URL
+display_url: https://prince-collection.netlify.app/ # Replace with site's URL
 
-logo_url: /images/logo/logo.png # Replace with path to logo
+logo_url: /img/logos/logo-crown.png # Replace with path to logo
 
 slug: { { slug } } # The URL should be the name of the title of the post/document
 
@@ -23,9 +23,9 @@ collections:
       - { label: "Title", name: "title", widget: "string" } # Field Title
       - { label: "Author", name: "author", widget: "string" } # Field Title
       - { label: "Description", name: "description", widget: "markdown" } # Field Description
-      - { label: "Date of writing", name: "date", widget: "DateTime" } # Field Date of writing
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: "Featured image", name: "featuredImage", widget: "image" } # Field Featured Image
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "json"}
   - label: guides # Label used in the UI for the collection
     label_singular: guide # Label for singular post
     name: guides # Name of the collection used for various functionality in the CMS
