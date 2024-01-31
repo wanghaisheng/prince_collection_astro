@@ -61,7 +61,6 @@ const { icon, modalTrigger } = Astro.props
 			<a class="navbar-brand me-auto mt-1 ms-2" href="/">
 				<!-- <img style="width: 30px; height: 30px;" src="src/assets/img/logos/logo-crown.png" alt=""> -->
 				<Image style="width: 30px; height: 30px" src={crown} alt="Prince Collection logo"/>
-				
 			</a>
 			<!-- <div class="d-flex justify-content-center align-items-center me-auto">
 				<img style="width: 30px; height: 30px;" src="src/assets/img/logos/logo-crown.png" alt="">
@@ -86,9 +85,12 @@ const { icon, modalTrigger } = Astro.props
 				<li class="nav-item">
 					<button class="btn btn-dark me-2">Contact us</button>
 				</li>
+
+				<!-- animated dropdown -->
+				<!-- <ul>
 				<li class="nav-item dropdown">
 					
-					<!-- <button class="btn btn-dark dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<button class="btn btn-dark dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 				
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-water" viewBox="0 0 16 16">
 						<path d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65"/>
@@ -97,11 +99,9 @@ const { icon, modalTrigger } = Astro.props
 				
 					<div class="dropdown-menu dropdown-menu-end rounded-4 shadow-lg bg-pc p-3 animate slideIn" aria-labelledby="navbarDropdown" style="top: 50px; width: 350px; height: 75vh;">
 						<div class="text-pc-dark fw-bold">Menu</div>
-					
 					  {
 						navData.map((item) => (
-							<a class="dropdown-item shadow rounded-4 p-3 mt-2 text-dark bg-pc" href={item.path}><i class="bi-grid text-dark" style=""></i>
- {item.title}</a>
+							<a class="dropdown-item shadow rounded-4 p-3 mt-2 text-dark bg-pc" href={item.path}><i class="bi-grid text-dark" style=""></i>{item.title}</a>
 						))
 					  }
 					</div>
@@ -118,7 +118,7 @@ const { icon, modalTrigger } = Astro.props
 		  <div class="offcanvas offcanvas-end bg-dark text-pc" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 			<div class="offcanvas-header">
 			  <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Prince Collection</h5> -->
-			  <img style="width: 30px; height: 30px;" src="src/assets/img/logos/logo-crown.png" alt="">
+			  <Image class="ms-2" style="width: 30px; height: 30px" src={crown} alt="Prince Collection logo"/>
 			  <button type="button" class="btn p-0" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-circle-fill fs-2 text-pc-dark"></i></button>
 			</div>
 			<div class="offcanvas-body offcanvas-body d-flex flex-column justify-content-end align-items-start">

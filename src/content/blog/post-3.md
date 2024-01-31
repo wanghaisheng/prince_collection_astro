@@ -1,10 +1,9 @@
 ---
-title: My Second Blog Post
-author: TJ Dunn
-description: "A post about travel"
-image:
-    url: "https://placehold.co/1000x600"
-    alt: "Thumbnail of Astro arcs."
+title: Third post!
+author: Prince Collection
+description: "Reprehenderit incididunt nostrud esse do ipsum quis."
+imageUrl: https://placehold.co/1000x600
+imageAlt: 'The full Astro logo.'
 pubDate: 2022-07-08
 tags: ["prince collection", "reviews", "points"]
 ---
