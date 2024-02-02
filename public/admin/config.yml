@@ -26,7 +26,7 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: "Featured image", name: "imageUrl", widget: "image" } # Field Featured Image
       - { label: "Image Alt text", name: "imageAlt", widget: "string" } # 
-      - {label: "Body", name: "body", widget: "json"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - label: guides # Label used in the UI for the collection
     label_singular: guide # Label for singular post
     name: guides # Name of the collection used for various functionality in the CMS
