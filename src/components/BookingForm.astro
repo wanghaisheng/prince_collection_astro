@@ -15,52 +15,62 @@
     <input type="hidden" name="referrername" value="" />
     <div class="zf-templateWrapper">
       <!---------template Header Starts Here---------->
-      <ul class="zf-tempHeadBdr">
+      <!-- <ul class="zf-tempHeadBdr">
         <li class="zf-tempHeadContBdr">
           <h2 class="zf-frmTitle">
-            <em>TA Hotel</em>
+            <em>Prince Collection</em>
           </h2>
           <p class="zf-frmDesc"></p>
           <div class="zf-clearBoth"></div>
         </li>
-      </ul>
+      </ul> -->
       <!---------template Header Ends Here---------->
+
       <!---------template Container Starts Here---------->
-      <div class="zf-subContWrap zf-topAlign">
-        <ul>
+      <div class="zf-subContWrap zf-topAlign container-fluid">
+        <!-- <div class="row"> -->
+        <ul class="row list-unstyled g-3 p-3 border rounded-3">
           <!---------Single Line Starts Here---------->
-          <li class="zf-tempFrmWrapper zf-small">
-            <label class="zf-labelName"> First Name <em class="zf-important">*</em>
-            </label>
-            <div class="zf-tempContDiv">
-              <span>
-                <input type="text" name="SingleLine1" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="" />
-              </span>
-              <p id="SingleLine1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
-            </div>
-            <div class="zf-clearBoth"></div>
-          </li>
+          <!-- <div class="col-lg-4"> -->
+            <li class="zf-tempFrmWrapper zf-small col-lg-3">
+                <label class="zf-labelName"> First Name <em class="zf-important">*</em>
+                </label>
+                <div class="zf-tempContDiv">
+                <span>
+                    <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine1" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="">
+
+
+                    <!-- <input class="w-100 py-1 border border-secondary rounded-2" type="text" name="SingleLine1" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="" /> -->
+                </span>
+                <p id="SingleLine1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                </div>
+                <div class="zf-clearBoth"></div>
+            </li>
+          <!-- </div> -->
           <!---------Single Line Ends Here---------->
           <!---------Single Line Starts Here---------->
-          <li class="zf-tempFrmWrapper zf-small">
+          <li class="col-lg-3">
             <label class="zf-labelName"> Last Name <em class="zf-important">*</em>
             </label>
             <div class="zf-tempContDiv">
               <span>
-                <input type="text" name="SingleLine" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="" />
+                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="" />
               </span>
               <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
             </div>
             <div class="zf-clearBoth"></div>
           </li>
+
           <!---------Single Line Ends Here---------->
           <!---------Email Starts Here---------->
-          <li class="zf-tempFrmWrapper zf-small">
+          <li class="zf-tempFrmWrapper zf-small col-lg-3">
             <label class="zf-labelName"> Email <em class="zf-important">*</em>
             </label>
             <div class="zf-tempContDiv">
               <span>
-                <input fieldType=9 type="text" maxlength="255" name="Email" checktype="c5" value="" placeholder="" />
+                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" fieldType=9 type="text" maxlength="255" name="Email" checktype="c5" value="" placeholder=""> 
+                
+                <!-- <input class="w-100 border border-secondary rounded-2" fieldType=9 type="text" maxlength="255" name="Email" checktype="c5" value="" placeholder="" /> -->
               </span>
               <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
             </div>
@@ -68,26 +78,31 @@
           </li>
           <!---------Email Ends Here---------->
           <!---------Single Line Starts Here---------->
-          <li class="zf-tempFrmWrapper zf-small">
+          <li class="zf-tempFrmWrapper zf-small col-lg-3">
             <label class="zf-labelName"> Destination City <em class="zf-important">*</em>
             </label>
             <div class="zf-tempContDiv">
               <span>
-                <input type="text" name="SingleLine2" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="" />
+                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine2" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="">
+
+                <!-- <input type="text" name="SingleLine2" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="" /> -->
               </span>
               <p id="SingleLine2_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
             </div>
             <div class="zf-clearBoth"></div>
           </li>
           <!---------Single Line Ends Here---------->
+
           <!---------Date Starts Here---------->
-          <li class="zf-tempFrmWrapper zf-date">
+          <li class="zf-tempFrmWrapper zf-date col-lg-6">
             <label class="zf-labelName"> Check-in Date <em class="zf-important">*</em>
             </label>
             <div class="zf-tempContDiv">
               <span>
-                <input type="text" name="Date" checktype="c4" value="" maxlength="25" placeholder="" />
-                <label>dd-MMM-yyyy</label>
+                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date" checktype="c4" value="" maxlength="25" placeholder="DD-MMM-YYYY" >
+<!-- 
+                <input type="text" name="Date" checktype="c4" value="" maxlength="25" placeholder="" /> -->
+                <!-- <label>DD-MMM-YYYY</label> -->
               </span>
               <div class="zf-clearBoth"></div>
               <p id="Date_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
@@ -95,14 +110,17 @@
             <div class="zf-clearBoth"></div>
           </li>
           <!---------Date Ends Here---------->
+
           <!---------Date Starts Here---------->
-          <li class="zf-tempFrmWrapper zf-date">
+          <li class="zf-tempFrmWrapper zf-date col-lg-6">
             <label class="zf-labelName"> Check-out Date <em class="zf-important">*</em>
             </label>
             <div class="zf-tempContDiv">
               <span>
-                <input type="text" name="Date1" checktype="c4" value="" maxlength="25" placeholder="" />
-                <label>dd-MMM-yyyy</label>
+                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date1" checktype="c4" value="" maxlength="25" placeholder="DD-MMM-YYYY">
+
+                <!-- <input type="text" name="Date1" checktype="c4" value="" maxlength="25" placeholder="" /> -->
+                <!-- <label>DD-MMM-YYYY</label> -->
               </span>
               <div class="zf-clearBoth"></div>
               <p id="Date1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
@@ -110,26 +128,32 @@
             <div class="zf-clearBoth"></div>
           </li>
           <!---------Date Ends Here---------->
+
           <!---------Single Line Starts Here---------->
-          <li class="zf-tempFrmWrapper zf-small">
+          <li class="zf-tempFrmWrapper zf-small col-lg-6">
             <label class="zf-labelName"> How many rooms do you need? Do you have a preference for room/suite type? <em class="zf-important">*</em>
             </label>
             <div class="zf-tempContDiv">
               <span>
-                <input type="text" name="SingleLine3" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="" />
+                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine3" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="">
+
+                <!-- <input type="text" name="SingleLine3" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="" /> -->
               </span>
               <p id="SingleLine3_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
             </div>
             <div class="zf-clearBoth"></div>
           </li>
           <!---------Single Line Ends Here---------->
+
           <!---------Single Line Starts Here---------->
-          <li class="zf-tempFrmWrapper zf-small">
+          <li class="zf-tempFrmWrapper zf-small col-lg-6">
             <label class="zf-labelName"> How many beds do you need? Do you have a preference for bed configuration? <em class="zf-important">*</em>
             </label>
             <div class="zf-tempContDiv">
               <span>
-                <input type="text" name="SingleLine9" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="" />
+                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine9" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="">
+
+                <!-- <input type="text" name="SingleLine9" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="" /> -->
               </span>
               <p id="SingleLine9_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
             </div>
@@ -333,8 +357,11 @@
           </li>
           <!---------Multiple Line Ends Here---------->
         </ul>
-      </div>
+
+        <!-- </div> -->
+      </div><!-- end container-->
       <!---------template Container Starts Here---------->
+      <!-- Submit button -->
       <ul>
         <li class="zf-fmFooter">
           <button class="zf-submitColor">Submit</button>
