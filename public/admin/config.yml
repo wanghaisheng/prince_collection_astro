@@ -17,7 +17,7 @@ collections:
   - label: blog # Label used in the UI for the collection
     label_singular: post # Label for singular post
     name: blog # Name of the collection used for various functionality in the CMS
-    folder: /src/pages/blog # Where each new post with .md should be saved
+    folder: /src/content/blog # Where each new post with .md should be saved
     create: true # Allows users to create new items in the collection
     fields:
       - { label: "Title", name: "title", widget: "string" } # Field Title
@@ -36,20 +36,22 @@ collections:
       - { label: "Title", name: "title", widget: "string" } # Field Title
       - { label: "Author", name: "author", widget: "string" } # Field Title
       - { label: "Description", name: "description", widget: "markdown" } # Field Description
-      - { label: "Date of writing", name: "date", widget: "DateTime" } # Field Date of writing
-      - { label: "Featured image", name: "featuredImage", widget: "image" } # Field Featured Image
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: "Featured image", name: "imageUrl", widget: "image" } # Field Featured Image
+      - { label: "Image Alt text", name: "imageAlt", widget: "string" } # 
       - {label: "Body", name: "body", widget: "markdown"}
   - label: news # Label used in the UI for the collection
     label_singular: post # Label for singular post
     name: news # Name of the collection used for various functionality in the CMS
-    folder: /src/pages/news # Where each new post with .md should be saved
+    folder: /src/content/news # Where each new post with .md should be saved
     create: true # Allows users to create new items in the collection
     fields:
       - { label: "Title", name: "title", widget: "string" } # Field Title
       - { label: "Author", name: "author", widget: "string" } # Field Title
       - { label: "Description", name: "description", widget: "markdown" } # Field Description
-      - { label: "Date of writing", name: "date", widget: "DateTime" } # Field Date of writing
-      - { label: "Featured image", name: "featuredImage", widget: "image" } # Field Featured Image
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: "Featured image", name: "imageUrl", widget: "image" } # Field Featured Image
+      - { label: "Image Alt text", name: "imageAlt", widget: "string" } # 
       - {label: "Body", name: "body", widget: "markdown"}
 
 # use fields for credit card or other ads, then use v-if on a component inside the MD
