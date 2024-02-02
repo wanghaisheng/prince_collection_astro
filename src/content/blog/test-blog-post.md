@@ -2,9 +2,10 @@
 title: Test blog post
 author: Andrew Mason
 description: Test description
-date: 2024-02-02T17:54:41.571Z
+pubDate: 2024-02-02T17:54:41.571Z
 imageUrl: /images/uploads/sunset_wallpaper.jpeg
 imageAlt: Image for blog post
+tags: ["prince collection", "reviews", "points"]
 ---
 # Post title
 
