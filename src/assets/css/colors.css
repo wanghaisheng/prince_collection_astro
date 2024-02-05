@@ -1,4 +1,55 @@
+/* https://www.learnui.design/tools/data-color-picker.html#single */
+
 /* pc brand */
+
+.text-pc-dark {
+    color: #a1655c;
+}
+.text-pc-dark-80 {
+    color: #b47b6e;
+}
+.text-pc-dark-60 {
+    color: #c69081;
+}
+.text-pc-dark-40 {
+    color: #d9a794;
+}
+.text-pc-dark-20 {
+    color: #ecbea9;
+}
+.text-pc-dark-10 {
+    color: #ffd5bf;
+}
+
+/* bg */
+
+.bg-pc-dark {
+    background: #a1655c;
+}
+.bg-pc-dark-80 {
+    background: #b47b6e;
+}
+.bg-pc-dark-60 {
+    background: #c69081;
+}
+.bg-pc-dark-40 {
+    background: #d9a794;
+}
+.bg-pc-dark-20 {
+    background: #ecbea9;
+}
+.bg-pc-dark-10 {
+    background: #ffd5bf;
+}
+
+
+
+/* #a1655c
+#b47b6e
+#c69081
+#d9a794
+#ecbea9
+#ffd5bf */
 
 .text-pc {
     color: #f0beb4;
@@ -8,12 +59,32 @@
     color: #a1655c;
 }
 
+.text-chestnut {
+    color: #5D2F27;
+}
+
 .bg-pc {
     background-color: #f0beb4;
 }
 
+.bg-pc-50 {
+    background-color: #f0beb480;
+}
+
+.bg-pc-30 {
+    background-color: #f0beb44F;
+}
+
 .bg-pc-dark {
     background-color: #a1655c;
+}
+
+.bg-pc-dark-50 {
+    background-color: #a1655c80;
+}
+
+.bg-pc-dark-30 {
+    background-color: #a1655c4F;
 }
 
 .bg-midnight-blue {

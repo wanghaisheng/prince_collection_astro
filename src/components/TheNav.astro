@@ -115,7 +115,7 @@ const { icon, modalTrigger } = Astro.props
 			  </button>
 		  
 		 
-		  <div class="offcanvas offcanvas-end bg-dark text-pc" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+		  <div class="offcanvas offcanvas-end bg-pc-dark text-pc" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 			<div class="offcanvas-header">
 			  <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Prince Collection</h5> -->
 			  <Image class="ms-2" style="width: 30px; height: 30px" src={crown} alt="Prince Collection logo"/>
@@ -127,10 +127,9 @@ const { icon, modalTrigger } = Astro.props
 					navData.map((item) => (
 					<li class="nav-item pb-0">
 						<a class="dropdown-item fw-light pb-2" href={item.path}>
-							<h2 class="fs-4 fw-bold">
-								<i class:list={["bi text-pc-dark me-2", item.icon || ""]} ></i>
+							<h2 class="fs-4 fw-light">
+								<i class:list={["bi text-pc me-2", item.icon || ""]} ></i>
 								{item.title}</h2>
-
 						</a>
 					</li>
 					))
@@ -251,6 +250,10 @@ const { icon, modalTrigger } = Astro.props
 	<!-- <ViewTransitions /> -->
 </header>
 <style>
+
+.nav-item a h2 {
+	font-family: 'Inter tight', Arial, Helvetica, sans-serif;
+}
 
 .dropdown-toggle::after {
     display: none;
