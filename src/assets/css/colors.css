@@ -42,8 +42,6 @@
     background: #ffd5bf;
 }
 
-
-
 /* #a1655c
 #b47b6e
 #c69081
@@ -54,10 +52,51 @@
 .text-pc {
     color: #f0beb4;
 }
-
-.text-pc-dark {
-    color: #a1655c;
+.text-pc-80 {
+    color: #f2c5bc;
 }
+.text-pc-60 {
+    color: #f5cdc5;
+}
+.text-pc-40 {
+    color: #f7d4cd;
+}
+.text-pc-20 {
+    color: #f9dcd5;
+}
+.text-pc-10 {
+    color: #fbe3de;
+}
+
+/* bg */
+
+.bg-pc {
+    background: #f0beb4;
+}
+.bg-pc-80 {
+    background: #f2c5bc;
+}
+.bg-pc-60 {
+    background: #f5cdc5;
+}
+.bg-pc-40 {
+    background: #f7d4cd;
+}
+.bg-pc-20 {
+    background: #f9dcd5;
+}
+.bg-pc-10 {
+    background: #fbe3de;
+}
+
+/* #f0beb4
+#f2c5bc
+#f5cdc5
+#f7d4cd
+#f9dcd5
+#fbe3de */
+
+
 
 .text-chestnut {
     color: #5D2F27;
@@ -75,7 +114,7 @@
     background-color: #f0beb44F;
 }
 
-.bg-pc-dark {
+/* .bg-pc-dark {
     background-color: #a1655c;
 }
 
@@ -85,7 +124,7 @@
 
 .bg-pc-dark-30 {
     background-color: #a1655c4F;
-}
+} */
 
 .bg-midnight-blue {
     background: #061E51;
