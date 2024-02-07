@@ -1,57 +1,53 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import faqData from '../data/faq.json';
 ---
 
 <Layout title="Welcome to Prince Collection" description="Prince Collection">
 	<main>
-		<div class="container-fluid px-0 pt-3 bg-black text-light">
-			<div class="row row-cols-1 row-cols-lg-2 min-vh-100">
-				<div class="col d-flex flex-column justify-content-center align-items-center text-center p-5">
-					<img style="width: 80px; height: 80px;" src="src/assets/img/logos/logo-crown.png" alt="">
-					<h1 class="display-4 fw-bold lh-1 mb-2 mt-3">Prince Collection</h1>
-					<p class="h4 mb-3">The new standard in luxury travel.</p>
-				
-					<nav class="nav nav-fill d-flex mx-auto">
-						<a class="nav-link p-0 me-2" href="/book">
-							<button class="btn btn-pc">Book your hotel</button>
-						</a>
-						<a class="nav-link p-0 me-2" href="/about">
-							<button class="btn btn-pc">About us</button>
-						</a>
-						<a class="nav-link p-0 me-2" href="/guides">
-							<button class="btn btn-pc">Guides</button>
-						</a>
-						<a class="nav-link p-0 me-2" href="/">
-							<button class="btn btn-pc">Contact</button>
-						</a>
-					  </nav>
-					<!-- <div class="row row-cols-1 row-cols-lg-4 gx-2 mt-4 ">
-						<div class="col flex-fill min-vh-25 border rounded-5 p-3">
-							<img src="https://images.unsplash.com/photo-1526786220381-1d21eedf92bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-100 h-100 object-fit rounded-5" alt="...">
-						</div>
-						<div class="col flex-fill min-vh-25 border rounded-5 p-3">
-							<img src="https://images.unsplash.com/photo-1526786220381-1d21eedf92bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-100 h-100 object-fit rounded-5" alt="...">
-						</div>
-						<div class="col flex-fill min-vh-25 border rounded-5 p-3">
-							<img src="https://images.unsplash.com/photo-1526786220381-1d21eedf92bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-100 h-100 object-fit rounded-5" alt="...">
-						</div>
-					</div> -->
+		<div class="container px-0 pt-3">
+			<div class="row min-vh-500">
+				<div class="col-lg-10 offset-lg-1 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center p-5">
+                    <span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">FAQ</span>
+					<h1 class="display-2 fw-bold lh-1 mb-2 mt-3">Answers to our most <span class="text-pc-dark">Frequently Asked Questions</span></h1>
+					<p class="col-md-7 fs-5 text-body-secondary mt-3 mb-4">Prince Collection’s Travel Concierge is designed exclusively for companies and individuals who require exclusive travel arrangements handled for them.</p>
 				</div>
-				<div class="col d-flex flex-column justify-content-center align-items-center min-vh-50 p-5 position-relative">
-					<!-- <div class="card rounded-4 shadow-lg border-0 position-relative" style="z-index: 2;width: 18rem;">
-						<img src="https://images.unsplash.com/photo-1526786220381-1d21eedf92bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top p-3 rounded-5" alt="...">
-						<i class="bi bi-star-fill position-absolute end-0 top-0 mx-4 mt-3 text-warning" style="font-size: 30px; filter: drop-shadow(2px 4px 6px black);"></i>
-						<div class="card-body pt-2 px-4 pb-4">
-						  <h5 class="card-title fw-900">Your destination</h5>
-						  <p class="card-text mb-1">Prince Collection Concierge offers personalized, full spectrum travel booking services for high net worth clients.
-						</p>
-						  <a href="/book" class=""><i class="bi bi-arrow-up-right-circle-fill text-dark" style="font-size: 2rem"></i></a>
-						</div>
-					  </div> -->
-					<img class="w-100 h-100 rounded-4 shadow" style="object-fit: cover" src="https://images.unsplash.com/photo-1526786220381-1d21eedf92bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+				<div class="col-lg-10 offset-lg-1">
+					<div class="accordion accordion-flush" id="faqAccordion">
+						{
+							faqData.faq.map((item, index) => (
+							<div class="accordion-item text-body-secondary">
+								<h2 class="accordion-header mt-0 pe-5" id={'heading_' + index}>
+								<div class="btn btn-light accordion-button bg-white fw-light py-4" role="button" data-bs-toggle="collapse" data-bs-target={'#collapse_' + index} aria-expanded="false" aria-controls="collapseOne">
+									<h2 class="fs-1 fw-light w-75">{item.title}</h2>
+								</div>
+								</h2>
+								<div id={'collapse_' + index} class="accordion-collapse collapse" aria-labelledby={'heading_' + index} data-bs-parent="#faqAccordion">
+								<div class="accordion-body">
+									<ul class="list-unstyled py-4 mb-0">
+										{
+											item.content.map((i) => (
+												<li class="fs-4 mb-4">{i}</li>
+											))
+										}
+									</ul>
+								</div>
+								</div>
+							</div>
+							))
+						}
+					</div>
 				</div>
-			</div>
-		</div>
-		
+
+			</div>	
+		</div><!--end container -->
 	</main>
 </Layout>
+
+<style>
+	.accordion h2 {
+		font-family: 'Inter tight', Arial, Helvetica, sans-serif
+	}
+</style>
+
