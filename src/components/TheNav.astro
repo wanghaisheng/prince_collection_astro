@@ -48,8 +48,8 @@ const navData =
 			icon: "bi-send-plus"
           },
 		  {
-            title: 'Plan your trip',
-            path: '/contact',
+            title: 'Book your trip',
+            path: '/book',
 			icon: "bi-envelope-at"
           },
         ]
@@ -123,7 +123,7 @@ const { icon, modalTrigger } = Astro.props
 			  <button type="button" class="btn p-0" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-circle-fill fs-2 text-pc-dark"></i></button>
 			</div>
 			<div class="offcanvas-body offcanvas-body d-flex flex-column justify-content-end align-items-start p-3">
-			  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="color: #7d84ab">
+			  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-pc-dark-60" style="color: #7d84ab">
 				<li class="fw-900 pb-3">Prince Collection</li>
 				{
 					navData.map((item) => (
