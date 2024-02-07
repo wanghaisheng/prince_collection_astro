@@ -41,7 +41,7 @@ const { bookingContainer, bookingForm } = Astro.props;
                 <!-- <em class="zf-important">*</em> -->
                 <div class="zf-tempContDiv">
                 <span>
-                    <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine1" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="">
+                    <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine1" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="" required>
                 </span>
                 <p id="SingleLine1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div>
@@ -69,9 +69,7 @@ const { bookingContainer, bookingForm } = Astro.props;
             <!-- <em class="zf-important">*</em> -->
             <div class="zf-tempContDiv">
               <span>
-                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" fieldType=9 type="text" maxlength="255" name="Email" checktype="c5" value="" placeholder=""> 
-                
-                <!-- <input class="w-100 border border-secondary rounded-2" fieldType=9 type="text" maxlength="255" name="Email" checktype="c5" value="" placeholder="" /> -->
+                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" fieldType=9 type="text" maxlength="255" name="Email" checktype="c5" value="" placeholder="" required> 
               </span>
               <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
             </div>
@@ -85,9 +83,7 @@ const { bookingContainer, bookingForm } = Astro.props;
             <!-- <em class="zf-important">*</em> -->
             <div class="zf-tempContDiv">
               <span>
-                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine2" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="">
-
-                <!-- <input type="text" name="SingleLine2" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="" /> -->
+                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine2" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="" required>
               </span>
               <p id="SingleLine2_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
             </div>
@@ -101,7 +97,7 @@ const { bookingContainer, bookingForm } = Astro.props;
                         <!-- <em class="zf-important">*</em> -->
                         <div class="zf-tempContDiv">
                           <span>
-                            <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine3" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="i.e. 2 rooms, suite">
+                            <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine3" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="i.e. 2 rooms, suite" required>
                           </span>
                           <p id="SingleLine3_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                         </div>
@@ -115,10 +111,7 @@ const { bookingContainer, bookingForm } = Astro.props;
             <!-- <em class="zf-important">*</em> -->
             <div class="zf-tempContDiv">
               <span>
-                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date" checktype="c4" value="" maxlength="25" placeholder="DD-MMM-YYYY" >
-<!-- 
-                <input type="text" name="Date" checktype="c4" value="" maxlength="25" placeholder="" /> -->
-                <!-- <label>DD-MMM-YYYY</label> -->
+                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date" checktype="c4" value="" maxlength="25" placeholder="DD-MMM-YYYY" required>
               </span>
               <div class="zf-clearBoth"></div>
               <p id="Date_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
@@ -134,7 +127,7 @@ const { bookingContainer, bookingForm } = Astro.props;
             </label>
             <div class="zf-tempContDiv">
               <span>
-                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date1" checktype="c4" value="" maxlength="25" placeholder="DD-MMM-YYYY">
+                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date1" checktype="c4" value="" maxlength="25" placeholder="DD-MMM-YYYY" required>
 
                 <!-- <input type="text" name="Date1" checktype="c4" value="" maxlength="25" placeholder="" /> -->
                 <!-- <label>DD-MMM-YYYY</label> -->
@@ -166,7 +159,7 @@ const { bookingContainer, bookingForm } = Astro.props;
             <!-- <em class="zf-important">*</em> -->
             <div class="zf-tempContDiv">
               <span>
-                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine4" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="Total adults and children">
+                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine4" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="Total adults and children" required>
               </span>
               <p id="SingleLine4_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
             </div>
@@ -233,10 +226,10 @@ const { bookingContainer, bookingForm } = Astro.props;
 
           <!---------Single Line Starts Here---------->
           <li class="zf-tempFrmWrapper zf-small col-lg-6">
-            <label class="zf-labelName"> Is there a specific hotel you'd like to book? </label>
+            <label class="zf-labelName">Is there a specific hotel you'd like to book? </label>
             <div class="zf-tempContDiv">
               <span>
-                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine8" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="">
+                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine8" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="i.e. Ritz-Carlton, Hilton, Marriott...">
               </span>
               <p id="SingleLine8_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
             </div>
@@ -324,12 +317,10 @@ const { bookingContainer, bookingForm } = Astro.props;
 
           <!---------Single Line Starts Here---------->
           <li class="zf-tempFrmWrapper zf-small col-md-6 col-lg-6">
-            <label class="zf-labelName"> Do you have elite status with any hotel chains?</label>
+            <label class="zf-labelName">Do you have elite status with any hotel chains?</label>
             <div class="zf-tempContDiv">
               <span>
                 <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine7" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="i.e. Ritz-Carlton, Hilton, Marriot...">
-
-                <!-- <input type="text" name="SingleLine7" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="" /> -->
               </span>
               <p id="SingleLine7_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
             </div>
@@ -427,7 +418,9 @@ const { bookingContainer, bookingForm } = Astro.props;
         box-shadow: none;
         color: white;
     }
+    select, 
     select:focus {
+        background: transparent;
         box-shadow: none;
     }
     label {

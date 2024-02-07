@@ -1,3 +1,14 @@
+.btn-nav {
+    background: #7d84ab;
+    color: #0c1e35;
+}
+
+.btn-nav:hover {
+    background: #0c1e35;
+    border: 1px solid #7d84ab;
+    color: #7d84ab;
+}
+
 .btn-pc {
     background: #f0beb4;
     color: #161718;

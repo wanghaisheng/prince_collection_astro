@@ -12,11 +12,11 @@ const navData =
             path: '/',
 			icon: "bi-grid"
           },
-          {
-            title: 'About us',
-            path: '/about',
-			icon: "bi-info-square"
-          },
+        //   {
+        //     title: 'About us',
+        //     path: '/about',
+		// 	icon: "bi-info-square"
+        //   },
           {
             title: 'Concierge',
             path: '/concierge',
@@ -139,7 +139,7 @@ const { icon, modalTrigger } = Astro.props
 				  <li>
 					<div class="input-group my-2">
 						<p class="small mt-0">Join the Prince Collection newsletter and get access to exclusive deals, reviews, guides, benefits and become part of our community.</p>
-						<button class="btn btn-outline-secondary" type="button" id="button-addon1">I'm in!</button>
+						<button class="btn btn-nav" type="button" id="button-addon1">I'm in!</button>
 						<input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
 					</div>
 					</li>
@@ -194,13 +194,13 @@ const { icon, modalTrigger } = Astro.props
 	text-decoration: none;
 }
 
-.dropdown-toggle::after {
-    display: none;
-}
-.dropdown-item {
-	padding: 10px;
-}
-.dropdown-divider {
-	margin: 0;
+input, 
+input:focus {
+	/* border: 0; */
+	background: transparent;
+	border: 1px solid #7d84ab;
+	border-radius: 0;
+	box-shadow: none;
+	color: white;
 }
 </style>
