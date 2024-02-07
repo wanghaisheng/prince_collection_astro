@@ -1,6 +1,7 @@
 ---
 import Drawer from './TheDrawer.astro';
 import BookingForm from '../components/BookingForm.astro';
+import Modal from '../components/TheModal.astro';
 import { Image } from 'astro:assets';
 import crown from '../assets/img/logos/logo-crown.png';
 
@@ -78,7 +79,7 @@ const { icon, modalTrigger } = Astro.props
 					</button>
 				</li>
 				<li class="nav-item">
-					<button class="btn btn-dark me-2 px-3 rounded-3">
+					<button class="btn btn-dark me-2 px-3 rounded-3" data-bs-toggle="modal" data-bs-target="#signupForm">
 						<i class="bi bi-envelope-plus"></i>
 					</button>
 				</li>
@@ -115,25 +116,33 @@ const { icon, modalTrigger } = Astro.props
 			  </button>
 		  
 		 
-		  <div class="offcanvas offcanvas-end bg-pc-dark text-pc" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+		  <div class="offcanvas offcanvas-end" style="background: #0c1e35;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 			<div class="offcanvas-header">
 			  <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Prince Collection</h5> -->
 			  <Image class="ms-2" style="width: 30px; height: 30px" src={crown} alt="Prince Collection logo"/>
 			  <button type="button" class="btn p-0" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-circle-fill fs-2 text-pc-dark"></i></button>
 			</div>
-			<div class="offcanvas-body offcanvas-body d-flex flex-column justify-content-end align-items-start">
-			  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+			<div class="offcanvas-body offcanvas-body d-flex flex-column justify-content-end align-items-start p-3">
+			  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="color: #7d84ab">
+				<li class="fw-900 pb-3">Prince Collection</li>
 				{
 					navData.map((item) => (
-					<li class="nav-item pb-0">
-						<a class="dropdown-item fw-light pb-2" href={item.path}>
-							<h2 class="fs-4 fw-light">
-								<i class:list={["bi text-pc me-2", item.icon || ""]} ></i>
-								{item.title}</h2>
+					<li class="nav-item fw-bold pb-3">
+						<a class="" href={item.path}>
+							<i class:list={["bi me-3", item.icon || ""]} ></i>
+								{item.title}
 						</a>
 					</li>
 					))
 				  }
+				  <li><hr class="border border-top my-2"></li>
+				  <li>
+					<div class="input-group my-2">
+						<p class="small mt-0">Join the Prince Collection newsletter and get access to exclusive deals, reviews, guides, benefits and become part of our community.</p>
+						<button class="btn btn-outline-secondary" type="button" id="button-addon1">I'm in!</button>
+						<input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+					</div>
+					</li>
 				<!-- <li class="nav-item">
 				  <a class="nav-link" href="/about">About</a>
 				</li>
@@ -165,94 +174,24 @@ const { icon, modalTrigger } = Astro.props
 		</div>
 	  </nav>
 
-	  
-	<!-- offcanvas only
-		 <nav class="position-relative">
-		<div class="position-absolute top-0 end-0 m-3">
-		<button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-water" viewBox="0 0 16 16">
-				<path d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65"/>
-			  </svg>
-		  </button>
-		  </div>
-		  
-		  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-			<div class="offcanvas-header">
-			  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-			  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-			</div>
-			<div class="offcanvas-body">
-			  <div>
-				Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-			  </div>
-			  <div class="dropdown mt-3">
-				<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-				  Dropdown button
-				</button>
-				<ul class="dropdown-menu">
-				  <li><a class="dropdown-item" href="#">Action</a></li>
-				  <li><a class="dropdown-item" href="#">Another action</a></li>
-				  <li><a class="dropdown-item" href="#">Something else here</a></li>
-				</ul>
-			  </div>
-			</div>
-		  </div>
-	</nav> -->
-
-
-	<!-- <nav class="navbar navbar-expand-lg fixed-top border-bottom p-3" style="background-color: #ffffffCC;">
-		<div class="container-fluid">
-		<a class="navbar-brand" href="/">Prince Collection</a>
-		  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-			<div class="offcanvas-header">
-			  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-			  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-			</div>
-			<div class="offcanvas-body">
-			  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-				<li class="nav-item">
-				  <a class="nav-link" aria-current="page" href="/">Home</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="/about">About</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="/blog">Blog</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="/guides">Guides</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="/reviews">Reviews</a>
-				</li>
-				<li class="nav-item dropdown">
-				  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					Dropdown
-				  </a>
-				  <ul class="dropdown-menu">
-					<li><a class="dropdown-item" href="#">Action</a></li>
-					<li><a class="dropdown-item" href="#">Another action</a></li>
-					<li>
-					  <hr class="dropdown-divider">
-					</li>
-					<li><a class="dropdown-item" href="#">Something else here</a></li>
-				  </ul>
-				</li>
-			  </ul>
-			</div>
-		  </div>
+	  <Modal modalTitle="Join Our Newsletter" modalId="signupForm" modalStyles="bg-dark text-light">
+		<div class="input-group my-2">
+			<h3>Join the <span class="text-pc">Prince Collection</span> newsletter</h3>
+			<p class="mt-2 mb-4">Join the Prince Collection newsletter and get access to exclusive deals, reviews, guides, benefits and become part of our community.</p>
+			<button class="btn btn-outline-light" type="button" id="button-addon1">I'm in!</button>
+			<input type="email" class="form-control bg-dark border-end-0 border-top-0 rounded-0" placeholder="Your email" aria-label="Sign up for our newsletter" aria-describedby="button-addon1">
 		</div>
-	  </nav> -->
+	</Modal>
 </div>
-	<!-- <ViewTransitions /> -->
 </header>
 <style>
 
-.nav-item a h2 {
+.nav-item a {
 	font-family: 'Inter tight', Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	padding: 10px;
+	color: inherit;
+	text-decoration: none;
 }
 
 .dropdown-toggle::after {
