@@ -9,6 +9,11 @@
     color: #ffffff;
 }
 
+.btn-pc:hover .bi {
+    color: #ffffff !important;
+    transition: all .1s ease-in-out;
+}
+
 .btn-outline-pc {
     background: transparent;
     border: 1px solid #f0beb4;
