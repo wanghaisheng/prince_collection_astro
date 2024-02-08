@@ -105,3 +105,18 @@
 .text-light-grey {
    color: #EFEFEF;
 }
+
+/* nav */
+
+.bg-indigo {
+    background: #0c1e35;
+}
+.text-indigo {
+    color: #0c1e35;
+}
+.text-lightblue {
+    color: #7d84ab
+}
+.bg-lightblue {
+    background: #7d84ab;
+}
