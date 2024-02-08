@@ -4,6 +4,8 @@ import BookingForm from '../components/BookingForm.astro';
 import Modal from '../components/TheModal.astro';
 import { Image } from 'astro:assets';
 import crown from '../assets/img/logos/logo-crown.png';
+import NewsletterForm from './NewsletterForm.astro';
+import Form2 from './Form2.astro';
 
 const navData = 
 		[
@@ -175,12 +177,17 @@ const { icon, modalTrigger } = Astro.props
 	  </nav>
 
 	  <Modal modalTitle="Join Our Newsletter" modalId="signupForm" modalStyles="bg-dark text-light">
-		<div class="input-group my-2">
+		<h3>Join the <span class="text-pc">Prince Collection</span> newsletter</h3>
+		<p class="mt-3 mb-4">Join the Prince Collection newsletter and get access to exclusive deals, reviews, guides, benefits and become part of our community.</p>
+		<NewsletterForm />
+		<!-- <div class="input-group my-2">
 			<h3>Join the <span class="text-pc">Prince Collection</span> newsletter</h3>
 			<p class="mt-2 mb-4">Join the Prince Collection newsletter and get access to exclusive deals, reviews, guides, benefits and become part of our community.</p>
 			<button class="btn btn-outline-light" type="button" id="button-addon1">I'm in!</button>
 			<input type="email" class="form-control bg-dark border-end-0 border-top-0 rounded-0" placeholder="Your email" aria-label="Sign up for our newsletter" aria-describedby="button-addon1">
-		</div>
+		</div> -->
+		<!-- <NewsletterForm /> -->
+		<!-- <Form2 /> -->
 	</Modal>
 </div>
 </header>
