@@ -26,15 +26,12 @@ collections:
       - { label: 'Publish Date', name: 'pubDate', widget: 'datetime' }
       - { label: "Featured image", name: "imageUrl", widget: "image" } # Field Featured Image
       - { label: "Image Alt text", name: "imageAlt", widget: "string" } # 
-      # - label: "Tags"
-      #     name: "tags"
-      #     widget: "list"
-      #     allow_add: false
-      #     default: ["news"]
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        field: {label: "Tags", name: "tags", widget: "string"}
 
-      - { label: "Tags", name: "tags", widget: "list", field: {label: "Tags", name: "tags", widget: "string"} }
-      # - { label: "Tags", name: "tags", widget: "list", default: ["news"], field: {label: "Tags", name: "tags", widget: "string"} }
-      
+      # - { label: "Tags", name: "tags", widget: "list", default: ["news"]}
       - {label: "Body", name: "body", widget: "markdown"}
   - label: guides # Label used in the UI for the collection
     label_singular: guide # Label for singular post
