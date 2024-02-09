@@ -67,13 +67,13 @@ if (Astro.request.method === "POST") {
 <form id="newsletterSignup" method="POST">
     <div class="input-group my-2">
         <button class:list={["btn rounded-0 px-3 fw-bold", newsletterBtn]} type="button" id="button-addon1">I'm in!</button>
-        <input type="email" class:list={["form-control border-end-0 border-top-0 rounded-0", newsletterStyle, newsletterClass]} placeholder="name@example.com" aria-label="Sign up for our newsletter" aria-describedby="button-addon1">
+        <input type="email" class:list={["form-control border-end-0 border-top-0 rounded-0", newsletterStyle, newsletterClass]} placeholder="name@example.com" aria-label="Sign up for our newsletter" aria-describedby="button-addon1" required>
     </div>
 </form>
 
 <style>
     /* input::placeholder {
-        color: #7d84ab; 
+        color: #7d84abCC; 
     } */
 
     input, 

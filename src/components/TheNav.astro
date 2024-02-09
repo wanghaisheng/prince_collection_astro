@@ -80,7 +80,7 @@ const { icon, modalTrigger } = Astro.props
 					</button>
 				</li>
 				<li class="nav-item">
-					<button class="btn btn-dark me-2 px-3 rounded-3" data-bs-toggle="modal" data-bs-target="#signupForm">
+					<button class="btn btn-dark me-2 px-3 rounded-3" data-bs-toggle="modal" data-bs-target="#navSignup">
 						<i class="bi bi-envelope-plus"></i>
 					</button>
 				</li>
@@ -149,11 +149,11 @@ const { icon, modalTrigger } = Astro.props
 		</div>
 	  </nav>
 
-	  <Modal modalTitle="Join Our Newsletter" modalId="signupForm" modalStyles="bg-dark text-light">
+	  <Modal modalTitle="Join Our Newsletter" modalId="navSignup" modalStyles="bg-dark text-light">
 		<h3>Subscribe to the <span class="text-pc">Prince Collection</span> newsletter</h3>
 		<p class="mt-3 mb-4">You'll receive priority information about the newest luxury properties worldwide, exclusive reservations and deals through <span class="text-pc fw-bold">Prince Collection</span>, and unique destinations across the globe.</p>
 		<NewsletterForm newsletterBtn="btn-pc" newsletterClass="text-light" />
-	</Modal>
+		</Modal>
 </div>
 </header>
 <style>
