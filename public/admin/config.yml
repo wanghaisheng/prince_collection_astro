@@ -32,16 +32,12 @@ collections:
       #     allow_add: false
       #     default: ["news"]
       
-      # - label: "Gallery"
-      #   name: "galleryImages"
-      #   widget: "list"
-      #   fields:
-      #     - { label: "Source", name: "src", widget: "string" }
-      #     - { label: "Alt Text", name: "alt", widget: "string" }
-      #   default:
-      #     - { src: "/img/tennis.jpg", alt: "Tennis" }
-      #     - { src: "/img/footbar.jpg", alt: "Football" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["news"] }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        fields:
+          - { label: "Tags", name: "tags", widget: "string" }
+      # - { label: "Tags", name: "tags", widget: "list", default: ["news"] }
       - {label: "Body", name: "body", widget: "markdown"}
   - label: guides # Label used in the UI for the collection
     label_singular: guide # Label for singular post
