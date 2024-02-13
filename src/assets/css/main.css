@@ -13,11 +13,18 @@ html {
   }
   
 body {
-    font-family: 'Inter Tight', Helvetica, sans-serif;
+    font-family: 'Inter Tight', Helvetica, Arial, sans-serif;
     max-width: 1900px;
     overflow-x: hidden;
     line-height: 1.4;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* general spacing setup */
 
 section {
   padding: 2rlh;
@@ -35,7 +42,13 @@ h3, .h3 {
   letter-spacing: 0;
 }
 
+/* images */
+
 img {
   width: 100%;
   margin-inline: auto;
+}
+
+#content h1 {
+  color: red;
 }

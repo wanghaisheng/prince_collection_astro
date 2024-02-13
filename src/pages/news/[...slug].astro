@@ -6,13 +6,13 @@ import crown from '../../assets/img/logos/logo-crown.png'
 
 export const prerender = true;
 export async function getStaticPaths() {
-  const blogEntries = await getCollection('blog');
-  return blogEntries.map(post => ({
+  const newsEntries = await getCollection('news');
+  return newsEntries.map(post => ({
     params: { slug: post.slug }, props: { post },
   }));
 }
 
-const allPosts = await getCollection("blog");
+const allPosts = await getCollection("news");
 const { post } = Astro.props;
 const { Content } = await post.render();
 ---
@@ -73,7 +73,6 @@ const { Content } = await post.render();
                     ))
                 }
             </div>
-            // main content
             <div id="content" class="col-md-12 col-lg-9 p-5">
                 <Content />
             </div>

@@ -5,7 +5,10 @@ description: "A post about travel"
 imageUrl: https://placehold.co/1000x600
 imageAlt: 'The full Astro logo.'
 pubDate: 2022-07-08
-tags: ["prince collection", "reviews", "points"]
+tags:
+  - points
+  - credit-cards
+  - spain
 ---
 
 # Ea fugiat cupidatat dolor 

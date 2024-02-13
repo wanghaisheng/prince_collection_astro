@@ -1,5 +1,5 @@
 ---
-title: 'My First Blog Post'
+title: 'Ea incididunt officia sit ut aliquip esse est in magna.'
 pubDate: 2022-07-01
 description: 'This is the first post of my new Astro blog.'
 author: 'Astro Learner'
@@ -8,7 +8,7 @@ imageAlt: 'The full Astro logo.'
 tags:
   - prince-collection
   - travel
-  - europe
+  - guides
 ---
 # My First Blog Post
 

@@ -9,7 +9,7 @@ public_folder: "/images/uploads" # We do not need to specify the /public part as
 site_url: https://prince-collection.netlify.app/ # Replace with site's URL
 display_url: https://prince-collection.netlify.app/ # Replace with site's URL
 
-logo_url: /img/logos/logo-crown.png # Replace with path to logo
+logo_url: /images/logo-crown.png # Replace with path to logo
 
 slug: { { slug } } # The URL should be the name of the title of the post/document
 

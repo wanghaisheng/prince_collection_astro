@@ -19,13 +19,15 @@ const allPosts = await getCollection("blog");
 					</a>
 				</div>
 			</div>
-            
-            <div class="masonry p-4">
+         
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3 p-4">
                 {
                     allPosts.map((post) => (
-                        <div class="card rounded-4 border-0 p-3 shadow">
-                            <img src={post.data.imageUrl} class="card-img-top rounded-4" style="width: 100%; object-fit: cover" alt={post.data.imageAlt}>
-                            <div class="card-body px-3 pb-0">
+                        <div class="col">
+                    <a href={`/blog/${post.slug}/`}>
+                        <div class="card rounded-4 border-0 p-3 shadow" style="min-height: 500px">
+                            <img src={post.data.imageUrl} class="card-img-top rounded-4 w-100" style="object-fit: cover; filter: saturate(800%);" alt={post.data.imageAlt}>
+                            <div class="card-body position-relative px-3 pb-0">
                                 <div class="d-flex flex-row">
                                     {
                                         post.data.tags.map((tag) => (
@@ -36,27 +38,34 @@ const allPosts = await getCollection("blog");
                                 <p class="small mb-2">{post.data.pubDate.toString().slice(0,10)}</p>
                                 <h5 class="card-title fw-bold mb-0">{post.data.title}</h5>
                                 <p class="small m-0 text-secondary mt-2 mb-0">By: {post.data.author}</p>
-                                <p class="card-text text-body-secondary">{post.data.description}</p>
-                                <a href={`/blog/${post.slug}/`}>
-                                    <i class="bi bi-arrow-up-right-circle-fill text-dark fs-1" role="button"></i>
-                                </a>
+                                <p class="card-text text-body-secondary pe-5">{post.data.description}</p>
+                                <i class="bi bi-plus-circle text-dark fs-2 position-absolute bottom-0 end-0"></i>
                             </div>
                         </div>
                 
-                        </div>
-                  
-                    ))}
                     </div>
+                </a>
+                </div>
+                ))}
+            </div>
         </div>
         </Layout>
         
 <style>
-.masonry {
+
+    .grid {
+  display: grid;
+  padding: 20px;
+  /* grid-template-columns: repeat(auto-fill, minmax(300px,  1fr)); */
+  /* grid-template-columns: 1fr  1fr 2fr; */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+/* .masonry {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); */
     grid-template-rows: masonry;
     gap: 30px;
-}
+} */
     </style>

@@ -1,9 +1,25 @@
 /* https://www.learnui.design/tools/data-color-picker.html#single */
 
-/* pc brand */
+:root {
+    --pc: #f0beb4;
+    --pc-dark: #a1655c;
+    /* CSS menu palette HEX */
+    --melon: #f0beb4ff;
+    --vanilla: #f0eab4ff;
+    --dutch-white: #f0ddbfff;
+    --pale-dogwood: #efd0caff;
+    --timberwolf: #d4d7cdff;
+    --tiffany-blue: #b8ddcfff;
+    --periwinkle: #cac0f0ff;
+    --blue-gray: #6f9ed6ff;
+    --ucla-blue: #52749dff;
+    --charcoal: #474e57ff;
+}
+
+/* pc dark brand */
 
 .text-pc-dark {
-    color: #a1655c;
+    color: var(--pc-dark);
 }
 .text-pc-dark-80 {
     color: #b47b6e;
@@ -24,7 +40,7 @@
 /* bg */
 
 .bg-pc-dark {
-    background: #a1655c;
+    background: var(--pc-dark);
 }
 .bg-pc-dark-80 {
     background: #b47b6e;
@@ -42,15 +58,10 @@
     background: #ffd5bf;
 }
 
-/* #a1655c
-#b47b6e
-#c69081
-#d9a794
-#ecbea9
-#ffd5bf */
+/* pc brand */
 
 .text-pc {
-    color: #f0beb4;
+    color: var(--pc);
 }
 .text-pc-80 {
     color: #f2c5bc;
@@ -71,7 +82,7 @@
 /* bg */
 
 .bg-pc {
-    background: #f0beb4;
+    background: var(--pc);
 }
 .bg-pc-80 {
     background: #f2c5bc;
@@ -89,12 +100,7 @@
     background: #fbe3de;
 }
 
-/* #f0beb4
-#f2c5bc
-#f5cdc5
-#f7d4cd
-#f9dcd5
-#fbe3de */
+/* general */
 
 .text-chestnut {
     color: #5D2F27;
@@ -106,7 +112,28 @@
    color: #EFEFEF;
 }
 
-/* nav */
+/* nav modal */
+
+.bg-vanilla {
+    background: var(--vanilla);
+}
+.bg-dutch-white {
+    background: var(--dutch-white);
+}
+.bg-pale-dogwood {
+    background: var(--pale-dogwood);
+}
+.bg-tiffany-blue {
+    background-color: var(--tiffany-blue);
+}
+.bg-periwinkle {
+    background: var(--periwinkle);
+}
+.bg-timberwolf {
+    background: var(--timberwolf);
+}
+
+/* sidenav drawer */
 
 .bg-indigo {
     background: #0c1e35;
@@ -120,3 +147,4 @@
 .bg-lightblue {
     background: #7d84ab;
 }
+

@@ -6,9 +6,9 @@ pubDate: 2024-02-02T18:16:31.706Z
 imageUrl: /images/uploads/sunset_wallpaper.jpeg
 imageAlt: SEO description for images
 tags:
-  - big
+  - guides
   - travel
-  - europe
+  - flights
 ---
 # Blog title
 
