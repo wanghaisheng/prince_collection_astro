@@ -3,20 +3,13 @@ import Layout from '../../layouts/Layout.astro';
 import { getCollection } from "astro:content";
 const allPosts = await getCollection("guides");
 const [firstArticle, ...allArticles] = allPosts;
-
-function filterMultiplesOfFour(arr) {
-    return arr.filter(num => num %  4 ===  0);
-}
-
-const multiplesOfFour = filterMultiplesOfFour(allArticles);
-console.log(multiplesOfFour); // Output: [4,  8]
 ---
 
-<Layout title="Prince Collection | News" description="Prince Collection latest news and developments.">
+<Layout title="Prince Collection | Guides" description="Prince Collection latest news and developments.">
 		<div class="container-fluid px-0">
 			<div class="row min-vh-100 bg-pale-dogwood">
 				<div class="col-lg-6 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center p-5 mt-5 mt-lg-0">
-					<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">Prince Collection Guides</span>
+					<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-pc-10 py-2 px-3" style="font-family: 'Gloock', serif; font-size: 15px;">Prince Collection Guides</span>
 					<h1 class="display-3 col-lg-8 fw-bold lh-1 mb-2 mt-3">{firstArticle.data.title}</h1>
 					<p class="col-md-7 fs-5 text-body-secondary mt-3 mb-2">{firstArticle.data.description}</p>
 

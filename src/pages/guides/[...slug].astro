@@ -1,13 +1,14 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import NewsletterForm from '../../components/NewsletterForm.astro';
 import { Image } from 'astro:assets';
 import crown from '../../assets/img/logos/logo-crown.png'
 
 export const prerender = true;
 export async function getStaticPaths() {
-  const blogEntries = await getCollection('guides');
-  return blogEntries.map(post => ({
+  const guidesEntries = await getCollection('guides');
+  return guidesEntries.map(post => ({
     params: { slug: post.slug }, props: { post },
   }));
 }
@@ -20,46 +21,51 @@ const { Content } = await post.render();
 <Layout title={post.data.title} description={post.data.description} image={post.data.imageUrl}>
     <div class="container-fluid px-0 pt-3">
         <div class="row min-vh-500 pt-5">
-            <!-- <img class="position-absolute top-0 start-0 z-0 w-100 h-100 object-fit" src={post.data.imageUrl} alt={post.data.description}/> -->
             <div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center p-5">
-                <Image class="mb-3" style="width: 60px; height: 60px" src={crown} alt="Prince Collection logo"/>
-                <!-- <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a class="text-pc-dark" href="/blog">Blog</a></li>
-                      <li class="breadcrumb-item text-pc active" aria-current="page">{post.data.title}</li>
-                    </ol>
-                  </nav> -->
+                <Image class="mb-3" style="width: 50px; height: 50px" src={crown} alt="Prince Collection logo"/>
                    <!-- tags -->
                 <div class="d-flex justify-content center-align-items-center">
                     {
                         post.data.tags.map((tag) =>(
-                        <span class="badge bg-pc-dark me-1 mb-2">{tag}</span>
+                        <span class="badge bg-pc-dark me-1 my-2">{tag}</span>
                         ))
                     }
                 </div>
-                <h1 class="display-4 fw-900 text-uppercase text-body-secondary lh-1 mb-3 mt-1">{post.data.title}</h1>
+                <h1 class="display-4 fw-900 text-uppercase text-body-secondary lh-1 mb-3 mt-2">{post.data.title}</h1>
                 <p class="fs-5 col-md-7 text-body-secondary mx-auto mb-3 mt-0">{post.data.description}</p>
                 <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Written by</span> {post.data.author}</p>
                 <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {post.data.pubDate.toString().slice(0,10)}</p>
             </div>
-            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center min-vh-50 pt-5">
-                <Image class="w-100 h-100 object-fit shadow" width="700" height="500" src={post.data.imageUrl} alt="Prince Collection logo"/>
+            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5">
+                <Image class="w-100 object-fit min-vh-50" width="700" height="500" src={post.data.imageUrl} alt="Prince Collection logo"/>
             </div>
         </div>
     </div>
     <!-- body -->
     <div class="container w-100 mx-auto">
-        <div class="row p-4">
+        <div id="content" class="row p-4">
             <!-- sidebar -->
-            <div class="d-none d-lg-flex flex-column col-md-2 col-lg-3 pt-5">
+            <div class="d-none d-xl-flex flex-column col-lg-2 col-lg-3 pt-5">
                 <p><span class="fw-bold text-pc-dark">Prince Collection</span> is a non-traditional, full service travel concierge designed exclusively for companies and individuals who require exclusive travel arrangements. We handle the nuances of travel ensuring a seamless and extraordinary journey from start to finish.</p>
                 <hr>
-                <p>Join the Prince Collection newsletter to get weekly updates delivered straight to your inbox.</p>
+                <div>
+                    <h4 class="fs-5 fw-bold text-pc-dark">Newsletter</h4>
+                    <p>Join the Prince Collection newsletter to get weekly updates delivered straight to your inbox.</p>
+                    <NewsletterForm newsletterBtn="btn-pc" />
+                </div>
+                <hr>
+                <div>
+                    <h4 class="fs-5 fw-bold text-pc-dark">Book your travel</h4>
+                    <p>Let Prince Collection’s Travel Concierge handle your exclusive travel arrangements. Get started by filling out some basic info about your trip.</p>
+                    <a href="/book">
+                        <button class="btn btn-pc">Book now</button>
+                    </a>
+                </div>
                 <hr>
                 <h2 class="text-secondary">More posts</h2>
                 {
                     allPosts.map((post) => (
-                    <a href={`/blog/${post.slug}/`}>
+                    <a href={`/guides/${post.slug}/`}>
                         <div class="card text-body-secondary rounded-4 mb-3">
                             <img src={post.data.imageUrl} class="card-img-top rounded-4 p-2" style="width: 100%; height: 150px; object-fit: cover" alt={post.data.imageAlt}>
                             <div class="card-body px-4 pb-4 pt-0">
@@ -73,9 +79,51 @@ const { Content } = await post.render();
                     ))
                 }
             </div>
-            <div id="content" class="col-md-12 col-lg-9 p-5">
+            <div class="content-body col-lg-12 col-xl-9 p-4 p-lg-5">
                 <Content />
             </div>
+            
+            <div class="col-lg-12 d-block d-xl-none border-top p-4">
+                <div class="py-2">
+                <p><span class="fw-bold text-pc-dark">Prince Collection</span> is a non-traditional, full service travel concierge designed exclusively for companies and individuals who require exclusive travel arrangements. We handle the nuances of travel ensuring a seamless and extraordinary journey from start to finish.</p>
+                </div>
+                <hr>
+                <div class="py-2">
+                    <h4 class="fs-5 fw-bold text-pc-dark">Newsletter</h4>
+                    <p>Join the Prince Collection newsletter to get weekly updates delivered straight to your inbox.</p>
+                    <NewsletterForm newsletterBtn="btn-pc" />
+                </div>
+                <hr>
+                <div class="py-2">
+                    <h4 class="fs-5 fw-bold text-pc-dark">Book your travel</h4>
+                    <p>Let Prince Collection’s Travel Concierge handle your exclusive travel arrangements. Get started by filling out some basic info about your trip.</p>
+                    <a href="/book">
+                        <button class="btn btn-pc">Book now</button>
+                    </a>
+                </div>
+                <hr>
+                <div class="container-fluid">
+                    <h2 class="text-secondary">More posts</h2>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 px-0 py-2">
+                        {
+                            allPosts.map((post) => (
+                            <a href={`/guides/${post.slug}/`}>
+                                <div class="col">
+                                <div class="card text-body-secondary bg-light rounded-4 mb-2" style="min-height: 450px">
+                                    <img src={post.data.imageUrl} class="card-img-top rounded-4 p-2" style="width: 100%; height: 150px; object-fit: cover" alt={post.data.imageAlt}>
+                                    <div class="card-body px-4 pb-4 pt-0">
+                                        <p class="small text-uppercase fw-light mb-2">{post.data.pubDate.toString().slice(0,10)}</p>
+                                        <h5 class="fs-5 card-title fw-bold">{post.data.title}</h5>
+                                        <p class="card-text mt-2">{post.data.description}</p>
+                                        <button class="btn btn-pc btn-sm px-4 rounded-3">Read</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                            ))
+                        }
+                    </div>
+                </div>
         </div>
     </div>
 </Layout>

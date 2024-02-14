@@ -7,13 +7,13 @@ import crown from '../../assets/img/logos/logo-crown.png'
 
 export const prerender = true;
 export async function getStaticPaths() {
-  const blogEntries = await getCollection('blog');
-  return blogEntries.map(post => ({
+  const reviewsEntries = await getCollection('reviews');
+  return reviewsEntries.map(post => ({
     params: { slug: post.slug }, props: { post },
   }));
 }
 
-const allPosts = await getCollection("blog");
+const allPosts = await getCollection("reviews");
 const { post } = Astro.props;
 const { Content } = await post.render();
 ---
@@ -21,7 +21,6 @@ const { Content } = await post.render();
 <Layout title={post.data.title} description={post.data.description} image={post.data.imageUrl}>
     <div class="container-fluid px-0 pt-3">
         <div class="row min-vh-500 pt-5">
-            <!-- <img class="position-absolute top-0 start-0 z-0 w-100 h-100 object-fit" src={post.data.imageUrl} alt={post.data.description}/> -->
             <div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center p-5">
                 <Image class="mb-3" style="width: 50px; height: 50px" src={crown} alt="Prince Collection logo"/>
                    <!-- tags -->
@@ -66,7 +65,7 @@ const { Content } = await post.render();
                 <h2 class="text-secondary">More posts</h2>
                 {
                     allPosts.map((post) => (
-                    <a href={`/blog/${post.slug}/`}>
+                    <a href={`/news/${post.slug}/`}>
                         <div class="card text-body-secondary rounded-4 mb-3">
                             <img src={post.data.imageUrl} class="card-img-top rounded-4 p-2" style="width: 100%; height: 150px; object-fit: cover" alt={post.data.imageAlt}>
                             <div class="card-body px-4 pb-4 pt-0">
@@ -108,7 +107,7 @@ const { Content } = await post.render();
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 px-0 py-2">
                         {
                             allPosts.map((post) => (
-                            <a href={`/blog/${post.slug}/`}>
+                            <a href={`/news/${post.slug}/`}>
                                 <div class="col">
                                 <div class="card text-body-secondary bg-light rounded-4 mb-2" style="min-height: 450px">
                                     <img src={post.data.imageUrl} class="card-img-top rounded-4 p-2" style="width: 100%; height: 150px; object-fit: cover" alt={post.data.imageAlt}>

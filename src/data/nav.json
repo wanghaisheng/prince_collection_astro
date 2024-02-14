@@ -1,61 +1,60 @@
 {
-    "navData": 
-		[
-          {
-            "title": "Home",
-            "path": "/",
-			"icon": "bi-grid",
-			"badge": "Prince Collection",
-			"background": "bg-pc-80"
-          },
-          {
-            "title": "Concierge",
-            "path": "/concierge",
-			"icon": "bi-suitcase-lg",
-			"badge": "What we do",
-			"background": "bg-vanilla"
-          },
-          {
-            "title": "Guides",
-            "path": "/guides",
-			"icon": "bi-book",
-			"badge": "Travel tips",
-			"background": "bg-pale-dogwood"
-          },
-          {
-            "title": "Reviews",
-            "path": "/reviews",
-			"icon": "bi-hand-thumbs-up",
-			"badge": "Hotels & flights",
-			"background": "bg-tiffany-blue"
-          },
-          {
-            "title": "News",
-            "path": "/news",
-			"icon": "bi-newspaper",
-			"badge": "What's hot",
-			"background": "bg-dutch-white"
-          },
-          {
-            "title": "FAQ",
-            "path": "/faq",
-			"icon": "bi-question-square",
-			"badge": "Q and A",
-			"background": "bg-periwinkle"
-          },
-		  {
-            "title": "Book",
-            "path": "/book",
-			"icon": "bi-airplane",
-			"badge": "Your advisor",
-			"background": "bg-timberwolf"
-          },
-		  {
-            "title": "Contact",
-            "path": "/contact",
-			"icon": "bi-envelope-at",
-			"badge": "Get in touch",
-			"background": "bg-pc-dark-10"
-          }
-        ]
+  "navData": [
+    {
+      "title": "Home",
+      "path": "/",
+      "icon": "bi-grid",
+      "badge": "Prince Collection",
+      "background": "bg-pc-80"
+    },
+    {
+      "title": "Concierge",
+      "path": "/concierge",
+      "icon": "bi-suitcase-lg",
+      "badge": "What we do",
+      "background": "bg-vanilla"
+    },
+    {
+      "title": "Guides",
+      "path": "/guides",
+      "icon": "bi-book",
+      "badge": "Travel tips",
+      "background": "bg-pale-dogwood"
+    },
+    {
+      "title": "Reviews",
+      "path": "/reviews",
+      "icon": "bi-hand-thumbs-up",
+      "badge": "Hotels & flights",
+      "background": "bg-pc-dark-20"
+    },
+    {
+      "title": "News",
+      "path": "/news",
+      "icon": "bi-newspaper",
+      "badge": "What's hot",
+      "background": "bg-dutch-white"
+    },
+    {
+      "title": "FAQ",
+      "path": "/faq",
+      "icon": "bi-question-square",
+      "badge": "Q and A",
+      "background": "bg-periwinkle"
+    },
+    {
+      "title": "Book",
+      "path": "/book",
+      "icon": "bi-airplane",
+      "badge": "Your advisor",
+      "background": "bg-timberwolf"
+    },
+    {
+      "title": "Contact",
+      "path": "/contact",
+      "icon": "bi-envelope-at",
+      "badge": "Get in touch",
+      "background": "bg-pc-dark-10"
+    }
+  ]
 }

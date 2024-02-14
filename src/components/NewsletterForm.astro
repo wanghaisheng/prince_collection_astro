@@ -33,7 +33,8 @@ if (Astro.request.method === "POST") {
         })
     })
     .then(response => response.json())
-    .then(response => console.log(response))
+    // .then(response => console.log(response))
+    .then(() => alert("Thank you for your submission"))    
     .catch(err => console.error(err));
     console.log(data)
   } catch (error) {
@@ -43,25 +44,73 @@ if (Astro.request.method === "POST") {
   }
 }
 ---
-<form id="newsletterSignup" method="POST">
+<form id="userinfo" method="POST">
     <div class="input-group my-2">
         <button class:list={["btn rounded-0 px-3 fw-bold", newsletterBtn]} type="submit">I'm in!</button>
-        <input type="email" name="email" class:list={["form-control border-end-0 border-top-0 rounded-0", newsletterStyle, newsletterClass]} placeholder="name@example.com" aria-label="Sign up for our newsletter" aria-describedby="button-addon1" required>
+        <input type="email" name="email" class:list={["form-control rounded-0", newsletterStyle, newsletterClass]} placeholder="name@example.com" aria-label="Sign up for our newsletter" aria-describedby="button-addon1" required>
     </div>
 </form>
 
-<style>
-    /* input::placeholder {
-        color: #7d84abCC; 
-    } */
+<script>
+    const form = document.querySelector("#userinfo");
 
-    input, 
-input:focus {
-	/* border: 0; */
-	background: transparent;
-	border: 1px solid #7d84ab;
-	border-radius: 0;
-	box-shadow: none;
-	color: white;
+async function sendData() {
+  // Associate the FormData object with the form element
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch('https://a.klaviyo.com/client/subscriptions/?company_id=UKL5uG', {
+        method: 'POST',
+        headers: {revision: '2023-12-15', 'content-type': 'application/json'},
+        body: JSON.stringify({
+            data: {
+            type: 'subscription',
+            attributes: {
+                custom_source: 'Nav signup form',
+                profile: {
+                data: {
+                    type: 'profile',
+                    id: '01GDDKASAP8TKDDA2GRZDSVP4H',
+                    attributes: {
+                    email: '',
+                    properties: {newKey: 'New Value'},
+                    meta: {
+                        patch_properties: {append: {newKey: 'New Value'}, unappend: {newKey: 'New Value'}, unset: 'skus'}
+                    }
+                    }
+                }
+                }
+            },
+            relationships: {list: {data: {type: 'list', id: 'WLqZCg'}}}
+            }
+        })
+    });
+    console.log(await response.json());
+  } catch (e) {
+    console.error(e);
+  }
 }
+
+// Take over form submission
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  sendData();
+});
+</script>
+
+<style>
+    input, 
+    input:focus {
+        background: transparent;
+        border-radius: 0;
+        /* border: 1px solid #7d84ab; */
+        border: 1px solid gray;
+        box-shadow: none;
+        color: white;
+    }
+
+    input::placeholder {
+        /* color: #7d84ab; */
+        color: gray;
+    }
 </style>

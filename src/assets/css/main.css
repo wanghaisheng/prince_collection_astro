@@ -49,6 +49,16 @@ img {
   margin-inline: auto;
 }
 
-#content h1 {
-  color: red;
+#content, 
+#content h1,
+#content h2 { 
+  font-family: 'Inter tight', Helvetica, Arial, sans-serif;
+  color: var(--bs-secondary-color)!important;
 }
+
+#content > .content-body img {
+  border-radius: 23px;
+  /* margin-inline: auto; */
+  margin: 20px auto;
+}
+
