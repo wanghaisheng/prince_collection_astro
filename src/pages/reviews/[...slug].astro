@@ -65,7 +65,7 @@ const { Content } = await post.render();
                 <h2 class="text-secondary">More posts</h2>
                 {
                     allPosts.map((post) => (
-                    <a href={`/news/${post.slug}/`}>
+                    <a href={`/reviews/${post.slug}/`}>
                         <div class="card text-body-secondary rounded-4 mb-3">
                             <img src={post.data.imageUrl} class="card-img-top rounded-4 p-2" style="width: 100%; height: 150px; object-fit: cover" alt={post.data.imageAlt}>
                             <div class="card-body px-4 pb-4 pt-0">
@@ -107,7 +107,7 @@ const { Content } = await post.render();
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 px-0 py-2">
                         {
                             allPosts.map((post) => (
-                            <a href={`/news/${post.slug}/`}>
+                            <a href={`/reviews/${post.slug}/`}>
                                 <div class="col">
                                 <div class="card text-body-secondary bg-light rounded-4 mb-2" style="min-height: 450px">
                                     <img src={post.data.imageUrl} class="card-img-top rounded-4 p-2" style="width: 100%; height: 150px; object-fit: cover" alt={post.data.imageAlt}>
@@ -124,6 +124,7 @@ const { Content } = await post.render();
                         }
                     </div>
                 </div>
+            </div>
         </div>
     </div>
 </Layout>

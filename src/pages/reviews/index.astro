@@ -20,7 +20,7 @@ const [firstArticle, ...allArticles] = allPosts;
 					</div>
 
 					<!-- for some reason the firstArticle.data doesn't work, only straight to firstArticle.slug -->
-					<a href={`/news/${firstArticle.slug}/`}>
+					<a href={`/reviews/${firstArticle.slug}/`}>
 						<button class="btn btn-dark fw-bold rounded-pill px-4 mt-3 shadow">Read article</button>
 					</a>
 				</div>
@@ -33,7 +33,7 @@ const [firstArticle, ...allArticles] = allPosts;
                 {
                     allArticles.map((post, index) => (
                         <div class="col">
-                    <a href={`/news/${post.slug}/`}>
+                    <a href={`/reviews/${post.slug}/`}>
                         <div class="card rounded-4 border-0 p-3 shadow" style="min-height: 500px">
                             <img src={post.data.imageUrl} class="card-img-top rounded-4 w-100" style="object-fit: cover;" alt={post.data.imageAlt}>
                             <div class="card-body position-relative px-3 pb-0">
