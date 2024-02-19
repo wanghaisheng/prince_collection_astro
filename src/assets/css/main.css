@@ -13,6 +13,7 @@ html {
   }
   
 body {
+  /* background-color: var(--pc-light); */
     font-family: 'Inter Tight', Helvetica, Arial, sans-serif;
     max-width: 1900px;
     overflow-x: hidden;
@@ -58,7 +59,12 @@ img {
 
 #content > .content-body img {
   border-radius: 23px;
-  /* margin-inline: auto; */
   margin: 20px auto;
 }
+
+/* #content p:nth-of-type(3) {
+  background: var(--light-grey);
+  padding: 40px;
+  border-radius: 10px;
+} */
 

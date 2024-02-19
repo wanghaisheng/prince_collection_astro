@@ -1,7 +1,8 @@
 ---
 title: 'My First Blog Post'
 pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
+description: 'Lorem ipsUm dolor sit amet, consectetur adipiscing elit, sed do
+  eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 author: 'Astro Learner'
 imageUrl: https://placehold.co/1000x600
 imageAlt: 'The full Astro logo.'

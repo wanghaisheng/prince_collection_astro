@@ -16,25 +16,83 @@ export async function getStaticPaths() {
 const allPosts = await getCollection("reviews");
 const { post } = Astro.props;
 const { Content } = await post.render();
+
+// get read time
+function wordCount(str) {
+  const words = str.match(/(\w+)/g).length;
+  const readMins = Math.trunc(words / 250);
+  return readMins;
+}
+
+// share
+// fb share btn
+function fbShare() {
+  const fbShare = "https://www.facebook.com/sharer/sharer.php?u=";
+  const url = `https://princecollection.com${Astro.url.pathname}`;
+  const shareButton = fbShare + url;
+  return shareButton;
+}
+
+// twitter/X share btn
+function tweetCurrentPage(title) {
+  const twShare = "https://twitter.com/share?url=";
+  const url = encodeURIComponent(`https://princecollection.com${Astro.url.pathname}`);
+  const twShareButton = twShare + url + '&text=' + title;
+  return twShareButton;
+}
+
+// link copy
+// function copyToClipboard() {
+//   navigator.clipboard.writeText(`${Astro.url.pathname}`);
+// }
+
+// email page
+function emailPage(title) {
+  const href = "mailto:?";
+  const url = encodeURIComponent(Astro.url.pathname);
+  const emailShare = href + 'subject=' +  title + '&body=' + 'Check out this great article I found from returnofthelivingdad.com: ' + url;
+  return emailShare;
+}
+const url = encodeURIComponent(Astro.url.pathname);
 ---
+
+<script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+        toastTrigger.addEventListener('click', () => {
+            const toast = new bootstrap.Toast(toastLiveExample)
+            toast.show();
+            navigator.clipboard.writeText("https://princecollection.com" + window.location.pathname);
+
+        })
+    }
+  </script>
 
 <Layout title={post.data.title} description={post.data.description} image={post.data.imageUrl}>
     <div class="container-fluid px-0 pt-3">
         <div class="row min-vh-500 pt-5">
-            <div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center p-5">
-                <Image class="mb-3" style="width: 50px; height: 50px" src={crown} alt="Prince Collection logo"/>
-                   <!-- tags -->
-                <div class="d-flex justify-content center-align-items-center">
+            <div class="col-lg-7 d-flex flex-column justify-content-end align-items-start text-start p-5">
+            <a href="/reviews">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-arrow-left text-black-50 fs-1" data-astro-source-file="/Users/andrewmason/Projects/pc_astro/src/pages/reviews/[...slug].astro" data-astro-source-loc="26:18"></i>
+                    <h6 class="ms-2 my-0 text-black-50 fw-light">Back to reviews</h6>
+                </div>
+            </a>
+            <h1 class="display-1 font-inter text-secondary fw-900 mb-3 mt-2" style="letter-spacing: -3px;
+            line-height: 90%;">{post.data.title}</h1>
+            <p class="fs-5 col-md-7 text-body-secondary mb-3 mt-3">{post.data.description}</p>
+                <!-- tags -->
+                <!-- <div class="d-flex justify-content center-align-items-center">
                     {
                         post.data.tags.map((tag) =>(
-                        <span class="badge bg-pc-dark me-1 my-2">{tag}</span>
+                        <span class="badge text-bg-light me-1 mb-3">#{tag}</span>
                         ))
                     }
-                </div>
-                <h1 class="display-4 fw-900 text-uppercase text-body-secondary lh-1 mb-3 mt-2">{post.data.title}</h1>
-                <p class="fs-5 col-md-7 text-body-secondary mx-auto mb-3 mt-0">{post.data.description}</p>
+                </div> -->
                 <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Written by</span> {post.data.author}</p>
                 <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {post.data.pubDate.toString().slice(0,10)}</p>
+                <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Read time </span>  {wordCount(post.body)} mins</p>
             </div>
             <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5">
                 <Image class="w-100 object-fit min-vh-50" width="700" height="500" src={post.data.imageUrl} alt="Prince Collection logo"/>
@@ -81,6 +139,38 @@ const { Content } = await post.render();
             </div>
             <div class="content-body col-lg-12 col-xl-9 p-4 p-lg-5">
                 <Content />
+                <!-- share -->
+                <div class="d-flex border-top py-3 mt-4">
+                    <h6 class="ms-2 my-0 text-black-50 fw-bold">Share this article</h6>
+                </div>
+                <div class="d-flex">
+                <a href={fbShare()} target="_blank">
+                    <button class="btn btn-light text-black-50 px-3 py-2 fw-900 fs-5 me-2" style="background: #d6d6d680;">
+                    <i class="bi bi-facebook fs-5"></i>
+                  </button>
+                </a>
+                <a href={tweetCurrentPage(post.title)} target="_blank">
+                  <button class="btn btn-light text-black-50 px-3 py-2 fw-900 fs-5 me-2" style="background: #d6d6d680;">
+                    <i class="bi bi-twitter-x fs-5"></i>
+                  </button>
+                </a>
+                <a href={emailPage(post.title)}>
+                  <button class="btn btn-light text-black-50 px-3 py-2 fw-900 fs-5 me-2" style="background: #d6d6d680;">
+                    <i class="bi bi-envelope fs-5"></i>
+                  </button>
+                </a>
+                <button class="btn btn-light text-black-50 px-3 py-2 fw-900 fs-5 me-2" style="background: #d6d6d680;" type="button" id="liveToastBtn">
+                    <i class="bi bi-link-45deg fs-5"></i>
+                </button>
+                <div class="toast-container position-fixed top-50 start-50 translate-middle p-3">
+                    <div id="liveToast" class="toast text-bg-light border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true" data-bs-delay="1500">
+                        <div class="toast-body p-2 d-flex align-items-center text-secondary">
+                            <i class="bi bi-check-circle-fill text-success fs-5"></i> <p class="ms-2 my-0">Copied to clipboard!</p>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
             </div>
             
             <div class="col-lg-12 d-block d-xl-none border-top p-4">

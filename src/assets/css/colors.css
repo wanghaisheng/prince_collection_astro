@@ -3,6 +3,7 @@
 :root {
     --pc: #f0beb4;
     --pc-dark: #a1655c;
+    --pc-light: #f6f1eb;
     /* CSS menu palette HEX */
     --melon: #f0beb4ff;
     --vanilla: #f0eab4ff;
@@ -14,6 +15,15 @@
     --blue-gray: #6f9ed6ff;
     --ucla-blue: #52749dff;
     --charcoal: #474e57ff;
+    --light-grey: hsl(60, 12%, 90%);
+}
+
+.bg-pc-light {
+    background: var(--pc-light);
+}
+
+.text-pc-light {
+    color: var(--pc-light);
 }
 
 /* pc dark brand */

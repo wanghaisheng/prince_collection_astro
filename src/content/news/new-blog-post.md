@@ -1,7 +1,8 @@
 ---
 title: New blog post
 author: "Andrew "
-description: A description for a new blog post
+description: Lorem ipsUm dolor sit amet, consectetur adipiscing elit, sed do
+  eiusmod tempor incididunt ut labore et dolore magna aliqua.
 pubDate: 2024-02-02T18:16:31.706Z
 imageUrl: /images/uploads/sunset_wallpaper.jpeg
 imageAlt: SEO description for images

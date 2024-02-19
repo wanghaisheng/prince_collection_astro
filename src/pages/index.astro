@@ -3,45 +3,110 @@ import Layout from '../layouts/Layout.astro';
 import Modal from '../components/TheModal.astro';
 import NewsletterForm from '../components/NewsletterForm.astro';
 import { Image } from 'astro:assets';
-import crown from '../assets/img/logos/logo-crown.png'
+import { getCollection } from "astro:content";
+const newsPosts = await getCollection("news");
+const reviewsPosts = await getCollection("reviews");
+const guidesPosts = await getCollection("guides");
 ---
 
 <Layout title="Welcome to Prince Collection" description="Prince Collection">
 	<main>
 		<div class="container-fluid px-0 pt-3">
-			<!-- bg-dark text-light -->
-			<div class="row row-cols-1 row-cols-lg-2 min-vh-100 pt-5 pt-lg-0">
-				<div class="col d-flex flex-column justify-content-center align-items-center text-center p-5">
-					<!-- <img style="width: 80px; height: 80px;" src="src/assets/img/logos/logo-crown.png" alt=""> -->
-					<Image style="width: 80px; height: 80px" src={crown} alt="Prince Collection logo"/>
-					<h1 class="display-4 fw-bold text-uppercase lh-1 mb-2 mt-3">Prince Collection</h1>
-					<p class="h4 mb-3">The new standard in luxury travel.</p>
-				
-					<nav class="nav nav-fill d-flex mx-auto">
+			<!-- <iframe class="position-absolute top-0 start-0 w-100 h-100 z-0" style="object-fit: cover; transform: scale(1.2);" src="https://player.vimeo.com/video/872789370?h=7f62049a50&amp;autoplay=0&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;muted=1" allow="autoplay" data-ready="true"></iframe> -->
+
+			<!-- <div class="row min-vh-100 text-light rounded-4 position-relative">
+				<img class="w-100 h-100 position-absolute z-0" style="object-fit: cover;" src="https://images.unsplash.com/photo-1526786220381-1d21eedf92bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+				<div class="col-lg-7 position-relative d-flex flex-column justify-content-end align-items-center position-relative p-5">
+					<div class="text-start text-dark p-5 rounded-4 shadow" style="background: #ffffffEE;">
+					<div>
+						<img style="width: 30px;" class="h-auto" src="/images/logos/logo-crown.png" alt="Prince Collection crown logo">
+						<h1 class="fw-bold text-uppercase lh-1 mt-2 mb-0">Prince</h1>
+						<h4 class="text-uppercase text-secondary fw-light" style="font-family: 'Helvetica Neue'">Collection</h4>
+					</div>
+					<p class="lh-1 mb-4 mt-0 text-uppercase" style="font-size: 12vmin;font-family: 'Helvetica Neue';font-weight: 100;">The new standard in luxury travel</p>
+					<nav class="nav d-flex ms-0 me-auto">
 						<a class="nav-link p-0 me-2" href="/book">
-							<button class="btn btn-pc rounded-pill fw-bold px-4">Book your hotel</button>
+							<button class="btn btn-light text-pc-dark bg-pc-10 rounded-3 fw-bold px-4">Book your hotel</button>
 						</a>
 						<a class="nav-link p-0 me-2" href="/concierge">
-							<button class="btn btn-pc rounded-pill fw-bold px-4">About us</button>
+							<button class="btn btn-light text-pc-dark bg-pc-10 rounded-3 fw-bold px-4">About us</button>
+						</a>
+					</nav>
+					</div>
+				</div>
+			</div> -->
+
+			<!-- fullscreen minimal horizontal logo 
+				<div class="row min-vh-100">
+				<div class="col-lg-8 offset-lg-2 d-flex flex-column align-items-center justify-content-center text-body-secondary">
+						<img style="width: 60px;" class="h-auto ms-0 me-1" src="/images/logos/logo-crown.png" alt="Prince Collection crown logo">
+						<h1 class="display-1 fw-bold text-uppercase lh-1 m-0" style="font-family: 'Gloock'">Prince<span class="text-uppercase text-secondary" style="font-family: 'Helvetica Neue', helvetica, Arial; font-weight: 100">Collection</span></h1>
+						<div class="d-flex">
+							<button class="btn bg-pc-20 text-pc-dark fw-bold px-4 me-2">Book travel</button>
+							<button class="btn bg-pc-20 text-pc-dark fw-bold px-4">Concierge</button>
+							<button class="btn bg-pc-20 text-pc-dark fw-bold px-4">News</button>
+							<button class="btn bg-pc-20 text-pc-dark fw-bold px-4">Reviews</button>
+						</div>
+				</div>
+			</div> -->
+
+			<div class="row min-vh-100 text-light rounded-4">
+				<div class="col-lg-10 offset-lg-1 d-flex flex-column justify-content-center align-items-center text-center text-dark p-5 min-vh-500">
+					<!-- <div>
+						<img style="width: 30px;" class="h-auto" src="/images/logos/logo-crown.png" alt="Prince Collection crown logo">
+						<h1 class="fw-bold text-uppercase lh-1 mt-2 mb-0">Prince</h1>
+						<h4 class="text-uppercase text-secondary fw-light" style="font-family: 'Helvetica Neue'">Collection</h4>
+					</div> -->
+					<img class="mb-4" style="width: 200px;" src="/images/pc-logo-black.jpeg" alt="Prince collection logo">
+					<p class="lh-1 mb-4 mt-0 text-uppercase" style="font-size: 12vmin;font-family: 'Helvetica Neue';font-weight: 100;">The new standard in luxury travel</p>
+					<nav class="nav nav-fill d-flex mx-auto">
+						<a class="nav-link p-0 me-2" href="/book">
+							<button class="btn btn-light text-pc-dark bg-pc-10 rounded-pill fw-bold px-4">Book your hotel</button>
+						</a>
+						<a class="nav-link p-0 me-2" href="/concierge">
+							<button class="btn btn-light text-pc-dark bg-pc-10 rounded-pill fw-bold px-4">About us</button>
+						</a>
+					</nav>
+				</div>
+				<div class="col-lg-12 px-5 pb-5">
+					<img class="w-100 rounded-5" style="object-fit: cover; height: 60vh;" src="https://images.unsplash.com/photo-1526786220381-1d21eedf92bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+				</div>
+			</div>
+			<!-- <div class="row row-cols-1 row-cols-lg-2 min-vh-100 pt-5 pt-lg-0">
+				<div class="col d-flex flex-column justify-content-center align-items-center position-relative text-center p-5">
+					<div>
+						<img style="width: 50px;" class="h-auto" src="/images/logos/logo-crown.png" alt="Prince Collection crown logo">
+						<h1 class="display-1 fw-bold text-uppercase lh-1 mt-2 mb-0">Prince</h1>
+						<h4 class="fs-2 text-uppercase fw-light text-secondary" style="letter-spacing: 10px; font-family: 'helvetica Neue', Helvetica, Arial, sans-serif;">Collection</h4>
+					</div>
+					<p class="h4 mb-3">The new standard in luxury travel.</p>
+					<nav class="nav nav-fill d-flex mx-auto">
+						<a class="nav-link p-0 me-2" href="/book">
+							<button class="btn btn-light text-pc-dark bg-pc-10 rounded-pill fw-bold px-4">Book your hotel</button>
+						</a>
+						<a class="nav-link p-0 me-2" href="/concierge">
+							<button class="btn btn-light text-pc-dark bg-pc-10 rounded-pill fw-bold px-4">About us</button>
 						</a>
 					  </nav>
 				</div>
-				<div class="col d-flex flex-column justify-content-center align-items-center p-5">
-					<!-- <img class="w-100 rounded-4 shadow" style="object-fit: cover;
-					aspect-ratio: 1;" src="https://cdn.pixabay.com/photo/2017/05/18/02/32/airplane-2322303_1280.jpg" alt=""> -->
-					<!-- <img class="w-100 rounded-4 shadow" style="object-fit: cover;
-					aspect-ratio: 1;" src="https://cdn.pixabay.com/photo/2019/06/06/17/07/airplane-4256362_1280.jpg" alt=""> -->
-					<!-- <img class="w-100 rounded-4 shadow" style="object-fit: cover;
-					aspect-ratio: 1;" src="https://cdn.pixabay.com/photo/2024/01/24/21/22/buildings-8530584_1280.jpg" alt=""> -->
+				<div class="col d-flex flex-column justify-content-center align-items-center position-relative ps-5 py-5 pe-0">
 					<img class="w-100 rounded-4 shadow" style="object-fit: cover;
+					aspect-ratio: 1;" src="https://cdn.pixabay.com/photo/2017/05/18/02/32/airplane-2322303_1280.jpg" alt="">
+					<img class="w-100 rounded-4 shadow" style="object-fit: cover;
+					aspect-ratio: 1;" src="https://cdn.pixabay.com/photo/2019/06/06/17/07/airplane-4256362_1280.jpg" alt="">
+					<img class="w-100 rounded-4 shadow" style="object-fit: cover;
+					aspect-ratio: 1;" src="https://cdn.pixabay.com/photo/2024/01/24/21/22/buildings-8530584_1280.jpg" alt="">
+					<img class="w-100 rounded-start-5 shadow" style="object-fit: cover;
 					aspect-ratio: 1;" src="https://images.unsplash.com/photo-1526786220381-1d21eedf92bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
 				</div>
-			</div>
+			</div> -->
+
+			<!-- get more -->
 
 			<div class="row py-5 bg-pc-60">
 				<div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center text-body-secondary p-5">
-					<span class="badge rounded-pill fw-bold bg-pc-dark text-pc py-2 px-3">Prince Collection Concierge</span>
-					<h2 class="display-4 fw-bold lh-1 mb-2 mt-3">Get <span class="text-pc-dark">more</span> out of your hotel stays</h2>
+					<span class="badge rounded-pill fw-bold bg-pc-dark text-pc-10 py-2 px-3">Prince Collection</span>
+					<h2 class="display-4 fw-bold lh-1 mb-2 mt-3">Travel better, easier</span>, and in more style with <span class="text-pc-dark">Prince Collection</h2>
 					<p class="fs-5">Prince Collection’s Travel Concierge is designed exclusively for companies and individuals who require exclusive travel arrangements handled for them. Our expertise lies in handling the nuances of travel, ensuring a seamless and extraordinary journey from start to finish.</p>
 					<a href="/concierge">
 						<button class="btn bg-pc-dark text-light fw-bold rounded-pill px-4 shadow">Learn more</button>
@@ -49,8 +114,7 @@ import crown from '../assets/img/logos/logo-crown.png'
 				</div>
 			</div>
 
-			<div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 p-5">
-				<!-- bg-pc-dark-80 -->
+			<div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 p-5 bg-pc-light">
 				<div class="col d-flex my-auto text-center p-3">
 					<img src="/images/logos/stars.webp" style="width: 120px; filter: brightness(0);" alt="">
 				</div>
@@ -71,6 +135,37 @@ import crown from '../assets/img/logos/logo-crown.png'
 				</div>
 			</div>
 
+			<!-- articles -->
+
+			<div class="row py-5">
+				<div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center text-body-secondary px-5">
+					<span class="badge rounded-pill fw-bold bg-pc-dark text-pc-10 py-2 px-3">Prince Collection News</span>
+					<h2 class="display-4 fw-bold lh-1 mb-2 mt-3">Stay up to date on all the latest travel related news, stories, deals, and events</h2>
+					<p class="fs-5 col-lg-8 text-balance mb-0">Elit laboris excepteur enim exercitation consectetur. Cillum ut magna irure quis adipisicing veniam ex et magna. Qui tempor ut voluptate eu.</p>
+				</div>
+				<div class="row g-4 px-5">
+					{
+						newsPosts.slice(0,3).map((item, index) => (
+						<div class:list={[index === 2 ? 'col-md-12 col-lg-4' : 'col-md-6 col-lg-4']}>
+							<a href={`/news/${item.slug}/`}>
+							<div class="card mb-3 rounded-5 bg-pc-light border-0 shadow" style="min-height: 500px;">
+								<img src={item.data.imageUrl} class="card-img-top w-100 object-fit rounded-top-5" style="height: 250px;" alt="...">
+								<div class="card-body p-4">
+									<p class="small mb-2 mt-0">{item.data.pubDate.toString().slice(0,10)}</p>
+									<h5 class="card-title fs-4 fw-900 text-secondary">{item.data.title}</h5>
+									<p class="card-text my-3">{item.data.description}</p>
+									<p class="small m-0 text-secondary mt-2 mb-0">By: {item.data.author}</p>
+									<i class="bi bi-arrow-up-right-circle-fill text-secondary fs-1 position-absolute bottom-0 end-0 m-3"></i>
+							
+								</div>
+							</div>
+							</a>
+						</div>
+						))
+					}
+				</div>
+			</div>
+
 			<div class="row p-5">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<span class="badge rounded-pill fw-bold bg-pc-60 text-pc-dark py-2 px-3">Book with PC</span>
@@ -78,9 +173,8 @@ import crown from '../assets/img/logos/logo-crown.png'
 					<p class="fs-5 col-lg-10 offset-lg-1">Book your next hotel stay with Prince Collection and enjoy an elevated experience along your trip. Commodo nisi nisi qui reprehenderit adipisicing occaecat amet proident commodo ad ad adipisicing mollit esse. Pariatur ex cillum qui labore enim amet minim et aliquip do Lorem proident minim sint.</p>
 				</div>
 			</div>
-
 			
-			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 text-body-secondary px-5 pb-5">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-body-secondary px-5 pb-5">
 				<div class="col">
 					<div class="p-5 rounded-4 bg-pc-20 shadow">
 						<i class="bi bi-sunrise fs-2 text-pc-dark"></i>
@@ -157,7 +251,44 @@ import crown from '../assets/img/logos/logo-crown.png'
 				</div>
 			</div>
 
-			<div class="row p-5">
+			<div class="p-4"></div>
+
+			<div class="row px-5">
+				<div class="col-lg-12 col-xl-3">
+					<div class="d-flex flex-column justify-content-center align-items-start bg-pc-dark-80 h-100 min-vh-50 rounded-5 p-5">
+					<span class="badge rounded-pill fw-bold bg-pc-60 text-pc-dark py-2 px-3 mb-3">Prince collection reviews</span>
+					<h3 class="fw-bold fs-1 lh-1">Prince <span class="text-pc-60">reviews</span></h3>
+					<p class="py-1 text-pc-light">Prince Collection’s Travel Concierge is designed exclusively for high net worth individuals and companies who seek exclusive experiences, handled for them. We understand that time is your most valuable asset.</p>
+					</div>
+					</div>
+					<div class="col-lg-12 col-xl-9">
+						<div class="row g-3 py-3 py-xl-0">
+							{
+						reviewsPosts.slice(0,3).map((item, index) => (
+						<div class:list={[index === 2 ? 'col-md-12 col-lg-4' : 'col-md-6 col-lg-4']}>
+							<a href={`/news/${item.slug}/`}>
+							<div class="card rounded-5 bg-pc-dark border-0 shadow position-relative">
+								<img src={item.data.imageUrl} class="card-img-top position-absolute top-0 start-0 z-0 w-100 h-100 object-fit rounded-5 p-3" style="filter: brightness(0.5)" alt="...">
+								<div class="card-img-overlay position-relative">
+								<div class="card-body min-vh-500 text-light d-flex flex-column justify-content-end align-items-start p-4">
+									<p class="small mb-2 mt-0">{item.data.pubDate.toString().slice(0,10)}</p>
+									<h5 class="card-title fs-4 fw-900">{item.data.title}</h5>
+									<p class="card-text my-3">{item.data.description}</p>
+									<i class="bi bi-arrow-up-right-circle-fill text-pc-light fs-1 position-absolute top-0 end-0 me-2 mt-1 p-3"></i>
+								</div>
+								</div>
+							</div>
+							</a>
+						</div>
+						))
+					}
+						</div>
+					</div>
+				</div>
+
+			<div class="py-5"></div>
+
+			<div class="row px-5">
 				<div class="col-lg-6 p-5">
 					<span class="badge rounded-pill fw-bold bg-pc-60 text-pc-dark py-2 px-3 mb-3">Prince collection concierge</span>
 					<h3 class="fw-bold display-4 lh-1">Your <span class="text-pc-dark">luxury</span> travel concierge</h3>
@@ -168,6 +299,39 @@ import crown from '../assets/img/logos/logo-crown.png'
 				</div>
 				<div class="col-lg-6">
 					<Image src="https://images.unsplash.com/photo-1469796466635-455ede028aca?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A bird." class="w-100 h-100 rounded-4" style="object-fit: cover" width="1200" height="500" alt="descriptive text"/>
+				</div>
+			</div>
+
+			<div class="row p-5">
+				<div class="col-lg-12 col-xl-9 order-2 order-xl-1">
+					<div class="row g-3 py-3 py-xl-0">
+						{
+						guidesPosts.slice(0,3).map((item, index) => (
+						<div class:list={[index === 2 ? 'col-md-12 col-lg-4' : 'col-md-6 col-lg-4']}>
+							<a href={`/news/${item.slug}/`}>
+								<div class="card rounded-5 bg-pc-light border-0 shadow position-relative">
+									<img src={item.data.imageUrl} class="card-img-top position-absolute top-0 start-0 z-0 w-100 h-100 object-fit rounded-5 p-3" style="filter: brightness(0.5)" alt="...">
+									<div class="card-img-overlay position-relative">
+									<div class="card-body min-vh-500 text-light d-flex flex-column justify-content-end align-items-start p-4">
+										<p class="small mb-2 mt-0">{item.data.pubDate.toString().slice(0,10)}</p>
+										<h5 class="card-title fs-4 fw-900">{item.data.title}</h5>
+										<p class="card-text my-3">{item.data.description}</p>
+										<i class="bi bi-arrow-up-right-circle-fill text-pc-light fs-1 position-absolute top-0 end-0 me-2 mt-1 p-3"></i>
+									</div>
+									</div>
+								</div>
+								</a>
+							</div>
+							))
+						}
+					</div>
+				</div>
+				<div class="col-lg-12 col-xl-3 order-1 order-xl-2">
+					<div class="d-flex flex-column justify-content-center align-items-start bg-pc-light h-100 min-vh-50 rounded-5 p-5">
+					<span class="badge rounded-pill fw-bold bg-pc-60 text-pc-dark py-2 px-3 mb-3">Prince collection guides</span>
+					<h3 class="fw-bold fs-1 lh-1">Prince <span class="text-pc-dark-60">guides</span></h3>
+					<p class="py-1">Prince Collection’s Travel Concierge is designed exclusively for high net worth individuals and companies who seek exclusive experiences, handled for them. We understand that time is your most valuable asset.</p>
+					</div>
 				</div>
 			</div>
 

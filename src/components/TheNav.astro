@@ -12,14 +12,14 @@ const { icon, modalTrigger } = Astro.props
 <header>
 	<nav id="nav" class="navbar fixed-top">
 		<div class="container-fluid">
-			<a class="navbar-brand me-auto mt-1 ms-2" href="/">
-				<img style="width: 30px; height: 30px;" src="/images/logos/logo-crown.png" alt="Prince Collection crown logo">
+			<a class="navbar-brand me-auto mt-1 ms-2 text-body-secondary d-flex align-items-center" href="/">
+				<img style="width: 30px;" class="h-auto me-1" src="/images/logos/logo-crown.png" alt="Prince Collection crown logo">
 			</a>
 			<!-- <div class="d-flex justify-content-center align-items-center me-auto">
 				<img style="width: 30px; height: 30px;" src="src/assets/img/logos/logo-crown.png" alt="">
 				<a class="navbar-brand me-auto mt-1 ms-2" href="/">Prince Collection</a>
 			</div> -->
-
+			
 			<Drawer drawerTitle="Book with Prince Collection" drawerId="bookingDrawer" drawerAriaLabel="Book with Prince Collection">
 				<BookingForm />
 			</Drawer>
@@ -28,7 +28,7 @@ const { icon, modalTrigger } = Astro.props
 				<li class="nav-item">
 					<a href="/book" class="p-0">
 						<button class="btn btn-dark me-2 rounded-3 px-3">
-							<i class="bi bi-airplane"></i>
+							<i class="bi bi-airplane fs-5"></i>
 						</button>
 					</a>
 					<!-- <button data-bs-toggle="offcanvas" data-bs-target="#bookingDrawer" aria-controls="offcanvasBottom" class="btn btn-dark me-2 rounded-3 px-3">
@@ -37,14 +37,14 @@ const { icon, modalTrigger } = Astro.props
 				</li>
 				<li class="nav-item">
 					<button class="btn btn-dark me-2 px-3 rounded-3" data-bs-toggle="modal" data-bs-target="#navSignup">
-						<i class="bi bi-send-plus"></i>
+						<i class="bi bi-send-plus fs-5"></i>
 						
 					</button>
 				</li>
 				<li class="nav-item">
 					<a class="px-0" href="/contact">
 						<button class="btn btn-dark me-2">
-							<i class="bi bi-envelope-plus"></i>
+							<i class="bi bi-envelope-plus fs-5"></i>
 						</button>
 					</a>
 				</li>
@@ -76,9 +76,8 @@ const { icon, modalTrigger } = Astro.props
 			<!-- <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"> -->
 			
 			<button class="btn btn-dark" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#navModal">
-				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-water" viewBox="0 0 16 16">
-					<path d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65"/>
-				  </svg>
+				<!-- <i class="bi bi-justify"></i> -->
+				<i class="bi bi-justify-left fs-5"></i>
 			  </button>
 		  
 		 
@@ -111,10 +110,12 @@ const { icon, modalTrigger } = Astro.props
 		</div>
 	  </nav>
 
-	  <Modal modalTitle="Join Our Newsletter" modalId="navSignup" modalStyles="bg-dark text-light">
-		<h3>Subscribe to the <span class="text-pc">Prince Collection</span> newsletter</h3>
-		<p class="mt-3 mb-4">You'll receive priority information about the newest luxury properties worldwide, exclusive reservations and deals through <span class="text-pc fw-bold">Prince Collection</span>, and unique destinations across the globe.</p>
+	  <Modal modalTitle="Join Our Newsletter" modalId="navSignup" modalStyles="bg-dark text-light min-vh-500 rounded-4" modalSize="modal-lg" modalBody="d-flex flex-column justify-content-center align-items-start align-items-lg-center text-start text-lg-center">
+		<span class="badge rounded-pill fw-bold text-pc-light bg-pc-dark py-2 px-3">Join us</span>
+		<h2 class="mb-2 mt-3">Subscribe to the <span class="text-pc">Prince Collection</span> newsletter</h2>
+		<p class="mt-2 mb-4">You'll receive priority information about the newest luxury properties worldwide, exclusive reservations and deals through <span class="text-pc fw-bold">Prince Collection</span>, and unique destinations across the globe.</p>
 		<NewsletterForm newsletterBtn="btn-pc" newsletterClass="text-light" />
+		<p class="small text-pc-dark-80">By providing your email, you agree to the Prince Collection Privacy Policy</p>
 		</Modal>
 
 		<!-- main menu modal -->
