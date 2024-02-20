@@ -19,7 +19,7 @@ const { icon, modalTrigger } = Astro.props
 				<img style="width: 30px; height: 30px;" src="src/assets/img/logos/logo-crown.png" alt="">
 				<a class="navbar-brand me-auto mt-1 ms-2" href="/">Prince Collection</a>
 			</div> -->
-			
+
 			<Drawer drawerTitle="Book with Prince Collection" drawerId="bookingDrawer" drawerAriaLabel="Book with Prince Collection">
 				<BookingForm />
 			</Drawer>
@@ -121,21 +121,22 @@ const { icon, modalTrigger } = Astro.props
 		<!-- main menu modal -->
 		<div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-fullscreen p-3">
-			<div class="modal-content rounded-4 bg-dark">
-			<div class="modal-header border-0">
+			<div class="modal-content rounded-4 bg-pc">
+			<div class="modal-header border-0" style="background: transparent !important;">
 				<div class="modal-title fs-5">
 					<img class="ms-2" style="width: 30px; height: 30px;" src="/images/logos/logo-crown.png" alt="Prince Collection crown logo">
 				</div>
 				<i class="bi bi-x-circle-fill position-absolute top-0 end-0 fs-2 m-3 text-pc-dark" role="button" data-bs-dismiss="modal" aria-label="Close"></i>
 			</div>
-			<div class="modal-body py-0">
+			<div class="modal-body py-0 ">
 			<div class="container-fluid">
 				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 p-3">
+					<!-- <div class:list={["p-4 min-vh-25 rounded-4 shadow", item.background || ""]}></div> -->
 					{
 					navData.navData.map((item) => (
 						<div class="col position-relative">
 							<a href={item.path}>
-								<div class:list={["p-4 min-vh-25 rounded-4 shadow", item.background || ""]}>
+								<div class="p-4 bg-pc-10 rounded-4 shadow" style="min-height: 300px">
 									<i class:list={["bi me-3 fs-2 text-pc-dark position-absolute end-0 top-0 me-4 mt-2", item.icon || ""]}></i>
 									<span class="badge bg-pc-dark text-pc-10">{item.badge}</span>
 									<h3 class="fs-2 fw-bold mt-3">{item.title}</h3>
@@ -156,7 +157,7 @@ const { icon, modalTrigger } = Astro.props
 		</div>
 </header>
 
-<script>
+<!-- <script>
 	window.onscroll = function() {scrollFunction()};
 
 	function scrollFunction() {
@@ -167,7 +168,7 @@ const { icon, modalTrigger } = Astro.props
 		document.getElementById("nav").classList.remove("bg-light");
 	}
 	}
-</script>
+</script> -->
 
 <style>
 

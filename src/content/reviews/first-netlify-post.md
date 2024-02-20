@@ -9,6 +9,7 @@ tags:
   - news
   - deals
   - scandinavia
+  - southamerica
 ---
 # Big time first post
 

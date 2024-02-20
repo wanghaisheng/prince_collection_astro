@@ -6,14 +6,13 @@ const [firstArticle, ...allArticles] = allPosts;
 
 ---
 
-<Layout title="Prince Collection | Reviews" description="Prince Collection latest reviews.">
+<Layout title="Prince Collection | Reviews" description="Prince Collection reviews.">
 		<div class="container-fluid px-0">
 			<div class="row min-vh-100 bg-pc-dark-20">
 				<div class="col-lg-6 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center p-5 mt-5 mt-lg-0">
-					<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-pc-10 py-2 px-3" style="font-family: 'Gloock', serif; font-size: 15px;">Prince Collection Reviews</span>
-					<h1 class="display-2 col-lg-10 lh-1 mb-2 mt-3"  style="font-family: 'Helvetica Neue', Helvetica, Arial; font-weight: 100">{firstArticle.data.title}</h1>
+					<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-pc-10 py-2 px-3" style="font-size: 15px;">Prince Collection Reviews</span>
+					<h1 class="display-2 col-lg-10 col-xl-8 font-inter text-pc-dark-80 fw-900 mb-3 mt-4" style="letter-spacing: -2px; line-height: 90%;">{firstArticle.data.title}</h1>
 					<p class="col-md-7 fs-5 text-body-secondary mt-3 mb-2">{firstArticle.data.description}</p>
-
 					<div class="py-2">
 						<p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Written by</span> {firstArticle.data.author}</p>
 						<p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {firstArticle.data.pubDate.toString().slice(0,10)}</p>
@@ -29,28 +28,29 @@ const [firstArticle, ...allArticles] = allPosts;
 				</div>
 			</div>
             
-            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3 p-4">
-				<!-- clip-path: polygon(0 0, 100% 0%, 100% 65%, 0 94%); -->
+            <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4 g-3 p-4">
                 {
                     allArticles.map((post, index) => (
                         <div class="col">
                     <a href={`/reviews/${post.slug}/`}>
-                        <div class="card bg-pc-light rounded-4 p-3 shadow" style="min-height: 500px">
-                            <img src={post.data.imageUrl} class="card-img-top rounded-4 w-100" style="object-fit: cover;" alt={post.data.imageAlt}>
-                            <div class="card-body position-relative px-3 pb-0">
-                                <div class="d-flex flex-row">
-                                    {
-                                        post.data.tags.map((tag) => (
-                                            <div class="span badge bg-secondary me-1">{tag}</div>
-                                        ))
-                                    }
-                                </div>
+                        <div class="card bg-pc-light rounded-4 p-0 border-0 shadow" style="min-height: 500px">
+                            <img src={post.data.imageUrl} class="card-img-top rounded-top-4 w-100" style="object-fit: cover; height: 200px; filter: brightness(70%)" alt={post.data.imageAlt}>
+							<i class="bi bi-arrow-up-right-circle-fill text-pc-10 fs-1 position-absolute top-0 end-0 me-3 mt-2"></i>
+                            <div class="card-body position-relative px-4 pb-4">
                                 <p class="small mb-2">{post.data.pubDate.toString().slice(0,10)}</p>
                                 <h5 class="card-title fw-900 text-uppercase text-body-secondary mb-0">{post.data.title}</h5>
                                 <p class="small m-0 text-secondary mt-2 mb-0">By: {post.data.author}</p>
                                 <p class="card-text text-body-secondary pe-5">{post.data.description}</p>
-                                <i class="bi bi-plus-circle text-dark fs-2 position-absolute bottom-0 end-0"></i>
                             </div>
+							<div class="card-footer p-3">
+								<div class="d-flex flex-row flex-wrap" style="text-wrap: pretty;">
+                                    {
+                                        post.data.tags.map((tag) => (
+                                            <p class="small text-pc-dark-80 me-1 my-0">#{tag}</p>
+                                        ))
+                                    }
+                                </div>
+							</div>
                         </div>
                 
                     </div>

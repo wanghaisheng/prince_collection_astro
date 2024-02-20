@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
 import { Image } from 'astro:assets';
-import crown from '../../assets/img/logos/logo-crown.png'
 
 export const prerender = true;
 export async function getStaticPaths() {
@@ -56,46 +55,24 @@ function emailPage(title) {
 const url = encodeURIComponent(Astro.url.pathname);
 ---
 
-<script>
-    const toastTrigger = document.getElementById('liveToastBtn')
-    const toastLiveExample = document.getElementById('liveToast')
-        if (toastTrigger) {
-        toastTrigger.addEventListener('click', () => {
-            const toast = new bootstrap.Toast(toastLiveExample)
-            toast.show();
-            navigator.clipboard.writeText("https://princecollection.com" + window.location.pathname);
-
-        })
-    }
-  </script>
-
 <Layout title={post.data.title} description={post.data.description} image={post.data.imageUrl}>
     <div class="container-fluid px-0 pt-3">
         <div class="row min-vh-500 pt-5">
             <div class="col-lg-7 d-flex flex-column justify-content-end align-items-start text-start p-5">
             <a href="/reviews">
                 <div class="d-flex align-items-center">
-                    <i class="bi bi-arrow-left text-black-50 fs-1" data-astro-source-file="/Users/andrewmason/Projects/pc_astro/src/pages/reviews/[...slug].astro" data-astro-source-loc="26:18"></i>
+                    <i class="bi bi-arrow-left text-black-50 fs-1"></i>
                     <h6 class="ms-2 my-0 text-black-50 fw-light">Back to reviews</h6>
                 </div>
             </a>
-            <h1 class="display-1 font-inter text-secondary fw-900 mb-3 mt-2" style="letter-spacing: -3px;
-            line-height: 90%;">{post.data.title}</h1>
+            <h1 class="display-1 font-inter text-secondary fw-900 mb-3 mt-2" style="letter-spacing: -2px; line-height: 90%;">{post.data.title}</h1>
             <p class="fs-5 col-md-7 text-body-secondary mb-3 mt-3">{post.data.description}</p>
-                <!-- tags -->
-                <!-- <div class="d-flex justify-content center-align-items-center">
-                    {
-                        post.data.tags.map((tag) =>(
-                        <span class="badge text-bg-light me-1 mb-3">#{tag}</span>
-                        ))
-                    }
-                </div> -->
                 <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Written by</span> {post.data.author}</p>
                 <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {post.data.pubDate.toString().slice(0,10)}</p>
                 <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Read time </span>  {wordCount(post.body)} mins</p>
             </div>
-            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5">
-                <Image class="w-100 object-fit min-vh-50" width="700" height="500" src={post.data.imageUrl} alt="Prince Collection logo"/>
+            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5 pe-5">
+                <Image class="w-100 object-fit min-vh-50 rounded-end-5 shadow" width="700" height="500" src={post.data.imageUrl} alt="Prince Collection logo"/>
             </div>
         </div>
     </div>
@@ -104,6 +81,10 @@ const url = encodeURIComponent(Astro.url.pathname);
         <div id="content" class="row p-4">
             <!-- sidebar -->
             <div class="d-none d-xl-flex flex-column col-lg-2 col-lg-3 pt-5">
+                <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Written by</span> {post.data.author}</p>
+                <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {post.data.pubDate.toString().slice(0,10)}</p>
+                <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Read time </span>  {wordCount(post.body)} mins</p>
+                <hr>
                 <p><span class="fw-bold text-pc-dark">Prince Collection</span> is a non-traditional, full service travel concierge designed exclusively for companies and individuals who require exclusive travel arrangements. We handle the nuances of travel ensuring a seamless and extraordinary journey from start to finish.</p>
                 <hr>
                 <div>
@@ -218,3 +199,15 @@ const url = encodeURIComponent(Astro.url.pathname);
         </div>
     </div>
 </Layout>
+
+<script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+        toastTrigger.addEventListener('click', () => {
+            const toast = new bootstrap.Toast(toastLiveExample)
+            toast.show();
+            navigator.clipboard.writeText("https://princecollection.com" + window.location.pathname);
+        })
+    }
+  </script>

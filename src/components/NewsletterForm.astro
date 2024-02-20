@@ -2,11 +2,13 @@
 const { newsletterStyle, newsletterClass, newsletterBtn } = Astro.props;
 
 if (Astro.request.method === "POST") {
+
+  async function formSubmit() {
   try {
     const data = await Astro.request.formData();
     const email = data.get("email");
-    // Do something with the data
-    fetch('https://a.klaviyo.com/client/subscriptions/?company_id=UKL5uG', {
+
+    const response = await fetch('https://a.klaviyo.com/client/subscriptions/?company_id=UKL5uG', {
         method: 'POST',
         headers: {revision: '2023-12-15', 'content-type': 'application/json'},
         body: JSON.stringify({
@@ -31,86 +33,125 @@ if (Astro.request.method === "POST") {
             relationships: {list: {data: {type: 'list', id: 'WLqZCg'}}}
             }
         })
-    })
-    .then(response => response.json())
-    // .then(response => console.log(response))
-    .then(() => alert("Thank you for your submission"))    
-    .catch(err => console.error(err));
-    console.log(data)
+    });
+    console.log('status code: ', response.status); // 👉️ 200
+    const json = await response.json();
+    // alert("Please check your email to confirm your subscription");
+    console.log(json);
   } catch (error) {
-    if (error instanceof Error) {
-      console.error(error.message);
-    }
+    console.log(error);
   }
 }
+
+formSubmit();
+
+
+  // try {
+  //   const data = await Astro.request.formData();
+  //   const email = data.get("email");
+  //   // Do something with the data
+  //   fetch('https://a.klaviyo.com/client/subscriptions/?company_id=UKL5uG', {
+  //       method: 'POST',
+  //       headers: {revision: '2023-12-15', 'content-type': 'application/json'},
+  //       body: JSON.stringify({
+  //           data: {
+  //           type: 'subscription',
+  //           attributes: {
+  //               custom_source: 'Nav signup form',
+  //               profile: {
+  //               data: {
+  //                   type: 'profile',
+  //                   id: '01GDDKASAP8TKDDA2GRZDSVP4H',
+  //                   attributes: {
+  //                   email: email,
+  //                   properties: {newKey: 'New Value'},
+  //                   meta: {
+  //                       patch_properties: {append: {newKey: 'New Value'}, unappend: {newKey: 'New Value'}, unset: 'skus'}
+  //                   }
+  //                   }
+  //               }
+  //               }
+  //           },
+  //           relationships: {list: {data: {type: 'list', id: 'WLqZCg'}}}
+  //           }
+  //       })
+  //   })
+  //   .then(response => response.json())
+  //   .then(() => alert("Thank you for your submission"))    
+  //   .catch(err => console.error(err));
+  //   console.log(data)
+  // } catch (error) {
+  //   if (error instanceof Error) {
+  //     console.error(error.message);
+  //   }
+  // }
+}
 ---
-<form id="userinfo" method="POST">
+<!-- <form id="userinfo" method="post"> -->
+<form method="post">
     <div class="input-group my-2">
         <button class:list={["btn rounded-0 px-3 fw-bold", newsletterBtn]} type="submit">I'm in!</button>
         <input type="email" name="email" class:list={["form-control rounded-0", newsletterStyle, newsletterClass]} placeholder="name@example.com" aria-label="Sign up for our newsletter" aria-describedby="button-addon1" required>
     </div>
 </form>
-
+<!-- 
 <script>
-    const form = document.querySelector("#userinfo");
+    const form = document.getElementById("userinfo");
+    const formData = new FormData(form);
+    const email = formData.get('email');
+  
+    async function sendData() {
 
-async function sendData() {
-  // Associate the FormData object with the form element
-  const formData = new FormData(form);
+    try {
+      const response = await fetch("https://a.klaviyo.com/client/subscriptions/?company_id=UKL5uG", {
 
-  try {
-    const response = await fetch('https://a.klaviyo.com/client/subscriptions/?company_id=UKL5uG', {
-        method: 'POST',
-        headers: {revision: '2023-12-15', 'content-type': 'application/json'},
-        body: JSON.stringify({
-            data: {
-            type: 'subscription',
-            attributes: {
-                custom_source: 'Nav signup form',
-                profile: {
-                data: {
-                    type: 'profile',
-                    id: '01GDDKASAP8TKDDA2GRZDSVP4H',
-                    attributes: {
-                    email: '',
-                    properties: {newKey: 'New Value'},
-                    meta: {
-                        patch_properties: {append: {newKey: 'New Value'}, unappend: {newKey: 'New Value'}, unset: 'skus'}
+          headers: {revision: '2023-12-15', 'content-type': 'application/json'},
+          body: JSON.stringify({
+              data: {
+              type: 'subscription',
+              attributes: {
+                  custom_source: 'Nav signup form',
+                  profile: {
+                  data: {
+                      type: 'profile',
+                      id: '01GDDKASAP8TKDDA2GRZDSVP4H',
+                      attributes: {
+                      email: email,
+                      properties: {newKey: 'New Value'},
+                      meta: {
+                          patch_properties: {append: {newKey: 'New Value'}, unappend: {newKey: 'New Value'}, unset: 'skus'}
+                          }
+                        }
+                      }
                     }
-                    }
-                }
-                }
-            },
-            relationships: {list: {data: {type: 'list', id: 'WLqZCg'}}}
-            }
-        })
-    });
-    console.log(await response.json());
-  } catch (e) {
-    console.error(e);
+                },
+              relationships: {list: {data: {type: 'list', id: 'WLqZCg'}}}
+              }
+          })
+      });
+      console.log(await response.json());
+    } catch (e) {
+      console.error(e);
+    }
   }
-}
 
-// Take over form submission
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   sendData();
 });
-</script>
+</script> -->
 
 <style>
     input, 
     input:focus {
         background: transparent;
         border-radius: 0;
-        /* border: 1px solid #7d84ab; */
         border: 1px solid gray;
         box-shadow: none;
         color: white;
     }
 
     input::placeholder {
-        /* color: #7d84ab; */
         color: gray;
     }
 </style>
