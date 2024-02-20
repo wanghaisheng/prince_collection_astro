@@ -20,10 +20,6 @@ const { icon, modalTrigger } = Astro.props
 				<a class="navbar-brand me-auto mt-1 ms-2" href="/">Prince Collection</a>
 			</div> -->
 
-			<Drawer drawerTitle="Book with Prince Collection" drawerId="bookingDrawer" drawerAriaLabel="Book with Prince Collection">
-				<BookingForm />
-			</Drawer>
-
 			<ul class="nav justify-content-end align-items-center">
 				<li class="nav-item">
 					<a href="/book" class="p-0">
@@ -31,9 +27,6 @@ const { icon, modalTrigger } = Astro.props
 							<i class="bi bi-airplane fs-5"></i>
 						</button>
 					</a>
-					<!-- <button data-bs-toggle="offcanvas" data-bs-target="#bookingDrawer" aria-controls="offcanvasBottom" class="btn btn-dark me-2 rounded-3 px-3">
-						<i class="bi bi-airplane"></i>
-					</button> -->
 				</li>
 				<li class="nav-item">
 					<button class="btn btn-dark me-2 px-3 rounded-3" data-bs-toggle="modal" data-bs-target="#navSignup">
@@ -71,15 +64,37 @@ const { icon, modalTrigger } = Astro.props
 				  </li>
 			</ul> -->
 
-
-
-			<!-- <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"> -->
-			
-			<button class="btn btn-dark" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#navModal">
-				<!-- <i class="bi bi-justify"></i> -->
+			<button data-bs-toggle="offcanvas" data-bs-target="#bookingDrawer" aria-controls="offcanvasBottom" class="btn btn-dark me-2 rounded-3 px-3">
 				<i class="bi bi-justify-left fs-5"></i>
-			  </button>
-		  
+			</button>
+
+			<Drawer drawerTitle="PrinceCollection" drawerId="bookingDrawer" drawerAriaLabel="Prince Collection">
+				<div class="container-fluid px-0">
+					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 p-0">
+						{
+						navData.navData.map((item) => (
+							<div class="col position-relative">
+								<a href={item.path}>
+									<div class="p-4 w-100 h-100 bg-pc-light rounded-4 shadow" style="min-height: 350px;">
+										<div class="p-3 w-100 h-100 bg-pc-10 rounded-4">
+										<i class:list={["bi me-3 fs-2 text-pc-dark position-absolute end-0 top-0 me-4 mt-2", item.icon || ""]}></i>
+										<span class="badge bg-pc-dark text-pc-10">{item.badge}</span>
+										<h3 class="fs-2 fw-bold mt-3">{item.title}</h3>
+										<p>Id ea eiusmod magna cupidatat proident commodo tempor sit incididunt. Fugiat aliquip officia exercitation ad culpa ipsum est.</p>
+										<button class="btn btn-sm btn-pc-dark rounded-pill shadow">Go <i class="bi bi-arrow-up-right"></i></button>
+										</div>
+									</div>
+								</a>
+							</div>
+							))
+						}
+					</div>
+				</div>
+			</Drawer>
+			
+		<!-- <button class="btn btn-dark" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#navModal">
+			<i class="bi bi-justify-left fs-5"></i>
+		</button>
 		 
 		  <div class="offcanvas offcanvas-end bg-indigo" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 			<div class="offcanvas-header">
@@ -106,7 +121,8 @@ const { icon, modalTrigger } = Astro.props
 				</li>
 			  </ul>
 			</div>
-		  </div>
+		  </div> -->
+
 		</div>
 	  </nav>
 

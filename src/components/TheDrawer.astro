@@ -2,12 +2,17 @@
 const { drawerTitle, drawerId, drawerAriaLabel } = Astro.props;
 ---
 
-<div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id={drawerId} aria-labelledby={drawerAriaLabel}>
+<div class="offcanvas offcanvas-bottom h-100 bg-pale-dogwood" tabindex="-1" id={drawerId} aria-labelledby={drawerAriaLabel}>
     <div class="offcanvas-header">
-        <h5 class="offcanvas-title fw-900" style="font-family: 'Gloock', serif" id="offcanvasBottomLabel">{drawerTitle}</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="d-flex justify-content-center align-items-center">
+            <img class="m-0 me-1" style="width: 30px; height: 30px;" src="/images/logos/logo-crown.png" alt="Prince of Travel crown logo">
+            <h3 class="fw-900 text-uppercase text-body-secondary fs-4 mb-0 mt-2">Prince<span style="font-family: 'Helvetica Neue', helvetica, Arial, sans-serif; font-weight: 100">Collection</span></h3>
+        </div>
+        <!-- <h5 class="offcanvas-title fw-900" style="font-family: 'Gloock', serif" id="offcanvasBottomLabel">{drawerTitle}</h5> -->
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+        <i class="bi bi-x-circle-fill position-absolute top-0 end-0 fs-1 me-3 mt-2 text-pc-dark" role="button" data-bs-dismiss="offcanvas" aria-label="Close"></i>
     </div>
-    <div class="offcanvas-body small">
+    <div class="offcanvas-body">
         <slot />
     </div>
 </div>
