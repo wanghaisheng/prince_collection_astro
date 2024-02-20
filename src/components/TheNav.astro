@@ -34,13 +34,13 @@ const { icon, modalTrigger } = Astro.props
 						
 					</button>
 				</li>
-				<li class="nav-item">
+				<!-- <li class="nav-item">
 					<a class="px-0" href="/contact">
 						<button class="btn btn-dark me-2">
 							<i class="bi bi-envelope-plus fs-5"></i>
 						</button>
 					</a>
-				</li>
+				</li> -->
 
 				<!-- animated dropdown -->
 				<!-- <ul>
@@ -64,11 +64,11 @@ const { icon, modalTrigger } = Astro.props
 				  </li>
 			</ul> -->
 
-			<button data-bs-toggle="offcanvas" data-bs-target="#bookingDrawer" aria-controls="offcanvasBottom" class="btn btn-dark me-2 rounded-3 px-3">
+			<button data-bs-toggle="offcanvas" data-bs-target="#navDrawer" aria-controls="offcanvasBottom" class="btn btn-dark me-2 rounded-3 px-3">
 				<i class="bi bi-justify-left fs-5"></i>
 			</button>
 
-			<Drawer drawerTitle="PrinceCollection" drawerId="bookingDrawer" drawerAriaLabel="Prince Collection">
+			<Drawer drawerTitle="PrinceCollection" drawerId="navDrawer" drawerAriaLabel="Prince Collection">
 				<div class="container-fluid px-0">
 					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 p-0">
 						{
