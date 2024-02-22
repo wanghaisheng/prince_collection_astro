@@ -1,0 +1,372 @@
+{
+    "navData": [
+      {
+        "title": "Home",
+        "description": "Welcome to Prince Collection, the new standard in luxury travel.",
+        "path": "/",
+        "icon": "bi-grid",
+        "badge": "Prince Collection",
+        "background": "bg-pc-80"
+      },
+      {
+        "title": "News",
+        "description": "Stay up-to-date with the latest developments in the world of luxury travel.",
+        "path": "/news",
+        "icon": "bi-newspaper",
+        "badge": "What's hot",
+        "background": "bg-dutch-white"
+      },
+      {
+        "title": "Reviews",
+        "path": "/reviews",
+        "description": "Join us onsite as we experience the world's best hotels and destinations and how Prince Collection’s benefits elevate your experience.",
+        "icon": "bi-hand-thumbs-up",
+        "badge": "Hotels & flights",
+        "background": "bg-pc-dark-20"
+      },
+      {
+        "title": "Guides",
+        "path": "/guides",
+        "description": "Get in-depth information on hotel programs and learn more about Prince Collection’s premier brands and vendors.",
+        "icon": "bi-book",
+        "badge": "Travel tips",
+        "background": "bg-pale-dogwood"
+      },
+      {
+        "title": "Book travel",
+        "description": "Secure your stay at the world's best hotels, enjoying exclusive benefits through Prince Collection without any additional costs.",
+        "path": "/book",
+        "icon": "bi-airplane",
+        "badge": "Your advisor",
+        "background": "bg-timberwolf"
+      },
+      {
+        "title": "Concierge",
+        "description": "Discover our Concierge service, designed exclusively for high net worth individuals and companies who seek exclusive experiences, handled for them.",
+        "path": "/concierge",
+        "icon": "bi-suitcase-lg",
+        "badge": "What we do",
+        "background": "bg-vanilla"
+      },
+      {
+        "title": "FAQ",
+        "path": "/faq",
+        "description": "Get answers to frequently asked questions about our services, helping you understand how Prince Collection can cater to your travel needs.",
+        "icon": "bi-question-square",
+        "badge": "Q and A",
+        "background": "bg-periwinkle"
+      },
+      {
+        "title": "Contact",
+        "description": "Reach out to the Prince Collection team for personalized support and to learn how we can elevate your travel experiences.",
+        "path": "/contact",
+        "icon": "bi-envelope-at",
+        "badge": "Get in touch",
+        "background": "bg-pc-dark-10"
+      }
+    ],
+    "home": {
+        "hero": {
+            "title": "The new standard in luxury travel",
+            "button1": "Book your hotel",
+            "button2": "About us"
+        },
+        "logos": [
+            {
+                "url": "/images/logos/fourseasons.webp",
+                "alt": "The Four Seasons logo"
+            },
+            {
+                "url": "/images/logos/rosewood.webp",
+                "alt": "Rosewood logo"
+            },
+            {
+                "url": "/images/logos/mandarin.webp",
+                "alt": "Mandarin logo"
+            },
+            {
+                "url": "/images/logos/hyatt.webp",
+                "alt": "The Hyatt logo"
+            },
+            {
+                "url": "/images/logos/virtuoso.webp",
+                "alt": "Virtuoso logo"
+            },
+            {
+                "url": "/images/logos/rocco.webp",
+                "alt": "Rocco logo"
+            }
+        ],
+        "section1": {
+            "badge": "Who we are",
+            "title": "<span class='text-pc-dark'>Prince Collection</span> connects travellers to unique experiences worldwide",
+            "content": "Prince Collection’s Travel Concierge is designed exclusively for companies and individuals who require exclusive travel arrangements handled for them. Our expertise lies in handling the nuances of travel, ensuring a seamless and extraordinary journey from start to finish.",
+            "button": "Learn more"
+        },
+        "news": {
+            "badge": "News",
+            "title": "The latest in luxury travel",
+            "content": "Get exclusive content, breaking stories, and the most in depth information about the luxury travel space spanning hotels and accomodation, flights and transportation, restaurants, and more.",
+            "button": "See more"
+        },
+        "book": {
+            "badge": "Book your hotel",
+            "title": "Book your next hotel stay with us",
+            "content": "Through Prince Collection’s access to the world’s best hotels, you’ll enjoy exclusive benefits at no additional cost. By booking with us, you receive:",
+            "list": [
+                {
+                    "icon": "bi-sunrise",
+                    "title": "Daily breakfast for two people",
+                    "content": "Enjoy complimentary breakfast for two at the hotel restaurant, lounge, or in-room dining. Switch it up on consecutive days to explore them all."
+                },
+                {
+                    "icon": "bi-cash-coin",
+                    "title": "$100 (USD) hotel credit",
+                    "content": "Use your $100 (USD) hotel credit towards dining, spa, or other facilities. We will help you to secure reservations in advance."
+                },
+                {
+                    "icon": "bi-house-heart",
+                    "title": "Welcome amenity",
+                    "content": "A complimentary bottle of wine, snacks, or local gift will be awaiting your arrival. It is completely customizable for special occasions."
+                },
+                {
+                    "icon": "bi-patch-check",
+                    "title": "One-category room upgrade, subject to availability",
+                    "content": "Either at time of booking or upon arrival, we will take care of your upgrade from start to finish. You can be as hands-on as you prefer."
+                },
+                {
+                    "icon": "bi-calendar-check",
+                    "title": "Early check-in/late check-out, subject to availability",
+                    "content": "Have an early arrival or late flight? Have your room be ready for you and enjoy it until you leave for the airport."
+                },
+                {
+                    "icon": "bi-moon-stars",
+                    "title": "Property-specific 3rd/4th/5th Night Free promotions",
+                    "content": "Exclusive free nights when booking with us, applied automatically. Qualifying hotels and promotions do change over time."
+                }
+            ],
+            "exclusive": {
+                "badge": "Exclusive access",
+                "title": " Enjoy <span class='text-pc-dark-80'>exclusive</span> deals and benefits",
+                "content": "Book with Prince Collection and enjoy access to exclusive deals and features at a broad range of eligible hotels, including luxury brands like Four Seasons, Rosewood, Mandarin Oriental, St. Regis, Waldorf Astoria, Park Hyatt, as well as a wide range of independent boutique luxury properties. Feel free to submit an inquiry through our booking form to get started.",
+                "button": "Book your hotel"
+            },
+            "reviews": {
+                "badge": "Reviews",
+                "title": "Find inspiration",
+                "content": " Join us onsite as we experience the world's best hotels and destinations, while showcasing how Prince Collection’s benefits will elevate your experience.",
+                "button": "See more"
+            },
+            "concierge": {
+                "badge": "Prince Collection Concierge",
+                "title": "Your luxury travel concierge",
+                "content": "Prince Collection’s Travel Concierge is designed exclusively for high net worth individuals and companies who seek exclusive experiences, handled for them. We understand that time is your most valuable asset. The Prince Collection Concierge is a white-glove service, ensuring a seamless and extraordinary journey from start to finish.",
+                "button": "Learn more"
+            },
+            "guides": {
+                "badge": "Guides",
+                "title": "Find information",
+                "content": "Get in-depth information on hotel programs and learn more about Prince Collection’s premier brands and vendors.",
+                "button": "See more"
+            },
+            "newsletter_CTA": {
+                "badge": "",
+                "title": "Join the <span class='text-pc-dark'>Prince Collection</span> Community",
+                "content": "Join Prince Collection’s newsletter and be at the forefront of new property openings, unique experiences, and exclusive promotions",
+                "button": "Sign up"
+            }
+        }
+    },
+    "concierge": {
+        "meta": {
+            "title": "Prince Collection | Concierge",
+            "description": "Prince Collection Concierge services"
+        },
+        "hero": {
+            "badge": "Where will you go next?",
+            "title": "Your <span class='text-pc-dark'>luxury</span> travel concierge",
+            "content": "Prince Collection’s Travel Concierge is designed exclusively for companies and individuals who require exclusive travel arrangements handled for them. Our expertise lies in handling the nuances of travel, ensuring a seamless and extraordinary journey from start to finish.",
+            "button": "Book your hotel"
+        },
+        "logos": [
+            {
+                "url": "/images/logos/fourseasons.webp",
+                "alt": "The Four Seasons logo"
+            },
+            {
+                "url": "/images/logos/rosewood.webp",
+                "alt": "Rosewood logo"
+            },
+            {
+                "url": "/images/logos/mandarin.webp",
+                "alt": "Mandarin logo"
+            },
+            {
+                "url": "/images/logos/hyatt.webp",
+                "alt": "The Hyatt logo"
+            },
+            {
+                "url": "/images/logos/virtuoso.webp",
+                "alt": "Virtuoso logo"
+            },
+            {
+                "url": "/images/logos/rocco.webp",
+                "alt": "Rocco logo"
+            }
+        ],
+        "section1": {
+            "badge": "What we offer",
+            "title": "We're <span class='text-pc-dark'>more</span> than a travel agency",
+            "content": "Our Concierge does not offer basic booking services in the same way a traditional agent might. Our services are more personalized and complex. Since Concierge does not rely on commissions, we are always able to keep our clients best interests front of mind. Independent travel planning: Our services may not be suitable for those who prefer to plan their travel independently and prefer to do things themselves."
+        },
+        "section2": {
+            "badge": "What we do",
+            "title": "What does Prince Collection offer?",
+            "content": "We conduct a thorough evaluation of clients' credit cards, Elite status, and travel habits. This process aids us in developing a full travel strategy document to optimize the clients' travel experiences. Furthermore, our account managers gain access to clients' loyalty accounts to manage bookings, monitor progress to elite status, and ensure all optimized strategies are being implemented.",
+            "list": [
+                {
+                    "icon": "bi-sunrise",
+                    "title": "Comprehensive onboarding & annual travel strategy",
+                    "content": "We conduct a thorough evaluation of clients' credit cards, Elite status, and travel habits. This process aids us in developing a full travel strategy document to optimize the clients' travel experiences."
+                },
+                {
+
+                    "icon": "bi-cash-coin",
+                    "title": "Customized trip booking",
+                    "content": "Clients communicate their travel requirements to their account manager, who will then research and suggest the best flight and hotel options, keeping in mind the clients' preferences, travel goals, and points balances. Clients only need to sign off on trip proposals, after which the account manager proceeds with the bookings."
+                },
+                {
+                    "icon": "bi-house-heart",
+                    "title": "24/7 emergency travel support",
+                    "content": "Our Concierge team is available 24/7 to assist in emergency travel situations. In case of flight cancellations, delays, missed connections, or any other unexpected circumstances, our team adeptly navigates airline systems to achieve the best possible outcomes."
+                }
+            ]
+        },
+        "section3": {
+            "badge": "What we do",
+            "title": "Our Guarantee",
+            "content": "In aliqua incididunt commodo mollit ad officia exercitation ea nostrud ut proident do tempor. Cillum ut exercitation eu ea dolore. Do adipisicing et consectetur commodo in cillum.",
+            "list": [
+                {
+                    "badge": "01",
+                    "title": "Save time",
+                    "content": "We take over the time-consuming task of planning, optimizing, and managing travel, allowing clients to focus on other priorities."
+                },
+                {
+                    "badge": "02",
+                    "title": "Maximize loyalty",
+                    "content": "With our expertise in points, elite status, etc., we ensure clients make the most of their travels while flying the world’s best airlines and staying at world-class hotels."
+                },
+                {
+                    "badge": "03",
+                    "title": "Peace of mind",
+                    "content": "Our 24/7 emergency support gives you the assurance that help is always available, no matter what unexpected situations arise during their travels."
+                },
+                {
+                    "badge": "04",
+                    "title": "Customized service",
+                    "content": "Each travel strategy and trip is meticulously planned according to your preferences and goals, offering a fully personalized experience."
+                }
+            ]
+        }
+    },
+    "newsletter": {},
+    "faq": [
+        {
+            "title": "Do you charge any booking fees?",
+            "content": [ 
+                "No! We charge no additional fees for handling bookings. You’ll pay the same price as the best flexible rate offered by the hotel, all while enjoying extra benefits.",
+                "The fee structure is subject to change."
+            ]
+        },
+        {
+            "title": "How are you able to offer these additional benefits?",
+            "content": [
+                "Luxury hotel groups offer these additional benefits and promotions to clients of the world’s leading travel agencies in order to capture significant volumes of guest spending through these agencies."
+            ]
+        },
+        {
+            "title": "What rates will I pay when booking with Prince Collection?",
+            "content": [
+                "In most cases, you’ll pay the same rate as the best flexible (i.e., fully refundable) rate offered directly by the hotel.",
+                "These rates may be higher than member-exclusive rates, prepaid rates, corporate rates, or other specific rate types outside of the best flexible rate, so you’ll want to weigh up the difference in rates against the additional benefits you receive.",
+                "In some cases, such as during property-specific 3rd/4th/5th Night Free promotions, booking with Prince Collection can result in paying lower effective rates compared to the best publicly available rate."
+            ]
+        },
+        {
+            "title": "Will I get elite status benefits, points, and qualifying nights?",
+            "content": [
+                "Yes! The benefits you receive when booking hotels with Prince Collection are in addition to the benefits you’d get as an elite member of a hotel loyalty program.",
+                "Furthermore, Prince Collection bookings are eligible to earn points and qualifying nights within hotel elite status programs, helping you get closer to your next points redemption or a higher elite tier."
+            ]
+        },
+        {
+            "title": "Will I get elite status benefits, points, and qualifying nights?",
+            "content": [
+                "Submit an inquiry via the booking form to get started.",
+                "Our travel advisors will work with you to identify the best property for your needs and help you understand the benefits you’ll receive.",
+                "When you’re ready to book, we will collect your credit card information via a PCI-compliant submission process and pass it along to the property to guarantee your booking.",
+                "After your booking is confirmed, we will communicate with the hotel on your behalf with respect to room preferences, upgrade requests, special occasions, etc., to ensure you have the best possible experience during your stay."
+            ]
+        },
+        {
+            "title": "How does the booking process work?",
+            "content": [
+                "Submit an inquiry via the booking form to get started.",
+                "Our travel advisors will work with you to identify the best property for your needs and help you understand the benefits you’ll receive.",
+                "When you’re ready to book, we will collect your credit card information via a PCI-compliant submission process and pass it along to the property to guarantee your booking.",
+                "After your booking is confirmed, we will communicate with the hotel on your behalf with respect to room preferences, upgrade requests, special occasions, etc., to ensure you have the best possible experience during your stay."
+            ]
+        }
+    ],
+    "footer": {
+        "title": "Prince Collection",
+        "content": "Prince Collection is a full-service luxury travel brand featuring an in-house travel agency and travel concierge. As a leading industry resource, we deliver on-site reviews, comprehensive guides, and the latest news.",
+        "list": [
+            {
+                "title": "Product",
+                "one": "Travel agency",
+                "link1": "/about",
+                "two": "Concierge",
+                "link2": "/concierge",
+                "three": "FAQ",
+                "link3": "/faq",
+                "four": "Book Travel",
+                "link4": "/book"
+            },
+            {
+                "title": "Company",
+                "one": "About",
+                "link1": "/about",
+                "two": "Prince of Travel",
+                "link2": "https://princeoftravel.com",
+                "three": "The Travel Summit",
+                "link3": "https://thetravelsummit",
+                "four": "Contact",
+                "link4": "/contact"
+            },
+            {
+                "title": "Resources",
+                "one": "News",
+                "link1": "/news",
+                "two": "Guides",
+                "link2": "/guides",
+                "three": "Reviews",
+                "link3": "/reviews",
+                "four": "Privacy",
+                "link4": "/privacy"
+            }
+        ],
+        "social": [
+            "https://www.facebook.com/people/Prince-Collection/61556292290633/",
+            "https://www.instagram.com/princecollection",
+            "https://twitter.com/princeclxn"
+        ],
+        "copyright": [
+            "Prince Collection is a licensed travel agency, registered in the province of Ontario, Canada.",
+            "TICO #50023501",
+            "© 2024 Prince of Travel"
+        ]
+    }
+  }
+  

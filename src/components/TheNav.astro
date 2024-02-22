@@ -15,10 +15,6 @@ const { icon, modalTrigger } = Astro.props
 			<a class="navbar-brand me-auto mt-1 ms-2 text-body-secondary d-flex align-items-center" href="/">
 				<img style="width: 30px;" class="h-auto me-1" src="/images/logos/logo-crown.png" alt="Prince Collection crown logo">
 			</a>
-			<!-- <div class="d-flex justify-content-center align-items-center me-auto">
-				<img style="width: 30px; height: 30px;" src="src/assets/img/logos/logo-crown.png" alt="">
-				<a class="navbar-brand me-auto mt-1 ms-2" href="/">Prince Collection</a>
-			</div> -->
 
 			<ul class="nav justify-content-end align-items-center">
 				<li class="nav-item">
@@ -34,13 +30,6 @@ const { icon, modalTrigger } = Astro.props
 						
 					</button>
 				</li>
-				<!-- <li class="nav-item">
-					<a class="px-0" href="/contact">
-						<button class="btn btn-dark me-2">
-							<i class="bi bi-envelope-plus fs-5"></i>
-						</button>
-					</a>
-				</li> -->
 
 				<!-- animated dropdown -->
 				<!-- <ul>
@@ -64,7 +53,7 @@ const { icon, modalTrigger } = Astro.props
 				  </li>
 			</ul> -->
 
-			<button data-bs-toggle="offcanvas" data-bs-target="#navDrawer2" aria-controls="offcanvasBottom" class="btn btn-dark me-2 rounded-3 px-3">
+			<button data-bs-toggle="offcanvas" data-bs-target="#navDrawer" aria-controls="offcanvasBottom" class="btn btn-dark me-2 rounded-3 px-3">
 				<i class="bi bi-justify-left fs-5"></i>
 			</button>
 
@@ -80,7 +69,7 @@ const { icon, modalTrigger } = Astro.props
 										<i class:list={["bi me-3 fs-2 text-pc-dark position-absolute end-0 top-0 me-4 mt-2", item.icon || ""]}></i>
 										<span class="badge bg-pc-dark text-pc-10">{item.badge}</span>
 										<h3 class="fs-2 fw-bold mt-3">{item.title}</h3>
-										<p>Id ea eiusmod magna cupidatat proident commodo tempor sit incididunt. Fugiat aliquip officia exercitation ad culpa ipsum est.</p>
+										<p>{item.description}</p>
 										<button class="btn btn-sm btn-pc-dark rounded-pill shadow">Go <i class="bi bi-arrow-up-right"></i></button>
 										</div>
 									</div>
@@ -91,6 +80,8 @@ const { icon, modalTrigger } = Astro.props
 					</div>
 				</div>
 			</Drawer>
+
+			<!-- title-only menu -->
 			
 			<Drawer drawerTitle="PrinceCollection" drawerId="navDrawer2" drawerAriaLabel="Prince Collection">
 				<div class="container-fluid px-0">

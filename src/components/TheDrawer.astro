@@ -10,7 +10,8 @@ const { drawerTitle, drawerId, drawerAriaLabel } = Astro.props;
         </div>
         <i class="bi bi-x-circle-fill position-absolute top-0 end-0 fs-1 me-3 mt-2 text-pc-dark" role="button" data-bs-dismiss="offcanvas" aria-label="Close"></i>
     </div>
-    <div class="offcanvas-body d-flex flex-column justify-content-end">
+    <div class="offcanvas-body">
+    <!-- <div class="offcanvas-body d-flex flex-column justify-content-end"> for title only menu -->
         <slot />
     </div>
 </div>
