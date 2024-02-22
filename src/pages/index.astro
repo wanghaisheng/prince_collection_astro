@@ -8,11 +8,37 @@ const newsPosts = await getCollection("news");
 const reviewsPosts = await getCollection("reviews");
 const guidesPosts = await getCollection("guides");
 ---
+<script>
+	// https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play
+	// astro reinit script in SPA mode w/ astro:page-load
+	document.addEventListener('astro:page-load', () => {
+		let videoElem = document.getElementById("heroVideo");
+		let playButton = document.getElementById("playbutton");
 
+		playButton.addEventListener("click", handlePlayButton, false);
+		async function playVideo() {
+			try {
+				await videoElem.play();
+				playButton.classList.remove("bi-play-circle");
+				playButton.classList.add("opacity-50", "bi-pause-circle");
+			} catch (err) {
+				playButton.classList.remove("opacity-50");
+			}
+		}
+
+		function handlePlayButton() {
+			if (videoElem.paused) {
+				playVideo();
+			} else {
+				videoElem.pause();
+				playButton.classList.remove("opacity-50", "bi-pause-circle");
+				playButton.classList.add("bi-play-circle");
+			}
+		}
+	});
+</script>
 <Layout title="Welcome to Prince Collection" description="Prince Collection">
-	<main>
 		<div class="container-fluid px-0 pt-3">
-			<!-- <iframe class="position-absolute top-0 start-0 w-100 h-100 z-0" style="object-fit: cover; transform: scale(1.2);" src="https://player.vimeo.com/video/872789370?h=7f62049a50&amp;autoplay=0&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;muted=1" allow="autoplay" data-ready="true"></iframe> -->
 
 			<!-- <div class="row min-vh-100 text-light rounded-4 position-relative">
 				<img class="w-100 h-100 position-absolute z-0" style="object-fit: cover;" src="https://images.unsplash.com/photo-1526786220381-1d21eedf92bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
@@ -68,28 +94,19 @@ const guidesPosts = await getCollection("guides");
 						</a>
 					</nav>
 				</div>
-				<div class="col-lg-12 px-5 pb-5">
-					<img class="w-100 rounded-5" style="object-fit: cover; height: 60vh;" src="https://images.unsplash.com/photo-1526786220381-1d21eedf92bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+				<div class="col-lg-12 px-5 pb-5 position-relative">
+					<button class="btn btn-link position-absolute top-0 start-25 m-3 z-1">
+						<i id="playbutton" class="bi bi-play-circle display-1 text-pc" style="filter:drop-shadow(2px 2px 5px #222222); transition: all 0.3s ease-in-out"></i>
+					</button>
+					<video id="heroVideo" class="w-100 object-fit position-relative shadow rounded-4 min-vh-50" width="100%" height="600" muted>
+						<source src="/images/video/pc-hero-video.mp4" type="video/mp4">
+					  	Your browser does not support the video tag. Please update your browser or try Chrome, Firefox, or Safari.
+					  </video>
+
+					<!-- <img class="w-100 rounded-5" style="object-fit: cover; height: 60vh;" src="https://images.unsplash.com/photo-1526786220381-1d21eedf92bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""> -->
 				</div>
 			</div>
-			<!-- <div class="row row-cols-1 row-cols-lg-2 min-vh-100 pt-5 pt-lg-0">
-				<div class="col d-flex flex-column justify-content-center align-items-center position-relative text-center p-5">
-					<div>
-						<img style="width: 50px;" class="h-auto" src="/images/logos/logo-crown.png" alt="Prince Collection crown logo">
-						<h1 class="display-1 fw-bold text-uppercase lh-1 mt-2 mb-0">Prince</h1>
-						<h4 class="fs-2 text-uppercase fw-light text-secondary" style="letter-spacing: 10px; font-family: 'helvetica Neue', Helvetica, Arial, sans-serif;">Collection</h4>
-					</div>
-					<p class="h4 mb-3">The new standard in luxury travel.</p>
-					<nav class="nav nav-fill d-flex mx-auto">
-						<a class="nav-link p-0 me-2" href="/book">
-							<button class="btn btn-light text-pc-dark bg-pc-10 rounded-pill fw-bold px-4">Book your hotel</button>
-						</a>
-						<a class="nav-link p-0 me-2" href="/concierge">
-							<button class="btn btn-light text-pc-dark bg-pc-10 rounded-pill fw-bold px-4">About us</button>
-						</a>
-					  </nav>
-				</div>
-				<div class="col d-flex flex-column justify-content-center align-items-center position-relative ps-5 py-5 pe-0">
+			<!--
 					<img class="w-100 rounded-4 shadow" style="object-fit: cover;
 					aspect-ratio: 1;" src="https://cdn.pixabay.com/photo/2017/05/18/02/32/airplane-2322303_1280.jpg" alt="">
 					<img class="w-100 rounded-4 shadow" style="object-fit: cover;
@@ -98,8 +115,7 @@ const guidesPosts = await getCollection("guides");
 					aspect-ratio: 1;" src="https://cdn.pixabay.com/photo/2024/01/24/21/22/buildings-8530584_1280.jpg" alt="">
 					<img class="w-100 rounded-start-5 shadow" style="object-fit: cover;
 					aspect-ratio: 1;" src="https://images.unsplash.com/photo-1526786220381-1d21eedf92bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-				</div>
-			</div> -->
+				 -->
 
 			<!-- get more -->
 
@@ -170,7 +186,7 @@ const guidesPosts = await getCollection("guides");
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<span class="badge rounded-pill fw-bold bg-pc-60 text-pc-dark py-2 px-3">Book with PC</span>
 					<h2 class="display-4 fw-900 lh-1 my-3">Book your next hotel stay with us </h2>
-					<p class="fs-5 col-lg-10 offset-lg-1">Book your next hotel stay with Prince Collection and enjoy an elevated experience along your trip. Commodo nisi nisi qui reprehenderit adipisicing occaecat amet proident commodo ad ad adipisicing mollit esse. Pariatur ex cillum qui labore enim amet minim et aliquip do Lorem proident minim sint.</p>
+					<p class="fs-5 col-lg-8 offset-lg-2">Through Prince Collection’s access to the world’s best hotels, you’ll enjoy exclusive benefits at no additional cost. By booking with us, you receive:</p>
 				</div>
 			</div>
 			
@@ -259,6 +275,9 @@ const guidesPosts = await getCollection("guides");
 					<span class="badge rounded-pill fw-bold bg-pc-60 text-pc-dark py-2 px-3 mb-3">Prince collection reviews</span>
 					<h3 class="fw-bold fs-1 lh-1">Prince <span class="text-pc-60">reviews</span></h3>
 					<p class="py-1 text-pc-light">Prince Collection’s Travel Concierge is designed exclusively for high net worth individuals and companies who seek exclusive experiences, handled for them. We understand that time is your most valuable asset.</p>
+					<a href="/reviews">
+						<button class="btn btn-sm btn-pc rounded-pill fw-bold px-3 text-pc-light">See more</button>
+					</a>
 					</div>
 					</div>
 					<div class="col-lg-12 col-xl-9">
@@ -303,13 +322,23 @@ const guidesPosts = await getCollection("guides");
 			</div>
 
 			<div class="row p-5">
+				<div class="col-lg-12 col-xl-3 order-2 order-xl-1">
+					<div class="d-flex flex-column justify-content-center align-items-start bg-pale-dogwood text-body-secondary h-100 min-vh-50 rounded-5 p-5 shadow">
+					<span class="badge rounded-pill fw-bold bg-pc-dark text-pc-light py-2 px-3 mb-3">Prince collection guides</span>
+					<h3 class="fw-bold fs-1 lh-1">Prince <span class="text-pc-dark">guides</span></h3>
+					<p class="py-1">Prince Collection’s Travel Concierge is designed exclusively for high net worth individuals and companies who seek exclusive experiences, handled for them. We understand that time is your most valuable asset.</p>
+					<a href="/guides">
+						<button class="btn btn-sm btn-light border-0 bg-pc-dark rounded-pill fw-bold px-3 text-pc-light">See more</button>
+					</a>
+					</div>
+				</div>
 				<div class="col-lg-12 col-xl-9 order-2 order-xl-1">
 					<div class="row g-3 py-3 py-xl-0">
 						{
 						guidesPosts.slice(0,3).map((item, index) => (
 						<div class:list={[index === 2 ? 'col-md-12 col-lg-4' : 'col-md-6 col-lg-4']}>
-							<a href={`/news/${item.slug}/`}>
-								<div class="card rounded-5 bg-pc-light border-0 shadow position-relative">
+							<a href={`/guides/${item.slug}/`}>
+								<div class="card rounded-5 bg-pale-dogwood border-0 shadow position-relative">
 									<img src={item.data.imageUrl} class="card-img-top position-absolute top-0 start-0 z-0 w-100 h-100 object-fit rounded-5 p-3" style="filter: brightness(0.5)" alt="...">
 									<div class="card-img-overlay position-relative">
 									<div class="card-body min-vh-500 text-light d-flex flex-column justify-content-end align-items-start p-4">
@@ -324,13 +353,6 @@ const guidesPosts = await getCollection("guides");
 							</div>
 							))
 						}
-					</div>
-				</div>
-				<div class="col-lg-12 col-xl-3 order-1 order-xl-2">
-					<div class="d-flex flex-column justify-content-center align-items-start bg-pc-light h-100 min-vh-50 rounded-5 p-5">
-					<span class="badge rounded-pill fw-bold bg-pc-60 text-pc-dark py-2 px-3 mb-3">Prince collection guides</span>
-					<h3 class="fw-bold fs-1 lh-1">Prince <span class="text-pc-dark-60">guides</span></h3>
-					<p class="py-1">Prince Collection’s Travel Concierge is designed exclusively for high net worth individuals and companies who seek exclusive experiences, handled for them. We understand that time is your most valuable asset.</p>
 					</div>
 				</div>
 			</div>
@@ -348,7 +370,6 @@ const guidesPosts = await getCollection("guides");
 			<h3>Subscribe to the <span class="text-pc">Prince Collection</span> newsletter</h3>
 			<p class="mt-3 mb-4">You'll receive priority information about the newest luxury properties worldwide, exclusive reservations and deals through <span class="text-pc fw-bold">Prince Collection</span>, and unique destinations across the globe.</p>
 			<NewsletterForm newsletterBtn="btn-pc" newsletterClass="text-light" />
-			</Modal>
-		
-	</main>
+		</Modal>
 </Layout>
+
