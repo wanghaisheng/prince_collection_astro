@@ -32,7 +32,7 @@ collections:
         name: "galleryImages"
         widget: "list"
         fields:
-          - { label: "Source", name: "src", widget: "string" }
+          - { label: "Source", name: "src", widget: "image" }
           - { label: "Alt Text", name: "alt", widget: "string" }
 
 
