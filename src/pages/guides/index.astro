@@ -19,7 +19,7 @@ const [firstArticle, ...allArticles] = allPosts;
 					</div>
 
 					<!-- for some reason the firstArticle.data doesn't work, only straight to firstArticle.slug -->
-					<a href={`/news/${firstArticle.slug}/`}>
+					<a href={`/guides/${firstArticle.slug}/`}>
 						<button class="btn btn-dark fw-bold rounded-pill px-4 mt-3 shadow">Read article</button>
 					</a>
 				</div>
@@ -30,15 +30,16 @@ const [firstArticle, ...allArticles] = allPosts;
             
             <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3 p-4">
                 {
-                    allArticles.map((post, index) => (
+                    allPosts.map((post, index) => (
                         <div class="col">
-                    <a href={`/news/${post.slug}/`}>
+                    <a href={`/guides/${post.slug}/`}>
                         <div class="card bg-pc-light rounded-4 p-0 border-0 shadow" style="min-height: 500px">
-                            <img src={post.data.imageUrl} class="card-img-top rounded-top-4 w-100" style="object-fit: cover; height: 200px; filter: brightness(70%)" alt={post.data.imageAlt}>
+                            <img src={post.data.imageUrl} class="card-img-top rounded-top-4 w-100" style="object-fit: cover; height: 200px; filter: brightness(70%)" alt={post.data.imageAlt}
+							transition:name={`avatar ${post.slug} image`}>
 							<i class="bi bi-arrow-up-right-circle-fill text-pc-10 fs-1 position-absolute top-0 end-0 me-3 mt-2"></i>
                             <div class="card-body position-relative px-4 pb-4">
                                 <p class="small mb-2">{post.data.pubDate.toString().slice(0,10)}</p>
-                                <h5 class="card-title fw-bold mb-0">{post.data.title}</h5>
+                                <h5 class="card-title fw-bold mb-0" transition:name={`avatar ${post.slug} title`}>{post.data.title}</h5>
                                 <p class="small m-0 text-secondary mt-2 mb-0">By: {post.data.author}</p>
                                 <p class="card-text text-body-secondary pe-5">{post.data.description}</p>
                             </div>

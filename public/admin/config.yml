@@ -28,6 +28,16 @@ collections:
       - { label: "Image Alt text", name: "imageAlt", widget: "string" } # 
       - { label: "Tags", name: "tags", widget: "list", default: ["blog"] }
       - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Gallery"
+        name: "galleryImages"
+        widget: "list"
+        fields:
+          - { label: "Source", name: "src", widget: "string" }
+          - { label: "Alt Text", name: "alt", widget: "string" }
+
+
+
+
   - label: guides # Label used in the UI for the collection
     label_singular: guide # Label for singular post
     name: guides # Name of the collection used for various functionality in the CMS
