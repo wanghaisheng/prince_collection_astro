@@ -26,15 +26,12 @@ collections:
       - { label: 'Publish Date', name: 'pubDate', widget: 'datetime' }
       - { label: "Featured image", name: "imageUrl", widget: "image" } # Field Featured Image
       - { label: "Image Alt text", name: "imageAlt", widget: "string" } # 
-      - { label: "Category", name: "category", widget: "string", default: ["blog"] }
+      - { label: "Category", name: "category", widget: "string", default: "blog" }
       - { label: "Tags", name: "tags", widget: "list", default: ["blog"] }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Gallery"
-        name: "galleryImages"
-        widget: "list"
-        fields:
+      - { label: "Gallery", name: "galleryImages", widget: "list", fields:
           - { label: "Source", name: "src", widget: "image" }
-          - { label: "Alt Text", name: "alt", widget: "string" }
+          - { label: "Alt Text", name: "alt", widget: "string" } }
+      - { label: "Body", name: "body", widget: "markdown" }
 
 
 

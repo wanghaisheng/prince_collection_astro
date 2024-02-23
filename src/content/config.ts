@@ -55,23 +55,23 @@ const blog = defineCollection({
     })
   });
 
-  const authors = defineCollection({
-    type: 'data',
-    schema: z.object({
-        title: z.string(),
-        pubDate: z.date(),
-        description: z.string(),
-        author: z.string(),
-        imageUrl: z.string(),
-        imageAlt: z.string(),
-        tags: z.array(z.string())
-      })
-  });
+  // const authors = defineCollection({
+  //   type: 'data',
+  //   schema: z.object({
+  //       title: z.string(),
+  //       pubDate: z.date(),
+  //       description: z.string(),
+  //       author: z.string(),
+  //       imageUrl: z.string(),
+  //       imageAlt: z.string(),
+  //       tags: z.array(z.string())
+  //     })
+  // });
   
   export const collections = {
     'blog': blog,
     'guides': guides,
     'reviews': reviews,
     'news': news,
-    'authors': authors,
+    // 'authors': authors,
   };
