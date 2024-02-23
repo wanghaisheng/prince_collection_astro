@@ -5,7 +5,7 @@ import data from '../data/sitecontent.json';
 
 <Layout title={data.concierge.meta.title} description={data.concierge.meta.description}>
 	<main>
-		<div class="container-fluid px-0 pt-3">
+		<div class="container-fluid px-0 pt-3 text-body-secondary">
 			<div class="row min-vh-500">
 				<div class="col-lg-12 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center p-5 mb-0 mb-lg-4 mt-4 mt-lg-0">
                     <span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">{data.concierge.hero.badge}</span>
@@ -76,41 +76,22 @@ import data from '../data/sitecontent.json';
 		    </div>
 
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 px-5">
-                <div class="col">
-                    <div class="p-5 rounded-5 shadow-lg h-100">
-                    <h2 class="text-pc-dark fw-bold">01</h2>
-                    <h4 class="mt-1 mb-3 fw-900">Save time</h4> 
-                    <p>We take over the time-consuming task of planning, optimizing, and managing travel, allowing clients to focus on other priorities.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-5 rounded-5 shadow-lg h-100">
-                        <h2 class="text-pc-dark fw-bold">02</h2>
-                        <h4 class="mt-1 mb-3 fw-900">Maximize loyalty</h4> 
-                        <p>With our expertise in points, elite status, etc., we ensure clients make the most of their travels while flying the world’s best airlines and staying at world-class hotels.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-5 rounded-5 shadow-lg h-100">
-                        <h2 class="text-pc-dark fw-bold">03</h2>
-                        <h4 class="mt-1 mb-3 fw-900">Peace of mind</h4> 
-                        <p>Our 24/7 emergency support gives you the assurance that help is always available, no matter what unexpected situations arise during their travels.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-5 rounded-5 shadow-lg h-100">
-                        <h2 class="text-pc-dark fw-bold">04</h2>
-                        <h4 class="mt-1 mb-3 fw-900">Customized service</h4> 
-                        <p>Each travel strategy and trip is meticulously planned according to your preferences and goals, offering a fully personalized experience.</p>
-                    </div>
-                </div>
+                {data.concierge.section3.list.map((item, index) => (
+					<div class="col">
+						<div class="p-5 rounded-5 shadow-lg h-100">
+						<h2 class="text-pc-dark fw-bold">{item.badge}</h2>
+						<h4 class="mt-1 mb-3 fw-900">{item.title}</h4> 
+						<p>{item.content}</p>
+						</div>
+					</div>
+				))}
             </div>
 
             <div class="py-4"></div>
 
             <div class="row bg-pc-80 text-body-secondary py-5">
 				<div class="col-lg-8 offset-lg-2 p-5 text-center">
-					<h2 class="display-4 fw-bold lh-1">Join the <span class="text-pc-dark">Prince Collection</span> Community</h2>
+					<h2 class="display-4 fw-bold lh-1"></h2>
 					<p class="fs-5 my-3 col-md-8 mx-auto">Sign up for the Prince Collection newsletter to get exclusive deals, news, insights and resources to help you travel in style.</p>
 					<button class="btn bg-pc-dark text-light rounded-pill px-4 shadow">Sign up</button>
 				</div>

@@ -2,7 +2,6 @@
 import Drawer from './TheDrawer.astro';
 import BookingForm from '../components/BookingForm.astro';
 import Modal from '../components/TheModal.astro';
-import { Image } from 'astro:assets';
 import crown from '../assets/img/logos/logo-crown.png';
 import NewsletterForm from './NewsletterForm.astro';
 import navData from '../data/nav.json';
@@ -27,7 +26,6 @@ const { icon, modalTrigger } = Astro.props
 				<li class="nav-item">
 					<button class="btn btn-dark me-2 px-3 rounded-3" data-bs-toggle="modal" data-bs-target="#navSignup">
 						<i class="bi bi-send-plus fs-5"></i>
-						
 					</button>
 				</li>
 
