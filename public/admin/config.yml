@@ -28,9 +28,10 @@ collections:
       - { label: "Image Alt text", name: "imageAlt", widget: "string" } # 
       - { label: "Category", name: "category", widget: "string", default: "blog" }
       - { label: "Tags", name: "tags", widget: "list", default: ["blog"] }
-      - { label: "Gallery", name: "galleryImages", widget: "list", fields:
-          - { label: "Source", name: "src", widget: "image" }
-          - { label: "Alt Text", name: "alt", widget: "string" } }
+      - { label: "Gallery",   summary: '{{fields.image}}', name: "galleryImages", widget: "list", fields:
+        - { label: "Source", name: "src", widget: "image" }
+        - { label: "Alt Text", name: "alt", widget: "string" } 
+        }
       - { label: "Body", name: "body", widget: "markdown" }
 
 
