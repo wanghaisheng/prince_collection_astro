@@ -7,7 +7,7 @@ import crown from '../../assets/img/logos/logo-crown.png'
 
 // export const prerender = true;
 
-export async function getStaticPaths() {l
+export async function getStaticPaths() {
     const allPosts = await Astro.glob('.././[fc nm,.m]./pages/blog/*.mdx');
 
   return allPosts.map((post) => {
