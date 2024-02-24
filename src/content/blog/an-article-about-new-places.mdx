@@ -16,6 +16,8 @@ tags:
   - travel
   - europe
 ---
+import NewsletterPost from '../../components/NewsletterPost.astro';
+
 # Lorem ipsum titlesum
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi quis commodo. Blandit libero volutpat sed cras ornare. Sit amet est placerat in egestas erat imperdiet sed euismod. Mauris nunc congue nisi vitae suscipit tellus mauris. Donec ultrices tincidunt arcu non sodales neque sodales. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Gravida neque convallis a cras semper auctor neque. In arcu cursus euismod quis viverra nibh cras pulvinar. Aliquam ultrices sagittis orci a scelerisque purus semper eget duis. Magna sit amet purus gravida quis blandit turpis cursus in. Enim diam vulputate ut pharetra sit amet aliquam id. Diam ut venenatis tellus in metus vulputate eu. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Aliquet porttitor lacus luctus accumsan tortor. Pharetra pharetra massa massa ultricies. Magnis dis parturient montes nascetur ridiculus mus mauris vitae.
@@ -23,15 +25,27 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ## HTML 3x grid
 
 <div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
-<div class="col">
-<img alt="" class="w-100 h-100 object-fit p-1 m-0 shadow" style="min-height: 250px" src="/images/uploads/img_3693.jpeg">
+{
+	frontmatter.galleryImages.map((item) => (
+    <div class="col">
+      <img alt="" class="w-100 h-100 object-fit p-1 m-0 shadow" style="min-height: 250px" src={item} />
+    </div>
+))
+}
 </div>
-<div class="col">
-<img alt="" class="w-100 object-fit p-1 m-0 shadow" style="min-height: 300px" src="/images/uploads/img_3693.jpeg">
-</div>
-<div class="col">
-<img alt="" class="w-100 object-fit p-1 m-0 shadow" style="min-height: 300px" src="/images/uploads/img_3693.jpeg">
-</div>
+
+<NewsletterPost />
+
+<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
+  <div class="col">
+    <img alt="" class="w-100 object-fit p-1 m-0 shadow" style="min-height: 300px" src="/images/uploads/img_3693.jpeg" />
+  </div>
+  <div class="col">
+    <img alt="" class="w-100 object-fit p-1 m-0 shadow" style="min-height: 300px" src="/images/uploads/img_3693.jpeg" />
+  </div>
+  <div class="col">
+    <img alt="" class="w-100 object-fit p-1 m-0 shadow" style="min-height: 300px" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+  </div>
 </div>
 
 ## ridiculus mus mauris vitae
@@ -41,10 +55,6 @@ Quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mus mauris vitae u
 ## Faucibus nisl tincidunt
 
 Integer feugiat scelerisque varius morbi enim nunc faucibus. Accumsan tortor posuere ac ut consequat semper viverra. Consectetur a erat nam at lectus urna duis convallis. Ut ornare lectus sit amet. Et leo duis ut diam. Sed pulvinar proin gravida hendrerit lectus a. Ac tincidunt vitae semper quis lectus nulla at. Ipsum consequat nisl vel pretium lectus quam id leo. Enim sit amet venenatis urna. Purus non enim praesent elementum facilisis leo vel fringilla est. Varius sit amet mattis vulputate enim nulla aliquet. Sollicitudin aliquam ultrices sagittis orci. Risus at ultrices mi tempus imperdiet. Sit amet nisl purus in mollis nunc sed. Eros donec ac odio tempor orci. Id consectetur purus ut faucibus pulvinar elementum.
-
-| Sunset Kinton                              | Kinton                                                    |
-| ------------------------------------------ | --------------------------------------------------------- |
-| ![](/images/uploads/sunset_wallpaper.jpeg) | ![](/images/uploads/kimpton-saint-george-toronto-45.jpeg) |
 
 ## Another H2
 
