@@ -20,15 +20,28 @@ tags:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi quis commodo. Blandit libero volutpat sed cras ornare. Sit amet est placerat in egestas erat imperdiet sed euismod. Mauris nunc congue nisi vitae suscipit tellus mauris. Donec ultrices tincidunt arcu non sodales neque sodales. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Gravida neque convallis a cras semper auctor neque. In arcu cursus euismod quis viverra nibh cras pulvinar. Aliquam ultrices sagittis orci a scelerisque purus semper eget duis. Magna sit amet purus gravida quis blandit turpis cursus in. Enim diam vulputate ut pharetra sit amet aliquam id. Diam ut venenatis tellus in metus vulputate eu. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Aliquet porttitor lacus luctus accumsan tortor. Pharetra pharetra massa massa ultricies. Magnis dis parturient montes nascetur ridiculus mus mauris vitae.
 
+<!-- x3 -->
+| | | |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="1604" alt="" class="p-1 shadow" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"> |  <img width="1604" alt="" class="p-1 shadow" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">|<img width="1604" alt="" class="p-1 shadow" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
 ## ridiculus mus mauris vitae
 
 Quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mus mauris vitae ultricies leo integer malesuada nunc vel. Penatibus et magnis dis parturient montes nascetur ridiculus mus. Ut placerat orci nulla pellentesque dignissim enim sit. Eleifend mi in nulla posuere. Tortor dignissim convallis aenean et tortor. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Scelerisque fermentum dui faucibus in ornare quam. Faucibus nisl tincidunt eget nullam. Quam nulla porttitor massa id.
+
+<!-- x4 -->
+| | | | |
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="1604" alt="" class="p-1 shadow" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"> |  <img width="1604" alt="" class="p-1 shadow" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">|<img width="1604" alt="" class="p-1 shadow" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">|<img width="1604" alt="" class="p-1 shadow" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
 
 ## Faucibus nisl tincidunt
 
 Integer feugiat scelerisque varius morbi enim nunc faucibus. Accumsan tortor posuere ac ut consequat semper viverra. Consectetur a erat nam at lectus urna duis convallis. Ut ornare lectus sit amet. Et leo duis ut diam. Sed pulvinar proin gravida hendrerit lectus a. Ac tincidunt vitae semper quis lectus nulla at. Ipsum consequat nisl vel pretium lectus quam id leo. Enim sit amet venenatis urna. Purus non enim praesent elementum facilisis leo vel fringilla est. Varius sit amet mattis vulputate enim nulla aliquet. Sollicitudin aliquam ultrices sagittis orci. Risus at ultrices mi tempus imperdiet. Sit amet nisl purus in mollis nunc sed. Eros donec ac odio tempor orci. Id consectetur purus ut faucibus pulvinar elementum.
 
-![image alt text](/images/uploads/sunset_wallpaper.jpeg "Image title")
+
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](/images/uploads/sunset_wallpaper.jpeg)  |  ![](/images/uploads/sunset_wallpaper.jpeg)
 
 ## Another H2
 
