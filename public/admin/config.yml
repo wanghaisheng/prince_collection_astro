@@ -11,7 +11,7 @@ display_url: https://prince-collection.netlify.app/ # Replace with site's URL
 
 logo_url: /images/logo-crown.png # Replace with path to logo
 
-slug: { { slug } } # The URL should be the name of the title of the post/document
+slug: {{slug}} # The URL should be the name of the title of the post/document
 
 collections:
   - label: blog # Label used in the UI for the collection
