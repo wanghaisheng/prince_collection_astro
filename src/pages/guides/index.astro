@@ -3,61 +3,75 @@ import Layout from '../../layouts/Layout.astro';
 import { getCollection } from "astro:content";
 const allPosts = await getCollection("guides");
 const [firstArticle, ...allArticles] = allPosts;
+
+
+const { index } = Astro.props
+const slideAnim = {
+  old: {
+    name: 'slideDown',
+    duration: '0.6s',
+    easing: 'ease-out',
+    fillMode: 'backwards',
+  },
+  new: {
+    name: 'slideUp',
+    duration: '0.6s',
+    delay: `${index * 0.2 + 0.1}s`,
+    easing: 'ease-out',
+    fillMode: 'backwards',
+  },
+}
+const verticalSlide = {
+  forwards: slideAnim,
+  backwards: slideAnim,
+}
 ---
 
 <Layout title="Prince Collection | Guides" description="Prince Collection guides to exclusive travel experiences.">
-		<div class="container-fluid px-0">
-			<div class="row min-vh-100 bg-pale-dogwood">
-				<div class="col-lg-6 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center p-5 mt-5 mt-lg-0">
-					<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-pc-10 py-2 px-3" style="font-size: 15px;">Prince Collection Guides</span>
-					<h1 class="display-2 col-lg-8 font-inter text-pc-dark-80 fw-900 mb-3 mt-4" style="letter-spacing: -2px; line-height: 90%;">{firstArticle.data.title}</h1>
-					<p class="col-md-7 fs-5 text-body-secondary mt-3 mb-2">{firstArticle.data.description}</p>
+	<div class="container-fluid px-0">
+		<div class="row min-vh-100 bg-pale-dogwood" transition:animate={verticalSlide}>
+			<div class="col-lg-6 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center p-5 mt-5 mt-lg-0" transition:animate={verticalSlide}>
+				<span class="d-inline-block badge rounded-pill fw-bold bg-pc-dark-80 text-pc-10 py-2 px-3" style="font-size: 15px;" transition:animate={verticalSlide}>Prince Collection Guides</span>
+				<h1 class="display-2 col-lg-8 font-inter text-pc-dark-80 fw-900 mb-3 mt-4" style="letter-spacing: -2px; line-height: 90%;" transition:animate={verticalSlide}>{firstArticle.data.title}</h1>
+				<p class="col-md-7 fs-5 text-body-secondary mt-3 mb-2" transition:animate={verticalSlide}>{firstArticle.data.description}</p>
 
-					<div class="py-2">
-						<p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Written by</span> {firstArticle.data.author}</p>
-						<p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {firstArticle.data.pubDate.toString().slice(0,10)}</p>
-					</div>
-
-					<!-- for some reason the firstArticle.data doesn't work, only straight to firstArticle.slug -->
-					<a href={`/guides/${firstArticle.slug}/`}>
-						<button class="btn btn-dark fw-bold rounded-pill px-4 mt-3 shadow">Read article</button>
-					</a>
+				<div class="py-2" transition:animate={verticalSlide}>
+					<p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Written by</span> {firstArticle.data.author}</p>
+					<p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {firstArticle.data.pubDate.toString().slice(0,10)}</p>
 				</div>
-				<div class="col-lg-6">
-					<img src={firstArticle.data.imageUrl} class=" w-100 h-100" style="object-fit: cover;" alt={firstArticle.data.imageAlt}>
-				</div>
+				<a href={`/news/${firstArticle.slug}/`}>
+					<button class="btn btn-dark fw-bold rounded-pill px-4 mt-3 shadow" transition:animate={verticalSlide}>Read article</button>
+				</a>
 			</div>
-            
-            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3 p-4">
-                {
-                    allPosts.map((post) => (
-                        <div class="col">
-                    <a href={`/guides/${post.slug}/`}>
-                        <div class="card bg-pc-light rounded-4 p-0 border-0 shadow" style="min-height: 500px">
-                            <img src={post.data.imageUrl} class="card-img-top rounded-top-4 w-100" style="object-fit: cover; height: 200px; filter: brightness(70%)" alt={post.data.imageAlt}>
-							<i class="bi bi-arrow-up-right-circle-fill text-pc-10 fs-1 position-absolute top-0 end-0 me-3 mt-2"></i>
-                            <div class="card-body position-relative px-4 pb-4">
-                                <p class="small mb-2">{post.data.pubDate.toString().slice(0,10)}</p>
-                                <h5 class="card-title fw-bold mb-0">{post.data.title}</h5>
-                                <p class="small m-0 text-secondary mt-2 mb-0">By: {post.data.author}</p>
-                                <p class="card-text text-body-secondary pe-5">{post.data.description}</p>
-                            </div>
-							<div class="card-footer p-3">
-								<div class="d-flex flex-row flex-wrap" style="text-wrap: pretty;">
-                                    {
-                                        post.data.tags.map((tag) => (
-                                            <p class="small text-pc-dark-80 me-1 my-0">#{tag}</p>
-                                        ))
-                                    }
-                                </div>
+			<div class="col-lg-6" transition:animate={verticalSlide}>
+				<img src={firstArticle.data.imageUrl} class=" w-100 h-100" style="object-fit: cover;" alt={firstArticle.data.imageAlt}>
+			</div>
+		</div>
+				
+		<div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3 p-4">
+			{allPosts.map((post) => (
+			<div class="col">
+				<a href={`/guides/${post.slug}/`}>
+					<div class="card bg-pc-light rounded-4 p-0 border-0 shadow" style="min-height: 500px">
+						<img src={post.data.imageUrl} class="card-img-top rounded-top-4 w-100" style="object-fit: cover; height: 200px; filter: brightness(70%)" alt={post.data.imageAlt}>
+						<i class="bi bi-arrow-up-right-circle-fill text-pc-10 fs-1 position-absolute top-0 end-0 me-3 mt-2"></i>
+						<div class="card-body position-relative px-4 pb-4">
+							<p class="small mb-2">{post.data.pubDate.toString().slice(0,10)}</p>
+							<h5 class="card-title fw-bold mb-0">{post.data.title}</h5>
+							<p class="small m-0 text-secondary mt-2 mb-0">By: {post.data.author}</p>
+							<p class="card-text text-body-secondary pe-5">{post.data.description}</p>
+						</div>
+						<div class="card-footer p-3">
+							<div class="d-flex flex-row flex-wrap" style="text-wrap: pretty;">
+								{post.data.tags.map((tag) => (
+									<p class="small text-pc-dark-80 me-1 my-0">#{tag}</p>
+								))}
 							</div>
-                        </div>
-                
-                    </div>
-                </a>
-                </div>
-			)
-			)}
-            </div>
-        </div>
-        </Layout>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		))}
+	</div>
+</Layout>

@@ -4,33 +4,52 @@ import { getCollection } from "astro:content";
 const allPosts = await getCollection("reviews");
 const [firstArticle, ...allArticles] = allPosts;
 
+const { index } = Astro.props
+const slideAnim = {
+  old: {
+    name: 'slideDown',
+    duration: '0.6s',
+    easing: 'ease-out',
+    fillMode: 'backwards',
+  },
+  new: {
+    name: 'slideUp',
+    duration: '0.6s',
+    delay: `${index * 0.2 + 0.1}s`,
+    easing: 'ease-out',
+    fillMode: 'backwards',
+  },
+}
+const verticalSlide = {
+  forwards: slideAnim,
+  backwards: slideAnim,
+}
 ---
 
 <Layout title="Prince Collection | Reviews" description="Prince Collection reviews.">
 	<div class="container-fluid px-0">
-		<div class="row min-vh-100 bg-pc-dark-20">
-			<div class="col-lg-6 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center p-5 mt-5 mt-lg-0">
-				<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-pc-10 py-2 px-3" style="font-size: 15px;">Prince Collection Reviews</span>
-				<h1 class="display-2 col-lg-10 col-xl-8 font-inter text-pc-dark-80 fw-900 mb-3 mt-4" style="letter-spacing: -2px; line-height: 90%;">{firstArticle.data.title}</h1>
-				<p class="col-md-7 fs-5 text-body-secondary mt-3 mb-2">{firstArticle.data.description}</p>
-				<div class="py-2">
+		<div class="row min-vh-100 bg-pc-dark-20" transition:animate={verticalSlide}>
+			<div class="col-lg-6 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center p-5 mt-5 mt-lg-0" transition:animate={verticalSlide}>
+				<span class="d-inline-block badge rounded-pill fw-bold bg-pc-dark-80 text-pc-10 py-2 px-3" style="font-size: 15px;" transition:animate={verticalSlide}>Prince Collection Reviews</span>
+				<h1 class="display-2 col-lg-8 font-inter text-pc-dark-80 fw-900 mb-3 mt-4" style="letter-spacing: -2px; line-height: 90%;" transition:animate={verticalSlide}>{firstArticle.data.title}</h1>
+				<p class="col-md-7 fs-5 text-body-secondary mt-3 mb-2" transition:animate={verticalSlide}>{firstArticle.data.description}</p>
+
+				<div class="py-2" transition:animate={verticalSlide}>
 					<p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Written by</span> {firstArticle.data.author}</p>
 					<p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {firstArticle.data.pubDate.toString().slice(0,10)}</p>
 				</div>
-				for some reason the firstArticle.data doesn't work, only straight to firstArticle.slug
-				<a href={`/reviews/${firstArticle.slug}/`}>
-					<button class="btn btn-dark fw-bold rounded-pill px-4 mt-3 shadow">Read article</button>
+				<a href={`/news/${firstArticle.slug}/`}>
+					<button class="btn btn-dark fw-bold rounded-pill px-4 mt-3 shadow" transition:animate={verticalSlide}>Read article</button>
 				</a>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6" transition:animate={verticalSlide}>
 				<img src={firstArticle.data.imageUrl} class=" w-100 h-100" style="object-fit: cover;" alt={firstArticle.data.imageAlt}>
 			</div>
 		</div>
 		
 		<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4 g-3 p-4">
-			{
-				allArticles.map((post) => (
-					<div class="col">
+			{allArticles.map((post) => (
+			<div class="col">
 				<a href={`/reviews/${post.slug}/`}>
 					<div class="card bg-pc-light rounded-4 p-0 border-0 shadow" style="min-height: 500px">
 						<img src={post.data.imageUrl} class="card-img-top rounded-top-4 w-100" style="object-fit: cover; height: 200px; filter: brightness(70%)" alt={post.data.imageAlt}>
@@ -43,18 +62,15 @@ const [firstArticle, ...allArticles] = allPosts;
 						</div>
 						<div class="card-footer p-3">
 							<div class="d-flex flex-row flex-wrap" style="text-wrap: pretty;">
-								{
-									post.data.tags.map((tag) => (
-										<p class="small text-pc-dark-80 me-1 my-0">#{tag}</p>
-									))
-								}
+								{post.data.tags.map((tag) => (
+									<p class="small text-pc-dark-80 me-1 my-0">#{tag}</p>
+								))}
 							</div>
 						</div>
 					</div>
-				</div>
-			</a>
+				</a>
+			</div>
 		</div>
 		))}
-		</div>
 	</div>
 </Layout>
