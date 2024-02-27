@@ -4,6 +4,8 @@ import Layout from '../../layouts/Layout.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
 import { Image } from 'astro:assets';
 
+import { fade } from 'astro:transitions';
+
 export const prerender = true;
 export async function getStaticPaths() {
   const guidesEntries = await getCollection('guides');
@@ -48,6 +50,27 @@ function emailPage(title) {
   return emailShare;
 }
 const url = encodeURIComponent(Astro.url.pathname);
+
+const { index } = Astro.props
+const slideAnim = {
+  old: {
+    name: 'slideDown',
+    duration: '0.3s',
+    easing: 'ease-out',
+    fillMode: 'backwards',
+  },
+  new: {
+    name: 'slideUp',
+    duration: '0.3s',
+    delay: `${index * 0.1 + 0.1}s`,
+    easing: 'ease-out',
+    fillMode: 'backwards',
+  },
+}
+// const verticalSlide = {
+//   forwards: animSlideUp,
+//   backwards: animSlideUp,
+// }
 ---
 
 <Layout title={post.data.title} description={post.data.description} image={post.data.imageUrl}>
@@ -55,19 +78,19 @@ const url = encodeURIComponent(Astro.url.pathname);
         <div class="row min-vh-500 pt-5">
             <div class="col-lg-7 d-flex flex-column justify-content-end align-items-start text-start p-5">
             <a href="/guides">
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center" transition:animate={fade({ duration: '0.2s' })}>
                     <i class="bi bi-arrow-left text-black-50 fs-1"></i>
                     <h6 class="ms-2 my-0 text-black-50 fw-light">Back to guides</h6>
                 </div>
             </a>
-            <h1 class="display-1 font-inter text-secondary fw-900 mb-3 mt-2 animate-in" style="letter-spacing: -2px; line-height: 90%;" transition:name={`avatar ${post.slug} title`}>{post.data.title}</h1>
-            <p class="fs-5 col-md-7 text-body-secondary mb-3 mt-3">{post.data.description}</p>
+            <h1 class="display-1 font-inter text-secondary fw-900 mb-3 mt-2" style="letter-spacing: -2px; line-height: 90%;" transition:animate={fade({duration: '.4s'})}>{post.data.title}</h1>
+            <p class="fs-5 col-md-7 text-body-secondary mb-3 mt-3" transition:animate={fade({duration: '.6s'})}>{post.data.description}</p>
                 <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Written by</span> {post.data.author}</p>
                 <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {post.data.pubDate.toString().slice(0,10)}</p>
                 <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Read time </span>  {wordCount(post.body)} mins</p>
             </div>
             <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5 pe-5">
-                <Image class="w-100 object-fit min-vh-50 rounded-end-5 shadow animate-in" width="700" height="500" src={post.data.imageUrl} alt="Prince Collection logo" transition:name={`avatar ${post.slug} image`}/>
+                <Image class="w-100 object-fit min-vh-50 rounded-end-5 shadow animate-in" width="700" height="500" src={post.data.imageUrl} alt="Prince Collection logo"/>
             </div>
         </div>
     </div>
@@ -156,7 +179,7 @@ const url = encodeURIComponent(Astro.url.pathname);
                 <div class="py-2">
                     <h4 class="fs-5 fw-bold text-pc-dark">Newsletter</h4>
                     <p>Join the Prince Collection newsletter to get weekly updates delivered straight to your inbox.</p>
-                    <NewsletterForm newsletterBtn="btn-pc" />
+                    <NewsletterForm newsletterBtn="btn-pc px-4" />
                 </div>
                 <hr>
                 <div class="py-2">
@@ -208,7 +231,7 @@ const url = encodeURIComponent(Astro.url.pathname);
 
   <style>
     .animate-in {
-        animation: animate-in 0.5s ease-in-out;
+        animation: animate-in 1s ease-in-out;
       }
       @keyframes animate-in {
         0% {

@@ -16,25 +16,11 @@ tags:
   - travel
   - europe
 ---
-import NewsletterPost from '../../components/NewsletterPost.astro';
-
 # Lorem ipsum titlesum
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi quis commodo. Blandit libero volutpat sed cras ornare. Sit amet est placerat in egestas erat imperdiet sed euismod. Mauris nunc congue nisi vitae suscipit tellus mauris. Donec ultrices tincidunt arcu non sodales neque sodales. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Gravida neque convallis a cras semper auctor neque. In arcu cursus euismod quis viverra nibh cras pulvinar. Aliquam ultrices sagittis orci a scelerisque purus semper eget duis. Magna sit amet purus gravida quis blandit turpis cursus in. Enim diam vulputate ut pharetra sit amet aliquam id. Diam ut venenatis tellus in metus vulputate eu. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Aliquet porttitor lacus luctus accumsan tortor. Pharetra pharetra massa massa ultricies. Magnis dis parturient montes nascetur ridiculus mus mauris vitae.
 
 ## HTML 3x grid
-
-<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
-{
-	frontmatter.galleryImages.map((item) => (
-    <div class="col">
-      <img alt="" class="w-100 h-100 object-fit p-1 m-0 shadow" style="min-height: 250px" src={item} />
-    </div>
-))
-}
-</div>
-
-<NewsletterPost />
 
 <div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
   <div class="col">
@@ -51,6 +37,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ## ridiculus mus mauris vitae
 
 Quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mus mauris vitae ultricies leo integer malesuada nunc vel. Penatibus et magnis dis parturient montes nascetur ridiculus mus. Ut placerat orci nulla pellentesque dignissim enim sit. Eleifend mi in nulla posuere. Tortor dignissim convallis aenean et tortor. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Scelerisque fermentum dui faucibus in ornare quam. Faucibus nisl tincidunt eget nullam. Quam nulla porttitor massa id.
+
+## HTML 2x grid
+
+<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
+  <div class="col-md-6 col-lg-4">
+    <img alt="" class="w-100 object-fit p-1 m-0 shadow" style="min-height: 300px" src="/images/uploads/img_3693.jpeg" />
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <img alt="" class="w-100 object-fit p-1 m-0 shadow" style="min-height: 300px" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+  </div>
+  <div class="col-md-12 col-lg-4">
+    <img alt="" class="w-100 object-fit p-1 m-0 shadow" style="min-height: 300px" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+  </div>
+</div>
 
 ## Faucibus nisl tincidunt
 

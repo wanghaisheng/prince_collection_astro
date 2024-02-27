@@ -19,8 +19,6 @@ tags:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat velit scelerisque in dictum non consectetur a erat. Fermentum posuere urna nec tincidunt praesent semper feugiat. Commodo sed egestas egestas fringilla phasellus faucibus. Fusce id velit ut tortor pretium viverra suspendisse potenti nullam. Tempus imperdiet nulla malesuada pellentesque elit eget. Quam vulputate dignissim suspendisse in est ante in nibh. Adipiscing elit pellentesque habitant morbi tristique senectus et netus et. Blandit volutpat maecenas volutpat blandit aliquam etiam erat. Dictum sit amet justo donec enim diam vulputate ut pharetra. Ipsum a arcu cursus vitae congue mauris. Neque laoreet suspendisse interdum consectetur.
 
-
-
 > Odio morbi quis commodo odio aenean sed adipiscing. Dictum sit amet justo donec enim. Sagittis eu volutpat odio facilisis mauris sit. Id porta nibh venenatis cras sed felis eget velit. Diam quam nulla porttitor massa. Ut eu sem integer vitae justo eget. Scelerisque varius morbi enim nunc faucibus a. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Pellentesque habitant morbi tristique senectus et. In metus vulputate eu scelerisque felis imperdiet proin fermentum.
 
 ## Subtitle

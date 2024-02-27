@@ -1,8 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Modal from '../components/TheModal.astro';
-import NewsletterForm from '../components/NewsletterForm.astro';
-import { Image } from 'astro:assets';
+import data from '../data/sitecontent.json';
 import { getCollection } from "astro:content";
 const newsPosts = await getCollection("news");
 const reviewsPosts = await getCollection("reviews");
@@ -11,7 +9,7 @@ const guidesPosts = await getCollection("guides");
 <script>
 	// https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play
 	// astro reinit script in SPA mode w/ astro:page-load
-	document.addEventListener('astro:page-load', () => {
+	document.addEventListener('astro:after-swap', () => {
 		let videoElem = document.getElementById("heroVideo");
 		let playButton = document.getElementById("playbutton");
 
@@ -62,17 +60,14 @@ const guidesPosts = await getCollection("guides");
 				</div>
 			</div> -->
 
-			<!-- fullscreen minimal horizontal logo 
-				<div class="row min-vh-100">
+			<!-- fullscreen minimal horizontal logo  -->
+				<!-- <div class="row min-vh-100">
 				<div class="col-lg-8 offset-lg-2 d-flex flex-column align-items-center justify-content-center text-body-secondary">
 						<img style="width: 60px;" class="h-auto ms-0 me-1" src="/images/logos/logo-crown.png" alt="Prince Collection crown logo">
 						<h1 class="display-1 fw-bold text-uppercase lh-1 m-0" style="font-family: 'Gloock'">Prince<span class="text-uppercase text-secondary" style="font-family: 'Helvetica Neue', helvetica, Arial; font-weight: 100">Collection</span></h1>
-						<div class="d-flex">
-							<button class="btn bg-pc-20 text-pc-dark fw-bold px-4 me-2">Book travel</button>
-							<button class="btn bg-pc-20 text-pc-dark fw-bold px-4">Concierge</button>
-							<button class="btn bg-pc-20 text-pc-dark fw-bold px-4">News</button>
-							<button class="btn bg-pc-20 text-pc-dark fw-bold px-4">Reviews</button>
-						</div>
+						<h1 class="display-1 fw-bold text-uppercase lh-1 m-0 text-pc-dark" style="font-family: 'Gloock'">The<span class="text-uppercase text-secondary" style="font-family: 'Helvetica Neue', helvetica, Arial; font-weight: 100">New</span></h1>
+						<h1 class="display-1 fw-bold text-uppercase lh-1 m-0" style="font-family: 'Gloock'">Standard<span class="text-uppercase text-secondary" style="font-family: 'Helvetica Neue', helvetica, Arial; font-weight: 100">in</span></h1>
+						<h1 class="display-1 fw-bold text-uppercase lh-1 m-0" style="font-family: 'Gloock'">Luxury<span class="text-uppercase text-secondary" style="font-family: 'Helvetica Neue', helvetica, Arial; font-weight: 100">Travel</span></h1>
 				</div>
 			</div> -->
 
@@ -83,22 +78,30 @@ const guidesPosts = await getCollection("guides");
 						<h1 class="fw-bold text-uppercase lh-1 mt-2 mb-0">Prince</h1>
 						<h4 class="text-uppercase text-secondary fw-light" style="font-family: 'Helvetica Neue'">Collection</h4>
 					</div> -->
-					<img class="mb-4" style="width: 200px;" src="/images/pc-logo-black.jpeg" alt="Prince collection logo">
-					<p class="lh-1 mb-4 mt-0 text-uppercase" style="font-size: 12vmin;font-family: 'Helvetica Neue';font-weight: 100;">The new standard in luxury travel</p>
-					<nav class="nav nav-fill d-flex mx-auto">
+					<img class="mb-4" style="width: 200px;" src="/images/pc-logo-black.jpeg" alt="Prince collection logo" data-aos="fade-up">
+					<!-- <h1 class="lh-1 mb-4 mt-0 text-uppercase" style="font-size: 12vmin;font-family: 'Helvetica Neue';font-weight: 100;">
+					{data.home.hero.titleArray.map((item, index) => (
+						<div class="d-inline-block" data-aos="fade-up" data-aos-delay={index * 100}>
+						<span>{item}&nbsp;</span>
+						</div>
+					))}
+					</h1> -->
+					
+					<h1 class="lh-1 mb-4 mt-0 text-uppercase" style="font-size: 12vmin;font-family: 'Helvetica Neue';font-weight: 100;" data-aos="fade-up">{data.home.hero.title}</h1>
+					<nav class="nav nav-fill d-flex mx-auto" data-aos="fade-up">
 						<a class="nav-link p-0 me-2" href="/book">
-							<button class="btn btn-light text-pc-dark bg-pc-10 rounded-pill fw-bold px-4">Book your hotel</button>
+							<button class="btn btn-light text-pc-dark bg-pc-10 rounded-pill fw-bold px-4">{data.home.hero.button1}</button>
 						</a>
 						<a class="nav-link p-0 me-2" href="/concierge">
-							<button class="btn btn-light text-pc-dark bg-pc-10 rounded-pill fw-bold px-4">About us</button>
+							<button class="btn btn-light text-pc-dark bg-pc-10 rounded-pill fw-bold px-4">{data.home.hero.button2}</button>
 						</a>
 					</nav>
 				</div>
-				<div class="col-lg-12 px-5 pb-5 position-relative">
+				<div class="col-lg-12 px-5 pb-5 position-relative" data-aos="fade-up" data-aos-delay="200">
 					<button class="btn btn-link position-absolute top-0 start-25 m-3 z-1">
 						<i id="playbutton" class="bi bi-play-circle display-1 text-pc" style="filter:drop-shadow(2px 2px 5px #222222); transition: all 0.3s ease-in-out"></i>
 					</button>
-					<video id="heroVideo" class="w-100 object-fit position-relative shadow rounded-4 min-vh-50" width="100%" height="600" muted>
+					<video id="heroVideo" preload="none" class="w-100 object-fit position-relative shadow rounded-4 min-vh-50" width="100%" height="600" poster="/images/video/pc-video-placeholder.png" muted loop >
 						<source src="/images/video/pc-hero-video-min.mp4" type="video/mp4">
 					  	Your browser does not support the video tag. Please update your browser or try Chrome, Firefox, or Safari.
 					</video>
@@ -121,49 +124,39 @@ const guidesPosts = await getCollection("guides");
 
 			<div class="row py-5 bg-pc-60">
 				<div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center text-body-secondary p-5">
-					<span class="badge rounded-pill fw-bold bg-pc-dark text-pc-10 py-2 px-3">Prince Collection</span>
-					<h2 class="display-4 fw-bold lh-1 mb-2 mt-3">Travel better, easier</span>, and in more style with <span class="text-pc-dark">Prince Collection</h2>
-					<p class="fs-5">Prince Collection’s Travel Concierge is designed exclusively for companies and individuals who require exclusive travel arrangements handled for them. Our expertise lies in handling the nuances of travel, ensuring a seamless and extraordinary journey from start to finish.</p>
-					<a href="/concierge">
-						<button class="btn bg-pc-dark text-light fw-bold rounded-pill px-4 shadow">Learn more</button>
+					<span class="badge rounded-pill fw-bold bg-pc-dark text-pc-10 py-2 px-3" data-aos="fade-up">{data.home.intro.badge}</span>
+					<h2 class="display-4 fw-bold lh-1 mb-2 mt-3" data-aos="fade-up" data-aos-delay="200"><Fragment set:html={data.home.intro.title}/></h2>
+					<p class="fs-5" data-aos="fade-up" data-aos-delay="400">{data.home.intro.content}</p>
+					<a href="/concierge" data-aos="fade-up" data-aos-delay="600">
+						<button class="btn bg-pc-dark text-light fw-bold rounded-pill px-4 shadow">{data.home.intro.button}</button>
 					</a>
 				</div>
 			</div>
 
+			<!-- partner logos -->
+
 			<div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 p-5 bg-pc-light">
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/stars.webp" style="width: 120px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/ihg.webp" style="width: 140px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/peninsula.webp" style="width: 140px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/luxurycircle.webp" style="width: 120px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/impresario.webp" style="width: 140px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/step.webp" style="width: 140px; filter: brightness(0);" alt="">
-				</div>
+				{
+					data.home.logos1.map((item, index) => (
+					<div class="col d-flex my-auto text-center p-3" style="filter: brightness(0);">
+						<img src={item.url} data-aos="fade-up" data-aos-delay={index * 100} style={index === 0 || index === 2 ? 'width: 120px;' : 'width: 140px'} alt={item.alt}>
+					</div>
+				))}
 			</div>
 
-			<!-- articles -->
+			<!-- News articles -->
 
 			<div class="row py-5">
 				<div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center text-body-secondary px-5">
-					<span class="badge rounded-pill fw-bold bg-pc-dark text-pc-10 py-2 px-3">Prince Collection News</span>
-					<h2 class="display-4 fw-bold lh-1 mb-2 mt-3">The latest in luxury travel</h2>
-					<p class="fs-5 col-lg-8 text-balance mb-0">Get exclusive content, breaking stories, and the most in depth information about the luxury travel space spanning hotels and accomodation, flights and transportation, restaurants, and more.</p>
+					<span class="badge rounded-pill fw-bold bg-pc-dark text-pc-10 py-2 px-3" data-aos="fade-up">{data.home.news.badge}</span>
+					<h2 class="display-4 fw-bold lh-1 mb-2 mt-3" data-aos="fade-up" data-aos-delay="200">{data.home.news.title}</h2>
+					<p class="fs-5 col-lg-8 text-balance mb-0" data-aos="fade-up" data-aos-delay="400">{data.home.news.content}</p>
 				</div>
 				<div class="row g-4 px-5">
 					{
-						newsPosts.slice(0,3).map((item, index) => (
-						<div class:list={[index === 2 ? 'col-md-12 col-lg-4' : 'col-md-6 col-lg-4']}>
-							<a href={`/news/${item.slug}/`}>
+					newsPosts.slice(0,3).map((item, index) => (
+					<div class:list={[index === 2 ? 'col-md-12 col-lg-4' : 'col-md-6 col-lg-4']} data-aos="fade-up" data-aos-delay={index * 100}>
+						<a href={`/news/${item.slug}/`}>
 							<div class="card mb-3 rounded-5 bg-pc-light border-0 shadow" style="min-height: 500px;">
 								<img src={item.data.imageUrl} class="card-img-top w-100 object-fit rounded-top-5" style="height: 250px;" alt="...">
 								<div class="card-body p-4">
@@ -172,99 +165,54 @@ const guidesPosts = await getCollection("guides");
 									<p class="card-text my-3">{item.data.description}</p>
 									<p class="small m-0 text-secondary mt-2 mb-0">By: {item.data.author}</p>
 									<i class="bi bi-arrow-up-right-circle-fill text-secondary fs-1 position-absolute bottom-0 end-0 m-3"></i>
-							
 								</div>
 							</div>
-							</a>
-						</div>
-						))
-					}
+						</a>
+					</div>
+					))}
 				</div>
 			</div>
 
+			<!--book -->
+
 			<div class="row p-5">
 				<div class="col-lg-8 offset-lg-2 text-center">
-					<span class="badge rounded-pill fw-bold bg-pc-60 text-pc-dark py-2 px-3">Book with PC</span>
-					<h2 class="display-4 fw-900 lh-1 my-3">Book your next hotel stay with us </h2>
-					<p class="fs-5 col-lg-8 offset-lg-2">Through Prince Collection’s access to the world’s best hotels, you’ll enjoy exclusive benefits at no additional cost. By booking with us, you receive:</p>
+					<span class="badge rounded-pill fw-bold bg-pc-60 text-pc-dark py-2 px-3" data-aos="fade-up">{data.home.book.badge}</span>
+					<h2 class="display-4 fw-900 lh-1 my-3" data-aos="fade-up" data-aos-delay="200">{data.home.book.title}</h2>
+					<p class="fs-5 col-lg-8 offset-lg-2" data-aos="fade-up" data-aos-delay="400"><Fragment set:html={data.home.book.content}/></p>
 				</div>
 			</div>
 			
 			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-body-secondary px-5 pb-5">
-				<div class="col">
-					<div class="p-5 rounded-4 bg-pc-20 shadow">
-						<i class="bi bi-sunrise fs-2 text-pc-dark"></i>
-						<h4 class="my-1">Daily breakfast for two people</h4>
-						<p>Cupidatat cupidatat ipsum sint consequat do. Consequat ad deserunt ad reprehenderit id duis deserunt fugiat pariatur aliqua.</p>
+				{data.home.book.list.map((item, index) => (
+					<div class="col" data-aos="fade-up" data-aos-delay={index * 100}>
+						<div class="p-5 rounded-4 bg-pc-20 shadow" style="min-height: 320px">
+							<i class="bi bi-sunrise fs-2 text-pc-dark"></i>
+							<h4 class="my-1">{item.title}</h4>
+							<p>{item.content}</p>
+						</div>
 					</div>
-				</div>
-				<div class="col">
-					<div class="p-5 rounded-4 bg-pc-20 shadow">
-						<i class="bi bi-cash-coin text-pc-dark fs-2"></i>
-						<h4 class="my-1">$100 (USD) hotel credit</h4>
-						<p>Cupidatat cupidatat ipsum sint consequat do. Consequat ad deserunt ad reprehenderit id duis deserunt fugiat pariatur aliqua.</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="p-5 rounded-4 bg-pc-20 shadow">
-						<i class="bi bi-house-heart text-pc-dark fs-2"></i>
-						<h4 class="mb-2 mt-1">Welcome amenity</h4>
-						<p>Cupidatat cupidatat ipsum sint consequat do. Consequat ad deserunt ad reprehenderit id duis deserunt fugiat pariatur aliqua.</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="p-5 rounded-4 bg-pc-20 shadow">
-						<i class="bi bi-patch-check text-pc-dark fs-2"></i>
-						<h4 class="mb-2 mt-1">One-category room upgrade, subject to availability</h4>
-						<p>Cupidatat cupidatat ipsum sint consequat do. Consequat ad deserunt ad reprehenderit id duis deserunt fugiat pariatur aliqua.</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="p-5 rounded-4 bg-pc-20 shadow">
-						<i class="bi bi-calendar-check fs-2 text-pc-dark"></i>
-						<h4 class="mb-2 mt-1">Early check-in/late check-out, subject to availability</h4>
-						<p>Cupidatat cupidatat ipsum sint consequat do. Consequat ad deserunt ad reprehenderit id duis deserunt fugiat pariatur aliqua.</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="p-5 rounded-4 bg-pc-20 shadow">
-						<i class="bi bi-moon-stars text-pc-dark fs-2"></i>
-						<h4 class="mb-2 mt-1">Property-specific 3rd/4th/5th Night Free promotions</h4>
-						<p>Cupidatat cupidatat ipsum sint consequat do. Consequat ad deserunt ad reprehenderit id duis deserunt fugiat pariatur aliqua.</p>
-					</div>
-				</div>
+				))}
 			</div>
 
 			<div class="row p-5">
 				<div class="col-lg-8 offset-lg-2 text-center">
-					<span class="badge rounded-pill fw-bold text-pc-dark bg-pc-60 py-2 px-3">Exclusive access</span>
-					<h2 class="display-4 fw-900 lh-1 my-3">Enjoy <span class="text-pc-dark-80">exclusive</span> deals and benefits</h2>
-					<p class="fs-5">Book with Prince Collection and enjoy access to exclusive deals and features at a broad range of eligible hotels, including luxury brands like Four Seasons, Rosewood, Mandarin Oriental, St. Regis, Waldorf Astoria, Park Hyatt, as well as a wide range of independent boutique luxury properties. Feel free to submit an inquiry through our booking form to get started.</p>
+					<span class="badge rounded-pill fw-bold text-pc-dark bg-pc-60 py-2 px-3" data-aos="fade-up">{data.home.exclusive.badge}</span>
+					<h2 class="display-4 fw-900 lh-1 my-3" data-aos="fade-up" data-aos-delay="200"><Fragment set:html={data.home.exclusive.title}/></h2>
+					<p class="fs-5 col-lg-10 offset-lg-1" data-aos="fade-up" data-aos-delay="400">{data.home.exclusive.content}</p>
 					<a href="/book">
-						<button class="btn btn-pc fw-bold rounded-pill px-4 shadow">Book your hotel</button>
+						<button class="btn btn-pc fw-bold rounded-pill px-4 shadow" data-aos="fade-up" data-aos-delay="600">{data.home.exclusive.button}</button>
 					</a>
 				</div>
 			</div>
 
 			<div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 p-5 bg-pc-10">
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/fourseasons.webp" style="width: 140px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/rosewood.webp" style="width: 140px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/mandarin.webp" style="width: 120px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/hyatt.webp" style="width: 120px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/virtuoso.webp" style="width: 140px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/rocco.webp" style="width: 120px; filter: brightness(0);" alt="">
-				</div>
+				{
+					data.home.logos2.map((item, index) => (
+					<div class="col d-flex my-auto text-center p-3" style="filter: brightness(0);" data-aos="fade-up" data-aos-delay={index * 100}>
+						<img src={item.url} style={index === 0 || index === 1 || index === 4 ? 'width: 140px;' : 'width: 120px'} alt={item.alt}>
+					</div>
+				))}
 			</div>
 
 			<div class="p-4"></div>
@@ -272,9 +220,9 @@ const guidesPosts = await getCollection("guides");
 			<div class="row px-5">
 				<div class="col-lg-12 col-xl-3">
 					<div class="d-flex flex-column justify-content-center align-items-start bg-pc-dark-80 h-100 min-vh-50 rounded-5 p-5">
-					<span class="badge rounded-pill fw-bold bg-pc-60 text-pc-dark py-2 px-3 mb-3">Prince collection reviews</span>
-					<h3 class="fw-bold fs-1 lh-1">Prince <span class="text-pc-60">reviews</span></h3>
-					<p class="py-1 text-pc-light">Prince Collection’s Travel Concierge is designed exclusively for high net worth individuals and companies who seek exclusive experiences, handled for them. We understand that time is your most valuable asset.</p>
+					<span class="badge rounded-pill fw-bold bg-pc-60 text-pc-dark py-2 px-3 mb-3">{data.home.reviews.badge}</span>
+					<h3 class="fw-bold text-pc-60 fs-1 lh-1">{data.home.reviews.title}</h3>
+					<p class="py-1 text-pc-light">{data.home.reviews.content}</p>
 					<a href="/reviews">
 						<button class="btn btn-sm btn-pc rounded-pill fw-bold px-3 text-pc-light">See more</button>
 					</a>
@@ -282,17 +230,17 @@ const guidesPosts = await getCollection("guides");
 					</div>
 					<div class="col-lg-12 col-xl-9">
 						<div class="row g-3 py-3 py-xl-0">
-							{
-						reviewsPosts.slice(0,3).map((item, index) => (
-						<div class:list={[index === 2 ? 'col-md-12 col-lg-4' : 'col-md-6 col-lg-4']}>
-							<a href={`/news/${item.slug}/`}>
-							<div class="card rounded-5 bg-pc-dark border-0 shadow position-relative">
-								<img src={item.data.imageUrl} class="card-img-top position-absolute top-0 start-0 z-0 w-100 h-100 object-fit rounded-5 p-3" style="filter: brightness(0.5)" alt="...">
+						{
+						reviewsPosts.slice(0,3).map((post, index) => (
+						<div class:list={[index === 2 ? 'col-md-12 col-lg-4' : 'col-md-6 col-lg-4']} data-aos="fade-up" data-aos-delay={index * 200}>
+							<a href={`/reviews/${post.slug}/`}>
+							<div class="card rounded-5 bg-pc-dark border-0 shadow">
+								<img src={post.data.imageUrl} class="card-img-top position-absolute top-0 start-0 z-0 w-100 h-100 object-fit rounded-5 p-3" style="filter: brightness(0.5)" alt="...">
 								<div class="card-img-overlay position-relative">
 								<div class="card-body min-vh-500 text-light d-flex flex-column justify-content-end align-items-start p-4">
-									<p class="small mb-2 mt-0">{item.data.pubDate.toString().slice(0,10)}</p>
-									<h5 class="card-title fs-4 fw-900">{item.data.title}</h5>
-									<p class="card-text my-3">{item.data.description}</p>
+									<p class="small mb-2 mt-0">{post.data.pubDate.toString().slice(0,10)}</p>
+									<h5 class="card-title fs-4 fw-900">{post.data.title}</h5>
+									<p class="card-text my-3">{post.data.description}</p>
 									<i class="bi bi-arrow-up-right-circle-fill text-pc-light fs-1 position-absolute top-0 end-0 me-2 mt-1 p-3"></i>
 								</div>
 								</div>
@@ -309,14 +257,14 @@ const guidesPosts = await getCollection("guides");
 
 			<div class="row px-5">
 				<div class="col-lg-6 p-5">
-					<span class="badge rounded-pill fw-bold bg-pc-60 text-pc-dark py-2 px-3 mb-3">Prince collection concierge</span>
-					<h3 class="fw-bold display-4 lh-1">Your <span class="text-pc-dark">luxury</span> travel concierge</h3>
-					<p class="fs-5 py-1">Prince Collection’s Travel Concierge is designed exclusively for high net worth individuals and companies who seek exclusive experiences, handled for them. We understand that time is your most valuable asset. Our expertise lies in handling the nuances of travel, ensuring a seamless and extraordinary journey from start to finish.</p>
+					<span class="badge rounded-pill fw-bold bg-pc-60 text-pc-dark py-2 px-3 mb-3" data-aos="fade-up">{data.home.concierge.badge}</span>
+					<h3 class="fw-bold display-4 lh-1" data-aos="fade-up" data-aos-delay="200">{data.home.concierge.title}</h3>
+					<p class="fs-5 py-1" data-aos="fade-up" data-aos-delay="400">{data.home.concierge.content}</p>
 					<a href="/concierge">
-						<button class="btn btn-pc rounded-pill px-4 fw-bold shadow">Learn more</button>
+						<button class="btn btn-pc rounded-pill px-4 fw-bold shadow" data-aos="fade-up" data-aos-delay="600">{data.home.concierge.button}</button>
 					</a>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
 					<img class="w-100 h-100 rounded-4 object-fit" src="https://images.unsplash.com/photo-1469796466635-455ede028aca?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
 				</div>
 			</div>
@@ -324,11 +272,11 @@ const guidesPosts = await getCollection("guides");
 			<div class="row p-5">
 				<div class="col-lg-12 col-xl-3 order-2 order-xl-1">
 					<div class="d-flex flex-column justify-content-center align-items-start bg-pale-dogwood text-body-secondary h-100 min-vh-50 rounded-5 p-5 shadow">
-					<span class="badge rounded-pill fw-bold bg-pc-dark text-pc-light py-2 px-3 mb-3">Prince collection guides</span>
-					<h3 class="fw-bold fs-1 lh-1">Prince <span class="text-pc-dark">guides</span></h3>
-					<p class="py-1">Prince Collection’s Travel Concierge is designed exclusively for high net worth individuals and companies who seek exclusive experiences, handled for them. We understand that time is your most valuable asset.</p>
+					<span class="badge rounded-pill fw-bold bg-pc-dark text-pc-light py-2 px-3 mb-3">{data.home.guides.badge}</span>
+					<h3 class="fw-bold fs-1 lh-1">{data.home.guides.title}</h3>
+					<p class="py-1">{data.home.guides.content}</p>
 					<a href="/guides">
-						<button class="btn btn-sm btn-light border-0 bg-pc-dark rounded-pill fw-bold px-3 text-pc-light">See more</button>
+						<button class="btn btn-sm btn-light border-0 bg-pc-dark rounded-pill fw-bold px-3 text-pc-light">{data.home.guides.button}</button>
 					</a>
 					</div>
 				</div>
@@ -336,7 +284,7 @@ const guidesPosts = await getCollection("guides");
 					<div class="row g-3 py-3 py-xl-0">
 						{
 						guidesPosts.slice(0,3).map((item, index) => (
-						<div class:list={[index === 2 ? 'col-md-12 col-lg-4' : 'col-md-6 col-lg-4']}>
+						<div class:list={[index === 2 ? 'col-md-12 col-lg-4' : 'col-md-6 col-lg-4']} data-aos="fade-up" data-aos-delay={index * 200}>
 							<a href={`/guides/${item.slug}/`}>
 								<div class="card rounded-5 bg-pale-dogwood border-0 shadow position-relative">
 									<img src={item.data.imageUrl} class="card-img-top position-absolute top-0 start-0 z-0 w-100 h-100 object-fit rounded-5 p-3" style="filter: brightness(0.5)" alt="...">
@@ -359,10 +307,11 @@ const guidesPosts = await getCollection("guides");
 
 			<div class="row bg-pc-80 py-5 text-body-secondary">
 				<div class="col-lg-8 offset-lg-2 p-5 text-center">
-					<h2 class="display-4 fw-bold lh-1">Join the <span class="text-pc-dark">Prince Collection</span> Community</h2>
-					<p class="fs-5 my-3 col-md-8 mx-auto">Sign up for the Prince Collection newsletter to get exclusive deals, news, insights and resources to help you travel in style.</p>
+					<span class="badge rounded-pill fw-bold bg-pc-dark text-pc-light py-2 px-3" data-aos="fade-up">{data.home.newsletter_cta.badge}</span>
+					<h2 class="display-4 fw-bold lh-1" data-aos="fade-up" data-aos-delay="200"><Fragment set:html={data.home.newsletter_cta.title}/></h2>
+					<p class="fs-5 my-3 col-md-8 mx-auto" data-aos="fade-up" data-aos-delay="400">{data.home.newsletter_cta.content}</p>
 					<a href="/newsletter">
-						<button class="btn bg-pc-dark text-light rounded-pill px-4 shadow">Sign up</button>
+						<button class="btn bg-pc-dark text-light rounded-pill px-4 shadow" data-aos="fade-up" data-aos-delay="600">{data.home.newsletter_cta.button}</button>
 					</a>
 				</div>
 			</div>

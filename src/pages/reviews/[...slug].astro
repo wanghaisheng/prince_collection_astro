@@ -4,6 +4,8 @@ import Layout from '../../layouts/Layout.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
 import { Image } from 'astro:assets';
 
+import { fade } from 'astro:transitions';
+
 export const prerender = true;
 export async function getStaticPaths() {
   const reviewsEntries = await getCollection('reviews');
@@ -53,6 +55,28 @@ function emailPage(title) {
   return emailShare;
 }
 const url = encodeURIComponent(Astro.url.pathname);
+
+
+const { index } = Astro.props
+const slideAnim = {
+  old: {
+    name: 'slideDown',
+    duration: '0.5s',
+    easing: 'ease-out',
+    fillMode: 'backwards',
+  },
+  new: {
+    name: 'slideUp',
+    duration: '0.5s',
+    delay: `${index * 0.1 + 0.1}s`,
+    easing: 'ease-out',
+    fillMode: 'backwards',
+  },
+}
+const verticalSlide = {
+  forwards: slideAnim,
+  backwards: slideAnim,
+}
 ---
 
 <Layout title={post.data.title} description={post.data.description} image={post.data.imageUrl}>
@@ -60,19 +84,19 @@ const url = encodeURIComponent(Astro.url.pathname);
         <div class="row min-vh-500 pt-5">
             <div class="col-lg-7 d-flex flex-column justify-content-end align-items-start text-start p-5">
             <a href="/reviews">
-                <div class="d-flex align-items-center">
-                    <i class="bi bi-arrow-left text-black-50 fs-1"></i>
+                <div class="d-flex align-items-center" transition:animate={verticalSlide}>
+                    <i class="bi bi-arrow-left text-black-50 fs-1" transition:name={`${post.slug} icon`}></i>
                     <h6 class="ms-2 my-0 text-black-50 fw-light">Back to reviews</h6>
                 </div>
             </a>
-            <h1 class="display-1 font-inter text-secondary fw-900 mb-3 mt-2" style="letter-spacing: -2px; line-height: 90%;">{post.data.title}</h1>
-            <p class="fs-5 col-md-7 text-body-secondary mb-3 mt-3">{post.data.description}</p>
-                <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Written by</span> {post.data.author}</p>
-                <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {post.data.pubDate.toString().slice(0,10)}</p>
-                <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Read time </span>  {wordCount(post.body)} mins</p>
+            <h1 class="display-1 font-inter text-secondary fw-900 mb-3 mt-2" style="letter-spacing: -2px; line-height: 90%;" transition:name={`${post.slug} title`}>{post.data.title}</h1>
+            <p class="fs-5 col-md-7 text-body-secondary mb-3 mt-3" transition:name={`${post.slug} description`}>{post.data.description}</p>
+            <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Written by</span> {post.data.author}</p>
+            <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {post.data.pubDate.toString().slice(0,10)}</p>
+            <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Read time </span>  {wordCount(post.body)} mins</p>
             </div>
             <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5 pe-5">
-                <Image class="w-100 object-fit min-vh-50 rounded-end-5 shadow" width="700" height="500" src={post.data.imageUrl} alt="Prince Collection logo"/>
+                <Image class="w-100 object-fit min-vh-50 rounded-end-5 shadow" data-aos="fade-up" width="700" height="500" src={post.data.imageUrl} alt="Prince Collection logo" transition:name={`${post.slug} image`}/>
             </div>
         </div>
     </div>
@@ -162,7 +186,7 @@ const url = encodeURIComponent(Astro.url.pathname);
                 <div class="py-2">
                     <h4 class="fs-5 fw-bold text-pc-dark">Newsletter</h4>
                     <p>Join the Prince Collection newsletter to get weekly updates delivered straight to your inbox.</p>
-                    <NewsletterForm newsletterBtn="btn-pc" />
+                    <NewsletterForm newsletterBtn="btn-pc px-4" />
                 </div>
                 <hr>
                 <div class="py-2">

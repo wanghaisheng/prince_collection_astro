@@ -1,34 +1,20 @@
 ---
-// import { getCollection } from 'astro:content';
+import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
 import { Image } from 'astro:assets';
-import crown from '../../assets/img/logos/logo-crown.png'
 
-// export const prerender = true;
-
+export const prerender = true;
 export async function getStaticPaths() {
-    const allPosts = await Astro.glob('.././[fc nm,.m]./pages/blog/*.mdx');
-
-  return allPosts.map((post) => {
-    return {
-      params: { url: post.url },
-      props: { post },
-    };
-  });
+  const newsEntries = await getCollection('blog');
+  return newsEntries.map(post => ({
+    params: { slug: post.slug }, props: { post },
+  }));
 }
 
-// export async function getStaticPaths() {
-//   const blogEntries = await getCollection('blog');
-//   return blogEntries.map(post => ({
-//     params: { slug: post.slug }, 
-//     props: { post },
-//   }));
-// }
-
-// const allPosts = await getCollection("blog");
+const allPosts = await getCollection("blog");
 const { post } = Astro.props;
-// const { Content } = await post.render();
+const { Content } = await post.render();
 ---
 
 <Layout title={post.data.title} description={post.data.description} image={post.data.imageUrl}>
@@ -36,7 +22,6 @@ const { post } = Astro.props;
         <div class="row min-vh-500 pt-5">
             <!-- <img class="position-absolute top-0 start-0 z-0 w-100 h-100 object-fit" src={post.data.imageUrl} alt={post.data.description}/> -->
             <div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center p-5">
-                <Image class="mb-3" style="width: 50px; height: 50px" src={crown} alt="Prince Collection logo"/>
                    <!-- tags -->
                 <div class="d-flex justify-content center-align-items-center">
                     {
