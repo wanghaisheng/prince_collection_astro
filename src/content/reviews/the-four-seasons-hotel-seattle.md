@@ -27,7 +27,12 @@ Navigating yourself to the rest of the city is easy from the nearby University S
 
 Opt for the hotel's private airport transfers in a luxury sedan, or make your own arrangements to arrive at Seattle-Tacoma International Airport in around 20 minutes.
 
+| ![](https://images.unsplash.com/photo-1445991842772-097fea258e7b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) |
+|:--:|
+| *Image by Jon Johnson*
+
 ![](https://images.unsplash.com/photo-1445991842772-097fea258e7b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+*A single track trail outside of Albuquerque, New Mexico.*
 
 ## Four Seasons Hotel Seattle -- Check-in
 
