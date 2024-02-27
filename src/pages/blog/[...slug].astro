@@ -2,7 +2,6 @@
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
-import { Image } from 'astro:assets';
 
 export const prerender = true;
 export async function getStaticPaths() {
@@ -36,7 +35,38 @@ const { Content } = await post.render();
                 <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {post.data.pubDate.toString().slice(0,10)}</p>
             </div>
             <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5">
-                <Image class="w-100 object-fit min-vh-50" width="700" height="500" src={post.data.imageUrl} alt="Prince Collection logo"/>
+                <!-- <Image class="w-100 object-fit min-vh-50" width="700" height="500" src={post.data.imageUrl} alt="Prince Collection logo"/> -->
+                <div id="carouselExampleIndicators" class="carousel slide"  data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        {post.data.galleryImages.map((item, index) => (
+                               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} class={index === 0 ? 'active' : ''} aria-current="true" aria-label={'Slide ' + index+1}>
+                                <i class="bi bi-dot fs-1"></i>
+                                </button>
+                        ))}
+                        <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+                      
+
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+                    </div>
+                    <div class="carousel-inner object-fit h-100">
+                    {post.data.galleryImages.map((item, index) => (
+                        <div style="height: 600px"
+                        class:list={["carousel-item min-vw-100", index === 0 ? 'active' : '']}>
+                            <img src={item} class="d-block w-100 h-100 object-fit" alt="...">
+                      </div>
+                    ))}
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <i class="bi bi-arrow-left-circle-fill display-2 opacity-100"  aria-hidden="true"></i>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <i class="bi bi-arrow-right-circle-fill display-1 text-pc-light shadow" aria-hidden="true"></i>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
         </div>
     </div>
@@ -126,3 +156,28 @@ const { Content } = await post.render();
         </div>
     </div>
 </Layout>
+
+<style>
+    .carousel-indicators .active {
+    opacity: 1;
+}
+    .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin-right: 6px;
+    margin-left: 6px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff; 
+    background-clip: padding-box; 
+    border: 0; 
+    border-top: 10px solid transparent; 
+    border-bottom: 10px solid transparent; 
+    // opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 50%;
+}    
+</style>

@@ -52,15 +52,15 @@ const { index } = Astro.props
 const slideAnim = {
   old: {
     name: 'slideDown',
-    duration: '0.5s',
-    easing: 'ease-out',
-    fillMode: 'backwards',
+    duration: '0.7s',
+    easing: 'linear',
+    fillMode: 'forwards',
   },
   new: {
     name: 'slideUp',
-    duration: '0.5s',
+    duration: '0.7s',
     delay: `${index * 0.2 + 0.1}s`,
-    easing: 'ease-out',
+    easing: 'ease-in-out',
     fillMode: 'backwards',
   },
 }

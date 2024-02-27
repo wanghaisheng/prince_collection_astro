@@ -1,10 +1,8 @@
 ---
 import Drawer from './TheDrawer.astro';
-import BookingForm from '../components/BookingForm.astro';
 import Modal from '../components/TheModal.astro';
-import crown from '../assets/img/logos/logo-crown.png';
 import NewsletterForm from './NewsletterForm.astro';
-import navData from '../data/nav.json';
+import navData from '../data/sitecontent.json';
 
 const { icon, modalTrigger } = Astro.props 
 ---
@@ -57,7 +55,7 @@ const { icon, modalTrigger } = Astro.props
 
 			<Drawer drawerTitle="PrinceCollection" drawerId="navDrawer" drawerAriaLabel="Prince Collection">
 				<div class="container-fluid px-0">
-					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 p-0">
+					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 p-0">
 						{
 						navData.navData.map((item) => (
 							<div class="col position-relative">

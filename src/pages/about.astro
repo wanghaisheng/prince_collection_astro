@@ -1,199 +1,89 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Image } from 'astro:assets';
+import data from '../data/sitecontent.json';
 ---
 
-<Layout title="Welcome to Prince Collection" description="About Prince Collection">
-	<main>
-		<div class="container-fluid px-0 pt-3">
-			<div class="row row-cols-1 row-cols-lg-2 min-vh-100">
-				<div class="col d-flex flex-column justify-content-center align-items-start text-start p-5 min-vh-50">
-					<img style="width: 80px; height: 80px;" src="src/assets/img/logos/logo-crown.png" alt="Prince of Travel crown logo">
-					<h1 class="display-4 fw-bold lh-1 mb-3 mt-3">Get <span class="text-pc-dark">more</span> out of your hotel stays.</h1>
-					<p class="fs-5 col-md-10">Through our access to the world’s best hotel preferred partner programs, you’ll enjoy exclusive benefits when staying at luxury properties</p>
-					<nav class="nav nav-fill d-flex me-auto">
-						<a class="nav-link p-0 me-2" href="/book">
-							<button class="btn btn-pc fw-bold px-4 py-2 rounded-pill">Book your hotel</button>
-						</a>
-					</nav>
-				</div>
-				<div class="col min-vh-50 p-5">
-                     <Image src="https://images.unsplash.com/photo-1469796466635-455ede028aca?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A bird." class="w-100 h-100 rounded-4" style="object-fit: cover" width="1200" height="500" alt="descriptive text"/>
+<Layout title={data.about.meta.title} description={data.about.meta.description}>
+<div class="container-fluid px-0 pt-3 text-body-secondary">
+	<div class="row min-vh-500">
+		<div class="col-lg-12 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center p-5 mb-0 mb-lg-4 mt-4 mt-lg-0">
+			<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">{data.about.hero.badge}</span>
+			<h1 class="display-3 fw-bold lh-1 mb-2 mt-3"><Fragment set:html={data.about.hero.title}/></h1>
+			<p class="col-lg-6 col-md-8 fs-5 text-body-secondary mt-3 mb-4">{data.about.hero.content}</p>
+			<a href="/book">
+				<button class="btn btn-pc fw-bold rounded-pill px-4 shadow">{data.about.hero.button}</button>
+			</a>
+		</div>
+	</div>
+
+	<!-- logos -->
+
+	<div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 p-5 bg-light">
+		{
+			data.about.logos.map((item, index) => (
+			<div class="col d-flex my-auto text-center p-3" style="filter: brightness(0);">
+				<img src={item.url} style={index === 2 || index === 3 || index === 5 ? 'width: 120px;' : 'width: 140px'} alt={item.alt}>
+			</div>
+		))}
+	</div>
+
+	<div class="row row-cols-1 row-cols-lg-2 bg-pc-10">
+		<div class="col d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start p-5">
+			<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">{data.about.section1.badge}</span>
+			<h2 class="display-4 fw-bold lh-1 mb-2 mt-4"><Fragment set:html={data.about.section1.title}/></h2>
+			<p class="text-body-secondary fs-5 my-3">{data.about.section1.content}</p>
+			<a href="/book">
+				<button class="btn btn-light rounded-pill bg-pc-dark-60 border-0 text-pc-light px-4">Book your travel</button>
+			</a>
+		</div>
+		<div class="col p-5">
+			<img class="w-100 h-100 rounded-4" style="object-fit: cover; aspect-ratio: 1"  src="https://images.unsplash.com/photo-1586611292717-f828b167408c?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="An image of the St. Regis hotel in Bora Bora"/>
+		</div>
+	</div>
+
+	<div class="row g-3 p-5">
+		<div class="col-lg-12 d-flex flex-column justify-content-center align-items-center text-center px-5 pb-5">
+			<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">{data.about.section2.badge}</span>
+			<h2 class="display-4 fw-bold lh-1 mb-2 mt-3">{data.about.section2.title}</h2>
+			<p class="text-body-secondary col-md-8 fs-5 my-3">{data.about.section2.content}</p>
+		</div>
+
+		{data.about.section2.list.map((item) => (
+			<div class="d-none d-lg-flex col-lg-4">
+				<div class="p-5 border rounded-4 bg-pc-dark text-light border shadow" style="min-height: 420px">
+					<i class:list={["bi text-pc-dark-10 fs-2 px-3 py-2 shadow rounded-3 bg-pc-dark-80", item.icon]}></i>
+					<h4 class="fw-bold mb-3 mt-4">{item.title}</h4>
+					<p>{item.content}</p>
 				</div>
 			</div>
-
-			<div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 p-5 bg-light">
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/stars.webp" style="width: 120px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/ihg.webp" style="width: 140px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/peninsula.webp" style="width: 140px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/luxurycircle.webp" style="width: 120px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/impresario.webp" style="width: 140px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/step.webp" style="width: 140px; filter: brightness(0);" alt="">
+			<div class="d-flex d-lg-none col-lg-4">
+				<div class="p-5 border rounded-4 bg-pc-dark text-light border shadow">
+					<i class:list={["bi text-pc-dark-10 fs-2 px-3 py-2 shadow rounded-3 bg-pc-dark-80", item.icon]}></i>
+					<h4 class="fw-bold mb-3 mt-4">{item.title}</h4>
+					<p>{item.content}</p>
 				</div>
 			</div>
+		))}
+	</div>
 
-			<!-- <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 p-5 bg-pc-dark">
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/stars.webp" style="width: 120px; filter: brightness(0) invert(1);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/luxurycircle.webp" style="width: 120px; filter: brightness(0) invert(1);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/fourseasons.webp" style="width: 120px; filter: brightness(0) invert(1);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/mandarin.webp" style="width: 120px; filter: brightness(0) invert(1);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/impresario.webp" style="width: 120px; filter: brightness(0) invert(1);" alt="">
-				</div>
-				<div class="col text-center p-3">
-					<img src="/images/logos/hyatt.webp" style="width: 120px; filter: brightness(0) invert(1);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/step.webp" style="width: 120px; filter: brightness(0) invert(1);" alt="">
-				</div>
-				<div class="col d-flex my-auto d-flex my-autotext-center p-3">
-					<img src="/images/logos/ihg.webp" style="width: 120px; filter: brightness(0) invert(1);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/belmond.webp" style="width: 120px; filter: brightness(0) invert(1);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/diamondclub.webp" style="width: 120px; filter: brightness(0) invert(1);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/rocco.webp" style="width: 120px; filter: brightness(0) invert(1);" alt="">
-				</div>
-				<div class="col text-center p-3">
-					<img src="/images/logos/within.webp" style="width: 120px; filter: brightness(0) invert(1);" alt="">
-				</div>
-			</div> -->
+	<div class="py-4"></div>
 
-			<div class="row p-5">
-				<div class="col-lg-8 offset-lg-2 text-center">
-					<span class="badge rounded-pill fw-bold bg-pc-50 text-pc-dark py-2 px-3">Book with PC</span>
-					<h2 class="display-4 fw-900 lh-1 my-3">Book your next hotel stay with us </h2>
-					<p class="fs-5">Book your next hotel stay with Prince Collection and enjoy an elevated experience along your trip. Commodo nisi nisi qui reprehenderit adipisicing occaecat amet proident commodo ad ad adipisicing mollit esse. Pariatur ex cillum qui labore enim amet minim et aliquip do Lorem proident minim sint.</p>
-				</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="col-lg-12 p-0">
+				<img class="w-100 object-fit" style="aspect-ration: 16/9; height: 60vh;" src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A bird." alt="descriptive text"/>
 			</div>
-
-			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 px-5 pb-5">
-				<div class="col">
-					<div class="p-5 border rounded-4 bg-pc-50 border shadow">
-						<i class="bi bi-sunrise fs-2 text-pc-dark"></i>
-						<h4 class="my-1">Daily breakfast for two people</h4>
-						<p>Cupidatat cupidatat ipsum sint consequat do. Consequat ad deserunt ad reprehenderit id duis deserunt fugiat pariatur aliqua.</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="p-5 border rounded-4 bg-pc-50 border shadow">
-						<i class="bi bi-cash-coin text-pc-dark fs-2"></i>
-						<h4 class="my-1">$100 (USD) hotel credit</h4>
-						<p>Cupidatat cupidatat ipsum sint consequat do. Consequat ad deserunt ad reprehenderit id duis deserunt fugiat pariatur aliqua.</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="p-5 border rounded-4 bg-pc-50 border shadow">
-						<i class="bi bi-house-heart text-pc-dark fs-2"></i>
-						<h4 class="mb-2 mt-1">Welcome amenity</h4>
-						<p>Cupidatat cupidatat ipsum sint consequat do. Consequat ad deserunt ad reprehenderit id duis deserunt fugiat pariatur aliqua.</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="p-5 border rounded-4 bg-pc-50 border shadow">
-						<i class="bi bi-patch-check text-pc-dark fs-2"></i>
-						<h4 class="mb-2 mt-1">One-category room upgrade, subject to availability</h4>
-						<p>Cupidatat cupidatat ipsum sint consequat do. Consequat ad deserunt ad reprehenderit id duis deserunt fugiat pariatur aliqua.</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="p-5 border rounded-4 bg-pc-50 border shadow">
-						<i class="bi bi-calendar-check fs-2 text-pc-dark"></i>
-						<h4 class="mb-2 mt-1">Early check-in/late check-out, subject to availability</h4>
-						<p>Cupidatat cupidatat ipsum sint consequat do. Consequat ad deserunt ad reprehenderit id duis deserunt fugiat pariatur aliqua.</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="p-5 border rounded-4 bg-pc-50 border shadow">
-						<i class="bi bi-moon-stars text-pc-dark fs-2"></i>
-						<h4 class="mb-2 mt-1">Property-specific 3rd/4th/5th Night Free promotions</h4>
-						<p>Cupidatat cupidatat ipsum sint consequat do. Consequat ad deserunt ad reprehenderit id duis deserunt fugiat pariatur aliqua.</p>
-					</div>
-				</div>
-				<!-- <div class="col-6 flex-fill p-5">
-					<h4 class="mb-2 mt-1">Eligible hotels include luxury brands like Four Seasons, Rosewood, Mandarin Oriental, St. Regis, Waldorf Astoria, Park Hyatt, as well as a wide range of independent boutique luxury properties.</h4>
-				</div>
-				<div class="col-6 flex-fill p-5">
-					<h4 class="mb-2 mt-1">Feel free to submit an inquiry through our booking form to get started.
-					</h4>
-				</div> -->
-			</div>
-
-			<div class="row p-5">
-				<div class="col-lg-8 offset-lg-2 text-center">
-					<span class="badge rounded-pill fw-bold text-pc-dark bg-pc-50 py-2 px-3">Exclusive access</span>
-					<h2 class="display-4 fw-900 lh-1 my-3">Enjoy exclusive deals and treatment</h2>
-					<p class="fs-5">Book with Prince Collection and enjoy access to exclusive deals and features at a broad range of eligible hotels, including luxury brands like Four Seasons, Rosewood, Mandarin Oriental, St. Regis, Waldorf Astoria, Park Hyatt, as well as a wide range of independent boutique luxury properties. Feel free to submit an inquiry through our booking form to get started.</p>
-					<button class="btn btn-pc fw-bold rounded-pill px-4 shadow">Inquire</button>
-				</div>
-			</div>
-
-			<div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 p-5 bg-light">
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/fourseasons.webp" style="width: 140px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/rosewood.webp" style="width: 140px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/mandarin.webp" style="width: 120px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/hyatt.webp" style="width: 120px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/virtuoso.webp" style="width: 140px; filter: brightness(0);" alt="">
-				</div>
-				<div class="col d-flex my-auto text-center p-3">
-					<img src="/images/logos/rocco.webp" style="width: 120px; filter: brightness(0);" alt="">
-				</div>
-			</div>
-
-			<div class="row p-5">
-				<div class="col-lg-6 p-5">
-					<span class="badge rounded-pill fw-bold bg-pc-50 text-pc-dark py-2 px-3 mb-3">Prince collection concierge</span>
-					<h3 class="fw-bold display-4 lh-1">Your <span class="text-pc-dark">luxury</span> travel concierge</h3>
-					<p class="py-3">Prince Collection’s Travel Concierge is designed exclusively for high net worth individuals and companies who seek exclusive experiences, handled for them. We understand that time is your most valuable asset. Our expertise lies in handling the nuances of travel, ensuring a seamless and extraordinary journey from start to finish.</p>
-					<a href="/concierge">
-					<button class="btn btn-pc rounded-pill px-4 fw-bold shadow">Learn more</button>
-					</a>
-				</div>
-				<div class="col-lg-6">
-					<Image src="https://images.unsplash.com/photo-1469796466635-455ede028aca?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A bird." class="w-100 h-100 rounded-4" style="object-fit: cover" width="1200" height="500" alt="descriptive text"/>
-				</div>
-			</div>
-
-			<div class="row bg-pc-50 py-5">
-				<div class="col-lg-8 offset-lg-2 p-5 text-center">
-					<h2 class="display-4 fw-bold lh-1">Join the <span class="text-pc-dark">Prince Collection</span> Community</h2>
-					<p class="fs-5 my-3 col-md-8 mx-auto">Sign up for the Prince Collection newsletter to get exclusive deals, news, insights and resources to help you travel in style.</p>
-					<button class="btn bg-pc-dark text-light rounded-pill px-4 shadow">Sign up</button>
-				</div>
-			</div>
-		</div><!--end container-->
-		
-	</main>
+		</div>
+	</div>
+	
+	<div class="row bg-pc-80 py-5 text-body-secondary">
+		<div class="col-lg-8 offset-lg-2 p-5 text-center">
+			<span class="badge rounded-pill fw-bold bg-pc-dark text-pc-light py-2 px-3" data-aos="fade-up">{data.home.newsletter_cta.badge}</span>
+			<h2 class="display-4 fw-bold lh-1" data-aos="fade-up" data-aos-delay="200"><Fragment set:html={data.home.newsletter_cta.title}/></h2>
+			<p class="fs-5 my-3 col-md-8 mx-auto" data-aos="fade-up" data-aos-delay="400">{data.home.newsletter_cta.content}</p>
+			<a href="/newsletter">
+				<button class="btn bg-pc-dark text-light rounded-pill px-4 shadow" data-aos="fade-up" data-aos-delay="600">{data.home.newsletter_cta.button}</button>
+			</a>
+		</div>
+	</div>
 </Layout>

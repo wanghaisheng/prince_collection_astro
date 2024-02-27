@@ -9,6 +9,14 @@
       "background": "bg-pc-80"
     },
     {
+      "title": "About",
+      "description": "Prince Collection is a full-service travel brand with an emphasis on luxury travel.",
+      "path": "/about",
+      "icon": "bi-newspaper",
+      "badge": "Who we are",
+      "background": "bg-dutch-white"
+    },
+    {
       "title": "News",
       "description": "Stay up-to-date with the latest developments in the world of luxury travel.",
       "path": "/news",
@@ -55,6 +63,14 @@
       "icon": "bi-question-square",
       "badge": "Q and A",
       "background": "bg-periwinkle"
+    },
+    {
+      "title": "Newsletter",
+      "description": "Reach out to the Prince Collection team for personalized support and to learn how we can elevate your travel experiences.",
+      "path": "/newsletter",
+      "icon": "bi-envelope-at",
+      "badge": "Get in touch",
+      "background": "bg-pc-dark-10"
     },
     {
       "title": "Contact",

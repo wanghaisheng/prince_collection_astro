@@ -65,8 +65,8 @@
 }
 
 .slideIn {
-  -webkit-animation-name: slideIn;
-  animation-name: slideIn;
+  -webkit-animation-name: slideIn 1s cubic-bezier(.6,-0.41,.46,1.22);
+  animation-name: slideIn 1s cubic-bezier(.6,-0.41,.46,1.22);
 }
 
 .animate-in {
