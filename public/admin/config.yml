@@ -31,12 +31,18 @@ collections:
       #   - { label: "Source", name: "src", widget: "image" }
       #   - { label: "Alt Text", name: "alt", widget: "string" } 
       #   }
+      - label: "Carousel"
+        name: "carousel"
+        widget: "object"
+        fields:
+          - {label: "Carousel image", name: "image", widget: "image" }
+          - {label: "Image alt", name: "alt", widget: "list" }
       - label: "Gallery"
-        name: "galleryImages"
+        name: "gallery"
         widget: "object"
         fields:
           - {label: "Gallery image", name: "image", widget: "image" }
-          - {label: "Image alt", name: "alt", widget: "string" }
+          - {label: "Image alt", name: "alt", widget: "list" }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: guides # Label used in the UI for the collection
