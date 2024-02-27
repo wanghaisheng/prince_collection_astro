@@ -277,9 +277,9 @@
             ]
         },
         "section3": {
-            "badge": "What we do",
+            "badge": "Here for you",
             "title": "Our Guarantee",
-            "content": "In aliqua incididunt commodo mollit ad officia exercitation ea nostrud ut proident do tempor. Cillum ut exercitation eu ea dolore. Do adipisicing et consectetur commodo in cillum.",
+            "content": "Prince Collection provides comprehensive, exclusive travel services backed by a wealth of global travel experience. Our team provides complex, and fully personalized travel arrangements based on our clients’ unique schedules and travel needs. We offer end to end logistics and support through the entire process.",
             "list": [
                 {
                     "badge": "01",
@@ -364,8 +364,8 @@
         }
     ],
     "contact": {
-        "badge": "Get in touch",
-        "title": "Contact us",
+        "badge": "Here for you",
+        "title": "Contact <span class='text-pc-dark'>Us</span>",
         "content": "Prince Collection stands at the forefront of luxury travel and lifestyle, curating exceptional experiences for those who seek the extraordinary. As a beacon of exclusivity and sophistication, we invite you to connect with us. Share your vision of unparalleled travel or inquire about our insights into the world of luxury. Start by providing some initial details, and a Prince Collection representative will be in touch to explore the boundless possibilities that await you."
     },
     "footer": {

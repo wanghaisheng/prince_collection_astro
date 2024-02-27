@@ -4,97 +4,100 @@ import data from '../data/sitecontent.json';
 ---
 
 <Layout title={data.concierge.meta.title} description={data.concierge.meta.description}>
-	<main>
-		<div class="container-fluid px-0 pt-3 text-body-secondary">
-			<div class="row min-vh-500">
-				<div class="col-lg-12 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center p-5 mb-0 mb-lg-4 mt-4 mt-lg-0">
-                    <span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">{data.concierge.hero.badge}</span>
-					<h1 class="display-3 fw-bold lh-1 mb-2 mt-3"><Fragment set:html={data.concierge.hero.title}/></h1>
-					<p class="col-lg-6 col-md-8 fs-5 text-body-secondary mt-3 mb-4">{data.concierge.hero.content}</p>
-					<a href="/book">
-						<button class="btn btn-pc fw-bold rounded-pill px-4 shadow">{data.concierge.hero.button}</button>
-					</a>
+<div class="container-fluid px-0 pt-3 text-body-secondary">
+	<div class="row min-vh-500">
+		<div class="col-lg-12 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center p-5 mb-0 mb-lg-4 mt-4 mt-lg-0">
+			<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">{data.concierge.hero.badge}</span>
+			<h1 class="display-3 fw-bold lh-1 mb-2 mt-3"><Fragment set:html={data.concierge.hero.title}/></h1>
+			<p class="col-lg-6 col-md-8 fs-5 text-body-secondary mt-3 mb-4">{data.concierge.hero.content}</p>
+			<a href="/book">
+				<button class="btn btn-pc fw-bold rounded-pill px-4 shadow">{data.concierge.hero.button}</button>
+			</a>
+		</div>
+	</div>
+
+	<!-- logos -->
+
+	<div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 p-5 bg-light">
+		{
+			data.concierge.logos.map((item, index) => (
+			<div class="col d-flex my-auto text-center p-3" style="filter: brightness(0);">
+				<img src={item.url} style={index === 2 || index === 3 || index === 5 ? 'width: 120px;' : 'width: 140px'} alt={item.alt}>
+			</div>
+		))}
+	</div>
+
+	<div class="row row-cols-1 row-cols-2">
+		<div class="col d-flex flex-column justify-content-center align-items-start text-start p-5">
+			<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">{data.concierge.section1.badge}</span>
+			<h2 class="display-4 fw-bold lh-1 mb-2 mt-4"><Fragment set:html={data.concierge.section1.title}/></h2>
+			<p class="text-body-secondary fs-5 my-3">{data.concierge.section1.content}</p>
+		</div>
+		<div class="col p-5">
+			<img class="w-100 h-100 rounded-4" style="object-fit: cover; aspect-ratio: 1"  src="https://princeoftravel.wpengine.com/wp-content/uploads/2023/10/St.Regis-Bora-Bora-117-scaled.jpg" alt="An image of the St. Regis hotel in Bora Bora"/>
+		</div>
+	</div>
+
+	<div class="row g-3 p-5">
+		<div class="col-lg-12 d-flex flex-column justify-content-center align-items-center text-center p-5">
+			<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">{data.concierge.section2.badge}</span>
+			<h2 class="display-4 fw-bold lh-1 mb-2 mt-3">{data.concierge.section2.title}</h2>
+			<p class="text-body-secondary col-md-8 fs-5 my-3">{data.concierge.section2.content}</p>
+		</div>
+
+		{data.concierge.section2.list.map((item) => (
+			<div class="col-lg-4">
+				<div class="p-5 border rounded-4 bg-pc-dark-80 text-light border shadow">
+					<i class:list={["bi text-pc-dark-10 fs-2", item.icon]}></i>
+					<h4 class="mt-1 mb-3">{item.title}</h4>
+					<p>{item.content}</p>
 				</div>
 			</div>
+		))}
+	</div>
 
-			<!-- logos -->
+	<div class="py-4"></div>
 
-            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 p-5 bg-light">
-				{
-					data.concierge.logos.map((item, index) => (
-					<div class="col d-flex my-auto text-center p-3" style="filter: brightness(0);">
-						<img src={item.url} style={index === 2 || index === 3 || index === 5 ? 'width: 120px;' : 'width: 140px'} alt={item.alt}>
-					</div>
-				))}
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="col-lg-12 p-0">
+				<img class="w-100 object-fit" style="aspect-ration: 16/9; height: 60vh;" src="https://images.unsplash.com/photo-1604601600542-c751186db4a3?q=80&w=2652&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A bird." alt="descriptive text"/>
 			</div>
-		
-            <div class="row row-cols-1 row-cols-2">
-				<div class="col d-flex flex-column justify-content-center align-items-start text-start p-5">
-                    <span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">{data.concierge.section1.badge}</span>
-					<h2 class="display-4 fw-bold lh-1 mb-2 mt-4"><Fragment set:html={data.concierge.section1.title}/></h2>
-					<p class="text-body-secondary fs-5 my-3">{data.concierge.section1.content}</p>
-				</div>
-				<div class="col p-5">
-                    <img class="w-100 h-100 rounded-4" style="object-fit: cover; aspect-ratio: 1"  src="https://princeoftravel.wpengine.com/wp-content/uploads/2023/10/St.Regis-Bora-Bora-117-scaled.jpg" alt="An image of the St. Regis hotel in Bora Bora"/>
-				</div>
-			</div>
+		</div>
+	</div>
 
-            <div class="row g-3 p-5">
-				<div class="col-lg-12 d-flex flex-column justify-content-center align-items-center text-center p-5">
-                    <span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">{data.concierge.section2.badge}</span>
-					<h2 class="display-4 fw-bold lh-1 mb-2 mt-3">{data.concierge.section2.title}</h2>
-					<p class="text-body-secondary col-md-8 fs-5 my-3">{data.concierge.section2.content}</p>
-				</div>
+	<!--guarantee-->
 
-				{data.concierge.section2.list.map((item) => (
-					<div class="col-lg-4">
-						<div class="p-5 border rounded-4 bg-pc-dark-80 text-light border shadow">
-							<i class:list={["bi text-pc-dark-10 fs-2", item.icon]}></i>
-							<h4 class="mt-1 mb-3">{item.title}</h4>
-							<p>{item.content}</p>
-						</div>
-					</div>
-				))}
-			</div>
+	<div class="row row-cols-1 g-5 p-5">
+		<div class="col">
+			<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">{data.concierge.section3.badge}</span>
+			<h2 class="display-4 fw-bold my-3">{data.concierge.section3.title}</h2>
+			<p class="col-md-6 fs-5 text-body-secondary">{data.concierge.section3.content}</p>
+		</div>
+	</div>
 
-            <div class="py-4"></div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="col-lg-12 p-0">
-                        <img class="w-100 object-fit" style="aspect-ration: 16/9; height: 60vh;" src="https://images.unsplash.com/photo-1604601600542-c751186db4a3?q=80&w=2652&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A bird." alt="descriptive text"/>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row row-cols-1 g-5 p-5">
-                <div class="col">
-                    <span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">{data.concierge.section3.badge}</span>
-                    <h2 class="display-4 fw-bold my-3">{data.concierge.section3.title}</h2>
-                    <p class="col-md-6 fs-5 text-body-secondary">{data.concierge.section3.content}</p>
-                </div>
-		    </div>
-
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 px-5">
-                {data.concierge.section3.list.map((item, index) => (
-					<div class="col">
-						<div class="p-5 rounded-5 shadow-lg h-100">
-						<h2 class="text-pc-dark fw-bold">{item.badge}</h2>
-						<h4 class="mt-1 mb-3 fw-900">{item.title}</h4> 
-						<p>{item.content}</p>
-						</div>
-					</div>
-				))}
-            </div>
-
-            <div class="py-4"></div>
-
-            <div class="row bg-pc-80 text-body-secondary py-5">
-				<div class="col-lg-8 offset-lg-2 p-5 text-center">
-					<h2 class="display-4 fw-bold lh-1"></h2>
-					<p class="fs-5 my-3 col-md-8 mx-auto">Sign up for the Prince Collection newsletter to get exclusive deals, news, insights and resources to help you travel in style.</p>
-					<button class="btn bg-pc-dark text-light rounded-pill px-4 shadow">Sign up</button>
+	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 px-5">
+		{data.concierge.section3.list.map((item) => (
+			<div class="col">
+				<div class="p-5 rounded-5 shadow-lg h-100">
+				<h2 class="text-pc-dark fw-bold">{item.badge}</h2>
+				<h4 class="mt-1 mb-3 fw-900">{item.title}</h4> 
+				<p>{item.content}</p>
 				</div>
 			</div>
-	</main>
+		))}
+	</div>
+
+	<div class="py-4"></div>
+
+	<div class="row bg-pc-80 py-5 text-body-secondary">
+		<div class="col-lg-8 offset-lg-2 p-5 text-center">
+			<span class="badge rounded-pill fw-bold bg-pc-dark text-pc-light py-2 px-3" data-aos="fade-up">{data.home.newsletter_cta.badge}</span>
+			<h2 class="display-4 fw-bold lh-1" data-aos="fade-up" data-aos-delay="200"><Fragment set:html={data.home.newsletter_cta.title}/></h2>
+			<p class="fs-5 my-3 col-md-8 mx-auto" data-aos="fade-up" data-aos-delay="400">{data.home.newsletter_cta.content}</p>
+			<a href="/newsletter">
+				<button class="btn bg-pc-dark text-light rounded-pill px-4 shadow" data-aos="fade-up" data-aos-delay="600">{data.home.newsletter_cta.button}</button>
+			</a>
+		</div>
+	</div>
 </Layout>
