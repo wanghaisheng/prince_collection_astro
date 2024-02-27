@@ -10,7 +10,7 @@ site_url: https://prince-collection.netlify.app/ # Replace with site's URL
 display_url: https://prince-collection.netlify.app/ # Replace with site's URL
 
 logo_url: /images/logo-crown.png # Replace with path to logo
-extension: mdx
+extension: .mdx
 slug: {{slug}} # The URL should be the name of the title of the post/document
 
 collections:
