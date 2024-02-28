@@ -27,22 +27,25 @@ collections:
       - { label: "Image Alt text", name: "imageAlt", widget: "string" } # 
       - { label: "Category", name: "category", widget: "string", default: "blog" }
       - { label: "Tags", name: "tags", widget: "list", default: ["blog"] }
-      - label: "Gallery"
-        name: "gallery"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Gallery image", name: "image", widget: "image" }
-          - {label: "Image alt", name: "alt", widget: "string" }
+      - { label: "Carousel", name: "tags", widget: "list", fields: { - label: "Carousel image", name: "image", widget: "image" } }
+
+      # - label: "Gallery"
+      #   name: "gallery"
+      #   widget: "object"
+      #   collapsed: true
+      #   fields:
+      #     - { label: "Gallery image", name: "image", widget: "image" }
+      #     - { label: "Image alt", name: "alt", widget: "string" }
       - label: "Carousel"
         name: "carousel"
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Carousel image", name: "image", widget: "image" }
-          - {label: "Image alt", name: "alt", widget: "list" }
+          - { label: "Carousel image", name: "image", widget: "image" }
+          - { label: "Image alt", name: "alt", widget: "list" }
       
       - { label: "Body", name: "body", widget: "markdown" }
+
   - label: guides # Label used in the UI for the collection
     label_singular: guide # Label for singular post
     name: guides # Name of the collection used for various functionality in the CMS
