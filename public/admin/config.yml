@@ -33,7 +33,7 @@ collections:
         collapsed: true
         fields:
           - {label: "Gallery image", name: "image", widget: "image" }
-          - {label: "Image alt", name: "alt", widget: "list" }
+          - {label: "Image alt", name: "alt", widget: "string" }
       - label: "Carousel"
         name: "carousel"
         widget: "object"
