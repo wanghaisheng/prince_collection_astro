@@ -27,6 +27,13 @@ collections:
       - { label: "Image Alt text", name: "imageAlt", widget: "string" } # 
       - { label: "Category", name: "category", widget: "string", default: "blog" }
       - { label: "Tags", name: "tags", widget: "list", default: ["blog"] }
+      - label: "Carousel"
+        name: "carousel"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Carousel image", name: "image", widget: "image" }
+          - {label: "Image alt", name: "alt", widget: "list", fields: - {label: "Alt text", name: "Image alt text", widget: "string"} }
       - label: "Gallery"
         name: "gallery"
         widget: "object"
@@ -34,14 +41,6 @@ collections:
         fields:
           - {label: "Gallery image", name: "image", widget: "image" }
           - {label: "Image alt", name: "alt", widget: "list" }
-      - label: "Carousel"
-        name: "carousel"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Carousel image", name: "image", widget: "image" }
-          - {label: "Image alt", name: "alt", widget: "list" }
-      
       - { label: "Body", name: "body", widget: "markdown" }
       
   - label: guides # Label used in the UI for the collection

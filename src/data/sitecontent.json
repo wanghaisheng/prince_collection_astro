@@ -249,28 +249,28 @@
             }
         ],
         "section1": {
-            "badge": "What we offer",
+            "badge": "What sets us apart",
             "title": "We're <span class='text-pc-dark'>more</span> than a travel agency",
-            "content": "Our Concierge does not offer basic booking services in the same way a traditional agent might. Our services are more personalized and complex. Since Concierge does not rely on commissions, we are always able to keep our clients best interests front of mind. Independent travel planning: Our services may not be suitable for those who prefer to plan their travel independently and prefer to do things themselves."
+            "content": "The Prince Collection Concierge is different from traditional travel agencies. Our services are more unique, complex and are personally tailored to the needs of each and every client. The PC Concierge does not rely on commissions or referrals, and as such we are always able to focus solely on our clients’ needs and best interests. We care for our clients and handle their travel arrangements from start to finish."
         },
         "section2": {
             "badge": "What we do",
-            "title": "What does Prince Collection offer?",
-            "content": "We conduct a thorough evaluation of clients' credit cards, Elite status, and travel habits. This process aids us in developing a full travel strategy document to optimize the clients' travel experiences. Furthermore, our account managers gain access to clients' loyalty accounts to manage bookings, monitor progress to elite status, and ensure all optimized strategies are being implemented.",
+            "title": "What does <span class='text-pc-dark-80'>Prince Collection</span> offer?",
+            "content": "We conduct a thorough evaluation of clients' credit cards, Elite status, and travel habits. This process aids us in developing a full travel strategy document to optimize the client's travel experiences. Our account managers also gain access to client's loyalty accounts to manage bookings, monitor progress to elite status, and ensure all optimized strategies are being implemented.",
             "list": [
                 {
-                    "icon": "bi-sunrise",
+                    "icon": "bi-circle-square",
                     "title": "Comprehensive onboarding & annual travel strategy",
                     "content": "We conduct a thorough evaluation of clients' credit cards, Elite status, and travel habits. This process aids us in developing a full travel strategy document to optimize the clients' travel experiences."
                 },
                 {
 
-                    "icon": "bi-cash-coin",
+                    "icon": "bi-calendar2-day-fill",
                     "title": "Customized trip booking",
                     "content": "Clients communicate their travel requirements to their account manager, who will then research and suggest the best flight and hotel options, keeping in mind the clients' preferences, travel goals, and points balances. Clients only need to sign off on trip proposals, after which the account manager proceeds with the bookings."
                 },
                 {
-                    "icon": "bi-house-heart",
+                    "icon": "bi-shield-check",
                     "title": "24/7 emergency travel support",
                     "content": "Our Concierge team is available 24/7 to assist in emergency travel situations. In case of flight cancellations, delays, missed connections, or any other unexpected circumstances, our team adeptly navigates airline systems to achieve the best possible outcomes."
                 }

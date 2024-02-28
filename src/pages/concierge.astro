@@ -27,29 +27,36 @@ import data from '../data/sitecontent.json';
 		))}
 	</div>
 
-	<div class="row row-cols-1 row-cols-lg-2">
+	<div class="row row-cols-1 row-cols-lg-2 bg-pc-10 py-4">
 		<div class="col d-flex flex-column justify-content-center align-items-start text-start p-5">
 			<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">{data.concierge.section1.badge}</span>
 			<h2 class="display-4 fw-bold lh-1 mb-2 mt-4"><Fragment set:html={data.concierge.section1.title}/></h2>
 			<p class="text-body-secondary fs-5 my-3">{data.concierge.section1.content}</p>
 		</div>
-		<div class="col p-5">
-			<img class="w-100 h-100 rounded-4" style="object-fit: cover; aspect-ratio: 1"  src="https://princeoftravel.wpengine.com/wp-content/uploads/2023/10/St.Regis-Bora-Bora-117-scaled.jpg" alt="An image of the St. Regis hotel in Bora Bora"/>
+		<div class="col pt-0 pt-lg-5 pb-5 ps-5 pe-0">
+			<img class="w-100 h-100 object-fit min-vh-500 rounded-4 shadow"  src="https://princeoftravel.wpengine.com/wp-content/uploads/2023/10/St.Regis-Bora-Bora-117-scaled.jpg" alt="An image of the St. Regis hotel in Bora Bora"/>
 		</div>
 	</div>
 
 	<div class="row g-3 p-5">
-		<div class="col-lg-12 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start px-5 pb-5">
+		<div class="col-lg-12 d-flex flex-column justify-content-center align-items-center text-center px-5 pb-5">
 			<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">{data.concierge.section2.badge}</span>
-			<h2 class="display-4 fw-bold lh-1 mb-2 mt-3">{data.concierge.section2.title}</h2>
+			<h2 class="display-4 fw-bold lh-1 mb-2 mt-3"><Fragment set:html={data.concierge.section2.title} /></h2>
 			<p class="text-body-secondary col-md-8 fs-5 my-3">{data.concierge.section2.content}</p>
 		</div>
 
 		{data.concierge.section2.list.map((item) => (
-			<div class="col-lg-4">
-				<div class="p-5 border rounded-4 bg-pc-dark-80 text-light border shadow">
-					<i class:list={["bi text-pc-dark-10 fs-2", item.icon]}></i>
-					<h4 class="mt-1 mb-3">{item.title}</h4>
+			<div class="d-none d-lg-flex col-lg-4">
+				<div class="p-5 border rounded-4 bg-pc-dark text-light border shadow" style="min-height: 420px">
+					<i class:list={["bi text-pc-dark-10 fs-2 px-3 py-2 shadow rounded-3 bg-pc-dark-80", item.icon]}></i>
+					<h4 class="fw-bold mb-3 mt-4">{item.title}</h4>
+					<p>{item.content}</p>
+				</div>
+			</div>
+			<div class="d-flex d-lg-none col-lg-4">
+				<div class="p-5 border rounded-4 bg-pc-dark text-light border shadow">
+					<i class:list={["bi text-pc-dark-10 fs-2 px-3 py-2 shadow rounded-3 bg-pc-dark-80", item.icon]}></i>
+					<h4 class="fw-bold mb-3 mt-4">{item.title}</h4>
 					<p>{item.content}</p>
 				</div>
 			</div>
@@ -61,7 +68,7 @@ import data from '../data/sitecontent.json';
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="col-lg-12 p-0">
-				<img class="w-100 object-fit" style="aspect-ration: 16/9; height: 60vh;" src="https://images.unsplash.com/photo-1604601600542-c751186db4a3?q=80&w=2652&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A bird." alt="descriptive text"/>
+				<img class="w-100 object-fit" style="aspect-ration: 16/9; height: 60vh;" src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Luxury hotel with pool and palm trees" />
 			</div>
 		</div>
 	</div>

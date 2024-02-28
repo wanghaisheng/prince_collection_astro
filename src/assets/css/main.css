@@ -40,6 +40,10 @@ h3, .h3 {
   letter-spacing: 0;
 }
 
+p {
+  text-wrap: balance;
+}
+
 /* images */
 
 img {
