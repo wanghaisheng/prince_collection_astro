@@ -110,6 +110,37 @@ const { Content } = await post.render();
             </div>
             <div class="content-body col-lg-12 col-xl-9 p-4 p-lg-5">
                 <Content />
+
+                <!--image gallery-->
+               
+                    <div class="modal fade" id="gallery" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
+           
+                    {post.data.gallery.map((item, index) => (
+                        <div class="col">
+        <img class="rounded-3 shadow" src={item} alt="">
+    </div>
+        ))}
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+                
+         
+                    <button class="btn btn-primary" data-bs-target="#gallery" data-bs-toggle="modal">Open first modal</button>
+   
+
             </div>
             
             <div class="col-lg-12 d-block d-xl-none border-top p-4">

@@ -344,7 +344,7 @@
         "section1": {
             "badge": "What we offer",
             "title": "We've <span class='text-pc-dark'>been there</span>",
-            "content": "Prince Collection’s on-site reviews set us apart from other luxury travel brands and agencies. We’re physically sending our team to the most unique destinations worldwide so our recommendations come from"
+            "content": "Prince Collection’s on-site reviews set us apart from other luxury travel brands. We send our team to the most unique destinations worldwide and write our reviews and recommendations directly from personal experience."
         },
         "section2": {
             "badge": "Services",
@@ -383,54 +383,107 @@
         "content": "Stories that move the world in your inbox. We focus on inspiration, innovation, and solutions, presenting a balanced take on the latest news, ideas, and technology shaping the future of travel.",
         "privacy": "By providing your email, you agree to the Prince Collection Privacy Policy"
     },
-    "faq": [
-        {
-            "title": "Do you charge any booking fees?",
-            "content": [ 
-                "No! We charge no additional fees for handling bookings. You’ll pay the same price as the best flexible rate offered by the hotel, all while enjoying extra benefits.",
-                "The fee structure is subject to change."
-            ]
-        },
-        {
-            "title": "How are you able to offer these additional benefits?",
-            "content": [
-                "Luxury hotel groups offer these additional benefits and promotions to clients of the world’s leading travel agencies in order to capture significant volumes of guest spending through these agencies."
-            ]
-        },
-        {
-            "title": "What rates will I pay when booking with Prince Collection?",
-            "content": [
-                "In most cases, you’ll pay the same rate as the best flexible (i.e., fully refundable) rate offered directly by the hotel.",
-                "These rates may be higher than member-exclusive rates, prepaid rates, corporate rates, or other specific rate types outside of the best flexible rate, so you’ll want to weigh up the difference in rates against the additional benefits you receive.",
-                "In some cases, such as during property-specific 3rd/4th/5th Night Free promotions, booking with Prince Collection can result in paying lower effective rates compared to the best publicly available rate."
-            ]
-        },
-        {
-            "title": "Will I get elite status benefits, points, and qualifying nights?",
-            "content": [
-                "Yes! The benefits you receive when booking hotels with Prince Collection are in addition to the benefits you’d get as an elite member of a hotel loyalty program.",
-                "Furthermore, Prince Collection bookings are eligible to earn points and qualifying nights within hotel elite status programs, helping you get closer to your next points redemption or a higher elite tier."
-            ]
-        },
-        {
-            "title": "Will I get elite status benefits, points, and qualifying nights?",
-            "content": [
-                "Submit an inquiry via the booking form to get started.",
-                "Our travel advisors will work with you to identify the best property for your needs and help you understand the benefits you’ll receive.",
-                "When you’re ready to book, we will collect your credit card information via a PCI-compliant submission process and pass it along to the property to guarantee your booking.",
-                "After your booking is confirmed, we will communicate with the hotel on your behalf with respect to room preferences, upgrade requests, special occasions, etc., to ensure you have the best possible experience during your stay."
-            ]
-        },
-        {
-            "title": "How does the booking process work?",
-            "content": [
-                "Submit an inquiry via the booking form to get started.",
-                "Our travel advisors will work with you to identify the best property for your needs and help you understand the benefits you’ll receive.",
-                "When you’re ready to book, we will collect your credit card information via a PCI-compliant submission process and pass it along to the property to guarantee your booking.",
-                "After your booking is confirmed, we will communicate with the hotel on your behalf with respect to room preferences, upgrade requests, special occasions, etc., to ensure you have the best possible experience during your stay."
-            ]
-        }
-    ],
+    "faq": {
+        "badge": "FAQ",
+        "title": "Answers to our most <span class='text-pc-dark'>Frequently Asked Questions</span>",
+        "content": "Prince Collection’s Travel Concierge is designed exclusively for companies and individuals who require exclusive travel arrangements handled for them.",
+        "intro": [
+            {
+                "title": "What is Prince Collection?",
+                "content": "Prince Collection is a distinguished brand launched by Prince of Travel, dedicated to offering bespoke luxury experiences. Our portfolio includes a premier travel agency among other high-end travel services and products, designed to elevate the travel experiences of discerning globetrotters around the world."
+            },
+            {
+                "title": "How is Princecollection.com related to Princeoftravel.com?",
+                "content": "Prince Collection is a brand extension of Prince of Travel, leveraging the latter’s expertise and reputation in the travel industry to offer specialized luxury travel products and services. While Prince of Travel focuses on maximizing travel rewards, Prince Collection is dedicated to curating bespoke travel experiences that cater to the luxury segment of the market."
+            },
+            {
+                "title": "What future initiatives can we expect from Prince Collection?",
+                "content": "Looking ahead, Prince Collection is poised to expand its offerings to embrace a wider array of bespoke travel experiences. While luxury train journeys and exclusive hotel stays will remain a cornerstone of our offerings, we are exploring new partnerships and destinations to provide our clients with an even broader spectrum of exceptional travel options. Expect innovations in personalized travel, community engagement projects, and initiatives aimed at enhancing the sustainability of luxury travel. Our goal is to continuously push the boundaries of what luxury travel can be, ensuring our clients have access to unparalleled experiences that are as enriching as they are exclusive."
+            }
+        ],
+        "travel_agency_title": "Travel Agency FAQ",
+        "travel_agency": [
+            {
+                "title": "Do you charge any booking fees?",
+                "content": [ 
+                    "No! We charge no additional fees for handling bookings. You’ll pay the same price as the best flexible rate offered by the hotel, all while enjoying extra benefits.",
+                    "The fee structure is subject to change."
+                ]
+            },
+            {
+                "title": "How are you able to offer these additional benefits?",
+                "content": [
+                    "Luxury hotel groups offer these additional benefits and promotions to clients of the world’s leading travel agencies in order to capture significant volumes of guest spending through these agencies."
+                ]
+            },
+            {
+                "title": "What rates will I pay when booking with Prince Collection?",
+                "content": [
+                    "In most cases, you’ll pay the same rate as the best flexible (i.e., fully refundable) rate offered directly by the hotel.",
+                    "These rates may be higher than member-exclusive rates, prepaid rates, corporate rates, or other specific rate types outside of the best flexible rate, so you’ll want to weigh up the difference in rates against the additional benefits you receive.",
+                    "In some cases, such as during property-specific 3rd/4th/5th Night Free promotions, booking with Prince Collection can result in paying lower effective rates compared to the best publicly available rate."
+                ]
+            },
+            {
+                "title": "Will I get elite status benefits, points, and qualifying nights?",
+                "content": [
+                    "Yes! The benefits you receive when booking hotels with Prince Collection are in addition to the benefits you’d get as an elite member of a hotel loyalty program.",
+                    "Furthermore, Prince Collection bookings are eligible to earn points and qualifying nights within hotel elite status programs, helping you get closer to your next points redemption or a higher elite tier."
+                ]
+            },
+            {
+                "title": "Will I get elite status benefits, points, and qualifying nights?",
+                "content": [
+                    "Submit an inquiry via the booking form to get started.",
+                    "Our travel advisors will work with you to identify the best property for your needs and help you understand the benefits you’ll receive.",
+                    "When you’re ready to book, we will collect your credit card information via a PCI-compliant submission process and pass it along to the property to guarantee your booking.",
+                    "After your booking is confirmed, we will communicate with the hotel on your behalf with respect to room preferences, upgrade requests, special occasions, etc., to ensure you have the best possible experience during your stay."
+                ]
+            },
+            {
+                "title": "How does the booking process work?",
+                "content": [
+                    "Submit an inquiry via the booking form to get started.",
+                    "Our travel advisors will work with you to identify the best property for your needs and help you understand the benefits you’ll receive.",
+                    "When you’re ready to book, we will collect your credit card information via a PCI-compliant submission process and pass it along to the property to guarantee your booking.",
+                    "After your booking is confirmed, we will communicate with the hotel on your behalf with respect to room preferences, upgrade requests, special occasions, etc., to ensure you have the best possible experience during your stay."
+                ]
+            },
+            {
+                "title": "How does Prince Collection ensure the quality of its travel experiences?",
+                "content": [
+                    "Quality is at the core of everything we do at Prince Collection. We handpick our partners based on rigorous standards of excellence, from luxury accommodations to elite concierge services. Our team of travel experts continuously explores new destinations and experiences to ensure our recommendations meet the high expectations associated with our brand. Furthermore, we value and act upon the feedback from our clients to constantly refine and enhance our offerings."
+                ]
+            }
+        ],
+        "concierge_title": "Concierge FAQ",
+        "concierge": [
+            {
+                "title": "What is a luxury travel concierge service?",
+                "content": "A luxury travel concierge tailors every trip detail to client preferences, offering exclusive accommodations, unique experiences, and VIP treatment for a seamless, high-end travel experience."
+            },
+            {
+                "title": "How does a luxury travel concierge differ from a regular travel agent?",
+                "content": "Luxury concierges offer bespoke, high-end services and exclusive access on an ongoing basis with 24/7 travel support, while regular agents provide standard travel packages and bookings."
+            },
+            {
+                "title": "Who can benefit from using a luxury travel concierge service?",
+                "content": "Anyone seeking personalized, high-end travel experiences with exclusive access and VIP treatment can benefit from a luxury travel concierge, including businesses and high net worth individuals."
+            },
+            {
+                "title": "How can I contact my travel concierge while abroad?",
+                "content": "You will begin your relationship with your concierge upon enrollment, and you will have access 24/7 via text, phone, email, or your preferred contact method."
+            },
+            {
+                "title": "How do you tailor travel experiences to individual tastes and preferences?",
+                "content": "In the enrollment process, our  concierge team will get to know you and your travel preferences on a deep level. As the relationship progresses, we learn your needs, wants, preferences, and more as we deliver you personalized travel experiences."
+            },
+            {
+                "title": "Can you accommodate special requests, such as dietary restrictions or accessibility needs?",
+                "content": "Of course. The Prince Collection concierge is here to create your personalized travel itineraries, which includes your dietary and accessibility needs."
+            }
+        ]
+    },
     "booking": {
         "badge": "Book your travel",
         "title": "Book with Us",

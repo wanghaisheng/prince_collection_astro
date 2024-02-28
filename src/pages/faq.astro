@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import faqData from '../data/faq.json';
+import data from '../data/sitecontent.json';
 ---
 
 <Layout title="Welcome to Prince Collection" description="Prince Collection">
@@ -8,15 +8,50 @@ import faqData from '../data/faq.json';
 		<div class="container px-0 pt-3">
 			<div class="row min-vh-500">
 				<div class="col-lg-10 offset-lg-1 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center px-5 pt-5">
-                    <span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">FAQ</span>
-					<h1 class="display-2 fw-bold lh-1 mb-2 mt-3">Answers to our most <span class="text-pc-dark">Frequently Asked Questions</span></h1>
-					<p class="col-md-7 fs-5 text-body-secondary mt-3 mb-0">Prince Collection’s Travel Concierge is designed exclusively for companies and individuals who require exclusive travel arrangements handled for them.</p>
+                    <span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">{data.faq.badge}</span>
+					<h1 class="display-2 fw-bold lh-1 mb-2 mt-3"><Fragment set:html={data.faq.title} /></h1>
+					<p class="col-md-7 fs-5 text-body-secondary mt-3 mb-0">{data.faq.content}</p>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="d-flex flex-column justify-content-center align-items-start p-5 bg-pc-10 rounded-4" style="min-height: 375px">
+							<h2 class="fs-2 font-inter">{data.faq.intro[0].title}</h2>
+							<p>{data.faq.intro[0].content}</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="d-flex flex-column justify-content-center align-items-start p-5 bg-pc-10 rounded-4" style="min-height: 375px">
+							<h2 class="fs-2 font-inter">{data.faq.intro[1].title}</h2>
+							<p>{data.faq.intro[1].content}</p>
+						</div>
+					</div>
+					<div class="col-lg-12 mt-3">
+						<div class="d-flex flex-column justify-content-center align-items-start p-5 bg-pc-10 rounded-4" style="min-height: 375px">
+							<h2 class="fs-2 font-inter">{data.faq.intro[2].title}</h2>
+							<p>{data.faq.intro[2].content}</p>
+						</div>
+					</div>
+					<div class="col-lg-6 mt-3">
+						<div class="p-5 min-vh-50 bg-timberwolf rounded-4">
+							<h2 class="fs-2 font-inter">{data.faq.travel_agency_title}</h2>
+							<p>{data.faq.intro[2].content}</p>
+							<button class="btn btn-light rounded-pill border-0 px-4 bg-pc">Get the FAQs</button>
+						</div>
+					</div>
+					<div class="col-lg-6 mt-3">
+						<div class="p-5 min-vh-50 bg-pc-light rounded-4">
+							<h2 class="fs-2 font-inter">{data.faq.concierge_title}</h2>
+							<p>{data.faq.intro[2].content}</p>
+							<button class="btn btn-light rounded-pill border-0 px-4 bg-pc">Get the FAQs</button>
+						</div>
+					</div>
 				</div>
 
 				<div class="col-lg-10 offset-lg-1">
 					<div class="accordion accordion-flush" id="faqAccordion">
 						{
-						faqData.faq.map((item, index) => (
+						data.faq.travel_agency.map((item, index) => (
 						<div class="accordion accordion-flush px-3" id="faqAccordion">
 							<div class="accordion-item">
 								<h2 class="accordion-header py-4 border-top">

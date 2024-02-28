@@ -55,7 +55,22 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: "Featured image", name: "imageUrl", widget: "image" } # Field Featured Image
       - { label: "Image Alt text", name: "imageAlt", widget: "string" } 
+      - { label: "Category", name: "category", widget: "string", default: "blog" }
       - { label: "Tags", name: "tags", widget: "list", default: ["guides"] }
+      - label: "Carousel"
+        name: "carousel"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Carousel image", name: "image", widget: "image", required: false }
+          - {label: "Carousel alt text", name: "alt", widget: "string", required: false }
+      - label: "Gallery"
+        name: "gallery"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Gallery image", name: "image", widget: "image", required: false }
+          - {label: "Gallery alt text", name: "alt", widget: "string", required: false }
       - {label: "Body", name: "body", widget: "markdown"}
   - label: news # Label used in the UI for the collection
     label_singular: post # Label for singular post
@@ -69,7 +84,22 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: "Featured image", name: "imageUrl", widget: "image" } # Field Featured Image
       - { label: "Image Alt text", name: "imageAlt", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["news"] } 
+      - { label: "Category", name: "category", widget: "string", default: "blog" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["guides"] }
+      - label: "Carousel"
+        name: "carousel"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Carousel image", name: "image", widget: "image", required: false }
+          - {label: "Carousel alt text", name: "alt", widget: "string", required: false }
+      - label: "Gallery"
+        name: "gallery"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Gallery image", name: "image", widget: "image", required: false }
+          - {label: "Gallery alt text", name: "alt", widget: "string", required: false } 
       - {label: "Body", name: "body", widget: "markdown"}
   - label: reviews # Label used in the UI for the collection
     label_singular: post # Label for singular post
@@ -83,7 +113,22 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: "Featured image", name: "imageUrl", widget: "image" } # Field Featured Image
       - { label: "Image Alt text", name: "imageAlt", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["reviews"] } 
+      - { label: "Category", name: "category", widget: "string", default: "blog" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["guides"] }
+      - label: "Carousel"
+        name: "carousel"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Carousel image", name: "image", widget: "image", required: false }
+          - {label: "Carousel alt text", name: "alt", widget: "string", required: false }
+      - label: "Gallery"
+        name: "gallery"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Gallery image", name: "image", widget: "image", required: false }
+          - {label: "Gallery alt text", name: "alt", widget: "string", required: false }
       - {label: "Body", name: "body", widget: "markdown"}
 
 # use fields for credit card or other ads, then use v-if on a component inside the MD

@@ -10,10 +10,10 @@ const blog = defineCollection({
       author: z.string(),
       imageUrl: z.string(),
       imageAlt: z.string(),
+      category: z.string(),
       tags: z.array(z.string()),
       carousel: z.array(z.string()),
-      gallery: z.array(z.string()),
-      category: z.string()
+      gallery: z.array(z.string())
       })
   });
 
@@ -26,7 +26,10 @@ const blog = defineCollection({
       author: z.string(),
       imageUrl: z.string(),
       imageAlt: z.string(),
-      tags: z.array(z.string())
+      category: z.string(),
+      tags: z.array(z.string()),
+      carousel: z.array(z.string()),
+      gallery: z.array(z.string())
     })
   });
 
@@ -39,7 +42,10 @@ const blog = defineCollection({
       author: z.string(),
       imageUrl: z.string(),
       imageAlt: z.string(),
-      tags: z.array(z.string())
+      category: z.string(),
+      tags: z.array(z.string()),
+      carousel: z.array(z.string()),
+      gallery: z.array(z.string())
     })
   });
 
@@ -52,7 +58,10 @@ const blog = defineCollection({
       author: z.string(),
       imageUrl: z.string(),
       imageAlt: z.string(),
-      tags: z.array(z.string())
+      category: z.string(),
+      tags: z.array(z.string()),
+      carousel: z.array(z.string()),
+      gallery: z.array(z.string())
     })
   });
 
