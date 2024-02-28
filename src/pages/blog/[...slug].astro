@@ -35,18 +35,14 @@ const { Content } = await post.render();
                 <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {post.data.pubDate.toString().slice(0,10)}</p>
             </div>
             <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5">
-                <!-- <Image class="w-100 object-fit min-vh-50" width="700" height="500" src={post.data.imageUrl} alt="Prince Collection logo"/> -->
                 <div id="carouselExampleIndicators" class="carousel slide"  data-bs-ride="true">
                     <div class="carousel-indicators">
                         {post.data.carousel.map((item, index) => (
-                               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} class={index === 0 ? 'active' : ''} aria-current="true" aria-label={'Slide ' + index+1}>
-                                <i class="bi bi-dot fs-1"></i>
-                                </button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} class={index === 0 ? 'active' : ''} aria-current="true" aria-label={'Slide ' + index+1}>
+                            <i class="bi bi-dot fs-1"></i>
+                            </button>
                         ))}
                         <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-
-                      
-
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
                     </div>
@@ -110,37 +106,6 @@ const { Content } = await post.render();
             </div>
             <div class="content-body col-lg-12 col-xl-9 p-4 p-lg-5">
                 <Content />
-
-                <!--image gallery-->
-               
-                    <div class="modal fade" id="gallery" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-  <div class="modal-dialog modal-fullscreen modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
-           
-                    {post.data.gallery.map((item, index) => (
-                        <div class="col">
-        <img class="rounded-3 shadow" src={item} alt="">
-    </div>
-        ))}
-        </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-                
-         
-                    <button class="btn btn-primary" data-bs-target="#gallery" data-bs-toggle="modal">Open first modal</button>
-   
-
             </div>
             
             <div class="col-lg-12 d-block d-xl-none border-top p-4">

@@ -5,10 +5,21 @@ description: Perched atop a hill that overlooks the gorgeous Elliott Bay is the 
 pubDate: 2024-02-09T01:54:15.318Z
 imageUrl: https://images.unsplash.com/photo-1559511260-66a654ae982a?q=80&w=3018&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 imageAlt: Lorem ipsum dolor sit amet
+category: reviews
 tags:
-  - reviews
-  - four-seasons
-  - vancouver
+  - news
+  - deals
+  - scandinavia
+carousel:
+  - /images/uploads/kimpton-saint-george-toronto-45.jpeg
+  - https://images.unsplash.com/photo-1519690889869-e705e59f72e1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  - https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  - https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+gallery:
+  - /images/uploads/kimpton-saint-george-toronto-45.jpeg
+  - https://images.unsplash.com/photo-1519690889869-e705e59f72e1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  - https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  - https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 
 Perched atop a hill that overlooks the gorgeous Elliott Bay is the **Four Seasons Hotel Seattle**. If you're in search of a luxurious stay in the heart of the city, or are in need of a blissful escape from the region's notoriously moody weather, you've come to the right place.
