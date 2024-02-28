@@ -24,23 +24,23 @@ collections:
       - { label: "Description", name: "description", widget: "string" } # Field Description
       - { label: 'Publish Date', name: 'pubDate', widget: 'datetime' }
       - { label: "Featured image", name: "imageUrl", widget: "image" } # Field Featured Image
-      - { label: "Image Alt text", name: "imageAlt", widget: "string" } # 
+      - { label: "Image Alt text", name: "imageAlt", widget: "string", required: false } # 
       - { label: "Category", name: "category", widget: "string", default: "blog" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["blog"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["blog"], required: false }
       - label: "Carousel"
         name: "carousel"
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Carousel image", name: "image", widget: "image" }
-          - {label: "Carousel alt text", name: "alt", widget: "string" }
+          - {label: "Carousel image", name: "image", widget: "image", required: false }
+          - {label: "Carousel alt text", name: "alt", widget: "string", required: false }
       - label: "Gallery"
         name: "gallery"
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Gallery image", name: "image", widget: "image" }
-          - {label: "Gallery alt text", name: "alt", widget: "string" }
+          - {label: "Gallery image", name: "image", widget: "image", required: false }
+          - {label: "Gallery alt text", name: "alt", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
       
   - label: guides # Label used in the UI for the collection
