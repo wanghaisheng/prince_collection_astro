@@ -33,14 +33,14 @@ collections:
         collapsed: true
         fields:
           - {label: "Carousel image", name: "image", widget: "image" }
-          - {label: "Image alt", name: "alt", widget: "list", fields: - {label: "Alt text", name: "Image alt text", widget: "string"} }
+          - {label: "Carousel alt text", name: "alt", widget: "string" }
       - label: "Gallery"
         name: "gallery"
         widget: "object"
         collapsed: true
         fields:
           - {label: "Gallery image", name: "image", widget: "image" }
-          - {label: "Image alt", name: "alt", widget: "list" }
+          - {label: "Gallery alt text", name: "alt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       
   - label: guides # Label used in the UI for the collection
