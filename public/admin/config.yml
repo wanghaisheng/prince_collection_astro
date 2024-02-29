@@ -35,7 +35,7 @@ collections:
         required: false
         fields:
           - {label: "Carousel image", name: "image", widget: "image" }
-          - {label: "Carousel alt text", name: "alt", widget: "string" }
+          - {label: "Carousel alt text", name: "alt", widget: "list", default: ["An image about something"] }
       - label: "Gallery"
         name: "gallery"
         widget: "object"
