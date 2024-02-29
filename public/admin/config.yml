@@ -35,7 +35,7 @@ collections:
         required: false
         fields:
           - {label: "Carousel image", name: "image", widget: "image" }
-          - {label: "Carousel alt text", name: "alt", widget: "string", default: "Prince Collection post image" }
+          - {label: "Carousel alt text", name: "alt", widget: "string", default: "Prince Collection general carousel description" }
       - label: "Gallery"
         name: "gallery"
         widget: "object"
@@ -43,7 +43,7 @@ collections:
         required: false
         fields:
           - {label: "Gallery image", name: "image", widget: "image" }
-          - {label: "Gallery alt text", name: "alt", widget: "string" }
+          - {label: "Gallery alt text", name: "alt", widget: "string", default: "Prince Collection general gallery description" }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: news # Label used in the UI for the collection
@@ -68,7 +68,7 @@ collections:
         required: false
         fields:
           - {label: "Carousel image", name: "image", widget: "image" }
-          - {label: "Carousel alt text", name: "alt", widget: "string" }
+          - {label: "Carousel alt text", name: "alt", widget: "string", default: "Prince Collection general carousel description" }
       - label: "Gallery"
         name: "gallery"
         widget: "object"
@@ -76,7 +76,7 @@ collections:
         required: false
         fields:
           - {label: "Gallery image", name: "image", widget: "image" }
-          - {label: "Gallery alt text", name: "alt", widget: "string" } 
+          - {label: "Gallery alt text", name: "alt", widget: "string", default: "Prince Collection general gallery description" } 
       - {label: "Body", name: "body", widget: "markdown"}
 
   - label: reviews # Label used in the UI for the collection
@@ -101,7 +101,7 @@ collections:
         required: false
         fields:
           - {label: "Carousel image", name: "image", widget: "image" }
-          - {label: "Carousel alt text", name: "alt", widget: "string" }
+          - {label: "Carousel alt text", name: "alt", widget: "string", default: "Prince Collection general carousel description" }
       - label: "Gallery"
         name: "gallery"
         widget: "object"
@@ -109,7 +109,7 @@ collections:
         required: false
         fields:
           - {label: "Gallery image", name: "image", widget: "image" }
-          - {label: "Gallery alt text", name: "alt", widget: "string" }
+          - {label: "Gallery alt text", name: "alt", widget: "string", default: "Prince Collection general gallery description" }
       - {label: "Body", name: "body", widget: "markdown"}
 
   - label: guides # Label used in the UI for the collection
@@ -134,7 +134,7 @@ collections:
         required: false
         fields:
           - {label: "Carousel image", name: "image", widget: "image" }
-          - {label: "Carousel alt text", name: "alt", widget: "string" }
+          - {label: "Carousel alt text", name: "alt", widget: "string", default: "Prince Collection general carousel description" }
       - label: "Gallery"
         name: "gallery"
         widget: "object"
@@ -142,7 +142,7 @@ collections:
         required: false
         fields:
           - {label: "Gallery image", name: "image", widget: "image" }
-          - {label: "Gallery alt text", name: "alt", widget: "string" }
+          - {label: "Gallery alt text", name: "alt", widget: "string", default: "Prince Collection general gallery description" }
       - {label: "Body", name: "body", widget: "markdown"}
 
 # use fields for credit card or other ads, then use v-if on a component inside the MD
