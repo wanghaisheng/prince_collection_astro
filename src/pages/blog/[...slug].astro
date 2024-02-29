@@ -42,9 +42,6 @@ const { Content } = await post.render();
                             <i class="bi bi-dot fs-1"></i>
                             </button>
                         ))}
-                        <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
                     </div>
                     <div class="carousel-inner object-fit h-100">
                     {post.data.carousel.map((item, index) => (
@@ -104,8 +101,42 @@ const { Content } = await post.render();
                     ))
                 }
             </div>
+
+
+
             <div class="content-body col-lg-12 col-xl-9 p-4 p-lg-5">
                 <Content />
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                {post.data.gallery.map((item, index) => (
+                    <div class="col">
+                        <img src={item} alt="" data-bs-target={'#item_' + index} data-bs-toggle="modal">    
+                    </div>
+                ))}
+                </div>
+
+
+{
+    post.data.gallery.map((item, index) => (
+    <div class="modal fade" id={'item_' + index} aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src={item} alt="">
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target={'#' + index} data-bs-toggle="modal">Back to first</button>
+      </div>
+    </div>
+  </div>
+</div>
+    ))}
+
+
             </div>
             
             <div class="col-lg-12 d-block d-xl-none border-top p-4">
