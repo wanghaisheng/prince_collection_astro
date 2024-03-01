@@ -31,15 +31,17 @@ collections:
       - label: Carousel
         name: carousel
         widget: list
+        required: false
         fields:
           - {label: Image, name: photo, widget: image, required: false}
-          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description"}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
       - label: Gallery
         name: gallery
         widget: list
+        required: false
         fields:
           - {label: Image, name: photo, widget: image, required: false}
-          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description"}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: news # Label used in the UI for the collection
@@ -55,24 +57,22 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: "Featured image", name: "imageUrl", widget: "image" } # Field Featured Image
       - { label: "Image Alt text", name: "imageAlt", widget: "string" }
-      - { label: "Category", name: "category", widget: "string", default: "blog" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["guides"] }
-      - label: "Carousel"
-        name: "carousel"
-        widget: "object"
-        collapsed: true
+      - { label: "Category", name: "category", widget: "string", default: "news" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["news"] }
+      - label: Carousel
+        name: carousel
+        widget: list
         required: false
         fields:
-          - {label: "Carousel image", name: "image", widget: "image" }
-          - {label: "Carousel alt text", name: "alt", widget: "string", default: "Prince Collection general carousel description" }
-      - label: "Gallery"
-        name: "gallery"
-        widget: "object"
-        collapsed: true
+          - {label: Image, name: photo, widget: image, required: false}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
+      - label: Gallery
+        name: gallery
+        widget: list
         required: false
         fields:
-          - {label: "Gallery image", name: "image", widget: "image" }
-          - {label: "Gallery alt text", name: "alt", widget: "string", default: "Prince Collection general gallery description" } 
+          - {label: Image, name: photo, widget: image, required: false}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - label: reviews # Label used in the UI for the collection
@@ -88,24 +88,22 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: "Featured image", name: "imageUrl", widget: "image" } # Field Featured Image
       - { label: "Image Alt text", name: "imageAlt", widget: "string" }
-      - { label: "Category", name: "category", widget: "string", default: "blog" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["guides"] }
-      - label: "Carousel"
-        name: "carousel"
-        widget: "object"
-        collapsed: true
+      - { label: "Category", name: "category", widget: "string", default: "reviews" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["reviews"] }
+      - label: Carousel
+        name: carousel
+        widget: list
         required: false
         fields:
-          - {label: "Carousel image", name: "image", widget: "image" }
-          - {label: "Carousel alt text", name: "alt", widget: "string", default: "Prince Collection general carousel description" }
-      - label: "Gallery"
-        name: "gallery"
-        widget: "object"
-        collapsed: true
+          - {label: Image, name: photo, widget: image, required: false}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
+      - label: Gallery
+        name: gallery
+        widget: list
         required: false
         fields:
-          - {label: "Gallery image", name: "image", widget: "image" }
-          - {label: "Gallery alt text", name: "alt", widget: "string", default: "Prince Collection general gallery description" }
+          - {label: Image, name: photo, widget: image, required: false}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - label: guides # Label used in the UI for the collection
@@ -121,25 +119,35 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: "Featured image", name: "imageUrl", widget: "image" } # Field Featured Image
       - { label: "Image Alt text", name: "imageAlt", widget: "string" } 
-      - { label: "Category", name: "category", widget: "string", default: "blog" }
+      - { label: "Category", name: "category", widget: "string", default: "guides" }
       - { label: "Tags", name: "tags", widget: "list", default: ["guides"] }
-      - label: "Carousel"
-        name: "carousel"
-        widget: "object"
-        collapsed: true
+      - label: Carousel
+        name: carousel
+        widget: list
         required: false
         fields:
-          - {label: "Carousel image", name: "image", widget: "image" }
-          - {label: "Carousel alt text", name: "alt", widget: "string", default: "Prince Collection general carousel description" }
-      - label: "Gallery"
-        name: "gallery"
-        widget: "object"
-        collapsed: true
+          - {label: Image, name: photo, widget: image, required: false}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
+      - label: Gallery
+        name: gallery
+        widget: list
         required: false
         fields:
-          - {label: "Gallery image", name: "image", widget: "image" }
-          - {label: "Gallery alt text", name: "alt", widget: "string", default: "Prince Collection general gallery description" }
+          - {label: Image, name: photo, widget: image, required: false}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  - label: authors # Label used in the UI for the collection
+    label_singular: author # Label for singular post
+    name: authors # Name of the collection used for various functionality in the CMS
+    folder: /src/content/authors # Where each new post with .md should be saved
+    create: true # Allows users to create new items in the collection
+    fields:
+      - { label: "Name", name: "name", widget: "string" } # Field Title
+      - { label: "Description", name: "description", widget: "string" } # Field Description
+      - { label: "Featured image", name: "imageUrl", widget: "image" } # Field Featured Image
+      - { label: "Image Alt text", name: "imageAlt", widget: "string" } 
+      - {label: "Body", name: "body", widget: "markdown", required: false}  
 
 # use fields for credit card or other ads, then use v-if on a component inside the MD
 

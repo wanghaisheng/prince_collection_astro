@@ -72,13 +72,10 @@ const blog = defineCollection({
   const authors = defineCollection({
     type: 'data',
     schema: z.object({
-        title: z.string(),
-        pubDate: z.date(),
+        name: z.string(),
         description: z.string(),
-        author: z.string(),
         imageUrl: z.string(),
         imageAlt: z.string(),
-        tags: z.array(z.string())
       })
   });
   
