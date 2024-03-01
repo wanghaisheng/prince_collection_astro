@@ -28,6 +28,13 @@ collections:
       - { label: "Image Alt text", name: "imageAlt", widget: "string" } # 
       - { label: "Category", name: "category", widget: "string", default: "blog" }
       - { label: "Tags", name: "tags", widget: "list", default: ["blog"] }
+      - label: Team
+        name: team
+        widget: list
+        fields:
+          - {label: Name, name: name, widget: string}
+          - {label: Position, name: position, widget: string}
+          - {label: Photo, name: photo, widget: image}
       - label: "Carousel"
         name: "carousel"
         widget: "object"
