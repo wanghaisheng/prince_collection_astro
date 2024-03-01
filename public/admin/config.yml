@@ -28,29 +28,18 @@ collections:
       - { label: "Image Alt text", name: "imageAlt", widget: "string" } # 
       - { label: "Category", name: "category", widget: "string", default: "blog" }
       - { label: "Tags", name: "tags", widget: "list", default: ["blog"] }
-      - label: Team
-        name: team
+      - label: Carousel
+        name: carousel
         widget: list
         fields:
-          - {label: Name, name: name, widget: string}
-          - {label: Position, name: position, widget: string}
-          - {label: Photo, name: photo, widget: image}
-      - label: "Carousel"
-        name: "carousel"
-        widget: "object"
-        collapsed: true
-        required: false
+          - {label: Image, name: photo, widget: image, required: false}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description"}
+      - label: Gallery
+        name: gallery
+        widget: list
         fields:
-          - {label: "Carousel image", name: "image", widget: "image" }
-          - {label: "Carousel alt text", name: "alt", widget: "string", default: "Prince Collection general carousel description" }
-      - label: "Gallery"
-        name: "gallery"
-        widget: "object"
-        collapsed: true
-        required: false
-        fields:
-          - {label: "Gallery image", name: "image", widget: "image" }
-          - {label: "Gallery alt text", name: "alt", widget: "string", default: "Prince Collection general gallery description" }
+          - {label: Image, name: photo, widget: image, required: false}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description"}
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: news # Label used in the UI for the collection
