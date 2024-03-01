@@ -33,14 +33,14 @@ collections:
         widget: list
         required: false
         fields:
-          - {label: Image, name: photo, widget: image, required: false}
+          - {label: Image, name: url, widget: image, required: false}
           - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
       - label: "Gallery"
         name: "gallery"
         widget: list
         required: false
         fields:
-          - {label: Image, name: photo, widget: image, required: false}
+          - {label: Image, name: url, widget: image, required: false}
           - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -64,14 +64,14 @@ collections:
         widget: list
         required: false
         fields:
-          - {label: Image, name: photo, widget: image, required: false}
+          - {label: Image, name: url, widget: image, required: false}
           - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
       - label: "Gallery"
         name: "gallery"
         widget: list
         required: false
         fields:
-          - {label: Image, name: photo, widget: image, required: false}
+          - {label: Image, name: url, widget: image, required: false}
           - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
@@ -95,14 +95,14 @@ collections:
         widget: list
         required: false
         fields:
-          - {label: Image, name: photo, widget: image, required: false}
+          - {label: Image, name: url, widget: image, required: false}
           - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
       - label: "Gallery"
         name: "gallery"
         widget: list
         required: false
         fields:
-          - {label: Image, name: photo, widget: image, required: false}
+          - {label: Image, name: url, widget: image, required: false}
           - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
@@ -126,14 +126,14 @@ collections:
         widget: list
         required: false
         fields:
-          - {label: Image, name: photo, widget: image, required: false}
+          - {label: Image, name: url, widget: image, required: false}
           - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
       - label: "Gallery"
         name: "gallery"
         widget: list
         required: false
         fields:
-          - {label: Image, name: photo, widget: image, required: false}
+          - {label: Image, name: url, widget: image, required: false}
           - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
