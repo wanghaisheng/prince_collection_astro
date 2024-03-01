@@ -47,7 +47,7 @@ const { Content } = await post.render();
                     {post.data.carousel.map((item, index) => (
                         <div style="height: 600px"
                         class:list={["carousel-item min-vw-100", index === 0 ? 'active' : '']}>
-                            <img src={item} class="d-block w-100 h-100 object-fit" alt="...">
+                            <img src={item.url} class="d-block w-100 h-100 object-fit" alt={item.alt}>
                       </div>
                     ))}
                     </div>

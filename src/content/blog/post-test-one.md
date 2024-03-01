@@ -14,11 +14,11 @@ tags:
   - blog
 carousel:
   - alt: Alt one
-    photo: https://masonmedia.github.io/json-server/images/pc-hotel-bed-blue.avif
+    url: https://masonmedia.github.io/json-server/images/pc-hotel-bed-blue.avif
   - alt: Prince Collection garden
-    photo: https://masonmedia.github.io/json-server/images/pc-hotel-brown-garden.avif
+    url: https://masonmedia.github.io/json-server/images/pc-hotel-brown-garden.avif
   - alt: Prince Collection mountain bed
-    photo: https://masonmedia.github.io/json-server/images/pc-mountain-bed.avif
+    url: https://masonmedia.github.io/json-server/images/pc-mountain-bed.avif
 gallery:
   - alt: Prince Collection image description
 ---
