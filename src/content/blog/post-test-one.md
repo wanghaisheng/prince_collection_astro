@@ -21,6 +21,7 @@ carousel:
     url: https://masonmedia.github.io/json-server/images/pc-mountain-bed.avif
 gallery:
   - alt: Prince Collection image description
+    url: https://masonmedia.github.io/json-server/images/pc-mountain-bed.avif
 ---
 # Lorem ipsum titlesum
 
@@ -36,13 +37,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
   <div class="col">
-    <img alt="" class="w-100 object-fit p-1 m-0 shadow" style="min-height: 300px" src="/images/uploads/img_3693.jpeg" />
+    <img alt="" class="w-100 object-fit p-1 m-0 shadow" style="min-height: 250px" src="/images/uploads/img_3693.jpeg" />
   </div>
   <div class="col">
-    <img alt="" class="w-100 object-fit p-1 m-0 shadow" style="min-height: 300px" src="/images/uploads/img_3693.jpeg" />
+    <img alt="" class="w-100 object-fit p-1 m-0 shadow" style="min-height: 250px" src="/images/uploads/img_3693.jpeg" />
   </div>
   <div class="col">
-    <img alt="" class="w-100 object-fit p-1 m-0 shadow" style="min-height: 300px" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <img alt="" class="w-100 object-fit p-1 m-0 shadow" style="min-height: 250px" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
   </div>
 </div>
 
@@ -67,19 +68,19 @@ Quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mus mauris vitae u
 ## HTML image using figure and caption
 
 <figure>
-    <img src="/images/<!--if you upload the image, add your file path here-->"
+    <img src=""
          alt="Albuquerque, New Mexico">
     <figcaption>A single track trail outside of Albuquerque, New Mexico.</figcaption>
 </figure>
 
 <figure>
-    <img src="<!--if you use a URL from another site, i.e. unsplash, add the file path here-->"
+    <img src="https://masonmedia.github.io/json-server/images/pc-hotel-bed-blue.avif"
          alt="Albuquerque, New Mexico">
     <figcaption>A single track trail outside of Albuquerque, New Mexico.</figcaption>
 </figure>
 
 Also can use this approach
-![Albuquerque, New Mexico](/assets/images/albuquerque.jpg)
+![Albuquerque, New Mexico](https://masonmedia.github.io/json-server/images/pc-hotel-bed-blue.avif)
 *A single track trail outside of Albuquerque, New Mexico.*
 
 ## Faucibus nisl tincidunt

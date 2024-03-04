@@ -49,18 +49,34 @@ const { icon, modalTrigger } = Astro.props
 				  </li>
 			</ul> -->
 
+			<!-- main menu drawer -->
 			<button data-bs-toggle="offcanvas" data-bs-target="#navDrawer" aria-controls="offcanvasBottom" class="btn btn-dark me-2 rounded-3 px-3">
 				<i class="bi bi-justify-left fs-5"></i>
 			</button>
 
-			<Drawer drawerTitle="PrinceCollection" drawerId="navDrawer" drawerAriaLabel="Prince Collection">
+			<Drawer drawerClass="bg-pc" drawerTitle="Prince Collection" drawerId="navDrawer" drawerAriaLabel="Prince Collection Menu">
 				<div class="container-fluid px-0">
 					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 p-0">
+
 						{
 						navData.navData.map((item) => (
-							<div class="col position-relative">
+							<div class="col d-none d-lg-flex position-relative">
 								<a href={item.path}>
 									<div class="p-4 w-100 h-100 bg-pc-light rounded-4 shadow" style="min-height: 350px;">
+										<div class="p-3 w-100 h-100 bg-pc-10 rounded-4">
+										<i class:list={["bi me-3 fs-2 text-pc-dark position-absolute end-0 top-0 me-4 mt-2", item.icon || ""]}></i>
+										<span class="badge bg-pc-dark text-pc-10">{item.badge}</span>
+										<h3 class="fs-2 fw-bold mt-3">{item.title}</h3>
+										<p>{item.description}</p>
+										<button class="btn btn-sm btn-pc-dark rounded-pill shadow">Go <i class="bi bi-arrow-up-right"></i></button>
+										</div>
+									</div>
+								</a>
+							</div>
+							
+							<div class="col d-flex d-lg-none position-relative">
+								<a href={item.path}>
+									<div class="p-4 w-100 h-100 bg-pc-light rounded-4 shadow">
 										<div class="p-3 w-100 h-100 bg-pc-10 rounded-4">
 										<i class:list={["bi me-3 fs-2 text-pc-dark position-absolute end-0 top-0 me-4 mt-2", item.icon || ""]}></i>
 										<span class="badge bg-pc-dark text-pc-10">{item.badge}</span>

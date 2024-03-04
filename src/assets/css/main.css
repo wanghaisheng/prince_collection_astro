@@ -37,6 +37,11 @@ h1, .h1,
 h2, .h2,
 h3, .h3 {
   font-family: 'Gloock', serif;
+  /* font-family: "Dancing Script", cursive; no */
+  /* font-family: "Alex Brush", cursive; no */
+  /* font-family: "Allison", cursive; */
+  /* font-family: "WindSong", cursive; */
+  /* font-family: "Comforter", cursive; */
   font-weight: 900;
   letter-spacing: 0;
 }
@@ -52,6 +57,7 @@ img {
   margin-inline: auto;
 }
 
+/* post content  */
 #content, 
 #content h1,
 #content h2 { 

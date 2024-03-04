@@ -1,5 +1,5 @@
 ---
-title: First Netlify Post
+title: First netlify post
 pubDate: 2022-07-01
 description: Lorem ipsUm dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua.

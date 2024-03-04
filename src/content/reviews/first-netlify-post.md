@@ -1,5 +1,5 @@
 ---
-title: First Netlify Post
+title: 'The Ritz-Carlton'
 pubDate: 2022-07-01
 description: A short post about travel, beaches, and aw yaaaaaaaa.
 author: Andrew Mason

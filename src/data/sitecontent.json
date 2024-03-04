@@ -4,7 +4,7 @@
         "title": "About",
         "description": "Prince Collection is a full-service travel brand with an emphasis on luxury travel.",
         "path": "/about",
-        "icon": "bi-newspaper",
+        "icon": "bi-luggage-fill",
         "badge": "Who we are",
         "background": "bg-dutch-white"
       },
@@ -44,7 +44,7 @@
         "title": "Concierge",
         "description": "Discover our Concierge service, designed exclusively for high net worth individuals and companies who seek exclusive experiences, handled for them.",
         "path": "/concierge",
-        "icon": "bi-suitcase-lg",
+        "icon": "bi-gem",
         "badge": "What we do",
         "background": "bg-vanilla"
       },
@@ -389,19 +389,28 @@
         "content": "Prince Collection’s Travel Concierge is designed exclusively for companies and individuals who require exclusive travel arrangements handled for them.",
         "intro": [
             {
+                "icon": "bi-globe",
                 "title": "What is Prince Collection?",
                 "content": "Prince Collection is a distinguished brand launched by Prince of Travel, dedicated to offering bespoke luxury experiences. Our portfolio includes a premier travel agency among other high-end travel services and products, designed to elevate the travel experiences of discerning globetrotters around the world."
             },
             {
-                "title": "How is Princecollection.com related to Princeoftravel.com?",
+                "icon": "bi-gem",
+                "title": "How is princecollection.com related to princeoftravel.com?",
                 "content": "Prince Collection is a brand extension of Prince of Travel, leveraging the latter’s expertise and reputation in the travel industry to offer specialized luxury travel products and services. While Prince of Travel focuses on maximizing travel rewards, Prince Collection is dedicated to curating bespoke travel experiences that cater to the luxury segment of the market."
             },
             {
+                "icon": "bi-highlights",
                 "title": "What future initiatives can we expect from Prince Collection?",
                 "content": "Looking ahead, Prince Collection is poised to expand its offerings to embrace a wider array of bespoke travel experiences. While luxury train journeys and exclusive hotel stays will remain a cornerstone of our offerings, we are exploring new partnerships and destinations to provide our clients with an even broader spectrum of exceptional travel options. Expect innovations in personalized travel, community engagement projects, and initiatives aimed at enhancing the sustainability of luxury travel. Our goal is to continuously push the boundaries of what luxury travel can be, ensuring our clients have access to unparalleled experiences that are as enriching as they are exclusive."
             }
         ],
+        "travel_agency_icon": "bi-luggage-fill",
         "travel_agency_title": "Travel Agency FAQ",
+        "travel_agency_faq_hero": {
+            "badge": "Travel Agency",
+            "title": "Travel Agency <span class='text-pc-dark'>FAQ</span>",
+            "content": "Discover unparalleled luxury with Prince Collection’s Travel Agency, which specializes in booking exclusive, personally tailored hotel stays for you."
+        },
         "travel_agency": [
             {
                 "title": "Do you charge any booking fees?",
@@ -456,31 +465,49 @@
                 ]
             }
         ],
+        "concierge_icon": "bi-gem",
         "concierge_title": "Concierge FAQ",
+        "concierge_faq_hero": {
+            "badge": "Concierge",
+            "title": "Prince Collection <span class='text-pc-dark'>Concierge</span>",
+            "content": "Prince Collection’s Travel Concierge is designed exclusively for high net worth individuals and companies looking for white-glove travel experiences. Time is your most valuable asset, so Prince Collection’s Concierge ensures a seamless and extraordinary journey from start to finish."
+        },
         "concierge": [
             {
                 "title": "What is a luxury travel concierge service?",
-                "content": "A luxury travel concierge tailors every trip detail to client preferences, offering exclusive accommodations, unique experiences, and VIP treatment for a seamless, high-end travel experience."
+                "content": [
+                    "A luxury travel concierge tailors every trip detail to client preferences, offering exclusive accommodations, unique experiences, and VIP treatment for a seamless, high-end travel experience."
+                ]
             },
             {
                 "title": "How does a luxury travel concierge differ from a regular travel agent?",
-                "content": "Luxury concierges offer bespoke, high-end services and exclusive access on an ongoing basis with 24/7 travel support, while regular agents provide standard travel packages and bookings."
+                "content": [
+                    "Luxury concierges offer bespoke, high-end services and exclusive access on an ongoing basis with 24/7 travel support, while regular agents provide standard travel packages and bookings."
+                ]
             },
             {
                 "title": "Who can benefit from using a luxury travel concierge service?",
-                "content": "Anyone seeking personalized, high-end travel experiences with exclusive access and VIP treatment can benefit from a luxury travel concierge, including businesses and high net worth individuals."
+                "content": [
+                    "Anyone seeking personalized, high-end travel experiences with exclusive access and VIP treatment can benefit from a luxury travel concierge, including businesses and high net worth individuals."
+                ]
             },
             {
                 "title": "How can I contact my travel concierge while abroad?",
-                "content": "You will begin your relationship with your concierge upon enrollment, and you will have access 24/7 via text, phone, email, or your preferred contact method."
+                "content": [
+                    "You will begin your relationship with your concierge upon enrollment, and you will have access 24/7 via text, phone, email, or your preferred contact method."
+                ]
             },
             {
                 "title": "How do you tailor travel experiences to individual tastes and preferences?",
-                "content": "In the enrollment process, our  concierge team will get to know you and your travel preferences on a deep level. As the relationship progresses, we learn your needs, wants, preferences, and more as we deliver you personalized travel experiences."
+                "content": [
+                    "In the enrollment process, our  concierge team will get to know you and your travel preferences on a deep level. As the relationship progresses, we learn your needs, wants, preferences, and more as we deliver you personalized travel experiences."
+                ]
             },
             {
                 "title": "Can you accommodate special requests, such as dietary restrictions or accessibility needs?",
-                "content": "Of course. The Prince Collection concierge is here to create your personalized travel itineraries, which includes your dietary and accessibility needs."
+                "content": [
+                    "Of course. The Prince Collection concierge is here to create your personalized travel itineraries, which includes your dietary and accessibility needs."
+                ]
             }
         ]
     },
