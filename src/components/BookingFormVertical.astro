@@ -106,12 +106,32 @@ const { bookingContainer, bookingForm } = Astro.props;
                       <!---------Single Line Ends Here---------->
 
           <!---------Date Starts Here---------->
+
+          <!-- <div class="container shadow min-vh-100 py-2">
+            <h5>Bootstrap 5 date picker</h5>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-sm-6">
+                    <label for="startDate">Start</label>
+                    <input id="startDate" class="form-control" type="date" />
+                    <span id="startDateSelected"></span>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <label for="endDate">End</label>
+                    <input id="endDate" class="form-control" type="date" />
+                    <span id="endDateSelected"></span>
+                </div>
+            </div>
+        </div> -->
+
           <li class="zf-tempFrmWrapper zf-date col-lg-6">
             <label class="zf-labelName">Check-in Date</label>
             <!-- <em class="zf-important">*</em> -->
             <div class="zf-tempContDiv">
               <span>
-                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date" checktype="c4" value="" maxlength="25" placeholder="(DD-MMM-YYYY)" required>
+                <input id="startDate" class="form-control" type="date" class="form-control w-100" aria-label="Check-in date picker" aria-describedby="inputGroup-sizing-default" name="Date" checktype="c4" value="" maxlength="25" placeholder="(DD-MMM-YYYY)" required />
+                <!-- <span id="startDateSelected"></span> -->
+                
+                <!-- <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date" checktype="c4" value="" maxlength="25" placeholder="(DD-MMM-YYYY)" required> -->
               </span>
               <div class="zf-clearBoth"></div>
               <p id="Date_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
@@ -127,10 +147,10 @@ const { bookingContainer, bookingForm } = Astro.props;
             </label>
             <div class="zf-tempContDiv">
               <span>
-                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date1" checktype="c4" value="" maxlength="25" placeholder="(DD-MMM-YYYY)" required>
+                <input id="endDate" class="form-control" type="date" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date2" checktype="c4" value="" maxlength="25" placeholder="(DD-MMM-YYYY)" required />
+                <!-- <span id="endDateSelected"></span> -->
 
-                <!-- <input type="text" name="Date1" checktype="c4" value="" maxlength="25" placeholder="" /> -->
-                <!-- <label>DD-MMM-YYYY</label> -->
+                <!-- <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date1" checktype="c4" value="" maxlength="25" placeholder="(DD-MMM-YYYY)" required> -->
               </span>
               <div class="zf-clearBoth"></div>
               <p id="Date1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
@@ -408,7 +428,22 @@ const { bookingContainer, bookingForm } = Astro.props;
   var isSalesIQIntegrationEnabled = false;
   var salesIQFieldsArray = [];
 </script>
-<script is:inline src="/js/validation.js"></script>
+<!-- <script is:inline src="../js/validation.js"></script> -->
+
+<script>
+  let startDate = document.getElementById('startDate')
+let endDate = document.getElementById('endDate')
+
+startDate.addEventListener('change',(e)=>{
+  let startDateVal = e.target.value
+  document.getElementById('startDateSelected').innerText = startDateVal
+})
+
+endDate.addEventListener('change',(e)=>{
+  let endDateVal = e.target.value
+  document.getElementById('endDateSelected').innerText = endDateVal
+})  
+</script>
 
 <style scoped>
     input, input:focus {
