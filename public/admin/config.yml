@@ -36,7 +36,7 @@ collections:
         collapsed: true
         fields:
           - {label: Post title, name: title, widget: string }
-      - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
+      # - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - label: "Carousel"
         name: "carousel"
         widget: list
