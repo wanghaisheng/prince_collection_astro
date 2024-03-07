@@ -22,6 +22,12 @@ carousel:
 gallery:
   - alt: Prince Collection image description
     url: https://masonmedia.github.io/json-server/images/pc-mountain-bed.avif
+contents:
+  - html-3x-grid
+  - ridiculus-mus-mauris-vitae
+  - html-image-using-figure-and-caption
+  - faucibus-nisl-tincidunt
+  - another-h2
 ---
 # Lorem ipsum titlesum
 
