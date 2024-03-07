@@ -29,7 +29,6 @@ collections:
       - { label: "Category", name: "category", widget: "string", default: "blog" }
       - { label: "Tags", name: "tags", widget: "list", default: ["blog"] }
       - { label: "Featured post", name: "featured", widget: "boolean", default: false, required: false }
-      - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - label: "Carousel"
         name: "carousel"
         widget: list
@@ -46,6 +45,7 @@ collections:
         fields:
           - {label: Image, name: url, widget: image, required: false}
           - {label: Alt text, name: alt, widget: string, default: "Prince Collection gallery description", required: false}
+      - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: news # Label used in the UI for the collection
@@ -64,11 +64,11 @@ collections:
       - { label: "Category", name: "category", widget: "string", default: "news" }
       - { label: "Tags", name: "tags", widget: "list", default: ["news"] }
       - { label: "Featured post", name: "featured", widget: "boolean", default: false, required: false }
-      - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - label: "Carousel"
         name: "carousel"
         widget: list
         required: false
+        collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
           - {label: Alt text, name: alt, widget: string, default: "Prince Collection carousel description", required: false}
@@ -76,9 +76,11 @@ collections:
         name: "gallery"
         widget: list
         required: false
+        collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
           - {label: Alt text, name: alt, widget: string, default: "Prince Collection gallery description", required: false}
+      - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - {label: "Body", name: "body", widget: "markdown"}
 
   - label: reviews # Label used in the UI for the collection
@@ -97,11 +99,11 @@ collections:
       - { label: "Category", name: "category", widget: "string", default: "reviews" }
       - { label: "Tags", name: "tags", widget: "list", default: ["reviews"] }
       - { label: "Featured post", name: "featured", widget: "boolean", default: false, required: false }
-      - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - label: "Carousel"
         name: "carousel"
         widget: list
         required: false
+        collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
           - {label: Alt text, name: alt, widget: string, default: "Prince Collection carousel description", required: false}
@@ -109,9 +111,11 @@ collections:
         name: "gallery"
         widget: list
         required: false
+        collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
           - {label: Alt text, name: alt, widget: string, default: "Prince Collection gallery description", required: false}
+      - {label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - {label: "Body", name: "body", widget: "markdown"}
 
   - label: guides # Label used in the UI for the collection
@@ -130,11 +134,11 @@ collections:
       - { label: "Category", name: "category", widget: "string", default: "guides" }
       - { label: "Tags", name: "tags", widget: "list", default: ["guides"] }
       - { label: "Featured post", name: "featured", widget: "boolean", default: false, required: false }
-      - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - label: "Carousel"
         name: "carousel"
         widget: list
         required: false
+        collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
           - {label: Alt text, name: alt, widget: string, default: "Prince Collection carousel description", required: false}
@@ -142,9 +146,11 @@ collections:
         name: "gallery"
         widget: list
         required: false
+        collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
           - {label: Alt text, name: alt, widget: string, default: "Prince Collection gallery description", required: false}
+      - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - {label: "Body", name: "body", widget: "markdown"}
 
   - label: authors # Label used in the UI for the collection
@@ -157,7 +163,7 @@ collections:
       - { label: "Description", name: "description", widget: "string" } # Field Description
       - { label: "Featured image", name: "imageUrl", widget: "image" } # Field Featured Image
       - { label: "Image Alt text", name: "imageAlt", widget: "string" } 
-      - {label: "Body", name: "body", widget: "markdown", required: false}  
+      - { label: "Body", name: "body", widget: "markdown", required: false}  
 
 # use fields for credit card or other ads, then use v-if on a component inside the MD
 
