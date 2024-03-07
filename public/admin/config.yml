@@ -29,14 +29,7 @@ collections:
       - { label: "Category", name: "category", widget: "string", default: "blog" }
       - { label: "Tags", name: "tags", widget: "list", default: ["blog"] }
       - { label: "Featured post", name: "featured", widget: "boolean", default: false, required: false }
-      - label: "Table of Contens"
-        name: "contents"
-        widget: list
-        required: false
-        collapsed: true
-        fields:
-          - {label: Post title, name: title, widget: string }
-      # - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
+      - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - label: "Carousel"
         name: "carousel"
         widget: list
@@ -70,6 +63,8 @@ collections:
       - { label: "Image Alt text", name: "imageAlt", widget: "string" }
       - { label: "Category", name: "category", widget: "string", default: "news" }
       - { label: "Tags", name: "tags", widget: "list", default: ["news"] }
+      - { label: "Featured post", name: "featured", widget: "boolean", default: false, required: false }
+      - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - label: "Carousel"
         name: "carousel"
         widget: list
@@ -101,6 +96,8 @@ collections:
       - { label: "Image Alt text", name: "imageAlt", widget: "string" }
       - { label: "Category", name: "category", widget: "string", default: "reviews" }
       - { label: "Tags", name: "tags", widget: "list", default: ["reviews"] }
+      - { label: "Featured post", name: "featured", widget: "boolean", default: false, required: false }
+      - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - label: "Carousel"
         name: "carousel"
         widget: list
@@ -132,6 +129,8 @@ collections:
       - { label: "Image Alt text", name: "imageAlt", widget: "string" } 
       - { label: "Category", name: "category", widget: "string", default: "guides" }
       - { label: "Tags", name: "tags", widget: "list", default: ["guides"] }
+      - { label: "Featured post", name: "featured", widget: "boolean", default: false, required: false }
+      - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - label: "Carousel"
         name: "carousel"
         widget: list
