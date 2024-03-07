@@ -32,6 +32,8 @@ const blog = defineCollection({
       imageAlt: z.string(),
       category: z.string(),
       tags: z.array(z.string()),
+      featured: z.string(),
+      contents: z.array(z.object()),
       carousel: z.array(z.string()),
       gallery: z.array(z.string())
     })
@@ -49,6 +51,8 @@ const blog = defineCollection({
       imageAlt: z.string(),
       category: z.string(),
       tags: z.array(z.string()),
+      featured: z.string(),
+      contents: z.array(z.object()),
       carousel: z.array(z.string()),
       gallery: z.array(z.string())
     })
@@ -66,6 +70,8 @@ const blog = defineCollection({
       imageAlt: z.string(),
       category: z.string(),
       tags: z.array(z.string()),
+      featured: z.string(),
+      contents: z.array(z.object()),
       carousel: z.array(z.object()),
       gallery: z.array(z.object())
     })
