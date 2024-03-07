@@ -37,7 +37,7 @@ collections:
         collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
-          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection carousel description", required: false}
       - label: "Gallery"
         name: "gallery"
         widget: list
@@ -45,7 +45,7 @@ collections:
         collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
-          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection gallery description", required: false}
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: news # Label used in the UI for the collection
@@ -71,14 +71,14 @@ collections:
         required: false
         fields:
           - {label: Image, name: url, widget: image, required: false}
-          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection carousel description", required: false}
       - label: "Gallery"
         name: "gallery"
         widget: list
         required: false
         fields:
           - {label: Image, name: url, widget: image, required: false}
-          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection gallery description", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - label: reviews # Label used in the UI for the collection
@@ -104,14 +104,14 @@ collections:
         required: false
         fields:
           - {label: Image, name: url, widget: image, required: false}
-          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection carousel description", required: false}
       - label: "Gallery"
         name: "gallery"
         widget: list
         required: false
         fields:
           - {label: Image, name: url, widget: image, required: false}
-          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection gallery description", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - label: guides # Label used in the UI for the collection
@@ -137,14 +137,14 @@ collections:
         required: false
         fields:
           - {label: Image, name: url, widget: image, required: false}
-          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection carousel description", required: false}
       - label: "Gallery"
         name: "gallery"
         widget: list
         required: false
         fields:
           - {label: Image, name: url, widget: image, required: false}
-          - {label: Alt text, name: alt, widget: string, default: "Prince Collection image description", required: false}
+          - {label: Alt text, name: alt, widget: string, default: "Prince Collection gallery description", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - label: authors # Label used in the UI for the collection
