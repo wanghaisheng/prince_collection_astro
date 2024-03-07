@@ -7,10 +7,10 @@ import navData from '../data/sitecontent.json';
 const { icon, modalTrigger } = Astro.props 
 ---
 <header>
-	<nav id="nav" class="navbar fixed-top">
+	<nav id="nav" class="navbar fixed-top animate-in">
 		<div class="container-fluid">
 			<a class="navbar-brand me-auto mt-1 ms-2 text-body-secondary d-flex align-items-center" href="/">
-				<img style="width: 30px;" class="h-auto me-1" src="/images/logos/logo-crown.png" alt="Prince Collection crown logo">
+				<img style="width: 30px;" class="logo h-auto me-1" src="/images/logos/logo-crown.png" alt="Prince Collection crown logo">
 			</a>
 
 			<ul class="nav justify-content-end align-items-center">
@@ -153,17 +153,10 @@ const { icon, modalTrigger } = Astro.props
 		<h2 class="mb-2 mt-3">Subscribe to the <span class="text-pc">Prince Collection</span> newsletter</h2>
 		<p class="mt-2 mb-3 text-balance">You'll receive priority information about the newest luxury properties worldwide, exclusive reservations and deals through <span class="text-pc fw-bold">Prince Collection</span>, and unique destinations across the globe.</p>
 		<div class="col-lg-8">
-			<NewsletterForm newsletterBtn="btn-pc px-4 px-lg-5" newsletterClass="text-light" />
+			<NewsletterForm formInputId="id1" formModalId="navNewsletter" newsletterBtn="btn-pc px-4 px-lg-5" newsletterClass="text-body-secondary" />
 			<p class="small text-pc-dark-80">By providing your email, you agree to the Prince Collection Privacy Policy</p>
-			<button class="btn btn-dark me-2 px-3 rounded-3" data-bs-toggle="modal" data-bs-target="#thankYou">Thanks</button>
 		</div>
 		</Modal>
-		
-		<Modal modalTitle="Join Our Newsletter" modalId="thankYou" modalStyles="bg-dark text-light min-vh-500 rounded-4" modalSize="modal-lg" modalBody="d-flex flex-column justify-content-center align-items-start align-items-lg-center text-start text-lg-center">
-			<span class="badge rounded-pill fw-bold text-pc-light bg-pc-dark py-2 px-3">Success!</span>
-			<h2 class="display-6 mb-2 mt-3">Thank you for <span class="text-pc">subscribing!</span></h2>
-			<p class="mt-2 mb-3 text-balance">Please check your email to confirm your subscription!</p>
-		 </Modal>
 
 		<!-- main menu modal -->
 		<div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -229,16 +222,8 @@ nav {
 	color: inherit;
 	text-decoration: none;
 }
-
-input, 
-input:focus {
-	background: transparent;
-	border: 1px solid #7d84ab;
-	border-radius: 0;
-	box-shadow: none;
-	color: white;
-}
 </style>
+
 <!-- 
 <script>
 	var modal1 = document.getElementById('thankYou')

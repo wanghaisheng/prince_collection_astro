@@ -15,7 +15,7 @@
 /* text */
 
 .font-windsong {
-    font-family: 'WindSong', 'Helvetica Neue';
+    font-family: 'WindSong', cursive, 'Helvetica Neue';
     /* font-weight: 500;  */
     line-height: 79%;
 }

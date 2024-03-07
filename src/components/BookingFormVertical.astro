@@ -50,17 +50,17 @@ const { bookingContainer, bookingForm } = Astro.props;
           <!-- </div> -->
           <!---------Single Line Ends Here---------->
           <!---------Single Line Starts Here---------->
-          <!-- <li class="col-lg-12">
-            <label class="zf-labelName"> Last Name <em class="zf-important">*</em>
+          <li class="col-lg-12 d-none" style="height: 0; width: 0">
+            <label class="zf-labelName invisible"> Last Name <em class="zf-important">*</em>
             </label>
             <div class="zf-tempContDiv">
               <span>
-                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="" />
+                <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="SingleLine" checktype="c1" value="Smith" maxlength="255" fieldType=1 placeholder="" />
               </span>
               <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
             </div>
             <div class="zf-clearBoth"></div>
-          </li> -->
+          </li>
 
           <!---------Single Line Ends Here---------->
           <!---------Email Starts Here---------->
@@ -147,7 +147,7 @@ const { bookingContainer, bookingForm } = Astro.props;
             </label>
             <div class="zf-tempContDiv">
               <span>
-                <input id="endDate" class="form-control" type="date" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date2" checktype="c4" value="" maxlength="25" placeholder="(DD-MMM-YYYY)" required />
+                <input id="endDate" class="form-control" type="date" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date1" checktype="c4" value="" maxlength="25" placeholder="(DD-MMM-YYYY)" required />
                 <!-- <span id="endDateSelected"></span> -->
 
                 <!-- <input type="text" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date1" checktype="c4" value="" maxlength="25" placeholder="(DD-MMM-YYYY)" required> -->
@@ -354,7 +354,7 @@ const { bookingContainer, bookingForm } = Astro.props;
             <!-- <em class="zf-important">*</em> -->
             <div class="zf-tempContDiv">
 
-                <select class="form-select mb-3 bg-pc-dark border-0 border-bottom rounded-0 text-pc" aria-label="Large select example" checktype="c1">
+                <select name="Dropdown" class="zf-form-sBox form-select mb-3 bg-pc-dark border-0 border-bottom rounded-0 text-pc" aria-label="Large select example" checktype="c1">
                     <!-- <option selected>Open this select menu</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -430,7 +430,7 @@ const { bookingContainer, bookingForm } = Astro.props;
 </script>
 <!-- <script is:inline src="../js/validation.js"></script> -->
 
-<script>
+<!-- <script>
   let startDate = document.getElementById('startDate')
 let endDate = document.getElementById('endDate')
 
@@ -443,7 +443,7 @@ endDate.addEventListener('change',(e)=>{
   let endDateVal = e.target.value
   document.getElementById('endDateSelected').innerText = endDateVal
 })  
-</script>
+</script> -->
 
 <style scoped>
     input, input:focus {
@@ -452,7 +452,7 @@ endDate.addEventListener('change',(e)=>{
         border-bottom: 1px solid #fbe3de;
         border-radius: 0;
         box-shadow: none;
-        color: white;
+        color: #fff;
     }
     select, 
     select:focus {
@@ -473,4 +473,24 @@ endDate.addEventListener('change',(e)=>{
         color: #f0beb4;
         opacity: 1; /* Firefox */
     }
+    /* Change the white to any color */
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+} */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+}
+/*Change text in autofill textbox*/
+input:-webkit-autofill{
+    -webkit-text-fill-color: white !important;
+}
+
 </style>

@@ -32,21 +32,21 @@ const verticalSlide = {
 
 <Layout title="Prince Collection | News" description="Prince Collection latest news and developments.">
 	<div class="container-fluid px-0">
-		<div class="row min-vh-100 bg-dutch-white" transition:animate={verticalSlide}>
-			<div class="col-lg-6 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center p-5 mt-5 mt-lg-0" transition:animate={verticalSlide}>
-				<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-pc-10 py-2 px-3" style="font-size: 15px;" transition:animate={verticalSlide}>Prince Collection News</span>
-				<h1 class="col-lg-8 font-windsong text-pc-dark-80 fw-900 mb-3 mt-4" style="font-size: 10vmin;" transition:animate={verticalSlide}>{firstArticle.data.title}</h1>
-				<p class="col-md-7 fs-5 text-body-secondary mt-3 mb-2" transition:animate={verticalSlide}>{firstArticle.data.description}</p>
-				<div class="py-2" transition:animate={verticalSlide}>
+		<div class="row min-vh-100 bg-dutch-white">
+			<div class="col-lg-6 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center p-5 mt-5 mt-lg-0 animate-in">
+				<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-pc-10 py-2 px-3" style="font-size: 15px;">Prince Collection News</span>
+				<h1 class="col-lg-8 font-windsong text-pc-dark-80 fw-900 mb-3 mt-4" style="font-size: 10vmin;">{firstArticle.data.title}</h1>
+				<p class="col-md-7 fs-5 text-body-secondary mt-3 mb-2">{firstArticle.data.description}</p>
+				<div class="py-2">
 					<p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Written by</span> {firstArticle.data.author}</p>
 					<p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {firstArticle.data.pubDate.toString().slice(0,10)}</p>
 				</div>
 				<a href={`/news/${firstArticle.slug}/`}>
-					<button class="btn btn-dark fw-bold rounded-pill px-4 mt-3 shadow" transition:animate={verticalSlide}>Read article</button>
+					<button class="btn btn-dark fw-bold rounded-pill px-4 mt-3 shadow">Read article</button>
 				</a>
 			</div>
-			<div class="col-lg-6" transition:animate={verticalSlide}>
-				<img src={firstArticle.data.imageUrl} class=" w-100 h-100" style="object-fit: cover;" alt={firstArticle.data.imageAlt}>
+			<div class="col-lg-6">
+				<img src={firstArticle.data.imageUrl} class="w-100 h-100" style="object-fit: cover;" alt={firstArticle.data.imageAlt}>
 			</div>
 		</div>
 		

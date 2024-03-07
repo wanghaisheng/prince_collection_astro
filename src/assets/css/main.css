@@ -36,12 +36,8 @@ h1, h2, p {
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  font-family: 'Gloock', serif;
-  /* font-family: "Dancing Script", cursive; no */
-  /* font-family: "Alex Brush", cursive; no */
-  /* font-family: "Allison", cursive; */
-  /* font-family: "WindSong", cursive; */
-  /* font-family: "Comforter", cursive; */
+  font-family: 'Gloock', 'Times New Roman', Times, serif;
+  /* font-family: 'Red Hat Display', Helvetica, Arial, sans-serif; */
   font-weight: 900;
   letter-spacing: 0;
 }
@@ -55,9 +51,12 @@ p {
 img {
   width: 100%;
   margin-inline: auto;
+  animation: animate-in 1s cubic-bezier(.6,-0.41,.46,1.22);
+  transition: all .3s ease-in-out;
 }
 
 /* post content  */
+
 #content, 
 #content h1,
 #content h2 { 
@@ -67,7 +66,27 @@ img {
 
 #content > .content-body img {
   border-radius: 23px;
+  width: 100%;
   margin: 20px auto;
+}
+
+#content .grid-image {
+  margin: 0 !important;
+  width: 100%;
+  object-fit: cover;
+  min-height: 250px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+#content figure {
+  margin: 0;
+}
+
+#content figcaption {
+  margin-top: 10px;
+  font-weight: light;
+  color: grey;
+  font-size: 16px;
 }
 
 .content-body h1:first-of-type {

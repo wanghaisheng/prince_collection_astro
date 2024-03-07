@@ -354,20 +354,46 @@
                 {
                     "icon": "bi-pen",
                     "title": "Content",
-                    "content": "At Prince Collection, we’re focused on premium luxury travel content. Whether you are interested in the latest in luxury travel, finding inspiration for your next trip, or getting in-depth information on hotel programs and our premier brands and vendors, Prince Collection has covered it."
+                    "content": "At Prince Collection, we’re focused on premium luxury travel content. Whether you are interested in the latest in luxury travel, finding inspiration for your next trip, or getting in-depth information on hotel programs and our premier brands and vendors, Prince Collection has covered it.",
+                    "link": [
+                        {
+                            "button": "news",
+                            "url": "/news"
+                        },
+                        {
+                            "button": "reviews",
+                            "url": "/reviews"
+                        },
+                        {
+                            "button": "guides",
+                            "url": "/guides"
+                        }
+                    ]
                 },
                 {
 
                     "icon": "bi-airplane",
                     "title": "Travel Agency",
                     "content": "Discover unparalleled luxury with Prince Collection’s Travel Agency, which specializes in booking exclusive hotel stays for you. Tailored for discerning guests, booking with our Travel Agency offers additional benefits at no extra cost to you. Share your preferences and destination with our experts, and we tailor a personalized getaway for you.",
-                    "button": "Book a hotel"
+                    "button": "Book a hotel",
+                    "link": [
+                        {
+                            "button": "Read more",
+                            "url": "/about"
+                        }
+                    ]
                 },
                 {
                     "icon": "bi-signpost-split",
                     "title": "Concierge",
                     "content": "Prince Collection’s Travel Concierge is designed exclusively for high net worth individuals and companies looking for white-glove travel experiences. Time is your most valuable asset, so Prince Collection’s Concierge ensures a seamless and extraordinary journey from start to finish.",
-                    "button": "Luxury concierge"
+                    "button": "Luxury concierge",
+                    "link": [
+                        {
+                            "button": "Read more",
+                            "url": "/concierge"
+                        }
+                    ]
                 }
             ]
         }

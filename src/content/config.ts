@@ -13,6 +13,8 @@ const blog = defineCollection({
       imageAlt: z.string(),
       category: z.string(),
       tags: z.array(z.string()),
+      featured: z.string(),
+      contents: z.array(z.object()),
       carousel: z.array(z.object()),
       gallery: z.array(z.object())
       })
@@ -79,7 +81,7 @@ const blog = defineCollection({
       })
   });
   
-  // make all fiels optional for no errors if fields are undefined or null
+  // make all fields optional for no errors if fields are undefined or null
   // https://github.com/colinhacks/zod?tab=readme-ov-file#nonempty
   const content = z.optional(blog, news, reviews, guides, authors);
 

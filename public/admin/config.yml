@@ -28,6 +28,8 @@ collections:
       - { label: "Image Alt text", name: "imageAlt", widget: "string" } # 
       - { label: "Category", name: "category", widget: "string", default: "blog" }
       - { label: "Tags", name: "tags", widget: "list", default: ["blog"] }
+      - { label: "Featured post", name: "featured", widget: "boolean", default: "false", required: false }
+      - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - label: "Carousel"
         name: "carousel"
         widget: list
