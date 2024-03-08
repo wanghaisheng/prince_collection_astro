@@ -35,6 +35,13 @@ const { Content } = await post.render();
                 <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Written by</span> {post.data.author}</p>
                 <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {post.data.pubDate.toString().slice(0,10)}</p>
             </div>
+
+            { post.data.carousel == '' ?
+         
+            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5 pe-5">
+                <img class="w-100 object-fit rounded-end-5 shadow" style="height: 500px" src={post.data.imageUrl} alt={post.data.imageAlt} />
+            </div>
+            :
             <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5">
                 <div id="carouselExampleIndicators" class="carousel slide"  data-bs-ride="true">
                     <div class="carousel-indicators">
@@ -57,11 +64,14 @@ const { Content } = await post.render();
                       <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <i class="bi bi-arrow-right-circle-fill display-1 text-pc-light shadow" aria-hidden="true"></i>
+                        <i class="bi bi-arrow-right-circle-fill display-1 text-pc-light" aria-hidden="true"></i>
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
-            </div>
+            </div><!--end carousel -->
+        }
+
+
         </div>
     </div>
     <!-- body -->

@@ -92,7 +92,7 @@ const verticalSlide = {
             </div>
             
           
-          { post.data.carousel.url != '' &&
+          <!-- { post.data.carousel.url != '' && -->
             <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5" transition:animate={verticalSlide}>
                 <div id="carouselExampleIndicators" class="carousel slide"  data-bs-ride="true">
                     <div class="carousel-indicators">
@@ -120,7 +120,7 @@ const verticalSlide = {
                     </button>
                   </div>
             </div><!--end carousel -->
-          }
+          
                      
             <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5 pe-5" transition:animate={verticalSlide}>
                 <img class="w-100 object-fit rounded-end-5 shadow" style="height: 500px" src={post.data.imageUrl} alt={post.data.imageAlt} />

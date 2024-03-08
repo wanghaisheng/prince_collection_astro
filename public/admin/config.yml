@@ -37,7 +37,6 @@ collections:
         collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
-          # - {label: Alt text, name: alt, widget: string, default: "Prince Collection carousel description", required: false}
       - label: "Gallery"
         name: "gallery"
         widget: list
@@ -45,8 +44,6 @@ collections:
         collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
-          # - {label: Alt text, name: alt, widget: string, default: "Prince Collection gallery description", required: false}
-      # - { label: "Gallery alt text", name: "galleryAlt", widget: "string", required: false }
       - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -74,7 +71,6 @@ collections:
         collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
-          - {label: Alt text, name: alt, widget: string, default: "Prince Collection carousel description", required: false}
       - label: "Gallery"
         name: "gallery"
         widget: list
@@ -82,7 +78,6 @@ collections:
         collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
-          - {label: Alt text, name: alt, widget: string, default: "Prince Collection gallery description", required: false}
       - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - {label: "Body", name: "body", widget: "markdown"}
 
@@ -110,7 +105,6 @@ collections:
         collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
-          - {label: Alt text, name: alt, widget: string, default: "Prince Collection carousel description", required: false}
       - label: "Gallery"
         name: "gallery"
         widget: list
@@ -118,7 +112,6 @@ collections:
         collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
-          - {label: Alt text, name: alt, widget: string, default: "Prince Collection gallery description", required: false}
       - {label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - {label: "Body", name: "body", widget: "markdown"}
 
@@ -146,7 +139,6 @@ collections:
         collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
-          - {label: Alt text, name: alt, widget: string, default: "Prince Collection carousel description", required: false}
       - label: "Gallery"
         name: "gallery"
         widget: list
@@ -154,7 +146,6 @@ collections:
         collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
-          - {label: Alt text, name: alt, widget: string, default: "Prince Collection gallery description", required: false}
       - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
       - {label: "Body", name: "body", widget: "markdown"}
 
