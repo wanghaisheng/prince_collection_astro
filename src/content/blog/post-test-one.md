@@ -1,4 +1,5 @@
 ---
+draft: false
 title: Post test one
 author: Andrew
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -12,13 +13,7 @@ imageAlt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 category: blog
 tags:
   - blog
-carousel:
-  - alt: Alt one
-    url: https://masonmedia.github.io/json-server/images/pc-hotel-bed-blue.avif
-  - alt: Prince Collection garden
-    url: https://masonmedia.github.io/json-server/images/pc-hotel-brown-garden.avif
-  - alt: Prince Collection mountain bed
-    url: https://masonmedia.github.io/json-server/images/pc-mountain-bed.avif
+carousel: []
 gallery:
   - alt: Prince Collection image description
     url: https://masonmedia.github.io/json-server/images/pc-mountain-bed.avif
