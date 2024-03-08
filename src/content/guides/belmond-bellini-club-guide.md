@@ -78,17 +78,17 @@ For those looking to explore more of the natural world, Belmond’s modern and s
 <div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
   <div class="col">
     <figure>
-        <img alt="Gallery of images of eagle island lodge and the okavango delta" class="grid-image" src="/images/uploads/belmond-bellini-review-7.jpg" />
+        <img alt="Gallery of images of eagle island lodge and the okavango delta" class="grid-image" src="/images/uploads/belmond-bellini-review-7.jpeg" />
     </figure>
   </div>
   <div class="col">
     <figure>
-        <img alt="Gallery of images of eagle island lodge and the okavango delta" class="grid-image" src="/images/uploads/belmond-bellini-review-8.jpg" />
+        <img alt="Gallery of images of eagle island lodge and the okavango delta" class="grid-image" src="/images/uploads/belmond-bellini-review-8.jpeg" />
     </figure>
   </div>
   <div class="col">
     <figure>
-        <img alt="Gallery of images of eagle island lodge and the okavango delta" class="grid-image" src="/images/uploads/belmond-bellini-review-9.jpg" />
+        <img alt="Gallery of images of eagle island lodge and the okavango delta" class="grid-image" src="/images/uploads/belmond-bellini-review-9.jpeg" />
       </figure>
   </div>
 </div>
