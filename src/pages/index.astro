@@ -6,6 +6,15 @@ const newsPosts = await getCollection("news");
 const reviewsPosts = await getCollection("reviews");
 const guidesPosts = await getCollection("guides");
 
+const allPosts = newsPosts && reviewsPosts && guidesPosts;
+let filteredPosts = allPosts.filter(post => post.data.draft === false);
+
+function filterPost(arr) {
+	return arr.filter(item => item.data.draft === false);
+}
+
+// const [firstArticle, ...allArticles] = filteredPosts;
+
 const { index } = Astro.props
 const slideAnim = {
   old: {
@@ -165,8 +174,8 @@ const verticalSlide = {
 					<p class="fs-5 col-lg-8 text-balance mb-0" data-aos="fade-up" data-aos-delay="400">{data.home.news.content}</p>
 				</div>
 				<div class="row g-4 px-5">
-					{
-					newsPosts.slice(0,3).map((item, index) => (
+					{ 
+					filterPost(newsPosts).slice(0,3).map((item, index) => (
 					<div class:list={[index === 2 ? 'col-md-12 col-lg-4' : 'col-md-6 col-lg-4']} data-aos="fade-up" data-aos-delay={index * 100}>
 						<a href={`/news/${item.slug}/`}>
 							<div class="card mb-3 rounded-5 bg-pc-light border-0 shadow" style="min-height: 500px;">
