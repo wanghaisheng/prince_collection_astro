@@ -13,7 +13,10 @@ imageAlt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 category: blog
 tags:
   - blog
-carousel: []
+carousel:
+  - url: /images/uploads/belmond-bellini-review-2.png
+  - url: /images/uploads/belmond-bellini-review-10.jpeg
+  - url: /images/uploads/belmond-bellini-review-9.jpeg
 gallery:
   - alt: Prince Collection image description
     url: https://masonmedia.github.io/json-server/images/pc-mountain-bed.avif
