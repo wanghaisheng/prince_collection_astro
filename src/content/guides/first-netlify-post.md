@@ -1,4 +1,5 @@
 ---
+draft: false
 title: A guide to Bora Bora
 pubDate: 2022-07-01
 description: A short post about travel, beaches, and aw yaaaaaaaa.

@@ -1,4 +1,5 @@
 ---
+draft: false
 title: The Four Seasons Hotel Vancouver
 author: Prince Collection
 description: Perched atop a hill that overlooks the gorgeous Elliott Bay is the Four Seasons Hotel Seattle.
@@ -10,16 +11,8 @@ tags:
   - news
   - deals
   - scandinavia
-carousel:
-  - /images/uploads/kimpton-saint-george-toronto-45.jpeg
-  - https://images.unsplash.com/photo-1519690889869-e705e59f72e1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  - https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  - https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-gallery:
-  - /images/uploads/kimpton-saint-george-toronto-45.jpeg
-  - https://images.unsplash.com/photo-1519690889869-e705e59f72e1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  - https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  - https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+carousel: []
+gallery: []
 ---
 
 Perched atop a hill that overlooks the gorgeous Elliott Bay is the **Four Seasons Hotel Seattle**. If you're in search of a luxurious stay in the heart of the city, or are in need of a blissful escape from the region's notoriously moody weather, you've come to the right place.
