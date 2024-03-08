@@ -19,7 +19,7 @@ collections:
     folder: /src/content/blog # Where each new post with .md should be saved
     create: true # Allows users to create new items in the collection
     fields:
-      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - { label: "Draft", name: "draft", widget: "boolean", default: true}
       - { label: "Title", name: "title", widget: "string" } # Field Title
       - { label: "Author", name: "author", widget: "string", default: "Prince Collection" } # Field Title
       - { label: "Description", name: "description", widget: "string" } # Field Description
@@ -55,6 +55,7 @@ collections:
     folder: /src/content/news # Where each new post with .md should be saved
     create: true # Allows users to create new items in the collection
     fields:
+      - { label: "Draft", name: "draft", widget: "boolean", default: true}
       - { label: "Title", name: "title", widget: "string" } # Field Title
       - { label: "Author", name: "author", widget: "string", default: "Prince Collection" } # Field Title
       - { label: "Description", name: "description", widget: "string" } # Field Description
@@ -90,6 +91,7 @@ collections:
     folder: /src/content/reviews # Where each new post with .md should be saved
     create: true # Allows users to create new items in the collection
     fields:
+      - { label: "Draft", name: "draft", widget: "boolean", default: true}
       - { label: "Title", name: "title", widget: "string" } # Field Title
       - { label: "Author", name: "author", widget: "string", default: "Prince Collection" } # Field Title
       - { label: "Description", name: "description", widget: "string" } # Field Description
@@ -125,6 +127,7 @@ collections:
     folder: /src/content/guides # Where each new post with .md should be saved
     create: true # Allows users to create new items in the collection
     fields:
+      - { label: "Draft", name: "draft", widget: "boolean", default: true}
       - { label: "Title", name: "title", widget: "string" } # Field Title
       - { label: "Author", name: "author", widget: "string", default: "Prince Collection" } # Field Title
       - { label: "Description", name: "description", widget: "string" } # Field Description
