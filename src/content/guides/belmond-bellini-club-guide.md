@@ -1,4 +1,5 @@
 ---
+draft: false
 title: Belmond Bellini Club Guide
 author: Prince Collection
 description: "Belmond is a pioneer in luxury travel, operating a multi-service
@@ -18,10 +19,8 @@ tags:
   - belmond
   - belmond-bellini
 featured: false
-carousel:
-  - alt: Prince Collection carousel description
-gallery:
-  - alt: Prince Collection gallery description
+carousel: []
+gallery: []
 contents:
   - section-title
 ---
