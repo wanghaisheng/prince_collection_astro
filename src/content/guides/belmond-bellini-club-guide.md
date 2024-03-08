@@ -55,20 +55,20 @@ Travel on one of the most iconic train routes in the world on the Venice Simplon
 <div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
   <div class="col">
     <figure>
-        <img alt="Gallery of 3 images of Venice Simplon-Orient-Express" class="grid-image" src="public/images/uploads/belmond-bellini-review-4.jpg" />
-        <figcaption>Fig.1 - The Venice Simplon-Orient-Express</figcaption>
+        <img alt="Gallery of 3 images of Venice Simplon-Orient-Express" class="grid-image" src="/images/uploads/belmond-bellini-review-4.jpg" />
+       <!-- <figcaption>Fig.1 - The Venice Simplon-Orient-Express</figcaption>-->
     </figure>
   </div>
   <div class="col">
     <figure>
-        <img alt="Gallery of 3 images of Venice Simplon-Orient-Express" class="grid-image" src="public/images/uploads/belmond-bellini-review-5.jpg" />
-        <figcaption>Fig.2 - The Venice Simplon-Orient-Express</figcaption>
+        <img alt="Gallery of 3 images of Venice Simplon-Orient-Express" class="grid-image" src="/images/uploads/belmond-bellini-review-5.jpg" />
+        <!--<figcaption>Fig.2 - The Venice Simplon-Orient-Express</figcaption>-->
     </figure>
   </div>
   <div class="col">
     <figure>
-        <img alt="Gallery of 3 images of Venice Simplon-Orient-Express" class="grid-image" src="public/images/uploads/belmond-bellini-review-6.jpg" />
-        <figcaption>Fig.3 - The Venice Simplon-Orient-Express</figcaption>
+        <img alt="Gallery of 3 images of Venice Simplon-Orient-Express" class="grid-image" src="/images/uploads/belmond-bellini-review-6.jpg" />
+        <!--<figcaption>Fig.3 - The Venice Simplon-Orient-Express</figcaption>-->
       </figure>
   </div>
 </div>
@@ -78,20 +78,17 @@ For those looking to explore more of the natural world, Belmond’s modern and s
 <div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
   <div class="col">
     <figure>
-        <img alt="Gallery of images of eagle island lodge and the okavango delta" class="grid-image" src="public/images/uploads/belmond-bellini-review-7.jpg" />
-        <figcaption>Fig.1 - Eagle island lodge and the Okavango Delta</figcaption>
+        <img alt="Gallery of images of eagle island lodge and the okavango delta" class="grid-image" src="/images/uploads/belmond-bellini-review-7.jpg" />
     </figure>
   </div>
   <div class="col">
     <figure>
-        <img alt="Gallery of images of eagle island lodge and the okavango delta" class="grid-image" src="public/images/uploads/belmond-bellini-review-8.jpg" />
-        <figcaption>Fig.2 - Eagle island lodge and the Okavango Delta</figcaption>
+        <img alt="Gallery of images of eagle island lodge and the okavango delta" class="grid-image" src="/images/uploads/belmond-bellini-review-8.jpg" />
     </figure>
   </div>
   <div class="col">
     <figure>
-        <img alt="Gallery of images of eagle island lodge and the okavango delta" class="grid-image" src="public/images/uploads/belmond-bellini-review-9.jpg" />
-        <figcaption>Fig.3 - Eagle island lodge and the Okavango Delta</figcaption>
+        <img alt="Gallery of images of eagle island lodge and the okavango delta" class="grid-image" src="/images/uploads/belmond-bellini-review-9.jpg" />
       </figure>
   </div>
 </div>
@@ -110,7 +107,7 @@ Booking through Belmond Bellini Club provides an array of perks and benefits at 
 
 The benefits offered by Belmond Bellini Club are dependent on whether you’re staying in a hotel or safari lodge, or on a train or river cruise.
 
-For hotels and safari lodges, Belmond Bellini Club benefits include the following:
+**For hotels and safari lodges, Belmond Bellini Club benefits include the following:**
 
 * $100 (all figures in USD) credit per room per stay, or $220 credit per suite per stay
 * Complimentary upgrade based on availability at time of check-in
@@ -128,9 +125,7 @@ For hotels and safari lodges, Belmond Bellini Club benefits include the followin
 
 In addition to the above benefits, travellers may also enjoy perks above and beyond those listed, depending on the property/experience they’ve booked.
 
-For example, when staying at the Sanctuary Lodge in Machu Picchu, you’ll enjoy fully inclusive food and drink service for two people as part of your Belmond Bellini Club booking, offering
-
-curated cocktails, thoughtfully designed local and international menus, and a stunning dining space.
+For example, when staying at the Sanctuary Lodge in Machu Picchu, you’ll enjoy fully inclusive food and drink service for two people as part of your Belmond Bellini Club booking, offering curated cocktails, thoughtfully designed local and international menus, and a stunning dining space.
 
 ![](/images/uploads/belmond-bellini-review-11.jpeg)
 
