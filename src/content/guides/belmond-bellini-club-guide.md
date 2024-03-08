@@ -24,6 +24,7 @@ gallery: []
 contents:
   - section-title
 ---
+# Belmond Bellini Club Guide
 
 Belmond is a pioneer in luxury travel, operating a multi-service company that originated in 1976 with the purchase of the gorgeous Cipriani hotel in Venice. 
 
@@ -37,16 +38,18 @@ Belmond offers stunning hotels across much of Europe, as well as one-of-a-kind p
 
 Currently, the Belmond portfolio boasts 32 luxury hotels, six unique train journeys, and two unforgettable safaris, as well as an upscale New York restaurant and a French riverboat experience.
 
-![Belmond Bellini ](/images/uploads/belmond-bellini-review-1.png)
+![A map of global Belmond Bellini locations](/images/uploads/belmond-bellini-review-1.png "A map of global Belmond Bellini locations")
 
 Belmond’s diverse range of offerings afford guests the opportunity to experience some of the world’s most distinct locales in the throes of luxury.
 
 Enjoy the Bellini Club’s features while staying at the lush and stunning Hotel des Cataratas next to Brazil’s Iguazu Falls… 
 
-![](/images/uploads/belmond-bellini-review-2.png)
+![An aerial image of the Belmond Bellini at Iguasso Falls, Brazil](/images/uploads/belmond-bellini-review-2.png)
 
 Or while venturing to Machu Picchu in style on the Hiram Bingham luxury train…
 
 ![](/images/uploads/belmond-bellini-review-3.jpeg)
 
 Travel on one of the most iconic train routes in the world on the Venice Simplon-Orient-Express, where you’ll be invited to go back in time with the impeccably detailed carriages and the 1920s-themed restaurant cars as you traverse between some of Europe’s most fascinating cities.
+
+grid
