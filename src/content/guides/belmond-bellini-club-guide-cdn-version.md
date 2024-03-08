@@ -25,28 +25,6 @@ gallery:
 contents:
   - section-title
 ---
-https://drive.google.com/uc?id=1kPGS8uw5YOYqj5q7zP08juIAq7SxwZ_W
-
-https://drive.google.com/uc?id=1GKFSSvJeQ7a21wJLwEe6h8BpaJ6NUOOF
-
-https://drive.google.com/uc?id=1T8hzB96Ji5r5X3b1QjAeV0T2jhLnZyJd
-
-https://drive.google.com/uc?id=1zrirvhYN-FJFxtE5u1jRSxn6iOlkD2lC
-
-https://drive.google.com/uc?id=11AH4xDEi_p46pGUFuYo7y2WDtkz2dVZc
-
-https://drive.google.com/uc?id=1pVWQrKQYQ9E8Nhar9hQ8JeBkv6juARoK
-
-https://drive.google.com/uc?id=1g9n0YrZ4xACaQALXV9C_8JVhMSKWvCvj
-
-https://drive.google.com/uc?id=11ZxK5soLjWWoBD_Qc2aGvfLAsL-Izth2
-
-https://drive.google.com/uc?id=19bheUbKJE8zH3ll2Xhz4WiyjVThFSpbX
-
-https://drive.google.com/uc?id=1Nr1HHdnCzxWMYmoJ3JvQ0vFnmBS5gpor
-
-https://drive.google.com/uc?id=1-k_RGSmfc6RzViQRtH-nfnsHOzfpvcwt
-
 Belmond is a pioneer in luxury travel, operating a multi-service company that originated in 1976 with the purchase of the gorgeous Cipriani hotel in Venice. 
 
 The Belmond portfolio boasts one-of-a-kind hotels and safari lodges, and further distinguishes itself as a leader in bespoke luxury offerings with train journeys and river cruises.
@@ -139,8 +117,6 @@ The benefits offered by Belmond Bellini Club are dependent on whether you’re s
 
 For hotels and safari lodges, Belmond Bellini Club benefits include the following:
 
-
-
 $100 (all figures in USD) credit per room per stay, or $220 credit per suite per stay
 
 Complimentary upgrade based on availability at time of check-in
@@ -152,8 +128,6 @@ VIP welcome treats with a local taste
 Complimentary Wi-Fi access
 
 $500 gift voucher if your holiday totals $5,000 or more, to be applied to a future Belmond booking of at least $2,500 within 18 months
-
-
 
 For trains and river cruises, Belmond Bellini Club benefits include the following:
 
