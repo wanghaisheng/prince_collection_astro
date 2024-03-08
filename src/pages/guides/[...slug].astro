@@ -90,9 +90,9 @@ const verticalSlide = {
                     <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Read time </span>  {wordCount(post.body)} mins</p>
                 </div>
             </div>
-            <!-- <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5 pe-5" transition:animate={verticalSlide}>
-                <img class="w-100 object-fit rounded-end-5 shadow" style="height: 500px" src={post.data.imageUrl} alt={post.data.imageAlt} />
-            </div> -->
+            
+          
+          { post.data.carousel.url != '' &&
             <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5" transition:animate={verticalSlide}>
                 <div id="carouselExampleIndicators" class="carousel slide"  data-bs-ride="true">
                     <div class="carousel-indicators">
@@ -106,7 +106,7 @@ const verticalSlide = {
                     {post.data.carousel.map((item, index) => (
                         <div style="height: 600px"
                         class:list={["carousel-item min-vw-100", index === 0 ? 'active' : '']}>
-                            <img src={item} class="d-block w-100 h-100 object-fit" alt="...">
+                            <img src={item.url} class="d-block w-100 h-100 object-fit" alt={item.alt}>
                       </div>
                     ))}
                     </div>
@@ -119,7 +119,13 @@ const verticalSlide = {
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
+            </div><!--end carousel -->
+          }
+                     
+            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5 pe-5" transition:animate={verticalSlide}>
+                <img class="w-100 object-fit rounded-end-5 shadow" style="height: 500px" src={post.data.imageUrl} alt={post.data.imageAlt} />
             </div>
+
         </div>
     </div>
     <!-- body -->

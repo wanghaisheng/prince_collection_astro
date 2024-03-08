@@ -25,6 +25,7 @@ gallery:
 contents:
   - section-title
 ---
+
 Belmond is a pioneer in luxury travel, operating a multi-service company that originated in 1976 with the purchase of the gorgeous Cipriani hotel in Venice. 
 
 The Belmond portfolio boasts one-of-a-kind hotels and safari lodges, and further distinguishes itself as a leader in bespoke luxury offerings with train journeys and river cruises.
