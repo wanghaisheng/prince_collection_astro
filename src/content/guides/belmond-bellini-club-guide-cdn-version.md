@@ -7,7 +7,7 @@ description: "Belmond is a pioneer in luxury travel, operating a multi-service
 SEOdescription: "Belmond is a pioneer in luxury travel, operating a
   multi-service company that originated in 1976 with the purchase of the
   gorgeous Cipriani hotel in Venice. "
-date: 2024-03-07T20:43:06.642Z
+pubDate: 2024-03-07T20:43:06.642Z
 imageUrl: https://drive.google.com/uc?id=1kPGS8uw5YOYqj5q7zP08juIAq7SxwZ_W
 imageAlt: "Belmond is a pioneer in luxury travel, operating a multi-service
   company that originated in 1976 with the purchase of the gorgeous Cipriani
@@ -37,30 +37,50 @@ Belmond offers stunning hotels across much of Europe, as well as one-of-a-kind p
 
 Currently, the Belmond portfolio boasts 32 luxury hotels, six unique train journeys, and two unforgettable safaris, as well as an upscale New York restaurant and a French riverboat experience.
 
-![Belmond Bellini ](https://drive.google.com/uc?id=1kPGS8uw5YOYqj5q7zP08juIAq7SxwZ_W)
+
+https://drive.google.com/uc?id=1kPGS8uw5YOYqj5q7zP08juIAq7SxwZ_W
+https://drive.google.com/uc?id=1GKFSSvJeQ7a21wJLwEe6h8BpaJ6NUOOF
+https://drive.google.com/uc?id=1T8hzB96Ji5r5X3b1QjAeV0T2jhLnZyJd
+https://drive.google.com/uc?id=1zrirvhYN-FJFxtE5u1jRSxn6iOlkD2lC
+https://drive.google.com/uc?id=11AH4xDEi_p46pGUFuYo7y2WDtkz2dVZc
+https://drive.google.com/uc?id=1pVWQrKQYQ9E8Nhar9hQ8JeBkv6juARoK
+https://drive.google.com/uc?id=1g9n0YrZ4xACaQALXV9C_8JVhMSKWvCvj
+https://drive.google.com/uc?id=11ZxK5soLjWWoBD_Qc2aGvfLAsL-Izth2
+https://drive.google.com/uc?id=19bheUbKJE8zH3ll2Xhz4WiyjVThFSpbX
+https://drive.google.com/uc?id=1Nr1HHdnCzxWMYmoJ3JvQ0vFnmBS5gpor
+https://drive.google.com/uc?id=1-k_RGSmfc6RzViQRtH-nfnsHOzfpvcwt
+
+
+![Belmond Bellini World map](https://drive.google.com/thumbnail?id=1kPGS8uw5YOYqj5q7zP08juIAq7SxwZ_W&sz=w1000)
+
+![Belmond Bellini ](https://drive.google.com/thumbnail?id=1GKFSSvJeQ7a21wJLwEe6h8BpaJ6NUOOF&sz=w1000)
+
+https://drive.google.com/file/d/1T8hzB96Ji5r5X3b1QjAeV0T2jhLnZyJd/view?usp=drive_link
 
 Belmond’s diverse range of offerings afford guests the opportunity to experience some of the world’s most distinct locales in the throes of luxury.
 
 Enjoy the Bellini Club’s features while staying at the lush and stunning Hotel des Cataratas next to Brazil’s Iguazu Falls… 
 
-![](https://drive.google.com/uc?id=1GKFSSvJeQ7a21wJLwEe6h8BpaJ6NUOOF)
+![](https://drive.google.com/thumbnail?id=1T8hzB96Ji5r5X3b1QjAeV0T2jhLnZyJd&sz=1200)
 
 Or while venturing to Machu Picchu in style on the Hiram Bingham luxury train…
 
-![](https://drive.google.com/uc?id=1T8hzB96Ji5r5X3b1QjAeV0T2jhLnZyJd)
+![Machu Picchi](https://drive.google.com/thumbnail?id=1T8hzB96Ji5r5X3b1QjAeV0T2jhLnZyJd&sz=1200x)
 
 Travel on one of the most iconic train routes in the world on the Venice Simplon-Orient-Express, where you’ll be invited to go back in time with the impeccably detailed carriages and the 1920s-themed restaurant cars as you traverse between some of Europe’s most fascinating cities.
 
 <div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
   <div class="col">
     <figure>
-        <img alt="" class="grid-image" src="https://drive.google.com/uc?id=1zrirvhYN-FJFxtE5u1jRSxn6iOlkD2lC" />
+        <img alt="" class="grid-image" src="https://drive.google.com/thumbnail?id=1zrirvhYN-FJFxtE5u1jRSxn6iOlkD2lC&sz=w1000" />
+        
+        <!-- https://drive.google.com/thumbnail?id=id=1zrirvhYN-FJFxtE5u1jRSxn6iOlkD2lC&sz=w1000 -->
         <figcaption>Fig.1 - Example image caption</figcaption>
     </figure>
   </div>
   <div class="col">
     <figure>
-        <img alt="" class="grid-image" src="https://drive.google.com/uc?id=11AH4xDEi_p46pGUFuYo7y2WDtkz2dVZc" />
+        <img alt="" class="grid-image" src="https://drive.google.com/thumbnail?id=1zrirvhYN-FJFxtE5u1jRSxn6iOlkD2lC&sz=w1000" />
         <figcaption>Fig.2 - Example image caption</figcaption>
     </figure>
   </div>
