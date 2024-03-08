@@ -74,7 +74,7 @@ const verticalSlide = {
 
 <Layout title={post.data.title} description={post.data.description} image={post.data.imageUrl}>
     <div class="container-fluid px-0 pt-3">
-        <div class="row min-vh-500 bg-gold-2 pt-5 px-5">
+        <div class="row min-vh-500 bg-gold-2 pt-5">
             <div class="col-lg-9 d-flex flex-column justify-content-end align-items-start text-start p-5">
                 <a href="/guides">
                     <div class="d-flex align-items-center" transition:animate={verticalSlide}>
@@ -158,6 +158,7 @@ const verticalSlide = {
                 <h2 class="text-secondary">More posts</h2>
                 {
                     allPosts.map((post) => (
+                    !post.data.draft &&
                     <a href={`/reviews/${post.slug}/`}>
                         <div class="card text-body-secondary rounded-4 mb-3">
                             <img src={post.data.imageUrl} class="card-img-top rounded-4 p-2" style="width: 100%; height: 150px; object-fit: cover" alt={post.data.imageAlt}>

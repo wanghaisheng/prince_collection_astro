@@ -52,6 +52,7 @@ const verticalSlide = {
 		
 		<div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3 p-4">
 			{allArticles.map((post) => (
+			!post.data.draft &&
 			<div class="col">
 				<a href={`/news/${post.slug}/`}>
 					<div class="card bg-pc-light rounded-4 p-0 border-0 shadow" style="min-height: 500px">
