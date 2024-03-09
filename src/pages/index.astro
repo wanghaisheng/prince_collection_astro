@@ -6,14 +6,9 @@ const newsPosts = await getCollection("news");
 const reviewsPosts = await getCollection("reviews");
 const guidesPosts = await getCollection("guides");
 
-const allPosts = newsPosts && reviewsPosts && guidesPosts;
-let filteredPosts = allPosts.filter(post => post.data.draft === false);
-
 function filterPost(arr) {
 	return arr.filter(item => item.data.draft === false);
 }
-
-// const [firstArticle, ...allArticles] = filteredPosts;
 
 const { index } = Astro.props
 const slideAnim = {
@@ -255,7 +250,7 @@ const verticalSlide = {
 						<div class:list={[index === 2 ? 'col-md-12 col-lg-4' : 'col-md-6 col-lg-4']} data-aos="fade-up" data-aos-delay={index * 200}>
 							<a href={`/reviews/${post.slug}/`}>
 								<div class="card rounded-5 bg-pc-dark border-0 shadow">
-									<img src="" data-src={post.data.imageUrl} class="card-img-top position-absolute top-0 start-0 z-0 w-100 h-100 object-fit rounded-5 p-3" style="filter: brightness(0.5)" alt="...">
+									<img src="" data-src={post.data.imageUrl} class="card-img-top position-absolute top-0 start-0 z-0 w-100 h-100 object-fit rounded-5 p-3" style="filter: brightness(0.4)" alt="...">
 									<div class="card-img-overlay position-relative">
 										<div class="card-body min-vh-500 text-light d-flex flex-column justify-content-end align-items-start p-4">
 											<p class="small mb-2 mt-0">{post.data.pubDate.toString().slice(0,10)}</p>
@@ -302,11 +297,11 @@ const verticalSlide = {
 				<div class="col-lg-12 col-xl-9 order-2 order-xl-1">
 					<div class="row g-3 py-3 py-xl-0">
 						{
-						guidesPosts.slice(0,3).map((item, index) => (
+						filterPost(guidesPosts).slice(0,3).map((item, index) => (
 						<div class:list={[index === 2 ? 'col-md-12 col-lg-4' : 'col-md-6 col-lg-4']} data-aos="fade-up" data-aos-delay={index * 200}>
 							<a href={`/guides/${item.slug}/`}>
 								<div class="card rounded-5 bg-pale-dogwood border-0 shadow position-relative">
-									<img src="" data-src={item.data.imageUrl} class="card-img-top position-absolute top-0 start-0 z-0 w-100 h-100 object-fit rounded-5 p-3" style="filter: brightness(0.5)" alt="...">
+									<img src="" data-src={item.data.imageUrl} class="card-img-top position-absolute top-0 start-0 z-0 w-100 h-100 object-fit rounded-5 p-3" style="filter: brightness(0.4)" alt="...">
 									<div class="card-img-overlay position-relative">
 									<div class="card-body min-vh-500 text-light d-flex flex-column justify-content-end align-items-start p-4">
 										<p class="small mb-2 mt-0">{item.data.pubDate.toString().slice(0,10)}</p>

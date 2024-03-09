@@ -26,23 +26,15 @@ contents:
 ---
 # Belmond Bellini Club Guide
 
-Belmond is a pioneer in luxury travel, operating a multi-service company that originated in 1976 with the purchase of the gorgeous Cipriani hotel in Venice. 
-
-The Belmond portfolio boasts one-of-a-kind hotels and safari lodges, and further distinguishes itself as a leader in bespoke luxury offerings with train journeys and river cruises.
-
-In 2019, Belmond joined LVMH Moët Hennessy Louis Vuitton, solidifying their place as leaders in luxury travel. 
+Belmond is a pioneer in luxury travel, operating a multi-service company that originated in 1976 with the purchase of the gorgeous Cipriani hotel in Venice. The Belmond portfolio boasts one-of-a-kind hotels and safari lodges, and further distinguishes itself as a leader in bespoke luxury offerings with train journeys and river cruises. In 2019, Belmond joined LVMH Moët Hennessy Louis Vuitton, solidifying their place as leaders in luxury travel. 
 
 ## The Belmond Experience
 
-Belmond offers stunning hotels across much of Europe, as well as one-of-a-kind properties and experiences throughout Asia, Africa, North America, and South America.
-
-Currently, the Belmond portfolio boasts 32 luxury hotels, six unique train journeys, and two unforgettable safaris, as well as an upscale New York restaurant and a French riverboat experience.
+Belmond offers stunning hotels across much of Europe, as well as one-of-a-kind properties and experiences throughout Asia, Africa, North America, and South America. Currently, the Belmond portfolio boasts 32 luxury hotels, six unique train journeys, and two unforgettable safaris, as well as an upscale New York restaurant and a French riverboat experience.
 
 ![A map of global Belmond Bellini locations](/images/uploads/belmond-bellini-review-1.png "A map of global Belmond Bellini locations")
 
-Belmond’s diverse range of offerings afford guests the opportunity to experience some of the world’s most distinct locales in the throes of luxury.
-
-Enjoy the Bellini Club’s features while staying at the lush and stunning Hotel des Cataratas next to Brazil’s Iguazu Falls… 
+Belmond’s diverse range of offerings afford guests the opportunity to experience some of the world’s most distinct locales in the throes of luxury. Enjoy the Bellini Club’s features while staying at the lush and stunning Hotel des Cataratas next to Brazil’s Iguazu Falls… 
 
 ![An aerial image of the Belmond Bellini at Iguasso Falls, Brazil](/images/uploads/belmond-bellini-review-2.png)
 
@@ -95,17 +87,11 @@ For those looking to explore more of the natural world, Belmond’s modern and s
 
 ![](/images/uploads/belmond-bellini-review-10.jpeg)
 
-No matter the destination, Belmond’s roster of hotels, lodges, and journeys will exceed your expectations.
-
-The best way to book one of Belmond’s lavish hotels, awe-inspiring river cruises and safari lodges, or incredible world-class train adventures is through **Belmond Bellini Club**.
+No matter the destination, Belmond’s roster of hotels, lodges, and journeys will exceed your expectations. The best way to book one of Belmond’s lavish hotels, awe-inspiring river cruises and safari lodges, or incredible world-class train adventures is through **Belmond Bellini Club**.
 
 ## Belmond Bellini Club Benefits
 
-Belmond Bellini Club is Belmond’s preferred partner program, which is only accessible when booking with an authorized travel advisor.
-
-Booking through Belmond Bellini Club provides an array of perks and benefits at no extra cost when staying at any of Belmond’s stunning hotels across Europe, as well as at their one-of-a-kind properties and experiences in Asia, Africa, South America, and North America.
-
-The benefits offered by Belmond Bellini Club are dependent on whether you’re staying in a hotel or safari lodge, or on a train or river cruise.
+Belmond Bellini Club is Belmond’s preferred partner program, which is only accessible when booking with an authorized travel advisor. Booking through Belmond Bellini Club provides an array of perks and benefits at no extra cost when staying at any of Belmond’s stunning hotels across Europe, as well as at their one-of-a-kind properties and experiences in Asia, Africa, South America, and North America. The benefits offered by Belmond Bellini Club are dependent on whether you’re staying in a hotel or safari lodge, or on a train or river cruise.
 
 **For hotels and safari lodges, Belmond Bellini Club benefits include the following:**
 
@@ -123,9 +109,7 @@ The benefits offered by Belmond Bellini Club are dependent on whether you’re s
 * Complimentary upgrade based on availability at time of check-in
 * $500 gift voucher if your holiday totals $5,000 or more, to be applied to a future Belmond booking of at least $2,500 within 18 months
 
-In addition to the above benefits, travellers may also enjoy perks above and beyond those listed, depending on the property/experience they’ve booked.
-
-For example, when staying at the Sanctuary Lodge in Machu Picchu, you’ll enjoy fully inclusive food and drink service for two people as part of your Belmond Bellini Club booking, offering curated cocktails, thoughtfully designed local and international menus, and a stunning dining space.
+In addition to the above benefits, travellers may also enjoy perks above and beyond those listed, depending on the property/experience they’ve booked. For example, when staying at the Sanctuary Lodge in Machu Picchu, you’ll enjoy fully inclusive food and drink service for two people as part of your Belmond Bellini Club booking, offering curated cocktails, thoughtfully designed local and international menus, and a stunning dining space.
 
 ![](/images/uploads/belmond-bellini-review-11.jpeg)
 
@@ -133,11 +117,7 @@ As a Prince Collection client, you’ll be given a full overview of the many ben
 
 ## Book Belmond Bellini Club with Prince Collection
 
-The Belmond Bellini Club benefits are only available when bookings are made through an authorized travel advisor.
-
-Once you’ve sent in a booking request to Prince Collection, our team will communicate the exact benefits available for your desired hotel, train, river cruise, or safari lodge, and will provide white-glove service to ensure your Belmond experience is exceptional.
-
-Plus, we provide the Belmond Bellini Club perks and benefits at no extra cost, and we’ll go above and beyond to make sure your travels are a seamless, once-in-a-lifetime experience.
+The Belmond Bellini Club benefits are only available when bookings are made through an authorized travel advisor. Once you’ve sent in a booking request to Prince Collection, our team will communicate the exact benefits available for your desired hotel, train, river cruise, or safari lodge, and will provide white-glove service to ensure your Belmond experience is exceptional. Plus, we provide the Belmond Bellini Club perks and benefits at no extra cost, and we’ll go above and beyond to make sure your travels are a seamless, once-in-a-lifetime experience.
 
 If you have your eyes on an upcoming Belmond vacation, please reach out to one of our travel advisors for a quote, and we’ll respond with everything you need to know.
 
