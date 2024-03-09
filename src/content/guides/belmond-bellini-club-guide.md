@@ -122,3 +122,73 @@ The Belmond Bellini Club benefits are only available when bookings are made thro
 If you have your eyes on an upcoming Belmond vacation, please reach out to one of our travel advisors for a quote, and we’ll respond with everything you need to know.
 
 Properties that Participate in Belmond Bellini Club:
+
+**Hotels in Europe**
+
+* Hotel Cipriani, Venice
+* Caruso, Ravello (Amalfi Coast)
+* Villa Margherita, Ravello (Amalfi Coast)
+* Villa San Michele, Florence
+* Splendido, Portofino
+* Splendido Mare, Portofino
+* Romazzino, Costa Smeralda (Sardinia)
+* Grand Hotel Timeo, Taormina (Sicily)
+* Villa Sant’Andrea, Taormina (Sicily)
+* Castello di Casole, Tuscany
+* Reid’s Palace, Madeira
+* Grand Hotel Europe, St. Petersburg
+* La Residencia, Mallorca
+* The Cadogan, London
+* Le Manoir aux Quat’Saisons, Oxfordshire (UK)
+
+Hotels in Asia
+
+* La Résidence d’Angkor, Siem Reap
+* Jimbaran Puri, Bali
+* La Résidence Phou Vao, Luang Prabang
+* Napasai, Koh Samui
+
+Hotels in Africa
+
+* Mount Nelson, Cape Town
+
+Hotels in North America
+
+* El Encanto, Santa Barbara
+* Charleston Place, Charleston
+
+Hotels in Mexico and the Caribbean:
+
+* Casa de Sierra Nevada, San Miguel De Allende (Mexico)
+* Maroma, Riviera Maya
+* Cap Juluca, Anguilla
+* La Samanna, St. Martin
+
+Hotels in South America:
+
+* Hotel das Cataratas, Iguassu Falls (Brazil)
+* Copacabana Palace, Rio de Janeiro
+* Las Casitas, Colca Canyon (Peru)
+* Monasterio, Cusco
+* Palacio Nazarenas, Cusco
+* Miraflores Park, Lima
+* Sanctuary Lodge, Machu Picchu
+* Rio Sagrado, Sacred Valley (Peru)
+
+Trains
+
+* Eastern & Oriental Express (Singapore and Malaysia)
+* Venice Simplon-Oriental-Express (Europe)
+* British Pullman (UK)
+* Royal Scotman (Scotland)
+* Andean Explorer (Peru)
+* Hiram Bingham (Machu Picchu)
+
+Boats
+
+* Les Bateaux Belmond (France)
+
+Safaris
+
+* Eagle Island Lodge (Okavango Delta)
+* Savute Elephant Lodge (Chobe National Park)
