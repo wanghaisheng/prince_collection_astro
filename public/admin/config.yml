@@ -44,7 +44,7 @@ collections:
         collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
-      - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
+      - { label: "Table of Contents", name: "contents", widget: "list", default: ["Comma separated list of all main section titles"], required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: news # Label used in the UI for the collection
@@ -78,7 +78,7 @@ collections:
         collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
-      - { label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
+      - { label: "Table of Contents", name: "contents", widget: "list", default: ["Comma separated list of all main section titles"], required: false }
       - {label: "Body", name: "body", widget: "markdown"}
 
   - label: reviews # Label used in the UI for the collection
@@ -112,7 +112,7 @@ collections:
         collapsed: true
         fields:
           - {label: Image, name: url, widget: image, required: false}
-      - {label: "Table of Contents", name: "contents", widget: "list", default: ["section-title"], required: false }
+      - {label: "Table of Contents", name: "contents", widget: "list", default: ["Comma separated list of all main section titles"], required: false }
       - {label: "Body", name: "body", widget: "markdown"}
 
   - label: guides # Label used in the UI for the collection
