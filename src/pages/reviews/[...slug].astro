@@ -19,6 +19,15 @@ let filteredPosts = allPosts.filter(post => post.data.draft === false)
 const { post } = Astro.props;
 const { Content } = await post.render();
 
+// Remove space, add hyphens to titles, convert to lowerCase to be used for hyperlinks
+function tableOfContents(str) {
+    // Convert the string to lowercase
+    let lowercaseStr = str.toLowerCase();
+    // Replace spaces with hyphens
+    let hyphenatedStr = lowercaseStr.replace(/ /g, '-');
+    return hyphenatedStr;
+}
+
 // get read time
 function wordCount(str) {
   const words = str.match(/(\w+)/g).length;
@@ -182,6 +191,19 @@ const verticalSlide = {
                 }
             </div>
             <div class="content-body col-lg-12 col-xl-9 p-4 p-lg-5">
+                <!--table of contents check and loop-->
+                { post.data.contents &&
+                <details class="bg-body-secondary p-3 mb-4 rounded-3" style="transition: all .3s ease-in-out;">
+                    <summary class="fs-5 fw-bold text-black-50">What's in this post</summary>
+                    <div class="px-3 py-2">
+                        {post.data.contents.map((item) => (
+                        <a href={'#' +  tableOfContents(item)}>
+                            <p class="my-2" style="font-size: 17px"><i class="bi bi-diamond text-secondary fw-bold"></i> {item}</p>
+                        </a>
+                        ))}
+                    </div>
+                </details>
+                }
                 <Content />
                 <!-- share -->
                 <div class="d-flex border-top py-3 mt-4">

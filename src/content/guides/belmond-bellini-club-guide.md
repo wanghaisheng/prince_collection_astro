@@ -22,7 +22,10 @@ featured: false
 carousel: []
 gallery: []
 contents:
-  - section-title
+  - The Belmond Experience
+  - Belmond Bellini Club Benefits
+  - Book Belmond Bellini Club with Prince Collection
+  - Properties that Participate in Belmond Bellini Club
 ---
 # Belmond Bellini Club Guide
 
@@ -121,7 +124,7 @@ The Belmond Bellini Club benefits are only available when bookings are made thro
 
 If you have your eyes on an upcoming Belmond vacation, please reach out to one of our travel advisors for a quote, and we’ll respond with everything you need to know.
 
-Properties that Participate in Belmond Bellini Club:
+## Properties that Participate in Belmond Bellini Club
 
 **Hotels in Europe**
 

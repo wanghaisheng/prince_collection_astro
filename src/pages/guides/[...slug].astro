@@ -16,6 +16,25 @@ let filteredPosts = allPosts.filter(post => post.data.draft === false)
 const { post } = Astro.props;
 const { Content } = await post.render();
 
+
+function tableOfContents(str) {
+ // Remove hyphens
+//  let noHyphens = str.replace(/-/g, ' ');
+//  // Split the string into words
+//  let words = noHyphens.split(' ');
+//  // Capitalize the first word
+//  words[0] = words[0].charAt(0).toUpperCase() + words[0].slice(1);
+//  // Join the words back together
+//  return words.join(' ');
+
+  // Convert the string to lowercase
+  let lowercaseStr = str.toLowerCase();
+  // Replace spaces with hyphens
+  let hyphenatedStr = lowercaseStr.replace(/ /g, '-');
+    
+  return hyphenatedStr;
+}
+
 // get read time
 function wordCount(str) {
   const words = str.match(/(\w+)/g).length;
@@ -160,7 +179,7 @@ const verticalSlide = {
                 {
                   filteredPosts.map((sidebarPost, index) => (
                   sidebarPost.slug != post.slug &&
-                    <a href={`/reviews/${sidebarPost.slug}/`}>
+                    <a href={`/guides/${sidebarPost.slug}/`}>
                         <div class="card text-body-secondary rounded-4 mb-3">
                             <img src={sidebarPost.data.imageUrl} class="card-img-top rounded-4 p-2" style="width: 100%; height: 150px; object-fit: cover" alt={sidebarPost.data.imageAlt}>
                             <div class="card-body px-4 pb-4 pt-0">
@@ -175,6 +194,20 @@ const verticalSlide = {
                 }
             </div>
             <div class="content-body col-lg-12 col-xl-9 p-4 p-lg-5">
+
+              <!--table of contents check and loop-->
+              { post.data.contents &&
+              <details class="bg-body-secondary p-3 mb-4 rounded-3" style="transition: all .3s ease-in-out;">
+                  <summary class="fs-5 fw-bold text-black-50">What's in this post</summary>
+                  <div class="px-3 py-2">
+                    {post.data.contents.map((item) => (
+                      <a href={'#' +  tableOfContents(item)}>
+                        <p class="my-2" style="font-size: 17px"><i class="bi bi-diamond text-secondary fw-bold"></i> {item}</p>
+                      </a>
+                    ))}
+                  </div>
+              </details>
+              }
                 <Content />
                 <!-- share -->
                 <div class="d-flex border-top py-3 mt-4">
