@@ -97,8 +97,6 @@ The Mandarin Oriental Hong Kong offers many different room types, ranging from s
 
 A standout feature in all room types is the bathroom, which features an opulent marble bathtub, striking black-and-white visual effects, and upscale bath amenities supplied by Diptyque.
 
-(Gallery of intriguing bathroom photos)
-
 <div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
   <div class="col">
     <figure>
@@ -119,8 +117,6 @@ A standout feature in all room types is the bathroom, which features an opulent 
 
 The hotel is a square-shaped building that boasts four potential views depending on the location of your room: a city view to the west, a view of Statue Square to the east, a harbour view to the north, and a non-descript option to the south.
 
-
-
 ![](/images/uploads/mandarin-hong-kong-10.jpeg)
 
 When booking through Mandarin Oriental Fan Club, you may be entitled to upgrade to a higher room type, such as a larger room, one with a nicer view, or maybe even a suite. Your Prince Collection travel advisor will ensure an upgrade request is noted on your booking.
@@ -130,6 +126,26 @@ When booking through Mandarin Oriental Fan Club, you may be entitled to upgrade 
 Guests of the Mandarin Oriental Hong Kong who book a Club-level room or suite will have access to The Mandarin Club, the hotel’s executive lounge.
 
 (Gallery of The Mandarin Club)
+
+![]()
+
+<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
+  <div class="col">
+    <figure>
+        <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-11.jpeg" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-12.jpeg" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-13.jpeg" />
+      </figure>
+  </div>
+</div>
 
 Situated on the 23rd floor, the newly renovated space boasts an exquisite, sleek design, complete with a stunning shattered floor effect. The Mandarin Club offers a variety of dining options, including a breakfast buffet, afternoon tea, and evening hors d’oeuvres with cocktails. Guests can enjoy service in an impressive and thoughtfully arranged dining area that features plush furnishings in shades of pink, purple, and magenta, or in the extensive additional seating areas which offer opportunities to take in a panoramic view.
 
