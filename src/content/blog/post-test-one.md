@@ -41,12 +41,10 @@ Once uploaded, select `"Copy name"` or "Copy path" from the top right. Go to the
 
 i.e. **`src=""`**
 
-`<img src="/images/uploads/mandarin-hong-kong-1.jpeg">`
+<img src="/images/uploads/mandarin-hong-kong-1.jpeg">
 
-`<figure>
-    <img src="/images/uploads/mandarin-hong-kong-1.jpeg" alt="Mandarin Hong Kong Hotel Review">
-
-</figure>`
+<figure>
+    <img src="/images/uploads/mandarin-hong-kong-1.jpeg" alt="Mandarin Hong Kong Hotel Review"></figure>
 
 ![]()
 
@@ -54,11 +52,11 @@ i.e. **`src=""`**
 
 Copy and paste the code below for a 3-column side by side image grid.
 
-`<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">`\
-`  <div class="col">
+<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">\
+   <div class="col">
     <figure>
         <img class="grid-image" src="/images/uploads/<!==add image name/file path here==>" alt="" />
-    </figure>
+    </figure>\
   </div>
   <div class="col">
     <figure>
@@ -70,32 +68,34 @@ Copy and paste the code below for a 3-column side by side image grid.
         <img class="grid-image" src="/images/uploads/four-seasons-seattle-2.jpeg" alt="" />
       </figure>
   </div>
-</div>`
+</div>
 
 ## HTML 2-column image grid
 
 Copy and paste the code below for a 2-column side by side image grid.
 
-`<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">`\
-``   <div class="col">
+<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">\
+   <div class="col">
     <figure>
       <img class="grid-image" src="/images/uploads/four-seasons-seattle-1.jpeg" alt="" />
-    </figure>
+    </figure>\
   </div>
   <div class="col">
     <figure>
       <img class="grid-image" src="/images/uploads/four-seasons-seattle-2.jpeg" alt="" />
     </figure>
   </div>
-</div>` ``
+</div>
 
 ## HTML images using figure and caption
 
 If desired you can copy/paste the `<figcaption>`element which adds a text description of the image just below it. It isn't necessary and if used needs to be added to every other image in the grid so it doesn't a) look imbalanced, and b) misalign spacing.
 
-`<figure>
+<figure>
     <img src="https://masonmedia.github.io/json-server/images/pc-hotel-bed-blue.avif"
-         alt="Albuquerque, New Mexico">`**`<figcaption>A single track trail outside of Albuquerque, New Mexico.</figcaption>`**
+         alt="Albuquerque, New Mexico">\
+ **   <figcaption>A single track trail outside of Albuquerque, New Mexico.</figcaption>**\
+</figure>
 
 Also can use this approach below using the standard image widget, with plain text description below:\
 
