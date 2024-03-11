@@ -9,7 +9,7 @@ SEOdescription: Perched atop a hill that overlooks the gorgeous Elliott Bay is
   the Four Seasons Hotel Seattle. If you’re in search of a luxurious stay in the
   heart of the city, or a blissful escape, you’ve come to the right place.
 pubDate: 2024-02-09T01:54:15.318Z
-imageUrl: https://images.unsplash.com/photo-1559511260-66a654ae982a?q=80&w=3018&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+imageUrl: /images/uploads/four-seasons-seattle-carousel-2.jpeg
 imageAlt: Perched atop a hill that overlooks the gorgeous Elliott Bay is the
   Four Seasons Hotel Seattle. If you’re in search of a luxurious stay in the
   heart of the city, or a blissful escape, you’ve come to the right place.
@@ -18,7 +18,10 @@ tags:
   - four-seasons
   - seattle
   - hotels
-carousel: []
+carousel:
+  - url: /images/uploads/four-seasons-seattle-carousel-1.jpeg
+  - url: /images/uploads/four-seasons-seattle-carousel-2.jpeg
+  - url: /images/uploads/four-seasons-seattle-carousel-3.jpeg
 gallery: []
 contents:
   - Four Seasons Hotel Seattle
@@ -35,7 +38,18 @@ Our Editor-in-Chief, T.J. Dunn enjoyed a stay at the Four Seasons Hotel Seattle 
 
 Perched atop a hill that overlooks the gorgeous Elliott Bay is the Four Seasons Hotel Seattle. If you’re in search of a luxurious stay in the heart of the city, or you’re in need of a blissful escape from the region's notoriously moody weather, you’ve come to the right place.
 
-
+`<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">
+  <div class="col">
+    <figure>
+      <img class="grid-image" src="/images/uploads/four-seasons-seattle-1.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+      <img class="grid-image" src="/images/uploads/four-seasons-seattle-2.jpeg" alt="" />
+    </figure>
+  </div>
+</div>`
 
 ## Location
 
