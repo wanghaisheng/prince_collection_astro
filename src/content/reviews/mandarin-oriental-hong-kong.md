@@ -19,8 +19,8 @@ tags:
   - hotels
 featured: false
 carousel:
-  - url: /images/uploads/mandarin-hong-kong-carousel-1.jpeg
   - url: /images/uploads/mandarin-hong-kong-carousel-3.jpeg
+  - url: /images/uploads/mandarin-hong-kong-carousel-1.jpeg
   - url: /images/uploads/mandarin-hong-kong-carousel-2.jpeg
   - url: /images/uploads/mandarin-hong-kong-carousel-4.jpeg
 contents:
@@ -35,9 +35,7 @@ contents:
 ---
 # Mandarin Oriental Hong Kong
 
-Prince Collection’s Founder & CEO Ricky Zhang stayed at the Mandarin Oriental Hong Kong in February 2023. He was most impressed by the hotel’s status amongst Hong Kong’s “see and be seen” crowd, as well as the numerous fine dining establishments and the elevated service culture from start to finish. Situated in the heart of Hong Kong’s financial district, the Mandarin Oriental Hong Kong is among the most sought-after luxury hotels in the city.
-
-As the flagship hotel of the Mandarin Oriental Hotel Group, this property holds a special place in Hong Kong’s history, as it boasts sweeping harbour views, impeccable service, a Michelin-starred restaurant, and award-winning cocktails.
+Prince Collection’s Founder & CEO Ricky Zhang stayed at the Mandarin Oriental Hong Kong in February 2023. He was most impressed by the hotel’s status amongst Hong Kong’s “see and be seen” crowd, as well as the numerous fine dining establishments and the elevated service culture from start to finish. Situated in the heart of Hong Kong’s financial district, the Mandarin Oriental Hong Kong is among the most sought-after luxury hotels in the city. As the flagship hotel of the Mandarin Oriental Hotel Group, this property holds a special place in Hong Kong’s history, as it boasts sweeping harbour views, impeccable service, a Michelin-starred restaurant, and award-winning cocktails.
 
 (Gallery/Carousel of 3–5 Best Pictures of Hotel)
 
