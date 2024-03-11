@@ -34,15 +34,13 @@ contents:
 ---
 # Four Seasons Hotel Seattle
 
-Our Editor-in-Chief, T.J. Dunn enjoyed a stay at the Four Seasons Hotel Seattle in November 2023. T.J. had this to say about his say: “There’s no better way to start the day than being served coffee in bed. The Four Seasons Hotel Seattle’s Coffee Concierge will become your new favourite person.” T.J.’s personal highlights: Buzzing at happy hour at the Goldfinch Tavern, soaking in the view of Puget Sound from the open-air hot tub, and a room that you won’t want to leave.
+Our Editor-in-Chief, T.J. Dunn enjoyed a stay at the Four Seasons Hotel Seattle in November 2023. T.J. had this to say about his say: “There’s no better way to start the day than being served coffee in bed. The Four Seasons Hotel Seattle’s Coffee Concierge will become your new favourite person.” T.J.’s personal highlights: Buzzing at happy hour at the Goldfinch Tavern, soaking in the view of Puget Sound from the open-air hot tub, and a room that you won’t want to leave. Perched atop a hill that overlooks the gorgeous Elliott Bay is the Four Seasons Hotel Seattle. If you’re in search of a luxurious stay in the heart of the city, or you’re in need of a blissful escape from the region's notoriously moody weather, you’ve come to the right place.
 
-Perched atop a hill that overlooks the gorgeous Elliott Bay is the Four Seasons Hotel Seattle. If you’re in search of a luxurious stay in the heart of the city, or you’re in need of a blissful escape from the region's notoriously moody weather, you’ve come to the right place.
-
-<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">\
+<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">
    <div class="col">
     <figure>
       <img class="grid-image" src="/images/uploads/four-seasons-seattle-1.jpeg" alt="" />
-    </figure>\
+    </figure>
   </div>
   <div class="col">
     <figure>
