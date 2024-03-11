@@ -88,8 +88,6 @@ You’ll be welcomed to the hotel by the valet staff, who are also valuable reso
 
 ## Rooms
 
-![]()
-
 <div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
    <div class="col">
     <figure>
@@ -112,17 +110,67 @@ Nestled in the heart of the city, the rooms at the Four Seasons Seattle capture 
 
 The room’s earthy tones are enhanced by the subtle Northwest-inspired décor and warm lighting. Bathed in natural light filtering through gauzy curtains, a cozy nook with a plush chaise longue provides space for quiet thought or peaceful repose. The room is also equipped with modern amenities. The sleek flat-screen TV, positioned perfectly for viewing, sits directly across from the king bed and rests atop a sound bar for an enhanced experience. Nearby, a table for two awaits, perfect for an in-room dining experience – a popular choice among guests – making meals a functional and enjoyable affair. The floor-to-ceiling windows offer moody views of Elliott Bay, showing off the dynamic energy of Seattle and the peaceful waterfront promenade.
 
-(Gallery 4)
+<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
+   <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-1.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-12.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-14.jpeg" alt="" />
+      </figure>
+  </div>
+</div>
 
 In the bathroom, the expansive vanity, with its polished marble countertop, offers ample space, and the large marble soaking bathtub invites you to unwind. The glass-enclosed rain shower, mimicking the famous Seattle rain, provides a rejuvenating experience with every drop. You can also keep an eye out for the model Boeing aircraft in your room, which pays homage to the city's aviation history.
 
 ## Dining
 
-(Gallery 5)
+<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">
+   <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-16.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-17.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-18.jpeg" alt="" />
+      </figure>
+  </div>\
+  <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-19.jpeg" alt="" />
+      </figure>
+  </div>
+</div>
 
 Goldfinch Tavern, the hotel's sole dining establishment, connects seamlessly with the hotel's lobby. Open all week with dedicated hours for breakfast, lunch, happy hour, and dinner, it's rare to find the space not buzzing. As you step inside, rich wood panelling harmonizes with sleek, dark furnishings. Warmed by the soft glow of carefully positioned lights, the space transforms into an intimate cocoon, ideal for guests seeking solace in stylish comfort. For the best experience, opt for a table by the expansive glass windows to enjoy views of Elliott Bay, or retreat to a private booth for a more intimate affair.
 
-(Gallery 6)
+![]()
+
+<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">
+   <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-20.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-carousel-1.jpeg" alt="" />
+    </figure>
+  </div>
+</div>
 
 The seasonal menu highlights local goods with a seafood-forward focus, celebrating the region's bounty. Indulge in the Aphrodite oysters paired with some bubbles for a special toast, or warm up from the inside with a delicious bowl of chowder. Also, be sure to catch the daily happy hour at Goldfinch Tavern, a popular affair among locals and guests alike. 
 
