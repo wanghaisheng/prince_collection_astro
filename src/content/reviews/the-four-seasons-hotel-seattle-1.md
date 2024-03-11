@@ -38,18 +38,18 @@ Our Editor-in-Chief, T.J. Dunn enjoyed a stay at the Four Seasons Hotel Seattle 
 
 Perched atop a hill that overlooks the gorgeous Elliott Bay is the Four Seasons Hotel Seattle. If you’re in search of a luxurious stay in the heart of the city, or you’re in need of a blissful escape from the region's notoriously moody weather, you’ve come to the right place.
 
-`<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">`\
-``   <div class="col">
+<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">\
+   <div class="col">
     <figure>
       <img class="grid-image" src="/images/uploads/four-seasons-seattle-1.jpeg" alt="" />
-    </figure>
+    </figure>\
   </div>
   <div class="col">
     <figure>
       <img class="grid-image" src="/images/uploads/four-seasons-seattle-2.jpeg" alt="" />
     </figure>
   </div>
-</div>` ``
+</div>
 
 ## Location
 
