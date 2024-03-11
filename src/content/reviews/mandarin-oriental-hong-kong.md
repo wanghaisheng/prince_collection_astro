@@ -51,7 +51,23 @@ The hotel opened in 1963 right next to the harbour of Hong Kong Island and, at t
 
 The exemplary service at the Mandarin Oriental Hong Kong begins as soon as you arrive, with a warm greeting from the staff as you enter the spacious lobby.
 
-(Gallery of Lobby)
+<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
+  <div class="col">
+    <figure>
+        <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-review-1.jpeg" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-2.jpeg" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-3.jpeg" />
+      </figure>
+  </div>
+</div>
 
 The lobby pays homage to the Mandarin Oriental’s Chinese roots through the soaring ceilings, dazzling chandeliers, and a harmonious blend of deep reds and golds. The clever interplay of bold floor patterns, rich colours, and textures imbues the space with a contemporary and eclectic feel, melding together the past and the present. The gracious hotel staff will facilitate your check-in to the right of the lobby in a separate check-in area.
 
@@ -61,9 +77,45 @@ The Mandarin Oriental Hong Kong offers many different room types, ranging from s
 
 (Gallery of intriguing room photos)
 
+<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
+  <div class="col">
+    <figure>
+        <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-4.jpeg" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-5.jpeg" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-6.jpeg" />
+      </figure>
+  </div>
+</div>
+
 A standout feature in all room types is the bathroom, which features an opulent marble bathtub, striking black-and-white visual effects, and upscale bath amenities supplied by Diptyque.
 
-(Gallery of intriguing bathroom photos).
+(Gallery of intriguing bathroom photos)
+
+<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
+  <div class="col">
+    <figure>
+        <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-7.jpeg" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-8.jpeg" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-9.jpeg" />
+      </figure>
+  </div>
+</div>
 
 The hotel is a square-shaped building that boasts four potential views depending on the location of your room: a city view to the west, a view of Statue Square to the east, a harbour view to the north, and a non-descript option to the south.
 
