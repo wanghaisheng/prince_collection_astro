@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Mandarin Oriental Hong Kong
 author: Prince Collection
 description: Situated in the heart of Hong Kong’s financial district, the
@@ -35,11 +35,7 @@ contents:
 ---
 # Mandarin Oriental Hong Kong
 
-Prince Collection’s Founder & CEO Ricky Zhang stayed at the Mandarin Oriental Hong Kong in February 2023. 
-
-He was most impressed by the hotel’s status amongst Hong Kong’s “see and be seen” crowd, as well as the numerous fine dining establishments and the elevated service culture from start to finish. 
-
-Situated in the heart of Hong Kong’s financial district, the Mandarin Oriental Hong Kong is among the most sought-after luxury hotels in the city.
+Prince Collection’s Founder & CEO Ricky Zhang stayed at the Mandarin Oriental Hong Kong in February 2023. He was most impressed by the hotel’s status amongst Hong Kong’s “see and be seen” crowd, as well as the numerous fine dining establishments and the elevated service culture from start to finish. Situated in the heart of Hong Kong’s financial district, the Mandarin Oriental Hong Kong is among the most sought-after luxury hotels in the city.
 
 As the flagship hotel of the Mandarin Oriental Hotel Group, this property holds a special place in Hong Kong’s history, as it boasts sweeping harbour views, impeccable service, a Michelin-starred restaurant, and award-winning cocktails.
 
@@ -49,7 +45,7 @@ As the flagship hotel of the Mandarin Oriental Hotel Group, this property holds 
 
 The Mandarin Oriental Hong Kong is located in the middle of the bustling Central district at the heart of Hong Kong’s financial centre.
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9152845128265!2d114.1561162252921!3d22.281198679700356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404006465228fb9%3A0x714d79b4857054f3!2sMandarin%20Oriental%2C%20Hong%20Kong!5e0!3m2!1sen!2sca!4v1709677816560!5m2!1sen!2sca" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9152845128265!2d114.1561162252921!3d22.281198679700356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404006465228fb9%3A0x714d79b4857054f3!2sMandarin%20Oriental%2C%20Hong%20Kong!5e0!3m2!1sen!2sca!4v1709677816560!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 The hotel opened in 1963 right next to the harbour of Hong Kong Island and, at the time, was the tallest building in the neighbourhood. 
 
