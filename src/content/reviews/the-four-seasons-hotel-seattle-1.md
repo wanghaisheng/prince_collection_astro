@@ -61,7 +61,7 @@ You can’t get any closer to the city’s famed Pike Place Market, where you ca
 
 ## Check-in
 
-<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
+<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">
    <div class="col">
     <figure>
         <img class="grid-image" src="/images/uploads/four-seasons-seattle-3.jpeg" alt="" />
@@ -76,6 +76,11 @@ You can’t get any closer to the city’s famed Pike Place Market, where you ca
     <figure>
         <img class="grid-image" src="/images/uploads/four-seasons-seattle-5.jpeg" alt="" />
       </figure>
+  </div>\
+  <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-6.jpeg" alt="" />
+      </figure>
   </div>
 </div>
 
@@ -88,17 +93,17 @@ You’ll be welcomed to the hotel by the valet staff, who are also valuable reso
 <div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
    <div class="col">
     <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-seattle-3.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-10.jpeg" alt="" />
     </figure>
   </div>
   <div class="col">
     <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-seattle-4.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-7.jpeg" alt="" />
     </figure>
   </div>
   <div class="col">
     <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-seattle-5.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-2.jpeg" alt="" />
       </figure>
   </div>
 </div>
