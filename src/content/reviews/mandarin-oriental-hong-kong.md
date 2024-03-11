@@ -119,7 +119,9 @@ A standout feature in all room types is the bathroom, which features an opulent 
 
 The hotel is a square-shaped building that boasts four potential views depending on the location of your room: a city view to the west, a view of Statue Square to the east, a harbour view to the north, and a non-descript option to the south.
 
-(Gallery of views)
+
+
+![](/images/uploads/mandarin-hong-kong-10.jpeg)
 
 When booking through Mandarin Oriental Fan Club, you may be entitled to upgrade to a higher room type, such as a larger room, one with a nicer view, or maybe even a suite. Your Prince Collection travel advisor will ensure an upgrade request is noted on your booking.
 
