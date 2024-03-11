@@ -129,7 +129,7 @@ const verticalSlide = {
                     {post.data.carousel.map((item, index) => (
                         <div style="height: 600px"
                         class:list={["carousel-item min-vw-100", index === 0 ? 'active' : '']}>
-                            <img src={item} class="d-block w-100 h-100 object-fit" alt="...">
+                            <img src={item.url} class="d-block w-100 h-100 object-fit" alt="...">
                       </div>
                     ))}
                     </div>
@@ -198,7 +198,7 @@ const verticalSlide = {
                     <div class="px-3 py-2">
                         {post.data.contents.map((item) => (
                         <a href={'#' +  tableOfContents(item)}>
-                            <p class="my-2" style="font-size: 17px"><i class="bi bi-diamond text-secondary fw-bold"></i> {item}</p>
+                            <p class="my-2" style="font-size: 17px"><i class="bi bi-diamond text-secondary fw-bold me-1"></i> {item}</p>
                         </a>
                         ))}
                     </div>
