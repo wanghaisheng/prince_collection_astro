@@ -61,15 +61,47 @@ You can’t get any closer to the city’s famed Pike Place Market, where you ca
 
 ## Check-in
 
-(Gallery 2)
-
-
+<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">\
+   <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-3.jpeg" alt="" />
+    </figure>\
+  </div>
+  <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-4.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-5.jpeg" alt="" />
+      </figure>
+  </div>
+</div>
 
 You’ll be welcomed to the hotel by the valet staff, who are also valuable resources for queries about where to go in the city and how to get there. Inside, the lobby lounge emits warmth with its multiple fireplaces, perfect for coming back in from a walk in the drizzle. Natural elements in the seating area and on the walls highlight the hotel's home in the Pacific Northwest. As you make your way from the check-in area to the elevators, keep an eye out for complimentary baked goods and a warm beverage on offer by the Concierge desk.
 
 ## Rooms
 
-(Gallery 3)
+![]()
+
+<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">\
+   <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-3.jpeg" alt="" />
+    </figure>\
+  </div>
+  <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-4.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-5.jpeg" alt="" />
+      </figure>
+  </div>
+</div>
 
 Nestled in the heart of the city, the rooms at the Four Seasons Seattle capture the essence of Seattle's innovative spirit and balance this with unrivaled comfort. As you step into the room, the king bed, clad in immaculate white linens with the Four Seasons logo subtly stitched onto each pillow, promises a night of decadent slumber. To start the day, you could enjoy a Nespresso using the provided machine, but we recommend you treat yourself and not miss out on the coffee concierge service, available from 6am to 10:30am. After a quick call down to the front desk, hotel staff will bring you a fresh cup of coffee without you even having to get out of bed.
 
