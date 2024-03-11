@@ -1,18 +1,18 @@
 ---
-draft: false
-title: Post test one
-author: Andrew
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-SEOdescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+draft: true
+title: Post title
+author: Post author
+description: Short, 1-2 sentence description for post thumbnail/card and
+  individual post page
+SEOdescription: 150 character SEO focused description
 pubDate: 2024-03-01T18:44:56.087Z
 imageUrl: https://masonmedia.github.io/json-server/images/pc-hotel-bed-blue.avif
-imageAlt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+imageAlt: Add image alt text = this same text will be applied to the carousel if used
 category: blog
 tags:
-  - blog
+  - four-seasons
+  - seattle
+  - hotels
 carousel:
   - url: /images/uploads/belmond-bellini-review-2.png
   - url: /images/uploads/belmond-bellini-review-10.jpeg
@@ -27,73 +27,78 @@ contents:
 ---
 # Lorem ipsum titlesum
 
-## Adding links
-<a href="https://www.markdownguide.org" target="_blank">Learn Markdown!</a>
+Make title heading H1 and all subsequent headings H2.
 
-## Markdown style/cheat sheet
-<a href="https://www.markdownguide.org" target="_blank">Learn Markdown!</a>
+## HTML 3-column grid
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi quis commodo. Blandit libero volutpat sed cras ornare. Sit amet est placerat in egestas erat imperdiet sed euismod. Mauris nunc congue nisi vitae suscipit tellus mauris. Donec ultrices tincidunt arcu non sodales neque sodales. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Gravida neque convallis a cras semper auctor neque. In arcu cursus euismod quis viverra nibh cras pulvinar. Aliquam ultrices sagittis orci a scelerisque purus semper eget duis. Magna sit amet purus gravida quis blandit turpis cursus in. Enim diam vulputate ut pharetra sit amet aliquam id. Diam ut venenatis tellus in metus vulputate eu. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Aliquet porttitor lacus luctus accumsan tortor. Pharetra pharetra massa massa ultricies. Magnis dis parturient montes nascetur ridiculus mus mauris vitae.
+Copy and paste the code below for a 3-column side by side image grid. Put the code exactly where you want it in the post as you would text. Then copy-paste the image filepaths you want into the code from the media library. 
 
-## HTML 3x grid
+Access the media library in the image widget below > `expand the dropdown` > click `"Choose an image"` and the media window will pop up. 
+
+Name your images before uploading them using the title of the post with a number for each image i.e. `mandarin-hong-kong-1.jpg`. This makes it easy especially for grids so you don't have to copy/paste every image, just change the 1, 2, 3 etc. ending.
+
+Once uploaded, select `"Copy name"` or "Copy path" from the top right. Go to the code below and paste the image name into the `src=""` atrribute, between the quotes, after `/images/uploads/ `
+
+i.e. **`src="`**
+
+   `<figure>
+    <img class="grid-image" `**`src="`**
+
+![]()
 
 <div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
   <div class="col">
     <figure>
         <img alt="" class="grid-image" src="/images/uploads/img_3693.jpeg" />
-        <figcaption>Fig.1 - Example image caption</figcaption>
     </figure>
   </div>
   <div class="col">
     <figure>
         <img alt="" class="grid-image" src="/images/uploads/img_3693.jpeg" />
-        <figcaption>Fig.2 - Example image caption</figcaption>
     </figure>
   </div>
   <div class="col">
     <figure>
         <img alt="" class="grid-image" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-        <figcaption>Fig.3 - Example image caption</figcaption>
       </figure>
   </div>
 </div>
 
-## ridiculus mus mauris vitae
-
-Quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mus mauris vitae ultricies leo integer malesuada nunc vel. Penatibus et magnis dis parturient montes nascetur ridiculus mus. Ut placerat orci nulla pellentesque dignissim enim sit. Eleifend mi in nulla posuere. Tortor dignissim convallis aenean et tortor. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Scelerisque fermentum dui faucibus in ornare quam. Faucibus nisl tincidunt eget nullam. Quam nulla porttitor massa id.
-
 ## HTML 2x grid
+
+Copy and paste the code below for a 2-column side by side image grid.
 
 <div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">
   <div class="col">
     <figure>
-      <img alt="" class="grid-image" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-      <figcaption>Fig.1 - Example image caption</figcaption>
+      <img class="grid-image" src="**<!==add image name/file path here==>**" alt="" />
     </figure>
   </div>
   <div class="col">
     <figure>
-      <img alt="" class="grid-image" src="https://plus.unsplash.com/premium_photo-1671751034871-9c18bd9533d6?q=80&w=2912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-      <figcaption>Fig.2 - Example image caption</figcaption>
+      <img class="grid-image" src="<!==add image name/file path here==>" alt="" />
     </figure>
   </div>
 </div>
 
 ## HTML image using figure and caption
 
+If desired you can copy/paste the `<figcaption> `element which adds a text description of the image just below it. It isn't necessary and if used needs to be added to every other image in the grid so it doesn't a) look imbalanced, and b) misalign spacing.
+
 <figure>
     <img src="https://masonmedia.github.io/json-server/images/pc-hotel-bed-blue.avif"
          alt="Albuquerque, New Mexico">
-    <figcaption>A single track trail outside of Albuquerque, New Mexico.</figcaption>
+    **`<figcaption>A single track trail outside of Albuquerque, New Mexico.</figcaption>`**
 </figure>
 
-Also can use this approach
+Also can use this approach below using the standard image widget, with simple text description below:\
+
 ![Albuquerque, New Mexico](https://masonmedia.github.io/json-server/images/pc-hotel-bed-blue.avif)
 *A single track trail outside of Albuquerque, New Mexico.*
 
-## Faucibus nisl tincidunt
+## Making a table of contents
 
-Integer feugiat scelerisque varius morbi enim nunc faucibus. Accumsan tortor posuere ac ut consequat semper viverra. Consectetur a erat nam at lectus urna duis convallis. Ut ornare lectus sit amet. Et leo duis ut diam. Sed pulvinar proin gravida hendrerit lectus a. Ac tincidunt vitae semper quis lectus nulla at. Ipsum consequat nisl vel pretium lectus quam id leo. Enim sit amet venenatis urna. Purus non enim praesent elementum facilisis leo vel fringilla est. Varius sit amet mattis vulputate enim nulla aliquet. Sollicitudin aliquam ultrices sagittis orci. Risus at ultrices mi tempus imperdiet. Sit amet nisl purus in mollis nunc sed. Eros donec ac odio tempor orci. Id consectetur purus ut faucibus pulvinar elementum.
+Every title in your post gets converted into an id that can be used as an anchor for article navigation. The subtitle ***Making a table of contents*** becomes `<h2 id="making-a-table-of-contents">Making a table of Contents</h2>` automatically.
 
 ## Another H2
 
