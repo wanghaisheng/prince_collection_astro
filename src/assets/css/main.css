@@ -150,3 +150,9 @@ img {
   margin-right: 0.7rem;
   padding: 10px;
 }
+
+iframe {
+border-radius: 18px;
+width: 100% !important;
+height: 450px !important;
+}
