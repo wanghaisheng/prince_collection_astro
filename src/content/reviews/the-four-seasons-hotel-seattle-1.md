@@ -63,6 +63,8 @@ You can’t get any closer to the city’s famed Pike Place Market, where you ca
 
 (Gallery 2)
 
+
+
 You’ll be welcomed to the hotel by the valet staff, who are also valuable resources for queries about where to go in the city and how to get there. Inside, the lobby lounge emits warmth with its multiple fireplaces, perfect for coming back in from a walk in the drizzle. Natural elements in the seating area and on the walls highlight the hotel's home in the Pacific Northwest. As you make your way from the check-in area to the elevators, keep an eye out for complimentary baked goods and a warm beverage on offer by the Concierge desk.
 
 ## Rooms
