@@ -25,7 +25,7 @@ contents:
   - faucibus-nisl-tincidunt
   - another-h2
 ---
-# Lorem ipsum titlesum
+# Main post title
 
 Make title heading H1 and all subsequent headings H2.
 
@@ -81,7 +81,7 @@ Copy and paste the code below for a 2-column side by side image grid.
   </div>
 </div>
 
-## HTML image using figure and caption
+## HTML images using figure and caption
 
 If desired you can copy/paste the `<figcaption> `element which adds a text description of the image just below it. It isn't necessary and if used needs to be added to every other image in the grid so it doesn't a) look imbalanced, and b) misalign spacing.
 
@@ -91,19 +91,24 @@ If desired you can copy/paste the `<figcaption> `element which adds a text descr
     **`<figcaption>A single track trail outside of Albuquerque, New Mexico.</figcaption>`**
 </figure>
 
-Also can use this approach below using the standard image widget, with simple text description below:\
+Also can use this approach below using the standard image widget, with plain text description below:\
 
 ![Albuquerque, New Mexico](https://masonmedia.github.io/json-server/images/pc-hotel-bed-blue.avif)
 *A single track trail outside of Albuquerque, New Mexico.*
 
 ## Making a table of contents
 
-Every title in your post gets converted into an id that can be used as an anchor for article navigation. The subtitle ***Making a table of contents*** becomes `<h2 id="making-a-table-of-contents">Making a table of Contents</h2>` automatically.
+Every title in your post gets converted into an `id` that can be used as an anchor for in-article navigation. The subtitle ***Making a table of contents*** becomes `<h2 id="making-a-table-of-contents">Making a table of Contents</h2>` automatically. This then gets added to a menu at the top of the page that links that each specific title in the article.
 
-## Another H2
+To activate the table of contents at the start of the post, paste each article heading/subtitle into the **"Table of Contents"** field just above the article body widget. Use a single comma to create a space for the next title (don't use spacebar). You can link as many titles as you want, just be aware that this will directly impact the size of the visible table of contents in the post.
 
-In aliquam sem fringilla ut morbi tincidunt. Cras pulvinar mattis nunc sed. Volutpat consequat mauris nunc congue nisi vitae. Neque gravida in fermentum et sollicitudin ac orci phasellus. Amet commodo nulla facilisi nullam. Leo vel fringilla est ullamcorper eget nulla. Viverra ipsum nunc aliquet bibendum enim facilisis. Enim neque volutpat ac tincidunt vitae semper. Commodo elit at imperdiet dui accumsan sit amet. Sem integer vitae justo eget magna fermentum iaculis eu. Massa placerat duis ultricies lacus sed turpis. Mi sit amet mauris commodo quis imperdiet massa tincidunt. Ultricies tristique nulla aliquet enim tortor at. Eu augue ut lectus arcu bibendum.
+## Lists
 
-## Yessir
+1. Lists are given global styling in the theme code
 
-Quisque egestas diam in arcu cursus euismod quis. Dui ut ornare lectus sit amet est. Elit ut aliquam purus sit. In hendrerit gravida rutrum quisque non. Tristique magna sit amet purus. Purus sit amet volutpat consequat mauris nunc congue. Nisi porta lorem mollis aliquam ut. Natoque penatibus et magnis dis parturient montes nascetur. Suspendisse in est ante in nibh mauris cursus mattis molestie. Tellus molestie nunc non blandit massa enim nec dui. Cras semper auctor neque vitae tempus quam pellentesque. Hendrerit gravida rutrum quisque non tellus orci ac auctor. Odio ut sem nulla pharetra diam sit amet nisl. Donec massa sapien faucibus et molestie ac feugiat sed lectus. Ut venenatis tellus in metus vulputate eu scelerisque. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Vitae purus faucibus ornare suspendisse sed nisi. Posuere ac ut consequat semper viverra nam libero justo laoreet. Placerat vestibulum lectus mauris ultrices.
+* Bullet lists are given unique icons for bullets 
+* They are laid out in a 2x grid for more attractive styling and to take up less space
+
+## Text layout
+
+For ease of reading and UX expectation, avoid short sentences broken into unique lines as a general post writing style. It makes it difficult to know where a main concept/section starts and ends, and gives the page a disjointed look more akin to a list than an article.
