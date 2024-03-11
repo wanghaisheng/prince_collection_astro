@@ -151,7 +151,7 @@ The Mandarin Oriental Hong Kong boasts a very comprehensive range of dining venu
 
 ![](/images/uploads/mandarin-hong-kong-14.jpeg)
 
-<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
+<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">
   <div class="col">
     <figure>
         <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-15.jpeg" />
@@ -172,7 +172,20 @@ Moreover, the Mandarin Oriental Hong Kong is home to the Krug Room, a fine dinin
 
 It’s easy to keep in shape and get pampered at the Mandarin Oriental Hong Kong.
 
-(Gallery of fitness centre, spa, and salon)
+![](/images/uploads/mandarin-hong-kong-17.jpeg)
+
+<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">
+  <div class="col">
+    <figure>
+        <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-18.jpeg" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-19.jpeg" />
+    </figure>
+  </div>
+</div>
 
 The Spa at Mandarin Oriental Hong Kong has received numerous awards and accolades, and is widely held as one of the top spas in Asia, offering a wide range of treatments and services in a stylish contemporary setting. In addition to the treatments, the facilities at the spa also include a sauna, steam room, relaxation room, and underwater air beds. To keep fit on the road, the Mandarin Oriental Hong Kong provides a top-notch fitness centre with an extensive array of equipment including free weights, a Smith machine, a punching bag, cable machines, and more. Lastly, the hotel features a small swimming pool on the uppermost floor, and for guests looking to freshen up without leaving the property, there's a salon and barbershop.
 
