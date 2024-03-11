@@ -49,32 +49,36 @@ i.e. **`src=""`**
 
 ![]()
 
-<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
+## HTML 3-column image grid
+
+Copy and paste the code below for a 3-column side by side image grid.
+
+`<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
   <div class="col">
     <figure>
-        <img alt="" class="grid-image" src="/images/uploads/img_3693.jpeg" />
+        <img class="grid-image" src="<!==add image name/file path here==>" alt="" />
     </figure>
   </div>
   <div class="col">
     <figure>
-        <img alt="" class="grid-image" src="/images/uploads/img_3693.jpeg" />
+        <img class="grid-image" src="<!==add image name/file path here==>" alt="" />
     </figure>
   </div>
   <div class="col">
     <figure>
-        <img alt="" class="grid-image" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+        <img class="grid-image" src="<!==add image name/file path here==>" alt="" />
       </figure>
   </div>
-</div>
+</div>`
 
-## HTML 2x grid
+## HTML 2-column image grid
 
 Copy and paste the code below for a 2-column side by side image grid.
 
-<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">
+`<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">
   <div class="col">
     <figure>
-      <img class="grid-image" src="\*\*<!==add image name/file path here==>\*\*" alt="" />
+      <img class="grid-image" src="<!==add image name/file path here==>" alt="" />
     </figure>
   </div>
   <div class="col">
@@ -82,7 +86,7 @@ Copy and paste the code below for a 2-column side by side image grid.
       <img class="grid-image" src="<!==add image name/file path here==>" alt="" />
     </figure>
   </div>
-</div>
+</div>`
 
 ## HTML images using figure and caption
 
