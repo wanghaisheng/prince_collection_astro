@@ -52,11 +52,11 @@ i.e. **`src=""`**
 
 Copy and paste the code below for a 3-column side by side image grid.
 
-<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">\
+<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
    <div class="col">
     <figure>
         <img class="grid-image" src="/images/uploads/<!==add image name/file path here==>" alt="" />
-    </figure>\
+    </figure>
   </div>
   <div class="col">
     <figure>
@@ -74,11 +74,11 @@ Copy and paste the code below for a 3-column side by side image grid.
 
 Copy and paste the code below for a 2-column side by side image grid.
 
-<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">\
+<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">
    <div class="col">
     <figure>
       <img class="grid-image" src="/images/uploads/four-seasons-seattle-1.jpeg" alt="" />
-    </figure>\
+    </figure>
   </div>
   <div class="col">
     <figure>
@@ -93,8 +93,8 @@ If desired you can copy/paste the `<figcaption>`element which adds a text descri
 
 <figure>
     <img src="https://masonmedia.github.io/json-server/images/pc-hotel-bed-blue.avif"
-         alt="Albuquerque, New Mexico">\
- **   <figcaption>A single track trail outside of Albuquerque, New Mexico.</figcaption>**\
+         alt="Albuquerque, New Mexico">
+    <figcaption>A single track trail outside of Albuquerque, New Mexico.</figcaption>
 </figure>
 
 Also can use this approach below using the standard image widget, with plain text description below:\
