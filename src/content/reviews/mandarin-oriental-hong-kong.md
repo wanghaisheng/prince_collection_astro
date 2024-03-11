@@ -125,10 +125,6 @@ When booking through Mandarin Oriental Fan Club, you may be entitled to upgrade 
 
 Guests of the Mandarin Oriental Hong Kong who book a Club-level room or suite will have access to The Mandarin Club, the hotel’s executive lounge.
 
-(Gallery of The Mandarin Club)
-
-![]()
-
 <div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
   <div class="col">
     <figure>
@@ -153,7 +149,20 @@ Situated on the 23rd floor, the newly renovated space boasts an exquisite, sleek
 
 The Mandarin Oriental Hong Kong boasts a very comprehensive range of dining venues.
 
-(Gallery of 3–5 images of dining)
+![](/images/uploads/mandarin-hong-kong-14.jpeg)
+
+<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
+  <div class="col">
+    <figure>
+        <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-15.jpeg" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img alt="" class="grid-image" src="/images/uploads/mandarin-hong-kong-16.jpeg" />
+    </figure>
+  </div>
+</div>
 
 Of note is the hotel’s Michelin-starred restaurant, Man Wah, situated on the 25th floor. Here, guests can enjoy a refined Cantonese dining experience complete with views of Victoria Harbour. The restaurant’s Art Deco style, featuring dark-blue walls and a gold and blue accented carpet, creates a modern and chic look. Also on the 25th floor, The Aubrey is a super-trendy Japanese izakaya with a lively bar that's been recognized as one of Asia’s 50 Best Bars. The venue exudes trendy glamour, with a stylish dining room, plush furnishings, large chandeliers, and lots of greenery.
 
