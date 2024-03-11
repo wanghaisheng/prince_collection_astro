@@ -1,6 +1,6 @@
 ---
 draft: true
-title: Post title
+title: Prince Collection CMS guide + widgets
 author: Post author
 description: Short, 1-2 sentence description for post thumbnail/card and
   individual post page
