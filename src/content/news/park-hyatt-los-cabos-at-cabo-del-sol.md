@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Park Hyatt Los Cabos at Cabo del Sol
 author: T.J. Dunn
 description: The Park Hyatt Los Cabos at Cabo del Sol is set to start welcoming
@@ -22,6 +22,7 @@ featured: false
 contents:
   - Park Hyatt Los Cabos at Cabo del Sol
   - Opens in early 2025
+  - Conclusion
 ---
 # Park Hyatt Los Cabos at Cabo del Sol
 
