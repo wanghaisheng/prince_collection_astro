@@ -31,11 +31,7 @@ Four Seasons Hotels and Resorts is one of the most recognizable luxury hotel bra
 
 ## The Four Seasons Experience
 
-Four Seasons is known for its thoughtful, well-appointed hotels and resorts and its dedication to ensuring high-quality guest experiences with each interaction.
-
-Four Seasons exceptional diversity of offerings allows guests to luxuriate in some of the world’s most compelling locales.
-
-Consider a stay at one of the Four Seasons iconic North American properties, such as the Beverly Wilshire in Los Angeles and revel in a slice of exceptional American iconography just steps from Rodeo Drive.
+Four Seasons is known for its thoughtful, well-appointed hotels and resorts and its dedication to ensuring high-quality guest experiences with each interaction. Four Seasons exceptional diversity of offerings allows guests to luxuriate in some of the world’s most compelling locales. Consider a stay at one of the Four Seasons iconic North American properties, such as the Beverly Wilshire in Los Angeles and revel in a slice of exceptional American iconography just steps from Rodeo Drive.
 
 ![](/images/uploads/four-seasons-preferred-partner-1.jpeg)
 
@@ -47,30 +43,25 @@ If you’re looking for more of an indulgent and one-of-a-kind escape, consider 
 
 ![](/images/uploads/four-seasons-preferred-partner-3.jpeg)
 
-No matter which one of the Four Seasons’s luxury properties you visit, you can rest assured that your stay will be excellent in all regards.
-
-The best way to book a stay at one of Four Seasons outstanding hotels, lush retreats, or grand residences is through the Four Seasons Preferred Partner program.
+No matter which one of the Four Seasons’s luxury properties you visit, you can rest assured that your stay will be excellent in all regards. The best way to book a stay at one of Four Seasons outstanding hotels, lush retreats, or grand residences is through the Four Seasons Preferred Partner program.
 
 ## Four Seasons Preferred Partner Benefits
 
-By booking a hotel stay or private retreat through the Four Seasons Preferred Partner program, you can enjoy exclusive benefits at no additional cost to you.
-
-The program and its benefits are only available when bookings are made through an authorized travel advisor, and the benefits will differ depending which property is booked.
+By booking a hotel stay or private retreat through the Four Seasons Preferred Partner program, you can enjoy exclusive benefits at no additional cost to you. The program and its benefits are only available when bookings are made through an authorized travel advisor, and the benefits will differ depending which property is booked.
 
 **In general, Four Seasons Preferred Partner benefits include the following:**
 
 * Daily breakfast for two guests, including in-room dining
 * Room upgrade, subject to availability at check-in
-* $100 (all figures in USD) property credit for room bookings; $200 property credit for suite bookings
+* $100 property credit for room bookings*
+* $200 property credit for suite bookings*
 * Early check-in and late check-out (subject to availability)
 
 Guests may also have access to a Third, Fourth, Fifth, or Sixth Night Free at select properties, as well as additional special offers unique to each property and dependent on the season.
 
 ![](/images/uploads/four-seasons-preferred-partner-4.jpeg)
 
-Additionally, the complimentary breakfast benefit is for two people per room, so if you book a Four Seasons Private Retreat or a suite with multiple bedrooms for more than two guests, the additional guests will likely be eligible for the complimentary breakfast.
-
-As a Prince Collection client, you’ll be given a full overview of the many benefits you can expect during your stay with Four Seasons.
+Additionally, the complimentary breakfast benefit is for two people per room, so if you book a Four Seasons Private Retreat or a suite with multiple bedrooms for more than two guests, the additional guests will likely be eligible for the complimentary breakfast. As a Prince Collection client, you’ll be given a full overview of the many benefits you can expect during your stay with Four Seasons.
 
 ## Book Four Seasons Preferred Partner with Prince Collection
 
@@ -86,3 +77,5 @@ If you’re planning an upcoming stay at a Four Seasons property, please reach o
 * 19 in Europe
 * 22 in the Middle East and Africa
 * 31 in Asia and the Pacific Region
+
+> *\*All figures in USD*
