@@ -30,12 +30,15 @@ Hyatt is slated to open its first-ever Park Hyatt property in Mexico, providing 
 
 The Park Hyatt Los Cabos at Cabo del Sol is set to start welcoming guests in early 2025. Once open, it will join a number of neighbouring luxury properties on the tip of Mexico’s Baja Peninsula.
 
-<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
+<div class="row row-cols-1 g-3 py-3 px-0">
    <div class="col">
     <figure>
         <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-1.jpeg" alt="" />
     </figure>
   </div>
+</div>
+
+<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">
   <div class="col">
     <figure>
         <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-2.jpeg" alt="" />
@@ -45,7 +48,7 @@ The Park Hyatt Los Cabos at Cabo del Sol is set to start welcoming guests in ear
     <figure>
         <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-3.jpeg" alt="" />
       </figure>
-  </div>\
+  </div>
   <div class="col">
     <figure>
         <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-4.jpeg" alt="" />
@@ -56,10 +59,13 @@ The Park Hyatt Los Cabos at Cabo del Sol is set to start welcoming guests in ear
         <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-5.jpeg" alt="" />
     </figure>
   </div>
-  <div class="col">
+</div>
+
+<div class="row row-cols-1 g-3 py-3 px-0">
+   <div class="col">
     <figure>
         <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-6.jpeg" alt="" />
-      </figure>
+    </figure>
   </div>
 </div>
 
