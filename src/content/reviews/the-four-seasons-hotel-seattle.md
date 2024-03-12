@@ -201,6 +201,24 @@ The Four Seasons Seattle's crown jewel is the outdoor pool area, where you'll fi
 
 ## Conclusion
 
+<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">
+   <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-21.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-22.jpeg" alt="" />
+    </figure>
+  </div>
+<div class="col">
+    <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-carousel-3.jpeg" alt="" />
+    </figure>
+  </div>
+</div>
+
 In the heart of the bustling city, where Seattle's steep streets meet Elliott Bay, the Four Seasons Hotel Seattle is where luxury is cradled in the arms of natural beauty. With its prime location near Pike Place Market and its stunning views, this is the perfect spot for an escape within the city, and the cozy rooms and bespoke service from staff at all levels make leaving the hotel a difficult choice.
 
 Luxurious amenities such as the coffee concierge service, the upscale Goldfinch Tavern, and an exclusive rooftop infinity pool ensure an unforgettable stay that balances indulgence and the warmth of a home away from home. With rates beginning at $500 (USD), the Four Seasons Hotel Seattle offers an ultra-luxurious yet modern retreat for those in search of a most excellent stay.
