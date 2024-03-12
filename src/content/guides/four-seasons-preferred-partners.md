@@ -27,9 +27,7 @@ contents:
 ---
 # Four Seasons Preferred Partners
 
-Four Seasons Hotels and Resorts is one of the most recognizable luxury hotel brands in the world, offering its guests unparalleled service at every turn.
-
-The company originated with a small footprint in Canada, and its portfolio now boasts over 120 properties worldwide.
+Four Seasons Hotels and Resorts is one of the most recognizable luxury hotel brands in the world, offering its guests unparalleled service at every turn. The company originated with a small footprint in Canada, and its portfolio now boasts over 120 properties worldwide.
 
 ## The Four Seasons Experience
 
@@ -76,11 +74,7 @@ As a Prince Collection client, you’ll be given a full overview of the many ben
 
 ## Book Four Seasons Preferred Partner with Prince Collection
 
-The Four Seasons preferred partner benefits are available exclusively for bookings made through an authorized travel advisor.
-
-After you’ve sent in a booking request to Prince Collection, our team will be in touch with information about the exact benefits available at your chosen property, and we’ll go above and beyond to ensure that your travels are everything you desire.
-
-Plus, we provide the Four Seasons preferred partner perks and benefits at no extra cost, helping you enjoy seamless and unburdened travel.
+The Four Seasons preferred partner benefits are available exclusively for bookings made through an authorized travel advisor. After you’ve sent in a booking request to Prince Collection, our team will be in touch with information about the exact benefits available at your chosen property, and we’ll go above and beyond to ensure that your travels are everything you desire. Plus, we provide the Four Seasons preferred partner perks and benefits at no extra cost, helping you enjoy seamless and unburdened travel.
 
 If you’re planning an upcoming stay at a Four Seasons property, please reach out to one of our travel advisors for a quote, and we’ll respond with everything you need to know.
 
