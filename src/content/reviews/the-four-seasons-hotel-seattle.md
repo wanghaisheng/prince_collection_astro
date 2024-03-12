@@ -19,6 +19,7 @@ tags:
   - seattle
   - hotels
 carousel:
+  - url: /images/uploads/four-seasons-seattle-18.jpeg
   - url: /images/uploads/four-seasons-seattle-carousel-1.jpeg
   - url: /images/uploads/four-seasons-seattle-carousel-2.jpeg
   - url: /images/uploads/four-seasons-seattle-carousel-3.jpeg
@@ -101,7 +102,7 @@ You’ll be welcomed to the hotel by the valet staff, who are also valuable reso
   </div>
   <div class="col">
     <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-seattle-2.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-9.jpeg" alt="" />
       </figure>
   </div>
 </div>
