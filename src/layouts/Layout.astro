@@ -88,7 +88,7 @@ interface Props {
 		aosInit();
 
 		document.addEventListener('astro:after-swap', () => {
-			window.scrollTo({ left: 0, top: 0, behavior: 'instant' })
+			window.scrollTo({ left: 0, top: 0, behavior: 'instant' });
 			lazyLoad();
 			// addLazyAttr();
 			aosInit();
