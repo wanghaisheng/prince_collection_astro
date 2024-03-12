@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from "astro:content";
 const allPosts = await getCollection("reviews");
-// const [firstArticle, ...allArticles] = allPosts;
 
 const { index } = Astro.props
 const slideAnim = {
@@ -23,6 +22,11 @@ const slideAnim = {
 const verticalSlide = {
   forwards: slideAnim,
   backwards: slideAnim,
+}
+
+// reduce length of string to closest full word
+function shorten(text, max) {
+  return text && text.length > max ? text.slice(0, max).split(' ').slice(0, -1).join(' ') : text
 }
 
 let filteredPosts = allPosts.filter(post => post.data.draft === false)
@@ -58,13 +62,13 @@ const [firstArticle, ...allArticles] = filteredPosts;
 			<div class="col">
 				<a href={`/reviews/${post.slug}/`}>
 					<div class="card bg-pc-light rounded-4 p-0 border-0 shadow" style="min-height: 500px">
-						<img src={post.data.imageUrl} class="card-img-top rounded-top-4 w-100" style="object-fit: cover; height: 200px; filter: brightness(70%)" alt={post.data.imageAlt}>
+						<img src="" data-src={post.data.imageUrl} class="card-img-top rounded-top-4 w-100" style="object-fit: cover; height: 200px; filter: brightness(70%)" alt={post.data.imageAlt}>
 						<i class="bi bi-arrow-up-right-circle-fill text-pc-10 fs-1 position-absolute top-0 end-0 me-3 mt-2"></i>
 						<div class="card-body position-relative px-4 pb-4">
 							<p class="small mb-2">{post.data.pubDate.toString().slice(0,10)}</p>
 							<h5 class="card-title fw-900 text-uppercase text-body-secondary mb-0">{post.data.title}</h5>
 							<p class="small m-0 text-secondary mt-2 mb-0">By: {post.data.author}</p>
-							<p class="card-text text-body-secondary pe-5">{post.data.description}</p>
+							<p class="card-text text-body-secondary pe-5">{shorten(post.data.description, 150) + '...'}</p>
 						</div>
 						<div class="card-footer p-3">
 							<div class="d-flex flex-row flex-wrap" style="text-wrap: pretty;">
