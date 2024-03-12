@@ -182,12 +182,12 @@ The seasonal menu highlights local goods with a seafood-forward focus, celebrati
   </div>
   <div class="col">
     <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-seattle-carousel-carousel-3.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-carousel-3.jpeg" alt="" />
     </figure>
   </div>
   <div class="col">
     <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-seattle-carousel-carousel-13.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-carousel-13.jpeg" alt="" />
     </figure>
   </div>
 </div>
