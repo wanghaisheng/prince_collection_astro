@@ -177,20 +177,17 @@ The seasonal menu highlights local goods with a seafood-forward focus, celebrati
 <div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">
    <div class="col">
     <figure>
+        <img class="grid-image" src="/images/uploads/four-seasons-seattle-21.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col">
+    <figure>
         <img class="grid-image" src="/images/uploads/four-seasons-seattle-22.jpeg" alt="" />
     </figure>
   </div>
-  <div class="col">
-    <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-seattle-carousel-3.jpeg" alt="" />
-    </figure>
-  </div>
-  <div class="col">
-    <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-seattle-carousel-13.jpeg" alt="" />
-    </figure>
-  </div>
 </div>
+
+![](/images/uploads/four-seasons-seattle-carousel-3.jpeg)
 
 The Four Seasons Seattle's crown jewel is the outdoor pool area, where you'll find Seattle's only infinity pool and a blissful hot tub perched on the fifth-floor terrace. Head here to swim some laps, to enjoy the panoramic views of the bay as you relax in the hot tub, or to quietly contemplate as you warm up around the firepit. Just inside from the pool, you'll find a compact but well-appointed fitness centre, complete with complimentary headphones, light snacks, and aluminum water bottles. The spa, located on the fourth floor and accessible from the pool, is an irresistible haven with a comprehensive list of treatments. Wind down in the relaxation room or warm up in the eucalyptus steam room. 
 
