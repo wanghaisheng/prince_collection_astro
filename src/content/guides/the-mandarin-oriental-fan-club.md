@@ -23,6 +23,7 @@ contents:
   - The Mandarin Oriental Experience
   - Mandarin Oriental Fan Club Benefits
   - Book Mandarin Oriental Fan Club with Prince Collection
+  - Mandarin Oriental properties
 ---
 # The Mandarin Oriental Fan Club
 
@@ -64,11 +65,9 @@ Your Prince Collection travel advisor will provide you with a full overview of t
 
 ## Book Mandarin Oriental Fan Club with Prince Collection
 
-To access the Mandarin Oriental Fan Club perks and benefits, your booking needs to be made through an authorized travel advisor. You can send in a booking request to Prince Collection, and our team will be in touch shortly with information about the exact benefits available at your chosen property.
+To access the Mandarin Oriental Fan Club perks and benefits, your booking needs to be made through an authorized travel advisor. You can send in a booking request to Prince Collection, and our team will be in touch shortly with information about the exact benefits available at your chosen property. If you’re planning a stay at one of Mandarin Oriental’s incredible properties, please reach out to one of our travel advisors for a quote, and we’ll respond with everything you need to know.
 
-If you’re planning a stay at one of Mandarin Oriental’s incredible properties, please reach out to one of our travel advisors for a quote, and we’ll respond with everything you need to know.
-
-### **Mandarin Oriental properties include:**
+### **Mandarin Oriental properties**
 
 #### Asia-Pacific
 
