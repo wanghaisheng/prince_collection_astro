@@ -9,7 +9,7 @@ SEOdescription: "Officially opening on May 1, 2024, Four Seasons Cabo San Lucas
   at Cabo del Sol will be a welcome addition to the already established luxury
   hotels in the area. "
 pubDate: 2024-03-13T14:12:09.455Z
-imageUrl: /images/uploads/sunset_wallpaper.jpeg
+imageUrl: /images/uploads/four-seasons-cabo-san-lucas-1.png
 imageAlt: "Officially opening on May 1, 2024, Four Seasons Cabo San Lucas at
   Cabo del Sol will be a welcome addition to the already established luxury
   hotels in the area. "
@@ -17,6 +17,10 @@ category: news
 tags:
   - news
 featured: false
+carousel:
+  - url: /images/uploads/four-seasons-cabo-san-lucas-1.png
+  - url: /images/uploads/four-seasons-cabo-san-lucas-2.png
+  - url: /images/uploads/four-seasons-cabo-san-lucas-5.png
 contents:
   - Four Seasons to Open New Baja Peninsula Luxury Property
   - Four Seasons Cabo San Lucas at Cabo del Sol
