@@ -60,7 +60,23 @@ This atoll, with its lush vegetation and azure waters, rose as a volcanic peak m
 
 ## Arrival & Check-In
 
-(Gallery 2)
+<div class="row g-3 py-3 px-0">
+  <div class="col-md-4">
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-5.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col-md-4">
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-6.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col-md-4">
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-7.jpeg" alt="" />
+      </figure>
+  </div>
+</div>
 
 To make your way to Tetiaroa, you'll first need to fly into Papeete, the capital of French Polynesia. From there, Air Tetiaroa will whisk you away, cutting across the deep blue skies and transporting you directly to The Brando. 
 
@@ -70,19 +86,29 @@ Upon disembarking on Tetiaroa, you’ll be greeted by truly exceptional service,
 
 (Gallery 3)
 
-At The Brando, a mere 35 villas are meticulously placed amidst the abundant, vibrant foliage, which creates unparalleled seclusion for each villa.
+<div class="row g-3 py-3 px-0">
+  <div class="col-md-4">
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col-md-4">
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-3.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col-md-4">
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-4.jpeg" alt="" />
+      </figure>
+  </div>
+</div>
 
-Nestled on the shores of white-sand beaches, every villa is a sanctuary outfitted with its own private plunge pool, direct access to the beach, and enveloped by tropical gardens flourishing with coconut palms.
+At The Brando, a mere 35 villas are meticulously placed amidst the abundant, vibrant foliage, which creates unparalleled seclusion for each villa. Nestled on the shores of white-sand beaches, every villa is a sanctuary outfitted with its own private plunge pool, direct access to the beach, and enveloped by tropical gardens flourishing with coconut palms. The interiors of the villas at The Brando emanate a symphony of luxury and comfort, adorned with creamy tones that are elegantly offset by accents of both dark and light shades, with each villa comprising a main living room, a bedroom, and a spacious media room, all with contemporary furnishings.
 
-The interiors of the villas at The Brando emanate a symphony of luxury and comfort, adorned with creamy tones that are elegantly offset by accents of both dark and light shades, with each villa comprising a main living room, a bedroom, and a spacious media room, all with contemporary furnishings.
+The villas use traditional building methods and incorporate locally sourced materials, such as wooden walls and roofs adorned with pandanus leaves, creating a space that is not just lavish but that is also deeply rooted in and respectful of the local ethos and tradition. Every villa is strategically positioned on the islet to offer views of either Turtle Beach, showcasing breathtaking sunsets, or Mermaid Bay, where instead, the break of the day bathes the sky in golden tones.
 
-The villas use traditional building methods and incorporate locally sourced materials, such as wooden walls and roofs adorned with pandanus leaves, creating a space that is not just lavish but that is also deeply rooted in and respectful of the local ethos and tradition.
-
-Every villa is strategically positioned on the islet to offer views of either Turtle Beach, showcasing breathtaking sunsets, or Mermaid Bay, where instead, the break of the day bathes the sky in golden tones.
-
-A welcoming bottle of Champagne awaits you at the table, a sparkling prelude to the unlimited beverages available as part of the all-inclusive package.
-
-The villas feature king beds, plush furnishings, a wall-mounted flat-screen TV, a walk-through closet, an elegant bathroom complete with a rain shower, and a mini-bar.
+A welcoming bottle of Champagne awaits you at the table, a sparkling prelude to the unlimited beverages available as part of the all-inclusive package. The villas feature king beds, plush furnishings, a wall-mounted flat-screen TV, a walk-through closet, an elegant bathroom complete with a rain shower, and a mini-bar.
 
 (Gallery 4)
 
