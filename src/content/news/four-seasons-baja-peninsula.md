@@ -26,6 +26,7 @@ carousel:
 contents:
   - Four Seasons to Open New Baja Peninsula Luxury Property
   - Four Seasons Cabo San Lucas at Cabo del Sol
+  - Conclusion
 ---
 # Four Seasons to Open New Baja Peninsula Luxury Property
 
