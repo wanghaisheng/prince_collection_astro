@@ -84,7 +84,7 @@ Cabo’s Golden Corridor will soon welcome a new luxury hotel as Four Seasons Ca
     <figure>
         <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-9.png" alt="" />
     </figure>
-  </div>\
+  </div>
 </div>
 
  The resort will offer 96 rooms, ranging from guest rooms to villas, and 61 branded residences. 
