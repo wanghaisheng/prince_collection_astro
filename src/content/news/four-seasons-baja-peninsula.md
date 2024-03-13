@@ -34,37 +34,37 @@ Four Seasons is set to open its newest property in Mexico, located on the beauti
 <div class="row g-3 py-3 px-0">
   <div class="col-md-12">
     <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-1.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-1.png" alt="" />
     </figure>
   </div>
   <div class="col-md-6">
     <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-2.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-2.png" alt="" />
     </figure>
   </div>
   <div class="col-md-6">
     <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-3.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-3.png" alt="" />
       </figure>
   </div>
   <div class="col-md-6">
     <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-4.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-4.png" alt="" />
     </figure>
   </div>
   <div class="col-md-6">
     <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-5.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-5.png" alt="" />
     </figure>
   </div>
   <div class="col-md-6">
     <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-6.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-6.png" alt="" />
     </figure>
   </div>\
   <div class="col-md-6">
     <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-7.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-7.png" alt="" />
     </figure>
   </div>
 </div>
@@ -76,12 +76,12 @@ Cabo’s Golden Corridor will soon welcome a new luxury hotel as Four Seasons Ca
 <div class="row g-3 py-3 px-0">
   <div class="col-md-6">
     <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-8.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-8.png" alt="" />
     </figure>
   </div>
   <div class="col-md-6">
     <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-9.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-9.png" alt="" />
     </figure>
   </div>\
 </div>
