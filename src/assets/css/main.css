@@ -28,7 +28,7 @@ section {
   padding: 2rlh;
 }
 
-h1, h2, p {
+h1, h2, h3, h4, p {
   margin-block: 1rlh;
 }
 
@@ -58,9 +58,22 @@ img {
 
 #content, 
 #content h1,
-#content h2 { 
+#content h2,  
+#content h3,
+#content h4 { 
   font-family: 'Inter tight', Helvetica, Arial, sans-serif;
-  color: var(--bs-secondary-color)!important;
+  color: var(--bs-secondary-color);
+}
+
+#content h1,
+#content h2,  
+#content h3,
+#content h4 {
+  font-weight: 900;
+}
+
+#content h4 {
+  color: rgba(0,0,0,.4)!important;
 }
 
 #content .content-body p { 

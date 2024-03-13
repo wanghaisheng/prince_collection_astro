@@ -69,7 +69,7 @@ const [firstArticle, ...allArticles] = filteredPosts;
 							<p class="small mb-2">{post.data.pubDate.toString().slice(0,10)}</p>
 							<h5 class="card-title fw-bold mb-0">{post.data.title}</h5>
 							<p class="small m-0 text-secondary mt-2 mb-0">By: {post.data.author}</p>
-							<p class="card-text text-body-secondary pe-5">{shorten(post.data.description, 150) + '...'}</p>
+							<p class="card-text text-body-secondary pe-4">{shorten(post.data.description, 150) + '...'}</p>
 						</div>
 						<div class="card-footer p-3">
 							<div class="d-flex flex-row flex-wrap" style="text-wrap: pretty;">
