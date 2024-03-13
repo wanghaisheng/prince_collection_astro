@@ -19,7 +19,10 @@ tags:
   - guides
 featured: false
 contents:
-  - section-title
+  - The Mandarin Oriental Fan Club
+  - The Mandarin Oriental Experience
+  - Mandarin Oriental Fan Club Benefits
+  - Book Mandarin Oriental Fan Club with Prince Collection
 ---
 # The Mandarin Oriental Fan Club
 
@@ -49,11 +52,11 @@ Mandarin Oriental Fan Club is Mandarin Oriental Hotel Group’s preferred partne
 
 **In general, the benefits provided through Fan Club include the following:**
 
-- $100 (all figures in USD) food & beverage or spa credit, per room per stay
-- Daily full breakfast for two
-- Complimentary high-speed internet access
-- Personalized welcome amenity and note
-- One category room upgrade, subject to availability at time of check-in
+* $100 (all figures in USD) food & beverage or spa credit, per room per stay
+* Daily full breakfast for two
+* Complimentary high-speed internet access
+* Personalized welcome amenity and note
+* One category room upgrade, subject to availability at time of check-in
 
 Additionally, some properties also offer a Third, Fourth, or Fifth Night Free, while others offer complimentary rounds of golf or special benefits for children.
 
@@ -65,56 +68,56 @@ To access the Mandarin Oriental Fan Club perks and benefits, your booking needs 
 
 If you’re planning a stay at one of Mandarin Oriental’s incredible properties, please reach out to one of our travel advisors for a quote, and we’ll respond with everything you need to know.
 
-**Mandarin Oriental properties include:**
+### **Mandarin Oriental properties include:**
 
-Asia-Pacific
+#### Asia-Pacific
 
-- Mandarin Oriental, Bangkok
-- Mandarin Oriental Wangfujing (Beijing)
-- Mandarin Oriental, Guangzhou
-- Mandarin Oriental, Hong Kong
-- The Landmark Mandarin Oriental, Hong Kong
-- Mandarin Oriental, Jakarta
-- Mandarin Oriental, Kuala Lumpur
-- Mandarin Oriental, Macau
-- Mandarin Oriental, Sanya
-- Mandarin Oriental, Shanghai
-- Mandarin Oriental, Shenzhen
-- Mandarin Oriental, Singapore
-- Mandarin Oriental, Taipei
-- Mandarin Oriental, Tokyo
+* Mandarin Oriental, Bangkok
+* Mandarin Oriental Wangfujing (Beijing)
+* Mandarin Oriental, Guangzhou
+* Mandarin Oriental, Hong Kong
+* The Landmark Mandarin Oriental, Hong Kong
+* Mandarin Oriental, Jakarta
+* Mandarin Oriental, Kuala Lumpur
+* Mandarin Oriental, Macau
+* Mandarin Oriental, Sanya
+* Mandarin Oriental, Shanghai
+* Mandarin Oriental, Shenzhen
+* Mandarin Oriental, Singapore
+* Mandarin Oriental, Taipei
+* Mandarin Oriental, Tokyo
 
-The Americas
+#### **The Americas**
 
-- Mandarin Oriental, Boston
-- Mandarin Oriental, Canouan (St. Vincents and the Grenadines)
-- Mandarin Oriental, Miami
-- Mandarin Oriental, New York
-- Mandarin Oriental, Santiago (Chile)
+* Mandarin Oriental, Boston
+* Mandarin Oriental, Canouan (St. Vincents and the Grenadines)
+* Mandarin Oriental, Miami
+* Mandarin Oriental, New York
+* Mandarin Oriental, Santiago (Chile)
 
-Europe
+#### **Europe**
 
-- Mandarin Oriental, Barcelona
-- Mandarin Oriental, Bodrum (Turkey)
-- Mandarin Oriental, Costa Navarino (Greece)
-- Mandarin Oriental, Geneva
-- Mandarin Oriental, Istanbul
-- Mandarin Oriental, Lake Como
-- Mandarin Oriental Hyde Park, London
-- Mandarin Oriental Mayfair, London
-- Mandarin Oriental, Luzern
-- Mandarin Oriental, Madrid
-- Mandarin Oriental, Milan
-- Mandarin Oriental, Munich
-- Mandarin Oriental, Paris
-- Mandarin Oriental, Prague
-- Mandarin Oriental, Zurich
+* Mandarin Oriental, Barcelona
+* Mandarin Oriental, Bodrum (Turkey)
+* Mandarin Oriental, Costa Navarino (Greece)
+* Mandarin Oriental, Geneva
+* Mandarin Oriental, Istanbul
+* Mandarin Oriental, Lake Como
+* Mandarin Oriental Hyde Park, London
+* Mandarin Oriental Mayfair, London
+* Mandarin Oriental, Luzern
+* Mandarin Oriental, Madrid
+* Mandarin Oriental, Milan
+* Mandarin Oriental, Munich
+* Mandarin Oriental, Paris
+* Mandarin Oriental, Prague
+* Mandarin Oriental, Zurich
 
-Middle East and Africa
+#### Middle East and Africa
 
-- Emirates Palace Mandarin Oriental, Abu Dhabi
-- Mandarin Oriental, Doha
-- Mandarin Oriental, Dubai
-- Mandarin Oriental, Marrakech
-- Mandarin Oriental, Muscat
-- Mandarin Oriental Al Faisaliah, Riyadh,
+* Emirates Palace Mandarin Oriental, Abu Dhabi
+* Mandarin Oriental, Doha
+* Mandarin Oriental, Dubai
+* Mandarin Oriental, Marrakech
+* Mandarin Oriental, Muscat
+* Mandarin Oriental Al Faisaliah, Riyadh,
