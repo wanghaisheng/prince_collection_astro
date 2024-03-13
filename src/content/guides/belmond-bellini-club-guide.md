@@ -9,7 +9,7 @@ SEOdescription: "Belmond is a pioneer in luxury travel, operating a
   multi-service company that originated in 1976 with the purchase of the
   gorgeous Cipriani hotel in Venice. "
 pubDate: 2024-03-07T20:43:06.642Z
-imageUrl: /images/uploads/belmond-bellini-review-9.jpeg
+imageUrl: /images/uploads/belmond-bellini-review-4.jpg
 imageAlt: "Belmond is a pioneer in luxury travel, operating a multi-service
   company that originated in 1976 with the purchase of the gorgeous Cipriani
   hotel in Venice. "
