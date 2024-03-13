@@ -87,6 +87,41 @@ Copy and paste the code below for a 2-column side by side image grid.
   </div>
 </div>
 
+## Combo image grid
+
+<div class="row g-3 py-3 px-0">
+  <div class="col-md-12">
+    <figure>
+        <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-1.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col-md-6">
+    <figure>
+        <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-2.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col-md-6">
+    <figure>
+        <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-3.jpeg" alt="" />
+      </figure>
+  </div>
+  <div class="col-md-6">
+    <figure>
+        <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-4.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col-md-6">
+    <figure>
+        <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-5.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col-md-12">
+    <figure>
+        <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-6.jpeg" alt="" />
+    </figure>
+  </div>
+</div>
+
 ## HTML images using figure and caption
 
 If desired you can copy/paste the `<figcaption>`element which adds a text description of the image just below it. It isn't necessary and if used needs to be added to every other image in the grid so it doesn't a) look imbalanced, and b) misalign spacing.
