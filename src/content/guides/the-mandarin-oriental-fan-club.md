@@ -69,7 +69,7 @@ To access the Mandarin Oriental Fan Club perks and benefits, your booking needs 
 
 ### **Mandarin Oriental properties**
 
-#### Asia-Pacific
+#### **Asia-Pacific**
 
 * Mandarin Oriental, Bangkok
 * Mandarin Oriental Wangfujing (Beijing)
@@ -112,7 +112,7 @@ To access the Mandarin Oriental Fan Club perks and benefits, your booking needs 
 * Mandarin Oriental, Prague
 * Mandarin Oriental, Zurich
 
-#### Middle East and Africa
+#### **Middle East and Africa**
 
 * Emirates Palace Mandarin Oriental, Abu Dhabi
 * Mandarin Oriental, Doha
