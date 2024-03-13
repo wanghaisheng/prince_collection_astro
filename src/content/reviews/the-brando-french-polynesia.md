@@ -8,7 +8,7 @@ description: Set amidst the pristine, turquoise waters and breathtaking
 SEOdescription: Set amidst the pristine, turquoise waters and breathtaking
   archipelagos of the vast South Pacific, The Brando stands unrivaled in the
   realm of exclusivity and eco-luxury.
-pubDate: 2024-03-13T15:30:09.903Z
+pubDate: 2024-03-13T17:57:04.738Z
 imageUrl: /images/uploads/brando-2.jpeg
 imageAlt: The Brando poolside view overlooking the pristine, turquoise waters
   and breathtaking archipelagos of the vast South Pacific.
