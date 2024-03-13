@@ -30,7 +30,7 @@ contents:
 ---
 # Four Seasons to Open New Baja Peninsula Luxury Property
 
-Four Seasons is set to open its newest property in Mexico, located on the beautiful Baja California peninsula. Officially opening on May 1, 2024, Four Seasons Cabo San Lucas at Cabo del Sol will be a welcome addition to the already established luxury hotels in the area. 
+Four Seasons is set to open its newest property in Mexico, located on the beautiful Baja California peninsula. Officially opening on May 1, 2024, Four Seasons Cabo San Lucas at Cabo del Sol will be a welcome addition to the already established luxury hotels in the area.
 
 <div class="row g-3 py-3 px-0">
   <div class="col-md-12">
@@ -62,7 +62,7 @@ Four Seasons is set to open its newest property in Mexico, located on the beauti
     <figure>
         <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-6.png" alt="" />
     </figure>
-  </div>\
+  </div>
   <div class="col-md-6">
     <figure>
         <img class="grid-image" src="/images/uploads/four-seasons-cabo-san-lucas-7.png" alt="" />
