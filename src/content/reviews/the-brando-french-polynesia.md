@@ -84,22 +84,25 @@ Upon disembarking on Tetiaroa, you’ll be greeted by truly exceptional service,
 
 ## One-Bedroom Villa
 
-(Gallery 3)
-
 <div class="row g-3 py-3 px-0">
-  <div class="col-md-4">
-    <figure>
-        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
-    </figure>
-  </div>
-  <div class="col-md-4">
-    <figure>
-        <img class="grid-image" src="/images/uploads/brando-3.jpeg" alt="" />
-    </figure>
-  </div>
-  <div class="col-md-4">
+  <div class="col-md-6">
     <figure>
         <img class="grid-image" src="/images/uploads/brando-4.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col-md-6">
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-9.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col-md-6">
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-9.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col-md-6">
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-10.jpeg" alt="" />
       </figure>
   </div>
 </div>
