@@ -126,7 +126,7 @@ If you have your eyes on an upcoming Belmond vacation, please reach out to one o
 
 ## Properties that Participate in Belmond Bellini Club
 
-**Hotels in Europe**
+#### Hotels in Europe
 
 * Hotel Cipriani, Venice
 * Caruso, Ravello (Amalfi Coast)
@@ -144,30 +144,30 @@ If you have your eyes on an upcoming Belmond vacation, please reach out to one o
 * The Cadogan, London
 * Le Manoir aux Quat’Saisons, Oxfordshire (UK)
 
-Hotels in Asia
+#### **Hotels in Asia**
 
 * La Résidence d’Angkor, Siem Reap
 * Jimbaran Puri, Bali
 * La Résidence Phou Vao, Luang Prabang
 * Napasai, Koh Samui
 
-Hotels in Africa
+#### **Hotels in Africa**
 
 * Mount Nelson, Cape Town
 
-Hotels in North America
+#### **Hotels in North America**
 
 * El Encanto, Santa Barbara
 * Charleston Place, Charleston
 
-Hotels in Mexico and the Caribbean:
+#### **Hotels in Mexico and the Caribbean**
 
 * Casa de Sierra Nevada, San Miguel De Allende (Mexico)
 * Maroma, Riviera Maya
 * Cap Juluca, Anguilla
 * La Samanna, St. Martin
 
-Hotels in South America:
+#### **Hotels in South America**
 
 * Hotel das Cataratas, Iguassu Falls (Brazil)
 * Copacabana Palace, Rio de Janeiro
@@ -178,7 +178,7 @@ Hotels in South America:
 * Sanctuary Lodge, Machu Picchu
 * Rio Sagrado, Sacred Valley (Peru)
 
-Trains
+#### **Trains**
 
 * Eastern & Oriental Express (Singapore and Malaysia)
 * Venice Simplon-Oriental-Express (Europe)
@@ -187,11 +187,11 @@ Trains
 * Andean Explorer (Peru)
 * Hiram Bingham (Machu Picchu)
 
-Boats
+#### **Boats**
 
 * Les Bateaux Belmond (France)
 
-Safaris
+#### **Safaris**
 
 * Eagle Island Lodge (Okavango Delta)
 * Savute Elephant Lodge (Chobe National Park)
