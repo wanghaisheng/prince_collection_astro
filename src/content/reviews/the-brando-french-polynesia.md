@@ -18,6 +18,10 @@ tags:
   - polynesia
   - hotels
 featured: false
+carousel:
+  - url: /images/uploads/brando-1.jpeg
+  - url: /images/uploads/brando-2.jpeg
+  - url: /images/uploads/brando-3.jpeg
 contents:
   - The Brando
   - Location
