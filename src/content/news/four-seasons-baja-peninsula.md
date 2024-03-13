@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Four Seasons Baja Peninsula
 author: Prince Collection
 description: "Officially opening on May 1, 2024, Four Seasons Cabo San Lucas at
@@ -15,7 +15,9 @@ imageAlt: "Officially opening on May 1, 2024, Four Seasons Cabo San Lucas at
   hotels in the area. "
 category: news
 tags:
-  - news
+  - four-seasons
+  - mexico
+  - hotels
 featured: false
 carousel:
   - url: /images/uploads/four-seasons-cabo-san-lucas-1.png
