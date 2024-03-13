@@ -86,58 +86,35 @@ Asia-Pacific
 
 The Americas
 
-Mandarin Oriental, Boston
-
-Mandarin Oriental, Canouan (St. Vincents and the Grenadines)
-
-Mandarin Oriental, Miami
-
-Mandarin Oriental, New York
-
-Mandarin Oriental, Santiago (Chile)
+- Mandarin Oriental, Boston
+- Mandarin Oriental, Canouan (St. Vincents and the Grenadines)
+- Mandarin Oriental, Miami
+- Mandarin Oriental, New York
+- Mandarin Oriental, Santiago (Chile)
 
 Europe
 
-Mandarin Oriental, Barcelona
-
-Mandarin Oriental, Bodrum (Turkey)
-
-Mandarin Oriental, Costa Navarino (Greece)
-
-Mandarin Oriental, Geneva
-
-Mandarin Oriental, Istanbul
-
-Mandarin Oriental, Lake Como
-
-Mandarin Oriental Hyde Park, London
-
-Mandarin Oriental Mayfair, London
-
-Mandarin Oriental, Luzern
-
-Mandarin Oriental, Madrid
-
-Mandarin Oriental, Milan
-
-Mandarin Oriental, Munich
-
-Mandarin Oriental, Paris
-
-Mandarin Oriental, Prague
-
-Mandarin Oriental, Zurich
+- Mandarin Oriental, Barcelona
+- Mandarin Oriental, Bodrum (Turkey)
+- Mandarin Oriental, Costa Navarino (Greece)
+- Mandarin Oriental, Geneva
+- Mandarin Oriental, Istanbul
+- Mandarin Oriental, Lake Como
+- Mandarin Oriental Hyde Park, London
+- Mandarin Oriental Mayfair, London
+- Mandarin Oriental, Luzern
+- Mandarin Oriental, Madrid
+- Mandarin Oriental, Milan
+- Mandarin Oriental, Munich
+- Mandarin Oriental, Paris
+- Mandarin Oriental, Prague
+- Mandarin Oriental, Zurich
 
 Middle East and Africa
 
-Emirates Palace Mandarin Oriental, Abu Dhabi
-
-Mandarin Oriental, Doha
-
-Mandarin Oriental, Dubai
-
-Mandarin Oriental, Marrakech
-
-Mandarin Oriental, Muscat
-
-Mandarin Oriental Al Faisaliah, Riyadh,
+- Emirates Palace Mandarin Oriental, Abu Dhabi
+- Mandarin Oriental, Doha
+- Mandarin Oriental, Dubai
+- Mandarin Oriental, Marrakech
+- Mandarin Oriental, Muscat
+- Mandarin Oriental Al Faisaliah, Riyadh,
