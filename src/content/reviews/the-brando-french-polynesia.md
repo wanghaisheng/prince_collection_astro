@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: The Brando French Polynesia
 author: Prince Collection
 description: Set amidst the pristine, turquoise waters and breathtaking
@@ -32,7 +32,23 @@ Set amidst the pristine, turquoise waters and breathtaking archipelagos of the v
 
 The atoll once served as the home to Tahitian royalty, where kings and queens made it their private paradise. The untamed islands also captured the heart of Marlon Brando while filming 'Mutiny on the Bounty' in 1960. Drawn in by its raw beauty, he vowed to shield these islands from change, preserving their natural state for generations to come.
 
-(Gallery of captivating images)
+<div class="row g-3 py-3 px-0">
+  <div class="col-md-4">
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col-md-4">
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-3.jpeg" alt="" />
+    </figure>
+  </div>
+  <div class="col-md-4">
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-4.jpeg" alt="" />
+      </figure>
+  </div>
+</div>
 
 ## Location
 
@@ -155,8 +171,6 @@ Additionally, The Brando actively engages in coral reef conservation, closely mo
 (Gallery 10)
 
 Once you’ve had your fill of activity, you can make your way to the impressive 21,000 -square-foot Varua Te Ora Polynesian Spa, offering indulgent treatments, a sauna, cold plunge pools (one of which draws its water from the deep sea), and more. 
-
-
 
 The spa also boasts a hammam, a traditional Turkish steam bath known for its detoxifying and purifying properties, as well as a freshwater cascade and a herbal tea room, where you can sip on flavourful infusions.
 
