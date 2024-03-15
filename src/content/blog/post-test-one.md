@@ -51,7 +51,7 @@ Copying and pasting the code snippets below allow writers to add image galleries
 
 ### Adding images to your grid gallery
 
-* add an image widget above or below your gallery code, just to use as a way to select images from the library
+* add an image widget (from the top menu/toolbar click the + and a dropdown will appear, select "Image") above or below your gallery code, just to use as a way to select images from the library
 * open the media library
 * find your image and click it to highlight
 * in the upper left button toolbar, select **"Copy Name"**: this will give you the name of the file i.e. waldorf-astoria-cabo-san-lucas-1.jpeg
