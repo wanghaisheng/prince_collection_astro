@@ -44,6 +44,12 @@ Copying and pasting the code snippets below allow writers to add image galleries
 
 ### Adding images
 
+- First name all article images before uploading them to the CMS
+- use a convention like the following: **article-name-1.jpeg** i.e. waldorf-astoria-cabo-san-lucas-1.jpeg, waldorf-astoria-cabo-san-lucas-2.jpeg
+- this allows you to search images in the media folder for ease of selection throughout the writing process
+- upload all images (you can do this either using the featured image field, or you can add an image widget to a post, and add all images from there once you access the media library)
+
+
 ### 2-column grid
 
 This gallery creates a 2-column side-by-side grid. You can also add 4 images like below to get a 4-grid gallery. 
