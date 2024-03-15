@@ -8,7 +8,7 @@ description: Set amidst the pristine, turquoise waters and breathtaking
 SEOdescription: Set amidst the pristine, turquoise waters and breathtaking
   archipelagos of the vast South Pacific, The Brando stands unrivaled in the
   realm of exclusivity and eco-luxury.
-pubDate: 2024-03-13T18:12:05.489Z
+pubDate: 2024-03-15T15:05:38.109Z
 imageUrl: /images/uploads/brando-2.jpeg
 imageAlt: The Brando poolside view overlooking the pristine, turquoise waters
   and breathtaking archipelagos of the vast South Pacific.
@@ -25,6 +25,16 @@ carousel:
 contents:
   - The Brando
   - Location
+  - Arrival and Check-In
+  - One-Bedroom Villa
+  - Resort Grounds
+  - Dining
+  - Pool
+  - Beach
+  - Spa
+  - Activities
+  - and Other Amenities
+  - Conclusion
 ---
 # The Brando
 
@@ -52,7 +62,7 @@ French Polynesia is made up of 121 vibrant islands within the Pacific Ocean. Whi
 
 This atoll, with its lush vegetation and azure waters, rose as a volcanic peak more than three million years ago, sharing its origin with the famous sister islands of Tahiti, Moorea, and Bora Bora. The Brando is situated on Onetahi, a motu that unfolds over 193 acres of coral island. This is the only spot in the atoll that opens its doors to visitors, as the remaining islands are devoted to conserving the beauty of the atoll, and safeguarding the diversity that inhabits it.
 
-## Arrival & Check-In
+## Arrival and Check-In
 
 <div class="one-big-two-small">
   <figure>
@@ -173,7 +183,7 @@ Notably, as part of the hotel’s sustainability initiatives, the world-class fo
 
 With its funky-chic beach vibe, Bob's Bar is situated on the beach and serves up South Pacific-inspired food and drinks, drawing inspiration from Marlon’s iconic films. The bar has a fascinating history that predates The Brando, as it was where Marlon Brando himself would come to indulge in his friend Bob's cocktail creating expertise. Te Manu Bar, serves cocktails before and after dinner from its intimate lounge seating which is suspended among a canopy of treetops, providing breathtaking views of the lagoon and the starry sky.
 
-## Pool, Beach, Spa, Activities, & Other Amenities
+## Pool, Beach, Spa, Activities, and Other Amenities
 
 <div class="one-big-two-small">
     <figure>
