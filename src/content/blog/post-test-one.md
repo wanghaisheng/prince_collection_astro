@@ -33,11 +33,16 @@ Make title heading H1 and all subsequent headings H2. If using an unordered (bul
 
 Copying and pasting the code snippets below allow writers to add image galleries to posts. **Care must be taken when using code to ensure there are no errors or typos to prevent breaks in the frontend of the production site.**
 
-**Steps**
+### Steps
 
-Copy desired gallery code from below.
+- Copy desired gallery code from below.
+- Select "Markdown" from the top right toggle switch.
+- Paste code where you want it in the article
+- *add image file paths (see below)
+- ensure there are no typos
+- return to Rich Text editor (toggle Rich Text in top right select)
 
-
+### Adding images
 
 ### 2-column grid
 
