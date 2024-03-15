@@ -29,6 +29,16 @@ contents:
 
 Make title heading H1 and all subsequent headings H2. If using an unordered (bullet) list subtitles can be h4.
 
+### Adding image grids
+
+Copying and pasting the code snippets below allow writers to add image galleries to posts. **Care must be taken when using code to ensure there are no errors or typos to prevent breaks in the frontend of the production site.**
+
+**Steps**
+
+Copy desired gallery code from below.
+
+
+
 ### 2-column grid
 
 This gallery creates a 2-column side-by-side grid. You can also add 4 images like below to get a 4-grid gallery. 
