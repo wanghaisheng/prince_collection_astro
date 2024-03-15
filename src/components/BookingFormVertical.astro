@@ -29,7 +29,7 @@ const { bookingContainer, bookingForm } = Astro.props;
   </ul>-------template Header Ends Here-------- -->
   <!---------template Container Starts Here---------->
   <div class="zf-subContWrap zf-topAlign">
-  <ul class="row list-unstyled g-4 p-4 rounded-3 mb-0">
+  <ul class:list={["row list-unstyled g-4 p-4 rounded-3", bookingForm]}>
     <!---------Single Line Starts Here---------->
     <li class="zf-tempFrmWrapper zf-small col-lg-6">
       <label class="zf-labelName"> 
@@ -101,7 +101,9 @@ const { bookingContainer, bookingForm } = Astro.props;
     </label>
     <div class="zf-tempContDiv">
     <span> 
-      <input id="startDate" class="form-control" type="date" class="form-control w-100" aria-label="Check-in date picker" aria-describedby="inputGroup-sizing-default" name="Date" checktype="c4" value="" maxlength="25" placeholder="(DD-MMM-YYYY)" required />
+      <input type="text" class="form-control w-100" aria-label="Check-in date" aria-describedby="inputGroup-sizing-default" name="Date" checktype="c4" value="" maxlength="25" placeholder="(DD-MM-YYYY)" required />
+
+      <!-- datepicker <input class="form-control" type="date" class="form-control w-100" aria-label="Check-in date picker" aria-describedby="inputGroup-sizing-default" name="Date" checktype="c4" value="" maxlength="25" placeholder="(DD-MMM-YYYY)" required /> -->
 
       <!-- <input type="text" name="Date" checktype="c4" value="" maxlength="25" placeholder=""/><label>dd-MMM-yyyy</label>  -->
     </span>
@@ -119,7 +121,10 @@ const { bookingContainer, bookingForm } = Astro.props;
   </label>
   <div class="zf-tempContDiv">
     <span> 
-      <input id="endDate" class="form-control" type="date" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date1" checktype="c4" value="" maxlength="25" placeholder="(DD-MMM-YYYY)" required />
+
+      <input type="text" class="form-control w-100" aria-label="Check-out date" aria-describedby="inputGroup-sizing-default" name="Date1" checktype="c4" value="" maxlength="25" placeholder="(DD-MM-YYYY)" required />
+      
+      <!--datepicker2 <input class="form-control" type="date" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date1" checktype="c4" value="" maxlength="25" placeholder="(DD-MMM-YYYY)" required /> -->
 
       <!-- <input type="text" name="Date1" checktype="c4" value="" maxlength="25" placeholder=""/><label>dd-MMM-yyyy</label>  -->
     </span>
@@ -201,16 +206,16 @@ const { bookingContainer, bookingForm } = Astro.props;
       <!-- <em class="zf-important">*</em> -->
       </label>
       <div class="zf-tempContDiv">
-        <select name="Dropdown1" class="zf-form-sBox form-select mb-3 bg-pc-dark border-0 border-bottom rounded-0 text-pc" aria-label="Currency select" checktype="c1">
+        <!-- <select name="Dropdown1" class="zf-form-sBox form-select mb-3 bg-pc-dark border-0 border-bottom rounded-0 text-pc" aria-label="Currency select" checktype="c1">
           <option selected>-Select-</option>
           <option value="Under $250" id="Dropdown1_1">Under $250</option>
           <option value="$250-500" id="Dropdown1_2">$250-500</option>
           <option value="$500-750" id="Dropdown1_3">$500-750</option>
           <option value="$750+" id="Dropdown1_4">$750+</option>
-        </select>
+        </select> -->
 
 
-      <!-- <div class="zf-overflow">
+      <div class="zf-overflow">
       <span class="zf-multiAttType"> 
       <input class="zf-radioBtnType" type="radio" id="Dropdown1_1" name="Dropdown1" checktype="c1" value="Under&#x20;&#x24;250">
       <label for="Dropdown1_1" class="zf-radioChoice">Under&#x20;&#x24;250</label> </span>
@@ -225,7 +230,7 @@ const { bookingContainer, bookingForm } = Astro.props;
       <label for="Dropdown1_4" class="zf-radioChoice">&#x24;750&#x2b;</label> 
     </span>
       <div class="zf-clearBoth"></div>
-    </div> -->
+    </div>
       <p id="Dropdown1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
       </div>
       <div class="zf-clearBoth"></div>
