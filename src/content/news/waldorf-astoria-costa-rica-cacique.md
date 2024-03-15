@@ -42,8 +42,6 @@ Hilton is set to open its first Waldorf Astoria property in Costa Rica, further 
     </figure>
 </div>
 
-![]()
-
 ## Opening in November 2024
 
 Hilton has plans to open the Waldorf Astoria Costa Rica Cacique in November 2024, with the new property taking up residence on the Pacific coastline of the Guanacaste province, a short 40-minute drive to Daniel Oduber Quirós International Airport in Liberia.

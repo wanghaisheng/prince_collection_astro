@@ -152,6 +152,8 @@ img {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-top: 1rem!important;
+  padding-bottom: 1rem!important;
   /* grid-template-columns: repeat(auto-fit, minmax(max(195px, 45vw), 2fr)); */
   /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
   /* or 50% */
@@ -162,12 +164,20 @@ img {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  /* display: grid; */
-  /* Define Auto Row size */
-  /* grid-auto-rows: 100px;  */
-  /*Define our columns */
-  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  */
-  /* grid-gap: 1em; */
+  padding-top: 1rem!important;
+  padding-bottom: 1rem!important;
+}
+
+.one-big-two-small {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-top: 1rem!important;
+  padding-bottom: 1rem!important;
+}
+
+.one-big-two-small > figure:nth-child(1) {
+  grid-column: 1/-1; /* span 2 columns */
 }
 
 .content-body ul li::before {

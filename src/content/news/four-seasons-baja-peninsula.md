@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Four Seasons Baja Peninsula
+title: Four Seasons Cabo San Lucas
 author: Prince Collection
 description: "Officially opening on May 1, 2024, Four Seasons Cabo San Lucas at
   Cabo del Sol will be a welcome addition to the already established luxury
