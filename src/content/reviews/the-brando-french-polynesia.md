@@ -130,27 +130,37 @@ Interspersed throughout the grounds are marae, the ancient Polynesian stone temp
 
 ## Dining
 
-(Gallery 6)
+<div class="grid-2">\
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-15.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-15.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-17.jpeg" alt="" />
+    </figure>
+</div>
 
-The Brando has four dining establishments plus one bar: the Beachcomber Café, Bob’s Bar, Nami, Les Mutinés, and Te Manu Bar. 
+The Brando has four dining establishments plus one bar: the Beachcomber Café, Bob’s Bar, Nami, Les Mutinés, and Te Manu Bar. The Beachcomber Café is the resort's all-day dining restaurant, offering breakfast, lunch, and dinner in a laid-back beachside ambiance, complete with outdoor seating and a picturesque lagoon view. The all-day-dining menu offers a blend of Polynesian, French, and international cuisines, with stand-out seafood dishes such as lagoon fish ceviche, Tahitian raw fish, swordfish carpaccio, rock octopus with pan-fried pineapples, and lobster rolls.
 
-The Beachcomber Café is the resort's all-day dining restaurant, offering breakfast, lunch, and dinner in a laid-back beachside ambiance, complete with outdoor seating and a picturesque lagoon view. 
+Nami offers a teppanyaki experience curated for an intimate group. The dinner service requires a reservation and is only available on select nights, so we recommend you book early if you’d like to enjoy the exceptional sushi and grill spread. Les Mutinés is nothing short of extraordinary, featuring a full multi-course French menu, complemented by carefully selected wine pairings.
 
-The all-day-dining menu offers a blend of Polynesian, French, and international cuisines, with stand-out seafood dishes such as lagoon fish ceviche, Tahitian raw fish, swordfish carpaccio, rock octopus with pan-fried pineapples, and lobster rolls.
+The restaurant's name draws from the renowned film Mutiny on the Bounty, which Marlon Brando was filming when he stumbled upon these islands, and the fine-dining menu focuses on flavours of the region. From appetizers of a Polynesian swordfish tart and shrimp carpaccio to main dishes such as roasted wagyu steak and lagoon fish accompanied by sweet pepper ravioli, your meal at Les Mutinés will be done to perfection. 
 
-Nami offers a teppanyaki experience curated for an intimate group. The dinner service requires a reservation and is only available on select nights, so we recommend you book early if you’d like to enjoy the exceptional sushi and grill spread.
+<div class="one-big-two-small">\
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-18.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-19.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-20.jpeg" alt="" />
+    </figure>
+</div>
 
-Les Mutinés is nothing short of extraordinary, featuring a full multi-course French menu, complemented by carefully selected wine pairings.
-
-The restaurant's name draws from the renowned film Mutiny on the Bounty, which Marlon Brando was filming when he stumbled upon these islands, and the fine-dining menu focuses on flavours of the region. 
-
-From appetizers of a Polynesian swordfish tart and shrimp carpaccio to main dishes such as roasted wagyu steak and lagoon fish accompanied by sweet pepper ravioli, your meal at Les Mutinés will be done to perfection. 
-
-(Gallery 7)
-
-Notably, as part of the hotel’s sustainability initiatives, the world-class food at the resort comes directly from their organic gardens and food forests. 
-
-Any food waste generated at The Brando is composted and used to enrich the soil for the gardens, creating a self-sustaining cycle for growing their own food, further reinforcing the resort's commitment to sustainability and conservation.
+Notably, as part of the hotel’s sustainability initiatives, the world-class food at the resort comes directly from their organic gardens and food forests. Any food waste generated at The Brando is composted and used to enrich the soil for the gardens, creating a self-sustaining cycle for growing their own food, further reinforcing the resort's commitment to sustainability and conservation.
 
 (Gallery 8)
 
