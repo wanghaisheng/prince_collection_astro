@@ -130,9 +130,9 @@ Interspersed throughout the grounds are marae, the ancient Polynesian stone temp
 
 ## Dining
 
-<div class="grid-2">\
+<div class="one-big-two-small">\
     <figure>
-        <img class="grid-image" src="/images/uploads/brando-15.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/brando-16.jpeg" alt="" />
     </figure>
     <figure>
         <img class="grid-image" src="/images/uploads/brando-15.jpeg" alt="" />
@@ -162,60 +162,41 @@ The restaurant's name draws from the renowned film Mutiny on the Bounty, which M
 
 Notably, as part of the hotel’s sustainability initiatives, the world-class food at the resort comes directly from their organic gardens and food forests. Any food waste generated at The Brando is composted and used to enrich the soil for the gardens, creating a self-sustaining cycle for growing their own food, further reinforcing the resort's commitment to sustainability and conservation.
 
-(Gallery 8)
+<div class="grid-2">\
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-3.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-21.jpeg" alt="" />
+    </figure>
+</div>
 
-With its funky-chic beach vibe, Bob's Bar is situated on the beach and serves up South Pacific-inspired food and drinks, drawing inspiration from Marlon’s iconic films.
+With its funky-chic beach vibe, Bob's Bar is situated on the beach and serves up South Pacific-inspired food and drinks, drawing inspiration from Marlon’s iconic films. The bar has a fascinating history that predates The Brando, as it was where Marlon Brando himself would come to indulge in his friend Bob's cocktail creating expertise. Te Manu Bar, serves cocktails before and after dinner from its intimate lounge seating which is suspended among a canopy of treetops, providing breathtaking views of the lagoon and the starry sky.
 
-The bar has a fascinating history that predates The Brando, as it was where Marlon Brando himself would come to indulge in his friend Bob's cocktail creating expertise.
-
-Te Manu Bar, serves cocktails before and after dinner from its intimate lounge seating which is suspended among a canopy of treetops, providing breathtaking views of the lagoon and the starry sky.
-
-The Brando – Pool, Beach, Spa, Activities, & Other Amenities
+## Pool, Beach, Spa, Activities, & Other Amenities
 
 (Gallery 9)
 
-The Brando is home to a gorgeous infinity pool that curves and sprawls generously, providing views of the ocean and the atoll’s natural beauty.
+The Brando is home to a gorgeous infinity pool that curves and sprawls generously, providing views of the ocean and the atoll’s natural beauty. The pool is surrounded by a wooden deck with loungers and umbrellas placed to offer respite and privacy. Tall palm trees give shade to the pool, making the water the perfect temperature to escape the warm sun.
 
-The pool is surrounded by a wooden deck with loungers and umbrellas placed to offer respite and privacy. Tall palm trees give shade to the pool, making the water the perfect temperature to escape the warm sun.
+The resort also has two breathtaking beaches, Mermaid Bay and Turtle Beach, both with pristine white sand and crystal-clear waters.  At these beaches, The Brando offers a variety of fun water activities such as paddleboarding, kayaking, and snorkeling which allows you to explore the colourful coral and captivating marine life in the lagoon. The Brando also offers a plethora of guided activities for those wishing to explore the beauty of Tetiaroa and its environs. 
 
-The resort also has two breathtaking beaches, Mermaid Bay and Turtle Beach, both with pristine white sand and crystal-clear waters. 
+These explorations range from kayak journeys to the atoll's outer reaches to intimate encounters with turtles and rays, allowing you to witness untouched, pristine beauty as you explore the tranquil lagoons, uncover secluded islets, and discover the native flora and fauna that call this paradise home. The Brando strives to create a seamless and enriching integration of guests into Polynesian life and traditions with activities designed to foster connections with local culture, including workshops on Polynesian art, performances of traditional dance, and engaging storytelling sessions.
 
-At these beaches, The Brando offers a variety of fun water activities such as paddleboarding, kayaking, and snorkeling which allows you to explore the colourful coral and captivating marine life in the lagoon.
-
-The Brando also offers a plethora of guided activities for those wishing to explore the beauty of Tetiaroa and its environs. 
-
-These explorations range from kayak journeys to the atoll's outer reaches to intimate encounters with turtles and rays, allowing you to witness untouched, pristine beauty as you explore the tranquil lagoons, uncover secluded islets, and discover the native flora and fauna that call this paradise home.
-
-The Brando strives to create a seamless and enriching integration of guests into Polynesian life and traditions with activities designed to foster connections with local culture, including workshops on Polynesian art, performances of traditional dance, and engaging storytelling sessions.
-
-If you visit Tetiaroa between October and March, you can join Tetiaroa Society guides and observe female turtles creating nests and laying eggs, as well as witness hatchlings making their way to the ocean along the beach.
-
-Indeed, an integral part of The Brando's essence lies in its commitment to sustainability. Every element of the hotel has been meticulously designed so as to have as small of an environmental footprint as possible, and much of its revenue goes toward funding research and educational initiatives to keep this island ecosystem healthy and thriving.
+If you visit Tetiaroa between October and March, you can join Tetiaroa Society guides and observe female turtles creating nests and laying eggs, as well as witness hatchlings making their way to the ocean along the beach. Indeed, an integral part of The Brando's essence lies in its commitment to sustainability. Every element of the hotel has been meticulously designed so as to have as small of an environmental footprint as possible, and much of its revenue goes toward funding research and educational initiatives to keep this island ecosystem healthy and thriving.
 
 Additionally, The Brando actively engages in coral reef conservation, closely monitoring the biodiversity of Tetiaroa and its surrounding waters. The resort also prioritizes sustainable tourism and collaborates with local schools and communities to raise awareness about the crucial importance of environmental conservation and sustainable practices.
 
 (Gallery 10)
 
-Once you’ve had your fill of activity, you can make your way to the impressive 21,000 -square-foot Varua Te Ora Polynesian Spa, offering indulgent treatments, a sauna, cold plunge pools (one of which draws its water from the deep sea), and more. 
+Once you’ve had your fill of activity, you can make your way to the impressive 21,000 -square-foot Varua Te Ora Polynesian Spa, offering indulgent treatments, a sauna, cold plunge pools (one of which draws its water from the deep sea), and more. The spa also boasts a hammam, a traditional Turkish steam bath known for its detoxifying and purifying properties, as well as a freshwater cascade and a herbal tea room, where you can sip on flavourful infusions.
 
-The spa also boasts a hammam, a traditional Turkish steam bath known for its detoxifying and purifying properties, as well as a freshwater cascade and a herbal tea room, where you can sip on flavourful infusions.
+With the all-inclusive plan, you'll receive one complimentary spa treatment per room per day. Near the spa, you'll find the fitness centre offering an excellent range of cardio and strength training equipment, allowing you to maintain your fitness routine while enjoying your stay at The Brando.
 
-With the all-inclusive plan, you'll receive one complimentary spa treatment per room per day.
+## Conclusion
 
-Near the spa, you'll find the fitness centre offering an excellent range of cardio and strength training equipment, allowing you to maintain your fitness routine while enjoying your stay at The Brando.
+The Brando unquestionably lives up to its well-deserved reputation as one of the world's finest getaways. During your stay, you will be immersed in the stunning natural beauty of Tetiaroa, with every need met. Accomodations come with abundant space, direct access to unspoiled beaches, a refreshing plunge pool, and an elevated blend of modern and traditional design elements. When it comes to dining, the resort's world-class cuisine allows you to truly let go and indulge in every meal and drink on the menu, thanks to the all-inclusive plan.
 
-Conclusion
-
-The Brando unquestionably lives up to its well-deserved reputation as one of the world's finest getaways. During your stay, you will be immersed in the stunning natural beauty of Tetiaroa, with every need met.
-
-Accomodations come with abundant space, direct access to unspoiled beaches, a refreshing plunge pool, and an elevated blend of modern and traditional design elements.
-
-When it comes to dining, the resort's world-class cuisine allows you to truly let go and indulge in every meal and drink on the menu, thanks to the all-inclusive plan.
-
-The exceptional service provided at the resort is marked by a perfect blend of professionalism, warmth, and attentiveness, and it's evident that the staff take immense pride in being part of such a remarkable and distinctive resort.
-
-Whether you choose to explore the island on bicycles to uncover ancient maraes and hidden beaches, or decide to hop across the outer islets in pursuit of unique marine life, The Brando offers myriad ways to engage with its stunning environment.
-
-With rates starting at $2,500 (USD), The Brando ensures an unforgettable stay with its unique natural surroundings merged seamlessly with an elevated eco-luxury experience.
+The exceptional service provided at the resort is marked by a perfect blend of professionalism, warmth, and attentiveness, and it's evident that the staff take immense pride in being part of such a remarkable and distinctive resort. Whether you choose to explore the island on bicycles to uncover ancient maraes and hidden beaches, or decide to hop across the outer islets in pursuit of unique marine life, The Brando offers myriad ways to engage with its stunning environment. With rates starting at $2,500 (USD), The Brando ensures an unforgettable stay with its unique natural surroundings merged seamlessly with an elevated eco-luxury experience.
 
 When you’re ready to book your stay, get in touch with a travel advisor at Prince Collection, who will ensure your stay is nothing short of extraordinary.
