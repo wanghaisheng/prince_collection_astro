@@ -7,14 +7,24 @@
 
 html {
     scroll-behavior: smooth;
+    background: var(--pc-light);
+    overflow-x: hidden;
   }
   
 body {
-    font-family: 'Inter Tight', Helvetica, Arial, sans-serif;
-    max-width: 1900px;
-    overflow-x: hidden;
-    line-height: 1.4;
-    transition: all 0.5s ease-in-out;
+  background: #ffffff;
+  font-family: 'Inter Tight', Helvetica, Arial, sans-serif;
+  max-width: 1900px;
+  overflow-x: hidden;
+  line-height: 1.4;
+  transition: all 0.5s ease-in-out;
+  margin: 0 auto;
+}
+
+body,
+nav,
+.carousel {
+  max-width: 1900px;
 }
 
 a {
@@ -138,11 +148,27 @@ img {
   justify-items: start;
 }
 
-/* .content-body h2 ul:nth-child(2) {
-  background: pink;
-  padding: 40px;
-  border-radius: 10px;
-} */
+.grid-2 {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(max(195px, 45vw), 2fr)); */
+  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+  /* or 50% */
+
+}
+
+.grid-3 {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  /* display: grid; */
+  /* Define Auto Row size */
+  /* grid-auto-rows: 100px;  */
+  /*Define our columns */
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  */
+  /* grid-gap: 1em; */
+}
 
 .content-body ul li::before {
   content: "";
