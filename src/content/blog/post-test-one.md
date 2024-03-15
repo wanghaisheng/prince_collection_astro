@@ -31,6 +31,37 @@ Make title heading H1 and all subsequent headings H2.
 
 ## HTML 3-column grid
 
+Any number of figure/image elements you add will remain in a 2-column grid layout
+
+<div class="grid-2">
+  <figure>
+        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+    </figure>
+</div>
+
+Any number of figure/image elements you add will remain in a 3-column grid layout
+
+<div class="grid-3 py-3">
+  <figure>
+     <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+    </figure>
+</div>
+
 Copy and paste the code below for a 3-column side by side image grid. Put the code exactly where you want it in the post as you would text. Then copy-paste the image filepaths you want into the code from the media library. 
 
 Access the media library in the image widget below > `expand the dropdown` > click `"Choose an image"` and the media window will pop up. 
