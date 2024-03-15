@@ -26,21 +26,27 @@ contents:
   - Opening in November 2024
   - Conclusion
 ---
+![]()
+
+![]()
+
 # Waldorf Astoria Costa Rica Cacique
 
 Hilton is set to open its first Waldorf Astoria property in Costa Rica, further strengthening its presence in the Caribbean and Latin America. The Waldorf Astoria Costa Rica Cacique is scheduled to open its doors to guests in November 2024, adding an exciting new location to the brand’s 30+ luxury properties worldwide.
 
 (Gallery of 3 images)
 
+![]()
+
 <div class="grid-3 py-3">
   <figure>
-        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-6.avif" alt="" />
     </figure>
     <figure>
-        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-5.avif" alt="" />
     </figure>
     <figure>
-        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-3.avif" alt="" />
     </figure>
 </div>
 
