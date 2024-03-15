@@ -32,12 +32,14 @@ Set amidst the pristine, turquoise waters and breathtaking archipelagos of the v
 
 The atoll once served as the home to Tahitian royalty, where kings and queens made it their private paradise. The untamed islands also captured the heart of Marlon Brando while filming 'Mutiny on the Bounty' in 1960. Drawn in by its raw beauty, he vowed to shield these islands from change, preserving their natural state for generations to come.
 
+![]()
+
 <div class="one-big-two-small">
   <figure>
-        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/brando-22.jpeg" alt="" />
     </figure>
     <figure>
-        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+        <img class="grid-image" src="/images/uploads/brando-27.jpeg" alt="" />
     </figure>
     <figure>
         <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
@@ -90,7 +92,7 @@ The villas use traditional building methods and incorporate locally sourced mate
 
 A welcoming bottle of Champagne awaits you at the table, a sparkling prelude to the unlimited beverages available as part of the all-inclusive package. The villas feature king beds, plush furnishings, a wall-mounted flat-screen TV, a walk-through closet, an elegant bathroom complete with a rain shower, and a mini-bar.
 
-<div class="ong-big-two-small">
+<div class="one-big-two-small">
     <figure>
         <img class="grid-image" src="/images/uploads/brando-1.jpeg" alt="" />
     </figure>
@@ -110,7 +112,7 @@ Adding to the outdoor experience, each villa boasts a generous deck adorned with
 
 ## Resort Grounds
 
-<div class="ong-big-two-small">
+<div class="one-big-two-small">
     <figure>
         <img class="grid-image" src="/images/uploads/brando-3.jpeg" alt="" />
     </figure>
@@ -130,7 +132,7 @@ Interspersed throughout the grounds are marae, the ancient Polynesian stone temp
 
 ## Dining
 
-<div class="one-big-two-small">\
+<div class="one-big-two-small">
     <figure>
         <img class="grid-image" src="/images/uploads/brando-16.jpeg" alt="" />
     </figure>
@@ -148,7 +150,7 @@ Nami offers a teppanyaki experience curated for an intimate group. The dinner se
 
 The restaurant's name draws from the renowned film Mutiny on the Bounty, which Marlon Brando was filming when he stumbled upon these islands, and the fine-dining menu focuses on flavours of the region. From appetizers of a Polynesian swordfish tart and shrimp carpaccio to main dishes such as roasted wagyu steak and lagoon fish accompanied by sweet pepper ravioli, your meal at Les Mutinés will be done to perfection. 
 
-<div class="one-big-two-small">\
+<div class="one-big-two-small">
     <figure>
         <img class="grid-image" src="/images/uploads/brando-18.jpeg" alt="" />
     </figure>
@@ -162,7 +164,7 @@ The restaurant's name draws from the renowned film Mutiny on the Bounty, which M
 
 Notably, as part of the hotel’s sustainability initiatives, the world-class food at the resort comes directly from their organic gardens and food forests. Any food waste generated at The Brando is composted and used to enrich the soil for the gardens, creating a self-sustaining cycle for growing their own food, further reinforcing the resort's commitment to sustainability and conservation.
 
-<div class="grid-2">\
+<div class="grid-2">
     <figure>
         <img class="grid-image" src="/images/uploads/brando-3.jpeg" alt="" />
     </figure>
@@ -175,7 +177,7 @@ With its funky-chic beach vibe, Bob's Bar is situated on the beach and serves up
 
 ## Pool, Beach, Spa, Activities, & Other Amenities
 
-<div class="one-big-two-small">\
+<div class="one-big-two-small">
     <figure>
         <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
     </figure>
@@ -197,7 +199,7 @@ If you visit Tetiaroa between October and March, you can join Tetiaroa Society g
 
 Additionally, The Brando actively engages in coral reef conservation, closely monitoring the biodiversity of Tetiaroa and its surrounding waters. The resort also prioritizes sustainable tourism and collaborates with local schools and communities to raise awareness about the crucial importance of environmental conservation and sustainable practices.
 
-<div class="one-big-two-small">\
+<div class="one-big-two-small">
     <figure>
         <img class="grid-image" src="/images/uploads/brando-24.jpeg" alt="" />
     </figure>
