@@ -27,11 +27,20 @@ contents:
 ---
 # Main post title
 
-Make title heading H1 and all subsequent headings H2.
+Make title heading H1 and all subsequent headings H2. If using an unordered (bullet) list subtitles can be h4.
 
 ### 2-column grid
 
 Any number of figure/image elements you add will remain in a 2-column grid layout
+
+<div class="grid-2">
+  <figure>
+        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+    </figure>
+</div>
 
 <div class="grid-2">
   <figure>
