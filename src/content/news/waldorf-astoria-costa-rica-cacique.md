@@ -8,7 +8,7 @@ description: The Waldorf Astoria Costa Rica Cacique is scheduled to open its
 SEOdescription: The Waldorf Astoria Costa Rica Cacique is scheduled to open its
   doors to guests in November 2024, adding an exciting new location to the
   brand’s 30+ luxury properties worldwide.
-pubDate: 2024-03-12T14:22:12.541Z
+pubDate: 2024-03-15T02:11:55.809Z
 imageUrl: /images/uploads/waldorf-astoria-costa-rica-3.avif
 imageAlt: The Waldorf Astoria Costa Rica Cacique is scheduled to open its doors
   to guests in November 2024, adding an exciting new location to the brand’s 30+
