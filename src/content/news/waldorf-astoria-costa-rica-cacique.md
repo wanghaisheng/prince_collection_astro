@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Waldorf Astoria Costa Rica Cacique
 author: T.J. Dunn
 description: The Waldorf Astoria Costa Rica Cacique is scheduled to open its
