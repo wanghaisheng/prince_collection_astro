@@ -64,6 +64,8 @@ This atoll, with its lush vegetation and azure waters, rose as a volcanic peak m
 
 ## Arrival and Check-In
 
+To make your way to Tetiaroa, you'll first need to fly into Papeete, the capital of French Polynesia. From there, Air Tetiaroa will whisk you away, cutting across the deep blue skies and transporting you directly to The Brando. 
+
 <div class="one-big-two-small">
   <figure>
         <img class="grid-image" src="/images/uploads/brando-6.jpeg" alt="" />
@@ -76,11 +78,11 @@ This atoll, with its lush vegetation and azure waters, rose as a volcanic peak m
     </figure>
 </div>
 
-To make your way to Tetiaroa, you'll first need to fly into Papeete, the capital of French Polynesia. From there, Air Tetiaroa will whisk you away, cutting across the deep blue skies and transporting you directly to The Brando. 
-
 Upon disembarking on Tetiaroa, you’ll be greeted by truly exceptional service, far surpassing most top-tier luxury properties in the world and a level of professionalism and hospitality that is unparalleled. A staff member dedicated specifically to you will escort you through the whispering palms to explore the resort's lush and panoramic landscapes before settling you into your accommodations. Your dedicated staff member will ensure all your dining experiences, spa retreats, and activities are properly arranged, showcasing the thoughtful and anticipatory service that you can expect throughout your stay.
 
 ## One-Bedroom Villa
+
+At The Brando, a mere 35 villas are meticulously placed amidst the abundant, vibrant foliage, which creates unparalleled seclusion for each villa. Nestled on the shores of white-sand beaches, every villa is a sanctuary outfitted with its own private plunge pool, direct access to the beach, and enveloped by tropical gardens flourishing with coconut palms. The interiors of the villas at The Brando emanate a symphony of luxury and comfort, adorned with creamy tones that are elegantly offset by accents of both dark and light shades, with each villa comprising a main living room, a bedroom, and a spacious media room, all with contemporary furnishings.
 
 <div class="one-big-two-small">
     <figure>
@@ -93,8 +95,6 @@ Upon disembarking on Tetiaroa, you’ll be greeted by truly exceptional service,
         <img class="grid-image" src="/images/uploads/brando-9.jpeg" alt="" />
     </figure>
 </div>
-
-At The Brando, a mere 35 villas are meticulously placed amidst the abundant, vibrant foliage, which creates unparalleled seclusion for each villa. Nestled on the shores of white-sand beaches, every villa is a sanctuary outfitted with its own private plunge pool, direct access to the beach, and enveloped by tropical gardens flourishing with coconut palms. The interiors of the villas at The Brando emanate a symphony of luxury and comfort, adorned with creamy tones that are elegantly offset by accents of both dark and light shades, with each villa comprising a main living room, a bedroom, and a spacious media room, all with contemporary furnishings.
 
 The villas use traditional building methods and incorporate locally sourced materials, such as wooden walls and roofs adorned with pandanus leaves, creating a space that is not just lavish but that is also deeply rooted in and respectful of the local ethos and tradition. Every villa is strategically positioned on the islet to offer views of either Turtle Beach, showcasing breathtaking sunsets, or Mermaid Bay, where instead, the break of the day bathes the sky in golden tones.
 
@@ -120,6 +120,8 @@ Adding to the outdoor experience, each villa boasts a generous deck adorned with
 
 ## Resort Grounds
 
+The resort itself unfolds in two distinctive parts: the lower enclave, home to the luxurious resort, and the elevated section, hosting the airstrip and secluded staff village. A winding pathway encircles the main islet, guiding you through the resort's awe-inspiring grounds, stunning public spaces, and ingeniously concealed villas. For effortless navigation through this slice of heaven, each guest is provided a bicycle; however, for those seeking leisure or simply preferring a laid-back journey, electric carts, steered by staff, stand ready to whisk you to your desired location.
+
 <div class="one-big-two-small">
     <figure>
         <img class="grid-image" src="/images/uploads/brando-3.jpeg" alt="" />
@@ -132,13 +134,13 @@ Adding to the outdoor experience, each villa boasts a generous deck adorned with
     </figure>
 </div>
 
-The resort itself unfolds in two distinctive parts: the lower enclave, home to the luxurious resort, and the elevated section, hosting the airstrip and secluded staff village. A winding pathway encircles the main islet, guiding you through the resort's awe-inspiring grounds, stunning public spaces, and ingeniously concealed villas. For effortless navigation through this slice of heaven, each guest is provided a bicycle; however, for those seeking leisure or simply preferring a laid-back journey, electric carts, steered by staff, stand ready to whisk you to your desired location.
-
 The villas are sprinkled along the eastern and western beachfronts, offering panoramic views of the shimmering ocean waves and beachfront, while the hubs of activity take place at the public areas and shared facilities nestled at the islet's base. The Resort Centre is the heart of the resort, where you'll find the front desk, restaurants, beach and pool area, activities, a couple shops, and the bar. If you head a bit more inland, towards the northeast, you'll discover the spa and fitness facilities, as well as pathways that lead to stunning views and offer convenient access to the airport runway and secluded beaches alike. 
 
 Interspersed throughout the grounds are marae, the ancient Polynesian stone temples. These marae serve as holy gathering sites, and provide guests with an opportunity to discover and learn more about the rich cultural heritage of the region. The 12 other islets in the atoll of Tetiaroa that are used for natural conservation, which The Brando's revenues help support. Guests can also arrange to take tours of the other islets to interact with and learn more about sustainability efforts.
 
 ## Dining
+
+The Brando has four dining establishments plus one bar: the Beachcomber Café, Bob’s Bar, Nami, Les Mutinés, and Te Manu Bar. The Beachcomber Café is the resort's all-day dining restaurant, offering breakfast, lunch, and dinner in a laid-back beachside ambiance, complete with outdoor seating and a picturesque lagoon view. The all-day-dining menu offers a blend of Polynesian, French, and international cuisines, with stand-out seafood dishes such as lagoon fish ceviche, Tahitian raw fish, swordfish carpaccio, rock octopus with pan-fried pineapples, and lobster rolls.
 
 <div class="one-big-two-small">
     <figure>
@@ -151,8 +153,6 @@ Interspersed throughout the grounds are marae, the ancient Polynesian stone temp
         <img class="grid-image" src="/images/uploads/brando-17.jpeg" alt="" />
     </figure>
 </div>
-
-The Brando has four dining establishments plus one bar: the Beachcomber Café, Bob’s Bar, Nami, Les Mutinés, and Te Manu Bar. The Beachcomber Café is the resort's all-day dining restaurant, offering breakfast, lunch, and dinner in a laid-back beachside ambiance, complete with outdoor seating and a picturesque lagoon view. The all-day-dining menu offers a blend of Polynesian, French, and international cuisines, with stand-out seafood dishes such as lagoon fish ceviche, Tahitian raw fish, swordfish carpaccio, rock octopus with pan-fried pineapples, and lobster rolls.
 
 Nami offers a teppanyaki experience curated for an intimate group. The dinner service requires a reservation and is only available on select nights, so we recommend you book early if you’d like to enjoy the exceptional sushi and grill spread. Les Mutinés is nothing short of extraordinary, featuring a full multi-course French menu, complemented by carefully selected wine pairings.
 
@@ -185,6 +185,8 @@ With its funky-chic beach vibe, Bob's Bar is situated on the beach and serves up
 
 ## Pool, Beach, Spa, Activities, and Other Amenities
 
+The Brando is home to a gorgeous infinity pool that curves and sprawls generously, providing views of the ocean and the atoll’s natural beauty. The pool is surrounded by a wooden deck with loungers and umbrellas placed to offer respite and privacy. Tall palm trees give shade to the pool, making the water the perfect temperature to escape the warm sun.
+
 <div class="one-big-two-small">
     <figure>
         <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
@@ -196,8 +198,6 @@ With its funky-chic beach vibe, Bob's Bar is situated on the beach and serves up
         <img class="grid-image" src="/images/uploads/brando-23.jpeg" alt="" />
     </figure>
 </div>
-
-The Brando is home to a gorgeous infinity pool that curves and sprawls generously, providing views of the ocean and the atoll’s natural beauty. The pool is surrounded by a wooden deck with loungers and umbrellas placed to offer respite and privacy. Tall palm trees give shade to the pool, making the water the perfect temperature to escape the warm sun.
 
 The resort also has two breathtaking beaches, Mermaid Bay and Turtle Beach, both with pristine white sand and crystal-clear waters.  At these beaches, The Brando offers a variety of fun water activities such as paddleboarding, kayaking, and snorkeling which allows you to explore the colourful coral and captivating marine life in the lagoon. The Brando also offers a plethora of guided activities for those wishing to explore the beauty of Tetiaroa and its environs. 
 
