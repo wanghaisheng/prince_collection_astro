@@ -54,22 +54,16 @@ This atoll, with its lush vegetation and azure waters, rose as a volcanic peak m
 
 ## Arrival & Check-In
 
-<div class="row g-3 py-3 px-0">
-  <div class="col-md-4">
+<div class="one-big-two-small">
+  <figure>
+        <img class="grid-image" src="/images/uploads/brando-6.jpeg" alt="" />
+    </figure>
     <figure>
         <img class="grid-image" src="/images/uploads/brando-5.jpeg" alt="" />
     </figure>
-  </div>
-  <div class="col-md-4">
-    <figure>
-        <img class="grid-image" src="/images/uploads/brando-6.jpeg" alt="" />
-    </figure>
-  </div>
-  <div class="col-md-4">
     <figure>
         <img class="grid-image" src="/images/uploads/brando-7.jpeg" alt="" />
-      </figure>
-  </div>
+    </figure>
 </div>
 
 To make your way to Tetiaroa, you'll first need to fly into Papeete, the capital of French Polynesia. From there, Air Tetiaroa will whisk you away, cutting across the deep blue skies and transporting you directly to The Brando. 
