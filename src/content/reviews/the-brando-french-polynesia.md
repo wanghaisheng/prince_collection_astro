@@ -110,7 +110,17 @@ Adding to the outdoor experience, each villa boasts a generous deck adorned with
 
 ## Resort Grounds
 
-(Gallery 5)
+<div class="ong-big-two-small">
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-3.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-13.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-14.jpeg" alt="" />
+    </figure>
+</div>
 
 The resort itself unfolds in two distinctive parts: the lower enclave, home to the luxurious resort, and the elevated section, hosting the airstrip and secluded staff village. A winding pathway encircles the main islet, guiding you through the resort's awe-inspiring grounds, stunning public spaces, and ingeniously concealed villas. For effortless navigation through this slice of heaven, each guest is provided a bicycle; however, for those seeking leisure or simply preferring a laid-back journey, electric carts, steered by staff, stand ready to whisk you to your desired location.
 
