@@ -148,6 +148,13 @@ img {
   justify-items: start;
 }
 
+/* css image grids
+.grid-2 creates a 2-column row; 
+adding 4 images will create a 4x4 grid automatically;
+suggest not putting more than 4 in any one gallery;
+.grid-3 creates a 3-column row;
+.one-big-two-small creates a single feature image with 2 images below it  */
+
 .grid-2 {
   display: grid;
   gap: 1rem;

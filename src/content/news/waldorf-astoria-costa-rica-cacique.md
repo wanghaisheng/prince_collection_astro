@@ -30,12 +30,12 @@ contents:
 
 Hilton is set to open its first Waldorf Astoria property in Costa Rica, further strengthening its presence in the Caribbean and Latin America. The Waldorf Astoria Costa Rica Cacique is scheduled to open its doors to guests in November 2024, adding an exciting new location to the brand’s 30+ luxury properties worldwide.
 
-<div class="grid-3">
+<div class="one-big-two-small">
   <figure>
-        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-1.avif" alt="" />
+        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-5.avif" alt="" />
     </figure>
     <figure>
-        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-5.avif" alt="" />
+        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-1.avif" alt="" />
     </figure>
     <figure>
         <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-3.avif" alt="" />
@@ -50,12 +50,12 @@ The new hotel will be in good company, as this part of Costa Rica is already hom
 
 Located on a dramatic cliffside peninsula and overlooking the secluded Playa Penca, the hotel stands to be a luxurious and relaxing retreat for guests while still providing easy access to many nearby activities.
 
-<div class="grid-3">
+<div class="one-big-two-small">
   <figure>
-        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-8.avif" alt="" />
+        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-6.avif" alt="" />
     </figure>
     <figure>
-        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-6.avif" alt="" />
+        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-8.avif" alt="" />
     </figure>
     <figure>
         <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-7.avif" alt="" />
