@@ -31,7 +31,7 @@ Make title heading H1 and all subsequent headings H2. If using an unordered (bul
 
 ### 2-column grid
 
-Any number of figure/image elements you add will remain in a 2-column grid layout
+This gallery creates a 2-column side-by-side grid. You can also add 4 images like below to get a 4-grid gallery. 
 
 <div class="grid-2">
   <figure>
@@ -59,7 +59,7 @@ Any number of figure/image elements you add will remain in a 2-column grid layou
 
 ### 3-column grid
 
-Any number of figure/image elements you add will remain in a 3-column grid layout
+This gallery creates a 3-column side-by-side grid. The drawback to this variation is the images are a little small. Best to use for instances where images have lower content/meaning, plane window, runway, arrival, etc.
 
 <div class="grid-3">
   <figure>
@@ -74,6 +74,8 @@ Any number of figure/image elements you add will remain in a 3-column grid layou
 </div>
 
 ### One big, two small
+
+This gallery creates a big feature image with two smaller images side-by-side underneath it.
 
 <div class="one-big-two-small">
   <figure>
