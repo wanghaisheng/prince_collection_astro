@@ -32,22 +32,7 @@ Set amidst the pristine, turquoise waters and breathtaking archipelagos of the v
 
 The atoll once served as the home to Tahitian royalty, where kings and queens made it their private paradise. The untamed islands also captured the heart of Marlon Brando while filming 'Mutiny on the Bounty' in 1960. Drawn in by its raw beauty, he vowed to shield these islands from change, preserving their natural state for generations to come.
 
-<div class="grid-2">
-  <figure>
-        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
-    </figure>
-    <figure>
-        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
-    </figure>
-    <figure>
-        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
-    </figure>
-    <figure>
-        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
-    </figure>
-</div>
-
-<div class="grid-3 py-3">
+<div class="one-big-two-small">
   <figure>
         <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
     </figure>
@@ -58,24 +43,6 @@ The atoll once served as the home to Tahitian royalty, where kings and queens ma
         <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
     </figure>
 </div>
-
-<!-- <div class="row g-3 py-3 px-0">
-  <div class="col-md-4">
-    <figure>
-        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
-    </figure>
-  </div>
-  <div class="col-md-4">
-    <figure>
-        <img class="grid-image" src="/images/uploads/brando-3.jpeg" alt="" />
-    </figure>
-  </div>
-  <div class="col-md-4">
-    <figure>
-        <img class="grid-image" src="/images/uploads/brando-4.jpeg" alt="" />
-      </figure>
-  </div>
-</div> -->
 
 ## Location
 
