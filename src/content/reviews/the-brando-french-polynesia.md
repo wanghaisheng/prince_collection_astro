@@ -72,7 +72,7 @@ Upon disembarking on Tetiaroa, you’ll be greeted by truly exceptional service,
 
 ## One-Bedroom Villa
 
-<div class="grid-2">
+<div class="one-big-two-small">
     <figure>
         <img class="grid-image" src="/images/uploads/brando-4.jpeg" alt="" />
     </figure>
@@ -82,12 +82,7 @@ Upon disembarking on Tetiaroa, you’ll be greeted by truly exceptional service,
     <figure>
         <img class="grid-image" src="/images/uploads/brando-9.jpeg" alt="" />
     </figure>
-    <figure>
-        <img class="grid-image" src="/images/uploads/brando-10.jpeg" alt="" />
-      </figure>
 </div>
-
-![]()
 
 At The Brando, a mere 35 villas are meticulously placed amidst the abundant, vibrant foliage, which creates unparalleled seclusion for each villa. Nestled on the shores of white-sand beaches, every villa is a sanctuary outfitted with its own private plunge pool, direct access to the beach, and enveloped by tropical gardens flourishing with coconut palms. The interiors of the villas at The Brando emanate a symphony of luxury and comfort, adorned with creamy tones that are elegantly offset by accents of both dark and light shades, with each villa comprising a main living room, a bedroom, and a spacious media room, all with contemporary furnishings.
 
@@ -95,35 +90,35 @@ The villas use traditional building methods and incorporate locally sourced mate
 
 A welcoming bottle of Champagne awaits you at the table, a sparkling prelude to the unlimited beverages available as part of the all-inclusive package. The villas feature king beds, plush furnishings, a wall-mounted flat-screen TV, a walk-through closet, an elegant bathroom complete with a rain shower, and a mini-bar.
 
-(Gallery 4)
+<div class="ong-big-two-small">
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-1.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-11.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-12.jpeg" alt="" />
+    </figure>
+</div>
 
 The villas also showcase an outdoor bathtub, nestled amidst the aromatic tropical garden. Here, you can soak in warm air and the gentle rustle of palm leaves, or relax under the vast, starlit sky at night while bathing in the soft glow of the moon.
 
-Adding to the outdoor experience, each villa boasts a generous deck adorned with a sheltered dining enclave, ideal for indulging in meals amid the fresh, tropical air.
+![](/images/uploads/brando-10.jpeg)
 
-There's also the private plunge pool, a standout feature complete with inviting recliners and a shielding umbrella, a serene oasis which, coupled with the lapping waves of the beach and the expansive ocean a few graceful steps away, creates an iconic South Pacific abode.
+Adding to the outdoor experience, each villa boasts a generous deck adorned with a sheltered dining enclave, ideal for indulging in meals amid the fresh, tropical air. There's also the private plunge pool, a standout feature complete with inviting recliners and a shielding umbrella, a serene oasis which, coupled with the lapping waves of the beach and the expansive ocean a few graceful steps away, creates an iconic South Pacific abode.
 
 ## Resort Grounds
 
 (Gallery 5)
 
-The resort itself unfolds in two distinctive parts: the lower enclave, home to the luxurious resort, and the elevated section, hosting the airstrip and secluded staff village.
+The resort itself unfolds in two distinctive parts: the lower enclave, home to the luxurious resort, and the elevated section, hosting the airstrip and secluded staff village. A winding pathway encircles the main islet, guiding you through the resort's awe-inspiring grounds, stunning public spaces, and ingeniously concealed villas. For effortless navigation through this slice of heaven, each guest is provided a bicycle; however, for those seeking leisure or simply preferring a laid-back journey, electric carts, steered by staff, stand ready to whisk you to your desired location.
 
-A winding pathway encircles the main islet, guiding you through the resort's awe-inspiring grounds, stunning public spaces, and ingeniously concealed villas.
+The villas are sprinkled along the eastern and western beachfronts, offering panoramic views of the shimmering ocean waves and beachfront, while the hubs of activity take place at the public areas and shared facilities nestled at the islet's base. The Resort Centre is the heart of the resort, where you'll find the front desk, restaurants, beach and pool area, activities, a couple shops, and the bar. If you head a bit more inland, towards the northeast, you'll discover the spa and fitness facilities, as well as pathways that lead to stunning views and offer convenient access to the airport runway and secluded beaches alike. 
 
-For effortless navigation through this slice of heaven, each guest is provided a bicycle; however, for those seeking leisure or simply preferring a laid-back journey, electric carts, steered by staff, stand ready to whisk you to your desired location.
+Interspersed throughout the grounds are marae, the ancient Polynesian stone temples. These marae serve as holy gathering sites, and provide guests with an opportunity to discover and learn more about the rich cultural heritage of the region. The 12 other islets in the atoll of Tetiaroa that are used for natural conservation, which The Brando's revenues help support. Guests can also arrange to take tours of the other islets to interact with and learn more about sustainability efforts.
 
-The villas are sprinkled along the eastern and western beachfronts, offering panoramic views of the shimmering ocean waves and beachfront, while the hubs of activity take place at the public areas and shared facilities nestled at the islet's base.
-
-The Resort Centre is the heart of the resort, where you'll find the front desk, restaurants, beach and pool area, activities, a couple shops, and the bar.
-
-If you head a bit more inland, towards the northeast, you'll discover the spa and fitness facilities, as well as pathways that lead to stunning views and offer convenient access to the airport runway and secluded beaches alike.
-
-Interspersed throughout the grounds are marae, the ancient Polynesian stone temples. These marae serve as holy gathering sites, and provide guests with an opportunity to discover and learn more about the rich cultural heritage of the region.
-
-The 12 other islets in the atoll of Tetiaroa that are used for natural conservation, which The Brando's revenues help support. Guests can also arrange to take tours of the other islets to interact with and learn more about sustainability efforts.
-
-The Brando – Dining
+## Dining
 
 (Gallery 6)
 
