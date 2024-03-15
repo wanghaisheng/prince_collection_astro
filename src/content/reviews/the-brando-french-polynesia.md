@@ -72,28 +72,22 @@ Upon disembarking on Tetiaroa, you’ll be greeted by truly exceptional service,
 
 ## One-Bedroom Villa
 
-<div class="row g-3 py-3 px-0">
-  <div class="col-md-6">
+<div class="grid-2">
     <figure>
         <img class="grid-image" src="/images/uploads/brando-4.jpeg" alt="" />
     </figure>
-  </div>
-  <div class="col-md-6">
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-8.jpeg" alt="" />
+    </figure>
     <figure>
         <img class="grid-image" src="/images/uploads/brando-9.jpeg" alt="" />
     </figure>
-  </div>
-  <div class="col-md-6">
-    <figure>
-        <img class="grid-image" src="/images/uploads/brando-9.jpeg" alt="" />
-    </figure>
-  </div>
-  <div class="col-md-6">
     <figure>
         <img class="grid-image" src="/images/uploads/brando-10.jpeg" alt="" />
       </figure>
-  </div>
 </div>
+
+![]()
 
 At The Brando, a mere 35 villas are meticulously placed amidst the abundant, vibrant foliage, which creates unparalleled seclusion for each villa. Nestled on the shores of white-sand beaches, every villa is a sanctuary outfitted with its own private plunge pool, direct access to the beach, and enveloped by tropical gardens flourishing with coconut palms. The interiors of the villas at The Brando emanate a symphony of luxury and comfort, adorned with creamy tones that are elegantly offset by accents of both dark and light shades, with each villa comprising a main living room, a bedroom, and a spacious media room, all with contemporary furnishings.
 
