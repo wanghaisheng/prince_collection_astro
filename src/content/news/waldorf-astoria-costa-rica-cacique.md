@@ -32,7 +32,17 @@ Hilton is set to open its first Waldorf Astoria property in Costa Rica, further 
 
 (Gallery of 3 images)
 
-
+<div class="grid-3 py-3">
+  <figure>
+        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+    </figure>
+</div>
 
 ## Opening in November 2024
 
@@ -44,17 +54,11 @@ Located on a dramatic cliffside peninsula and overlooking the secluded Playa Pen
 
 The hotel will have 188 guest rooms alongside lavish private residences, and guests will be able to enjoy a variety of amenities including a multi-level pool, on-site restaurants, a spa, a fitness centre, and more.
 
-
-
 The hotel’s use of wood and light-coloured stone elements imbues the indoor spaces with a warm and contemporary aesthetic, which is a pleasant complement to the lush, rainforest surroundings.
 
 Additionally, the layout of the hotel has been designed to fit naturally within the landscape’s terrain as it angles towards the ocean, and wildlife corridors have been incorporated to ensure the safety of the local fauna.
 
-
-
 This newest Waldorf Astoria property has been in development for over 10 years, so the excitement and anticipation has certainly had time to grow. 
-
-
 
 With any luck, an official opening date will be announced shortly, and travellers can begin to plan their stays.
 
