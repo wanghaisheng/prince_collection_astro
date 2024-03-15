@@ -29,7 +29,7 @@ contents:
 
 Make title heading H1 and all subsequent headings H2.
 
-## HTML 3-column grid
+### 2-column grid
 
 Any number of figure/image elements you add will remain in a 2-column grid layout
 
@@ -48,9 +48,11 @@ Any number of figure/image elements you add will remain in a 2-column grid layou
     </figure>
 </div>
 
+### 3-column grid
+
 Any number of figure/image elements you add will remain in a 3-column grid layout
 
-<div class="grid-3 py-3">
+<div class="grid-3">
   <figure>
      <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
     </figure>
@@ -59,6 +61,20 @@ Any number of figure/image elements you add will remain in a 3-column grid layou
     </figure>
     <figure>
         <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+    </figure>
+</div>
+
+### One big, two small
+
+<div class="one-big-two-small">
+  <figure>
+        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-6.avif" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-8.avif" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-7.avif" alt="" />
     </figure>
 </div>
 
@@ -78,80 +94,6 @@ i.e. **`src=""`**
     <img src="/images/uploads/mandarin-hong-kong-1.jpeg" alt="Mandarin Hong Kong Hotel Review"></figure>
 
 ![]()
-
-## HTML 3-column image grid
-
-Copy and paste the code below for a 3-column side by side image grid.
-
-<div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
-   <div class="col">
-    <figure>
-        <img class="grid-image" src="/images/uploads/<!==add image name/file path here==>" alt="" />
-    </figure>
-  </div>
-  <div class="col">
-    <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-seattle-1.jpeg" alt="" />
-    </figure>
-  </div>
-  <div class="col">
-    <figure>
-        <img class="grid-image" src="/images/uploads/four-seasons-seattle-2.jpeg" alt="" />
-      </figure>
-  </div>
-</div>
-
-## HTML 2-column image grid
-
-Copy and paste the code below for a 2-column side by side image grid.
-
-<div class="row row-cols-1 row-cols-lg-2 g-3 py-3 px-0">
-   <div class="col">
-    <figure>
-      <img class="grid-image" src="/images/uploads/four-seasons-seattle-1.jpeg" alt="" />
-    </figure>
-  </div>
-  <div class="col">
-    <figure>
-      <img class="grid-image" src="/images/uploads/four-seasons-seattle-2.jpeg" alt="" />
-    </figure>
-  </div>
-</div>
-
-## Combo image grid
-
-<div class="row g-3 py-3 px-0">
-  <div class="col-md-12">
-    <figure>
-        <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-1.jpeg" alt="" />
-    </figure>
-  </div>
-  <div class="col-md-6">
-    <figure>
-        <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-2.jpeg" alt="" />
-    </figure>
-  </div>
-  <div class="col-md-6">
-    <figure>
-        <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-3.jpeg" alt="" />
-      </figure>
-  </div>
-  <div class="col-md-6">
-    <figure>
-        <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-4.jpeg" alt="" />
-    </figure>
-  </div>
-  <div class="col-md-6">
-    <figure>
-        <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-5.jpeg" alt="" />
-    </figure>
-  </div>
-  <div class="col-md-12">
-    <figure>
-        <img class="grid-image" src="/images/uploads/park-hyatt-los-cabos-6.jpeg" alt="" />
-    </figure>
-  </div>
-</div>
 
 ## HTML images using figure and caption
 
