@@ -35,36 +35,35 @@ Copying and pasting the code snippets below allow writers to add image galleries
 
 ### Steps
 
-- Copy desired gallery code from below.
-- Select "Markdown" from the top right toggle switch.
-- Paste code where you want it in the article
-- *add image file paths (see below)
-- ensure there are no typos
-- return to Rich Text editor (toggle Rich Text in top right select)
+* Copy desired gallery code from below.
+* Select "Markdown" from the top right toggle switch.
+* Paste code where you want it in the article
+* \*add image file paths (see below)
+* ensure there are no typos
+* return to Rich Text editor (toggle Rich Text in top right select)
 
 ### Adding images
 
-- First name all article images before uploading them to the CMS
-- use a convention like the following: **article-name-1.jpeg** i.e. waldorf-astoria-cabo-san-lucas-1.jpeg, waldorf-astoria-cabo-san-lucas-2.jpeg
-- this allows you to search images in the media folder for ease of selection throughout the writing process
-- upload all images (you can do this either using the featured image field, or you can add an image widget to a post, and add all images from there once you access the media library)
+* First name all article images before uploading them to the CMS
+* use a convention like the following: **article-name-1.jpeg** i.e. waldorf-astoria-cabo-san-lucas-1.jpeg, waldorf-astoria-cabo-san-lucas-2.jpeg
+* this allows you to search images in the media folder for ease of selection throughout the writing process
+* upload all images (you can do this either using the featured image field, or you can add an image widget to a post, and add all images from there once you access the media library)
 
 ### Adding images to your grid gallery
 
-- add an image widget above or below your gallery code, just to use as a way to select images from the library
-- open the media library
-- find your image and click it to highlight
-- in the upper left button toolbar, select **"Copy Name"**: this will give you the name of the file i.e. waldorf-astoria-cabo-san-lucas-1.jpeg
-- in cases it will only allow you to select **"Copy Path"**: this will give you the full file path: public/images/uploads/waldorf-astoria-cabo-san-lucas-1.jpeg. In this case you have to **delete the "public"** part from the path.
-- final image url should look like: 
-/images/uploads/waldorf-astoria-cabo-san-lucas-1.jpeg
+* add an image widget above or below your gallery code, just to use as a way to select images from the library
+* open the media library
+* find your image and click it to highlight
+* in the upper left button toolbar, select **"Copy Name"**: this will give you the name of the file i.e. waldorf-astoria-cabo-san-lucas-1.jpeg
+* in cases it will only allow you to select **"Copy Path"**: this will give you the full file path: public/images/uploads/waldorf-astoria-cabo-san-lucas-1.jpeg. In this case you have to **delete the "public"** part from the path.
+* final image url should look like: 
+  **/images/uploads/waldorf-astoria-cabo-san-lucas-1.jpeg**
 
-<img src="/images/uploads/waldorf-astoria-cabo-san-lucas-1.jpeg" />
+**<img src="/images/uploads/waldorf-astoria-cabo-san-lucas-1.jpeg" />**
 
 <figure>
    <img class="grid-image" **src="/images/uploads/waldorf-astoria-cabo-san-lucas-1.jpeg"** alt="" />
 </figure>
-
 
 ### 2-column grid
 
