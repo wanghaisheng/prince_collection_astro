@@ -175,7 +175,17 @@ With its funky-chic beach vibe, Bob's Bar is situated on the beach and serves up
 
 ## Pool, Beach, Spa, Activities, & Other Amenities
 
-(Gallery 9)
+<div class="one-big-two-small">\
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-22.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-23.jpeg" alt="" />
+    </figure>
+</div>
 
 The Brando is home to a gorgeous infinity pool that curves and sprawls generously, providing views of the ocean and the atoll’s natural beauty. The pool is surrounded by a wooden deck with loungers and umbrellas placed to offer respite and privacy. Tall palm trees give shade to the pool, making the water the perfect temperature to escape the warm sun.
 
@@ -187,7 +197,17 @@ If you visit Tetiaroa between October and March, you can join Tetiaroa Society g
 
 Additionally, The Brando actively engages in coral reef conservation, closely monitoring the biodiversity of Tetiaroa and its surrounding waters. The resort also prioritizes sustainable tourism and collaborates with local schools and communities to raise awareness about the crucial importance of environmental conservation and sustainable practices.
 
-(Gallery 10)
+<div class="one-big-two-small">\
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-24.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-25.jpeg" alt="" />
+    </figure>
+    <figure>
+        <img class="grid-image" src="/images/uploads/brando-26.jpeg" alt="" />
+    </figure>
+</div>
 
 Once you’ve had your fill of activity, you can make your way to the impressive 21,000 -square-foot Varua Te Ora Polynesian Spa, offering indulgent treatments, a sauna, cold plunge pools (one of which draws its water from the deep sea), and more. The spa also boasts a hammam, a traditional Turkish steam bath known for its detoxifying and purifying properties, as well as a freshwater cascade and a herbal tea room, where you can sip on flavourful infusions.
 
