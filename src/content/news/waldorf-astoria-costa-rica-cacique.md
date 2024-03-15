@@ -68,16 +68,11 @@ The hotel’s use of wood and light-coloured stone elements imbues the indoor sp
 
 Additionally, the layout of the hotel has been designed to fit naturally within the landscape’s terrain as it angles towards the ocean, and wildlife corridors have been incorporated to ensure the safety of the local fauna.
 
-<div class="grid-2">
-  <figure>
-        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-4.avif" alt="" />
-    </figure>
-    <figure>
-        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-2.avif" alt="" />
-    </figure>
-</div>
+![](/images/uploads/waldorf-astoria-costa-rica-4.avif)
 
 This newest Waldorf Astoria property has been in development for over 10 years, so the excitement and anticipation has certainly had time to grow. With any luck, an official opening date will be announced shortly, and travellers can begin to plan their stays.
+
+![](/images/uploads/waldorf-astoria-costa-rica-2.avif)
 
 ## Conclusion
 
