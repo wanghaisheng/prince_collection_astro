@@ -49,6 +49,22 @@ Copying and pasting the code snippets below allow writers to add image galleries
 - this allows you to search images in the media folder for ease of selection throughout the writing process
 - upload all images (you can do this either using the featured image field, or you can add an image widget to a post, and add all images from there once you access the media library)
 
+### Adding images to your grid gallery
+
+- add an image widget above or below your gallery code, just to use as a way to select images from the library
+- open the media library
+- find your image and click it to highlight
+- in the upper left button toolbar, select **"Copy Name"**: this will give you the name of the file i.e. waldorf-astoria-cabo-san-lucas-1.jpeg
+- in cases it will only allow you to select **"Copy Path"**: this will give you the full file path: public/images/uploads/waldorf-astoria-cabo-san-lucas-1.jpeg. In this case you have to **delete the "public"** part from the path.
+- final image url should look like: 
+/images/uploads/waldorf-astoria-cabo-san-lucas-1.jpeg
+
+<img src="/images/uploads/waldorf-astoria-cabo-san-lucas-1.jpeg" />
+
+<figure>
+   <img class="grid-image" **src="/images/uploads/waldorf-astoria-cabo-san-lucas-1.jpeg"** alt="" />
+</figure>
+
 
 ### 2-column grid
 
@@ -65,17 +81,17 @@ This gallery creates a 2-column side-by-side grid. You can also add 4 images lik
 
 <div class="grid-2">
   <figure>
-        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
-    </figure>
-    <figure>
-        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
-    </figure>
-    <figure>
-        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
-    </figure>
-    <figure>
-        <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
-    </figure>
+     <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+  </figure>
+  <figure>
+     <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+  </figure>
+  <figure>
+     <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+  </figure>
+  <figure>
+     <img class="grid-image" src="/images/uploads/brando-2.jpeg" alt="" />
+  </figure>
 </div>
 
 ### 3-column grid
