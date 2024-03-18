@@ -31,14 +31,14 @@ Make title heading H1 and all subsequent headings H2. If using an unordered (bul
 
 ### Adding image grids
 
-Copying and pasting the code snippets below allow writers to add image galleries to posts. **Care must be taken when using code to ensure there are no errors or typos to prevent breaks in the frontend of the production site.**
+Copying and pasting the code snippets below allow writers to add image galleries to posts. **Care must be taken when using code and/or markdown to ensure there are no errors or typos to prevent breaks in the frontend of the production site.**
 
 ### Steps
 
 * Copy desired gallery code from below.
 * Select "Markdown" from the top right toggle switch.
 * Paste code where you want it in the article
-* \*add image file paths (see below)
+* add image file paths (see below)
 * ensure there are no typos
 * return to Rich Text editor (toggle Rich Text in top right select)
 
@@ -52,7 +52,8 @@ Copying and pasting the code snippets below allow writers to add image galleries
 
 ### Uploading images
 
-* upload all images (you can do this either using the featured image field, or you can add an image widget to a post, and add all images from there once you access the media library)
+* Upload all images (you can do this either using the featured image field, or you can add an image widget to a post, and add all images from there once you access the media library)
+* Do not leave an empty image widget in your post => it will break the page/site
 
 ### Adding images to your grid gallery
 
@@ -145,8 +146,6 @@ i.e. **`src=""`**
 <figure>
     <img src="/images/uploads/mandarin-hong-kong-1.jpeg" alt="Mandarin Hong Kong Hotel Review"></figure>
 
-![]()
-
 ## HTML images using figure and caption
 
 If desired you can copy/paste the `<figcaption>`element which adds a text description of the image just below it. It isn't necessary and if used needs to be added to every other image in the grid so it doesn't a) look imbalanced, and b) misalign spacing.
@@ -157,7 +156,7 @@ If desired you can copy/paste the `<figcaption>`element which adds a text descri
     <figcaption>A single track trail outside of Albuquerque, New Mexico.</figcaption>
 </figure>
 
-Also can use this approach below using the standard image widget, with plain text description below:\
+Also can use this approach below using the standard image widget, with plain text description below:
 
 ![Albuquerque, New Mexico](https://masonmedia.github.io/json-server/images/pc-hotel-bed-blue.avif)
 *A single track trail outside of Albuquerque, New Mexico.*
