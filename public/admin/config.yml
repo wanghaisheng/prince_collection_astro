@@ -6,8 +6,8 @@ backend: # The two following lines need to be indented
 media_folder: "public/images/uploads" # Exact path where we store the uploaded media
 public_folder: "/images/uploads" # We do not need to specify the /public part as all the files from it are stored in the root directory after the build step
 
-site_url: https://prince-collection.netlify.app/ # Replace with site's URL
-display_url: https://prince-collection.netlify.app/ # Replace with site's URL
+site_url: https://princecollection.com/ # Replace with site's URL
+display_url: https://princecollection.com/ # Replace with site's URL
 
 logo_url: /images/logo-crown.png # Replace with path to logo
 # slug: {{slug}} # The URL should be the name of the title of the post/document

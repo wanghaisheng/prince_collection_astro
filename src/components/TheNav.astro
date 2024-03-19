@@ -1,11 +1,7 @@
 ---
 import Drawer from './TheDrawer.astro';
 import Modal from '../components/TheModal.astro';
-import NewsletterForm from './NewsletterForm.astro';
 import navData from '../data/sitecontent.json';
-import ThankYouModal from './ThankYouModal.astro';
-
-const { icon, modalTrigger } = Astro.props 
 ---
 <header>
 	<nav id="nav" class="navbar fixed-top animate-in">
@@ -147,12 +143,9 @@ const { icon, modalTrigger } = Astro.props
 		  </div> -->
 
 		</div>
-	  </nav>
+	</nav>
 
-
-	  
-
-	  <Modal modalTitle="Join Our Newsletter" modalId="navSignup" modalStyles="bg-dark text-light min-vh-500 rounded-4" modalSize="modal-lg" modalBody="d-flex flex-column justify-content-center align-items-start align-items-lg-center text-start text-lg-center">
+	<Modal modalTitle="Join Our Newsletter" modalId="navSignup" modalStyles="bg-dark text-light min-vh-500 rounded-4" modalSize="modal-lg" modalBody="d-flex flex-column justify-content-center align-items-start align-items-lg-center text-start text-lg-center">
 		<span class="badge rounded-pill fw-bold text-pc-light bg-pc-dark py-2 px-3">Join us</span>
 		<h2 class="mb-2 mt-3">Subscribe to the <span class="text-pc">Prince Collection</span> newsletter</h2>
 		<p class="mt-2 mb-3 text-balance">You'll receive priority information about the newest luxury properties worldwide, exclusive reservations and deals through <span class="text-pc fw-bold">Prince Collection</span>, and unique destinations across the globe.</p>
@@ -169,28 +162,26 @@ const { icon, modalTrigger } = Astro.props
 			<!-- <NewsletterForm newsletterBtn="btn-pc px-4 px-lg-5" newsletterClass="text-body-secondary" /> -->
 			<p class="small text-pc-dark-80">By providing your email, you agree to the Prince Collection Privacy Policy</p>
 		</div>
-		</Modal>
+	</Modal>
 
-		<div class="modal fade" id="navSuccess" tabindex="-1" aria-labelledby="" aria-hidden="true">
-			<div class:list={["modal-dialog modal-dialog-centered modal-lg"]}>
-			  <div class:list={["modal-content bg-dark text-light min-vh-500 rounded-4"]}>
-				<div class="modal-header d-none border-0">
-				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class:list={["modal-body p-5 d-flex flex-column justify-content-center align-items-start align-items-lg-center text-start text-lg-center"]}>
-					<i class="bi bi-x-circle-fill position-absolute top-0 end-0 fs-3 m-3 text-pc-dark" role="button" data-bs-dismiss="modal" aria-label="Close"></i>
-					<span class="badge rounded-pill fw-bold text-pc-light bg-pc-dark py-2 px-3">Success!</span>
-					<h2 class="display-6 mb-2 mt-3">Thank you for <span class="text-pc">subscribing!</span></h2>
-					<p class="mt-2 mb-3 text-balance">Please check your email to confirm your subscription!</p>
-				</div>
-			  </div>
+	<div class="modal fade" id="navSuccess" tabindex="-1" aria-labelledby="" aria-hidden="true">
+		<div class:list={["modal-dialog modal-dialog-centered modal-lg"]}>
+			<div class:list={["modal-content bg-dark text-light min-vh-500 rounded-4"]}>
+			<div class="modal-header d-none border-0">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
-		  </div>
+			<div class:list={["modal-body p-5 d-flex flex-column justify-content-center align-items-start align-items-lg-center text-start text-lg-center"]}>
+				<i class="bi bi-x-circle-fill position-absolute top-0 end-0 fs-3 m-3 text-pc-dark" role="button" data-bs-dismiss="modal" aria-label="Close"></i>
+				<span class="badge rounded-pill fw-bold text-pc-light bg-pc-dark py-2 px-3">Success!</span>
+				<h2 class="display-6 mb-2 mt-3">Thank you for <span class="text-pc">subscribing!</span></h2>
+				<p class="mt-2 mb-3 text-balance">Please check your email to confirm your subscription!</p>
+			</div>
+			</div>
+		</div>
+	</div>
 
-		<!-- <ThankYouModal thankYouModalID="navSuccess" /> -->
-
-		<!-- main menu modal -->
-		<div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<!-- main menu modal -->
+	<div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-fullscreen p-3">
 			<div class="modal-content rounded-4 bg-pc">
 			<div class="modal-header border-0" style="background: transparent !important;">
@@ -202,7 +193,6 @@ const { icon, modalTrigger } = Astro.props
 			<div class="modal-body py-0 ">
 			<div class="container-fluid">
 				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 p-3">
-					<!-- <div class:list={["p-4 min-vh-25 rounded-4 shadow", item.background || ""]}></div> -->
 					{
 					navData.navData.map((item) => (
 						<div class="col position-relative">
@@ -213,19 +203,16 @@ const { icon, modalTrigger } = Astro.props
 									<h3 class="fs-2 fw-bold mt-3">{item.title}</h3>
 									<p>Id ea eiusmod magna cupidatat proident commodo tempor sit incididunt. Fugiat aliquip officia exercitation ad culpa ipsum est.</p>
 									<button class="btn btn-sm btn-pc-dark rounded-pill shadow">Go <i class="bi bi-arrow-up-right"></i></button>
-									
 								</div>
 							</a>
 						</div>
-						))
-					}
+						))}
+					</div>
 				</div>
 			</div>
-			</div>
-			</div>
 		</div>
 		</div>
-		</div>
+	</div>
 </header>
 
 <script is:inline>
@@ -247,7 +234,7 @@ const { icon, modalTrigger } = Astro.props
 		showhide();
 	  }
 	}
-	</script>
+</script>
 	
 
 <!-- <script>
