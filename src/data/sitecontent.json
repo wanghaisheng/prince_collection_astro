@@ -302,6 +302,11 @@
                     "content": "Each travel strategy and trip is meticulously planned according to your preferences and goals, offering a fully personalized experience."
                 }
             ]
+        },
+        "book": {
+            "badge": "Your travel concierge",
+            "title": "Book with Us",
+            "content": "Discover unparalleled luxury with Prince Collection’s Concierge service, where we specialize in arranging exclusive hotel stays. Tailored for discerning guests, we offer additional benefits at no extra cost. Begin by sharing a few preferences and travel habits, and our experts will promptly get back to you about your next exquisite getaway."
         }
     },
     "about": {
@@ -371,7 +376,6 @@
                     ]
                 },
                 {
-
                     "icon": "bi-airplane",
                     "title": "Travel Agency",
                     "content": "Discover unparalleled luxury with Prince Collection’s Travel Agency, which specializes in booking exclusive hotel stays for you. Tailored for discerning guests, booking with our Travel Agency offers additional benefits at no extra cost to you. Share your preferences and destination with our experts, and we tailor a personalized getaway for you.",
@@ -538,9 +542,9 @@
         ]
     },
     "booking": {
-        "badge": "Book your travel",
+        "badge": "Where will you go next?",
         "title": "Book with Us",
-        "content": "Discover unparalleled luxury with Prince Collection’s Travel Agency, where we specialize in arranging exclusive hotel stays. Tailored for discerning guests, we offer additional benefits at no extra cost. Begin by sharing your preferences and destination, and our experts will promptly tailor your exquisite getaway."
+        "content": "Prince Collection’s travel agency offers a wealth of experience and industry contacts to help navigate the complexities and pitfalls of travel - so our clients don’t have to. Our industry experts fill in the gaps and provide the kind of guidance and depth of support travelers need. From bookings and scheduling, to hotels, transportation, pricing, and safety, Prince Collection provides personally tailored travel arrangements to make your trip as unique as you are."
     },
     "contact": {
         "badge": "Here for you",

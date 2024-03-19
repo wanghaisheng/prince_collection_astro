@@ -104,10 +104,16 @@ const { bookingContainer, bookingForm } = Astro.props;
 
       <!-- <input type="date" id="checkIn" class="form-control w-100" aria-label="Check-in date" aria-describedby="inputGroup-sizing-default" name="Date" checktype="c4" value="" maxlength="25" placeholder="Select a date from the calendar icon" required /> -->
 
-      <div class="input-group mb-4">
-        <i class="bi bi-calendar-date input-group-text"></i>
-        <input type="date" class="datepicker_input form-control" aria-label="Check-in date" aria-describedby="inputGroup-sizing-default" name="Date" checktype="c4" value="" placeholder="Select a date from the calendar icon" required >
+      <div class="col-md-6 input-group">
+        <input type="date" name="Date" class="form-control position-relative" value="" aria-label="Check-in date" aria-describedby="inputGroup-sizing-default" name="Date" checktype="c4" value="" placeholder="Select a date from the calendar icon" required >
+        <label class="input-group-addon btn" for="testdate">
+          <i class="bi bi-calendar-date fs-5"></i>
+        </label>                    
       </div>
+
+      <!-- <div class="input-group mb-4">
+        <input type="date" class="date-icon datepicker_input form-control position-relative" aria-label="Check-in date" aria-describedby="inputGroup-sizing-default" name="Date" checktype="c4" value="" placeholder="Select a date from the calendar icon" required >
+      </div> -->
 
 
       <!-- datepicker <input class="form-control" type="date" class="form-control w-100" aria-label="Check-in date picker" aria-describedby="inputGroup-sizing-default" name="Date" checktype="c4" value="" maxlength="25" placeholder="(DD-MMM-YYYY)" required /> -->
@@ -127,18 +133,20 @@ const { bookingContainer, bookingForm } = Astro.props;
   <!-- <em class="zf-important">*</em> -->
   </label>
   <div class="zf-tempContDiv">
-    <span> 
+    <span>
+      <div class="col-md-6 input-group">
+        <input type="date" name="Date1" class="form-control position-relative" value="" aria-label="Check-out date" aria-describedby="Check-out date" checktype="c4" value="" placeholder="Select a date from the calendar icon" required >
+        <label class="input-group-addon btn" for="testdate">
+          <i class="bi bi-calendar-date fs-5"></i>
+        </label>                    
+      </div>
 
-      <!-- <i class="bi bi-calendar-date input-group-text"></i>
-      <input type="text" id="dateInput" class="form-control" placeholder="Pick a date" value="" aria-label="Date input 3 (using aria-label)" onchange="formatDate(this.value)" required /> -->
+      <!-- solution for needing to convert the HTML5 datepicker format
+      convert the date and append to an invisible input with the actual name field to submit
+      visual date on-screen is for display only -->
 
-      <input type="date" class="form-control w-100" placeholder="Select a date from the calendar icon" name="Date1" checktype="c4" maxlength="25" placeholder="Select a date from the calendar icon" aria-label="Check-out date" aria-describedby="inputGroup-sizing-default" value="" required />
+      <!-- <input type="date" class="form-control w-100 position-relative" placeholder="Select a date from the calendar icon" checktype="c4" maxlength="25" placeholder="Select a date from the calendar icon" aria-label="Check-out date" aria-describedby="inputGroup-sizing-default" value="" required /> -->
       <!-- <input type="text" id="dateInput" class="visibility-hidden" name="Date1" checktype="c4" placeholder="(e.g. 1-Dec-2025)" required /> -->
- 
-    <!-- <input type="text" id="dateInput" class="" name="Date1" checktype="c4" maxlength="25" placeholder="(e.g. 1-Dec-2025)" aria-label="Check-out date" aria-describedby="inputGroup-sizing-default" value="" />
-    <p id="formattedDate"></p> -->
-      
-      <!--datepicker2 <input class="form-control" type="date" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="Date1" checktype="c4" value="" maxlength="25" placeholder="(DD-MMM-YYYY)" required /> -->
 
       <!-- <input type="text" name="Date1" checktype="c4" value="" maxlength="25" placeholder=""/><label>dd-MMM-yyyy</label>  -->
     </span>
@@ -535,6 +543,46 @@ console.log(formattedDate); // Output: "18-Mar-2024"
   </script>
 
 <style scoped>
+  .date-icon {
+  padding-left: 25px;
+  margin-right: 20px;
+  background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'><path d='M6.445 11.688V6.354h-.633A13 13 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23'/><path d='M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z'/></svg>");
+  background-size: 25px;
+}
+
+  /* input[type="date"]::before {
+    display: inline-block;
+  content: "";
+  vertical-align: -.125em;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 16 16'><path d='M6.445 11.688V6.354h-.633A13 13 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23'/><path d='M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 2rem 2rem;
+  } */
+  /* input[type="date"]:focus {
+    border: 0;
+    background: var(--pc-dark);
+    border-bottom: 1px solid #fbe3de;
+    border-radius: 0;
+    box-shadow: none;
+    color: #fff;
+} */
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    /* height: auto; */
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 30px;
+    width: 100px;
+    width: auto;
+}
+
     input, input:focus {
         border: 0;
         background: transparent;
