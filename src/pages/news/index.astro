@@ -5,6 +5,8 @@ import { getCollection } from "astro:content";
 const allPosts = await getCollection("news");
 // astro.glob => getCollection is the difference between getting all files from a directory in pages vs. collections
 // https://docs.astro.build/en/tutorials/add-content-collections/
+import functions from '../../js/functions.js';
+
 
 const { index } = Astro.props
 const slideAnim = {
@@ -28,9 +30,9 @@ const verticalSlide = {
 }
 
 // reduce length of post description to closest full word
-function shorten(text, max) {
-  return text && text.length > max ? text.slice(0, max).split(' ').slice(0, -1).join(' ') : text
-}
+// function shorten(text, max) {
+//   return text && text.length > max ? text.slice(0, max).split(' ').slice(0, -1).join(' ') : text
+// }
 
 let filteredPosts = allPosts.filter(post => post.data.draft === false)
 filteredPosts.sort((a, b) => b.data.pubDate - a.data.pubDate);
@@ -43,7 +45,7 @@ const [firstArticle, ...allArticles] = filteredPosts;
 			<div class="col-lg-6 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center p-5 mt-5 mt-lg-0 animate-in">
 				<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-pc-10 py-2 px-3" style="font-size: 15px;">Prince Collection News</span>
 				<h1 class="col-lg-10 font-windsong text-pc-dark-80 fw-900 mb-2 my-4 pt-2" style="font-size: 10vmin;">{firstArticle.data.title}</h1>
-				<p class="col-md-8 fs-5 text-body-secondary mt-0 mb-2">{shorten(firstArticle.data.description, 150) + '...'}</p>
+				<p class="col-md-8 fs-5 text-body-secondary mt-0 mb-2">{functions.shorten(firstArticle.data.description, 150) + '...'}</p>
 				<div class="py-2">
 					<p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Written by</span> {firstArticle.data.author}</p>
 					<p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {firstArticle.data.pubDate.toString().slice(0,10)}</p>
@@ -69,7 +71,7 @@ const [firstArticle, ...allArticles] = filteredPosts;
 							<p class="small mb-2">{post.data.pubDate.toString().slice(0,10)}</p>
 							<h5 class="card-title fw-bold mb-0">{post.data.title}</h5>
 							<p class="small m-0 text-secondary mt-2 mb-0">By: {post.data.author}</p>
-							<p class="card-text text-body-secondary pe-4">{shorten(post.data.description, 150) + '...'}</p>
+							<p class="card-text text-body-secondary pe-4">{functions.shorten(post.data.description, 150) + '...'}</p>
 						</div>
 						<div class="card-footer p-3">
 							<div class="d-flex flex-row flex-wrap" style="text-wrap: pretty;">

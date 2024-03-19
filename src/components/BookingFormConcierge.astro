@@ -215,26 +215,35 @@ const { bookingForm } = Astro.props;
 
     <!--Decision Box-->
     <!-- <input type="checkbox" id="DecisionBox" name="DecisionBox"/> -->
-
     
-    <div class="row my-4"> 
-    <input type="checkbox" class="btn-check" name="DecisionBox" id="DecisionBox" autocomplete="off">
-    <div class="col-md-1">
-    <label class="sign-up btn btn-outline-light" for="DecisionBox"><i class="bi bi-check fs-3"></i></label>
+    <div class="d-flex my-4"> 
+        <input type="checkbox" class="btn-check" name="DecisionBox" id="DecisionBox" autocomplete="off">
+        <label id="signUpBtn" class="sign-up btn btn-outline-light me-2" for="DecisionBox"><i id="signUpIcon" class="bi bi-x fs-5"></i></label>
+        <p class="m-0 d-flex align-items-center justify-content-center" style="color: #fbe3de">Sign up for our newsletter for news, deals, and info straight to your inbox.</p>
     </div>
-    <div class="col-md-11 d-flex justify-content-start align-items-center">
-    <p class="m-0" style="color: #fbe3de">Sign up for our newsletter for news, deals, and info straight to your inbox.</p>      
-    </div>
-</div>
 
-    <!-- <label for="DecisionBox">Sign up for our newsletter for news, deals, and info straight to your inbox.
-    </label> -->
-    <!-- <button type="submit"><em>Submit</em></button> -->
+    <!-- <input type="checkbox" class="btn-check" name="DecisionBox" id="DecisionBox" autocomplete="off">
+    <label class="sign-up btn btn-outline-light" for="DecisionBox"><i class="bi bi-check fs-3"></i></label> -->
+
     <button type="submit" class="btn btn-pc d-none d-md-block px-4 py-1 fs-5 rounded-5">Submit <i class="bi bi-arrow-up-right-circle-fill text-pc-dark fs-4 ms-2" role="button"></i></button>
     <button type="submit" class="btn btn-dark d-block d-md-none w-100 px-4 py-1 fs-5 rounded-5">Submit <i class="bi bi-arrow-up-right-circle-fill text-pc-dark fs-4 ms-2" role="button"></i></button>
 </div>
 </div>
 </form>
+
+<script>
+    let signup = document.querySelector("#signUpIcon");
+    let btn = document.querySelector("#signUpBtn");
+    function toggleChecked() {
+    if (btn.checked = false) {
+        signup.classList.remove("bi-check");
+    } else if(btn.checked = true) {
+        signup.classList.toggle("bi-check")
+        signup.classList.toggle("bi-x")
+    }
+    }
+    btn.addEventListener('click', toggleChecked);
+</script>
 
 <style scoped>
     .sign-up.btn {

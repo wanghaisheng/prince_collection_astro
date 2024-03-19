@@ -5,6 +5,7 @@ import { getCollection } from "astro:content";
 const newsPosts = await getCollection("news");
 const reviewsPosts = await getCollection("reviews");
 const guidesPosts = await getCollection("guides");
+import functions from '../js/functions.js';
 
 function filterPost(arr) {
 	return arr.filter(item => item.data.draft === false);
@@ -178,7 +179,7 @@ const verticalSlide = {
 								<div class="card-body p-4">
 									<p class="small mb-2 mt-0">{item.data.pubDate.toString().slice(0,10)}</p>
 									<h5 class="card-title fs-4 fw-900 text-secondary">{item.data.title}</h5>
-									<p class="card-text my-3">{item.data.description}</p>
+									<p class="card-text my-3">{functions.shorten(item.data.description, 150) + '...'}</p>
 									<p class="small m-0 text-secondary mt-2 mb-0">By: {item.data.author}</p>
 									<i class="bi bi-arrow-up-right-circle-fill text-secondary fs-1 position-absolute bottom-0 end-0 m-3"></i>
 								</div>

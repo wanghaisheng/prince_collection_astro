@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from "astro:content";
 const allPosts = await getCollection("guides");
+import functions from '../../js/functions.js';
 
 const { index } = Astro.props
 const slideAnim = {
@@ -25,9 +26,9 @@ const verticalSlide = {
 }
 
 // reduce length of post description to closest full word
-function shorten(text, max) {
-  return text && text.length > max ? text.slice(0, max).split(' ').slice(0, -1).join(' ') : text
-}
+// function shorten(text, max) {
+//   return text && text.length > max ? text.slice(0, max).split(' ').slice(0, -1).join(' ') : text
+// }
 
 let filteredPosts = allPosts.filter(post => post.data.draft === false)
 filteredPosts.sort((a, b) => b.data.pubDate - a.data.pubDate);
@@ -67,7 +68,7 @@ const [firstArticle, ...allArticles] = filteredPosts;
 							<p class="small mb-2">{post.data.pubDate.toString().slice(0,10)}</p>
 							<h5 class="card-title fw-bold mb-0">{post.data.title}</h5>
 							<p class="small m-0 text-secondary mt-2 mb-0">By: {post.data.author}</p>
-							<p class="card-text text-body-secondary pe-4">{shorten(post.data.description, 150) + '...'}</p>
+							<p class="card-text text-body-secondary pe-4">{functions.shorten(post.data.description, 150) + '...'}</p>
 						</div>
 						<div class="card-footer p-3">
 							<div class="d-flex flex-row flex-wrap" style="text-wrap: pretty;">
