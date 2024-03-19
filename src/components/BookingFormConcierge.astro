@@ -15,7 +15,7 @@ const { bookingForm } = Astro.props;
     <input type="hidden" name="referrername" value=""/>
 
     <div class="container">
-        <div class:list={["row g-4 rounded-3 p-5", bookingForm]}>
+        <div class:list={["row g-4 rounded-3", bookingForm]}>
             
             <div class="col-lg-6 d-flex flex-column">
                 <!--Single Line-->
@@ -68,7 +68,7 @@ const { bookingForm } = Astro.props;
 
             <div class="col-lg-12 d-flex flex-column">
                 <div class="dropdown">
-                    <button class="btn btn-outline-light mt-0 form-control dropdown-toggle" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <button class="btn btn-outline-light mt-0 form-control dropdown-toggle text-balance" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                         Are you interested in our Concierge Service for:
                     </button>
                     <ul class="row g-2 dropdown-menu bg-pc-dark w-100 p-4 rounded-4">
@@ -98,7 +98,7 @@ const { bookingForm } = Astro.props;
             
             <div class="col-lg-12 d-flex flex-column">
                 <div class="dropdown">
-                    <button class="btn btn-outline-light mt-0 form-control dropdown-toggle" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <button class="btn btn-outline-light mt-0 form-control dropdown-toggle text-balance" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                         What are the biggest challenges you face as a traveller?
                     </button>
                     <ul class="row g-2 dropdown-menu bg-pc-dark w-100 p-4 rounded-4">
@@ -216,11 +216,12 @@ const { bookingForm } = Astro.props;
     <!--Decision Box-->
     <!-- <input type="checkbox" id="DecisionBox" name="DecisionBox"/> -->
     
-    <div class="d-flex my-4"> 
+    <!-- newsletter signup -->
+    <!-- <div class="d-flex my-4"> 
         <input type="checkbox" class="btn-check" name="DecisionBox" id="DecisionBox" autocomplete="off">
         <label id="signUpBtn" class="sign-up btn btn-outline-light me-2" for="DecisionBox"><i id="signUpIcon" class="bi bi-x fs-5"></i></label>
         <p class="m-0 d-flex align-items-center justify-content-center" style="color: #fbe3de">Sign up for our newsletter for news, deals, and info straight to your inbox.</p>
-    </div>
+    </div> -->
 
     <!-- <input type="checkbox" class="btn-check" name="DecisionBox" id="DecisionBox" autocomplete="off">
     <label class="sign-up btn btn-outline-light" for="DecisionBox"><i class="bi bi-check fs-3"></i></label> -->
@@ -269,9 +270,6 @@ const { bookingForm } = Astro.props;
     margin-bottom: 8px;
     }
 
-    .dropdown {
-        text-wrap: balance;
-    }
     input, input:focus {
         border: 0;
         background: transparent;
