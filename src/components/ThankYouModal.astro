@@ -1,0 +1,10 @@
+---
+const { thankYouModalID } = Astro.props;
+import TheModal from "./TheModal.astro";
+---
+
+<TheModal modalTitle="Join Our Newsletter" modalId={thankYouModalID} modalStyles="bg-dark text-light min-vh-500 rounded-4" modalSize="modal-lg" modalBody="d-flex flex-column justify-content-center align-items-start align-items-lg-center text-start text-lg-center">
+    <span class="badge rounded-pill fw-bold text-pc-light bg-pc-dark py-2 px-3">Success!</span>
+    <h2 class="display-6 mb-2 mt-3">Thank you for <span class="text-pc">subscribing!</span></h2>
+    <p class="mt-2 mb-3 text-balance">Please check your email to confirm your subscription!</p>
+</TheModal>

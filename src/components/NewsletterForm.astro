@@ -1,5 +1,5 @@
 ---
-const { newsletterClass, newsletterBtn } = Astro.props;
+const { inputID, btnID, newsletterClass, newsletterBtn } = Astro.props;
 import TheModal from "./TheModal.astro";
 
 if (Astro.request.method === "POST") {
@@ -87,23 +87,21 @@ formSubmit();
   // }
 }
 ---
-<!-- <form id="userinfo" method="post"> -->
 <form method="POST" class="w-100">
     <div class="input-group my-2 px-0">
-      <input id="id1" type="email" name="email" class:list={["form-control rounded-start-2", newsletterClass]} placeholder="name@example.com" aria-label="Sign up for our newsletter" aria-describedby="A form to subscribe to Prince Collection newsletter" required>
-      <button onclick="myFunction()" class:list={["btn rounded-0 fw-bold rounded-end-2", newsletterBtn]}
+      <input id={inputID} type="email" name="email" class:list={["form-control rounded-start-2", newsletterClass]} placeholder="name@example.com" aria-label="Sign up for our newsletter" aria-describedby="A form to subscribe to Prince Collection newsletter" required>
+      <button id={btnID} class:list={["btn rounded-0 fw-bold rounded-end-2", newsletterBtn]}
       >I'm in!</button>
-      <!-- <button id="id2" onclick="myFunction()">I'm in</button> -->
     </div>
 </form>
 
-<TheModal modalTitle="Join Our Newsletter" modalId="thankYou" modalStyles="bg-dark text-light min-vh-500 rounded-4" modalSize="modal-lg" modalBody="d-flex flex-column justify-content-center align-items-start align-items-lg-center text-start text-lg-center">
+<!-- <TheModal modalTitle="Join Our Newsletter" modalId="thankYou" modalStyles="bg-dark text-light min-vh-500 rounded-4" modalSize="modal-lg" modalBody="d-flex flex-column justify-content-center align-items-start align-items-lg-center text-start text-lg-center">
   <span class="badge rounded-pill fw-bold text-pc-light bg-pc-dark py-2 px-3">Success!</span>
   <h2 class="display-6 mb-2 mt-3">Thank you for <span class="text-pc">subscribing!</span></h2>
   <p class="mt-2 mb-3 text-balance">Please check your email to confirm your subscription!</p>
-</TheModal>
+</TheModal> -->
 
-
+<!-- 
 <script is:inline>
 function myFunction() {
   const inpObj = document.getElementById("id1");
@@ -123,4 +121,4 @@ function myFunction() {
     showhide();
   }
 }
-</script>
+</script> -->

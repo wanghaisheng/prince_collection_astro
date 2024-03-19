@@ -3,6 +3,8 @@ import NewsletterForm from '../components/NewsletterForm.astro';
 import TheModal from '../components/TheModal.astro';
 import Layout from '../layouts/Layout.astro';
 import data from '../data/sitecontent.json';
+import ThankYouModal from '../components/ThankYouModal.astro';
+import functions from '../js/functions.js';
 ---
 <Layout title={data.newsletter.meta.title} description={data.newsletter.meta.description}>
     <div class="container-fluid px-0 bg-gold-1">
@@ -12,20 +14,14 @@ import data from '../data/sitecontent.json';
                 <h1 class="display-3 fw-bold lh-1 mb-2 mt-3"><Fragment set:html={data.newsletter.title}/></h1>
                 <p class="fs-4 my-3">{data.newsletter.content}</p>
                 <div class="col-lg-9">
-                    
+
                     <form method="post" class="w-100">
                         <div class="input-group my-2 px-0">
-                          <input id="id3" type="email" name="email" class:list={["form-control form-control-lg rounded-start-2 border-secondary"]} placeholder="name@example.com" aria-label="Sign up for our newsletter" aria-describedby="button-addon1" required>
-                          <button id="id4" onclick="myFunction()" class:list={["btn rounded-0 fw-bold rounded-end-2 btn-pc px-4 px-lg-5"]}
+                          <input id="newsletterInputID" type="email" name="email" class:list={["form-control form-control-lg rounded-start-2 border-secondary"]} placeholder="name@example.com" aria-label="Sign up for our newsletter" aria-describedby="button-addon1" required>
+                          <button onclick="thanks()" class:list={["btn rounded-0 fw-bold rounded-end-2 btn-pc px-4 px-lg-5"]}
                           >I'm in!</button>
-                          <!-- <button id="id2" onclick="myFunction()">I'm in</button> -->
                         </div>
                     </form>
-
-                    <!-- <NewsletterForm newsletterBtn="btn-pc btn-lg px-4" newsletterClass="form-control-lg"  />
-                    <p class="small text-black-50">{data.newsletter.privacy}</p> -->
-                    <!-- <button id="id2" data-bs-target="#thankYou" data-bs-toggle="modal">I'm in</button> -->
-
                 </div>
             </div>
             <div class="col-lg-5 min-vh-50 d-flex justify-content-center align-items-center" style="background: linear-gradient(rgba(161, 101, 92, 0.6), rgba(161, 101, 92, 0.6)), url('/images/general/newsletter_plane.png') center bottom repeat; background-size: 50%">
@@ -34,48 +30,39 @@ import data from '../data/sitecontent.json';
             </div>
         </div>
         </div>
-<!-- Modal -->
-<!-- <div class="modal fade" id="success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <div class="modal fade" id="newsletterSuccess" tabindex="-1" aria-labelledby="" aria-hidden="true">
+          <div class:list={["modal-dialog modal-dialog-centered modal-lg"]}>
+            <div class:list={["modal-content bg-dark text-light min-vh-500 rounded-4"]}>
+              <div class="modal-header d-none border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class:list={["modal-body p-5 d-flex flex-column justify-content-center align-items-start align-items-lg-center text-start text-lg-center"]}>
+                  <i class="bi bi-x-circle-fill position-absolute top-0 end-0 fs-3 m-3 text-pc-dark" role="button" data-bs-dismiss="modal" aria-label="Close"></i>
+                  <span class="badge rounded-pill fw-bold text-pc-light bg-pc-dark py-2 px-3">Success!</span>
+                  <h2 class="display-6 mb-2 mt-3">Thank you for <span class="text-pc">subscribing!</span></h2>
+                  <p class="mt-2 mb-3 text-balance">Please check your email to confirm your subscription!</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div> -->
 </Layout>
 
-<TheModal modalTitle="Join Our Newsletter" modalId="thankYou" modalStyles="bg-dark text-light min-vh-500 rounded-4" modalSize="modal-lg" modalBody="d-flex flex-column justify-content-center align-items-start align-items-lg-center text-start text-lg-center">
-  <span class="badge rounded-pill fw-bold text-pc-light bg-pc-dark py-2 px-3">Success!</span>
-  <h2 class="display-6 mb-2 mt-3">Thank you for <span class="text-pc">subscribing!</span></h2>
-  <p class="mt-2 mb-3 text-balance">Please check your email to confirm your subscription!</p>
-</TheModal>
-
-
 <script is:inline>
-function myFunction() {
-  const inpObj = document.getElementById("id3");
+function thanks() {
+  const inpObj = document.getElementById("newsletterInputID");
   if (inpObj.checkValidity() === false) {
     // alert("Please include a valid email address");
   return false;
   } else {
-    var modal1 = new bootstrap.Modal(document.getElementById('thankYou')); 
+    var modal1 = new bootstrap.Modal(document.getElementById('newsletterSuccess')); 
     function showhide() { 
         // show Modal 
         modal1.show(); 
         // hide the modal after 5 seconds 
         setTimeout(() => { 
             modal1.hide(); 
-        }, 5000) 
+        }, 5500) 
     } 
     showhide();
   }

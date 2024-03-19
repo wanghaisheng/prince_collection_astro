@@ -3,6 +3,7 @@ import Drawer from './TheDrawer.astro';
 import Modal from '../components/TheModal.astro';
 import NewsletterForm from './NewsletterForm.astro';
 import navData from '../data/sitecontent.json';
+import ThankYouModal from './ThankYouModal.astro';
 
 const { icon, modalTrigger } = Astro.props 
 ---
@@ -148,15 +149,45 @@ const { icon, modalTrigger } = Astro.props
 		</div>
 	  </nav>
 
+
+	  
+
 	  <Modal modalTitle="Join Our Newsletter" modalId="navSignup" modalStyles="bg-dark text-light min-vh-500 rounded-4" modalSize="modal-lg" modalBody="d-flex flex-column justify-content-center align-items-start align-items-lg-center text-start text-lg-center">
 		<span class="badge rounded-pill fw-bold text-pc-light bg-pc-dark py-2 px-3">Join us</span>
 		<h2 class="mb-2 mt-3">Subscribe to the <span class="text-pc">Prince Collection</span> newsletter</h2>
 		<p class="mt-2 mb-3 text-balance">You'll receive priority information about the newest luxury properties worldwide, exclusive reservations and deals through <span class="text-pc fw-bold">Prince Collection</span>, and unique destinations across the globe.</p>
 		<div class="col-lg-8">
-			<NewsletterForm formInputId="id1" formModalId="navNewsletter" newsletterBtn="btn-pc px-4 px-lg-5" newsletterClass="text-body-secondary" />
+			<form method="post" class="w-100">
+				<div class="input-group my-2 px-0">
+				  <input id="navSignupInput" type="email" name="email" class:list={["form-control rounded-start-2 border-secondary"]} placeholder="name@example.com" aria-label="Sign up for our newsletter" aria-describedby="button-addon1" required>
+				  <button onclick="navThanks()" class:list={["btn rounded-0 fw-bold rounded-end-2 btn-pc px-4 px-lg-5"]}
+				  >I'm in!</button>
+				</div>
+			</form>
+			
+			<!-- <NewsletterForm inputID="navSignupInput" btnID="navSignupBtn" newsletterBtn="btn-pc px-4 px-lg-5" newsletterClass="text-body-secondary" /> -->
+			<!-- <NewsletterForm newsletterBtn="btn-pc px-4 px-lg-5" newsletterClass="text-body-secondary" /> -->
 			<p class="small text-pc-dark-80">By providing your email, you agree to the Prince Collection Privacy Policy</p>
 		</div>
 		</Modal>
+
+		<div class="modal fade" id="navSuccess" tabindex="-1" aria-labelledby="" aria-hidden="true">
+			<div class:list={["modal-dialog modal-dialog-centered modal-lg"]}>
+			  <div class:list={["modal-content bg-dark text-light min-vh-500 rounded-4"]}>
+				<div class="modal-header d-none border-0">
+				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class:list={["modal-body p-5 d-flex flex-column justify-content-center align-items-start align-items-lg-center text-start text-lg-center"]}>
+					<i class="bi bi-x-circle-fill position-absolute top-0 end-0 fs-3 m-3 text-pc-dark" role="button" data-bs-dismiss="modal" aria-label="Close"></i>
+					<span class="badge rounded-pill fw-bold text-pc-light bg-pc-dark py-2 px-3">Success!</span>
+					<h2 class="display-6 mb-2 mt-3">Thank you for <span class="text-pc">subscribing!</span></h2>
+					<p class="mt-2 mb-3 text-balance">Please check your email to confirm your subscription!</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		<!-- <ThankYouModal thankYouModalID="navSuccess" /> -->
 
 		<!-- main menu modal -->
 		<div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -196,6 +227,28 @@ const { icon, modalTrigger } = Astro.props
 		</div>
 		</div>
 </header>
+
+<script is:inline>
+	function navThanks() {
+	  const inpObj = document.getElementById("navSignupInput");
+	  if (inpObj.checkValidity() === false) {
+		// alert("Please include a valid email address");
+	  return false;
+	  } else {
+		var modal1 = new bootstrap.Modal(document.getElementById('navSuccess')); 
+		function showhide() { 
+			// show Modal 
+			modal1.show(); 
+			// hide the modal after 5 seconds 
+			setTimeout(() => { 
+				modal1.hide(); 
+			}, 5500) 
+		} 
+		showhide();
+	  }
+	}
+	</script>
+	
 
 <!-- <script>
 	window.onscroll = function() {scrollFunction()};
