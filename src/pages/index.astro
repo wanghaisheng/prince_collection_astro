@@ -158,8 +158,8 @@ const verticalSlide = {
 			<div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 p-5 bg-pc-light" data-aos="fade-up">
 				{
 					data.home.logos1.map((item, index) => (
-					<div class="col d-flex my-auto text-center p-3" style="filter: brightness(0);" data-aos="fade-up" data-aos-delay={index * 200}>
-						<img src="" width="120px" height="auto" data-src={item.url} data-aos="fade-up" data-aos-delay={index * 100} style={index === 0 || index === 2 ? 'width: 120px;' : 'width: 140px'} alt={item.alt}>
+					<div class="col d-flex my-auto text-center p-3" style="filter: brightness(0);">
+						<img src="" width="120px" height="auto" data-src={item.url} style={index === 0 || index === 2 ? 'width: 120px;' : 'width: 140px'} alt={item.alt}>
 					</div>
 				))}
 			</div>
@@ -229,7 +229,7 @@ const verticalSlide = {
 			<div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 p-5 bg-pc-10 g-4 mt-0 mt-lg-3" data-aos="fade-up">
 				{
 					data.home.logos2.map((item, index) => (
-					<div class="col d-flex my-auto text-center p-3" style="filter: brightness(0);" data-aos="fade-up" data-aos-delay={index * 100}>
+					<div class="col d-flex my-auto text-center p-3" style="filter: brightness(0);">
 						<img src="" data-src={item.url} style={index === 0 || index === 1 || index === 4 ? 'width: 140px;' : 'width: 120px'} alt={item.alt}>
 					</div>
 				))}

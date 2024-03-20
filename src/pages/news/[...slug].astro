@@ -3,8 +3,6 @@ import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
 
-import { slide, fade } from 'astro:transitions';
-
 export const prerender = true;
 export async function getStaticPaths() {
   const newsEntries = await getCollection('news');
@@ -108,8 +106,8 @@ function shorten(text, max) {
 
             { post.data.carousel == undefined || post.data.carousel == '' ?
              
-            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5 pe-5">
-                <img class="w-100 object-fit rounded-end-5 shadow" style="height: 500px" src={post.data.imageUrl} alt={post.data.imageAlt} />
+            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center pt-5">
+                <img class="w-100 object-fit" style="height: 500px" src={post.data.imageUrl} alt={post.data.imageAlt} />
             </div>
             
             :
