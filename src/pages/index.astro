@@ -37,16 +37,18 @@ const verticalSlide = {
 	// astro reinit script in SPA mode w/ astro:page-load => didn't work
 
 	let videoElem = document.getElementById("heroVideo");
-	const playButton = document.getElementById("playbutton");
+	const playIcon = document.getElementById("playIcon");
+	const playButton = document.getElementById("playButton");
 
-	playButton.addEventListener("click", handlePlayButton, false);
-	async function playVideo() {
+	[videoElem, playButton].forEach(item => {
+		item.addEventListener("click", handlePlayButton, false);
+			async function playVideo() {
 		try {
 			await videoElem.play();
-			playButton.classList.remove("bi-play-circle");
-			playButton.classList.add("opacity-50", "bi-pause-circle");
+			playIcon.classList.remove("bi-play-circle");
+			playIcon.classList.add("opacity-25", "bi-pause-circle");
 		} catch (err) {
-			playButton.classList.remove("opacity-50");
+			playIcon.classList.remove("opacity-25");
 		}
 	}
 
@@ -55,10 +57,11 @@ const verticalSlide = {
 			playVideo();
 		} else {
 			videoElem.pause();
-			playButton.classList.remove("opacity-50", "bi-pause-circle");
-			playButton.classList.add("bi-play-circle");
+			playIcon.classList.remove("opacity-25", "bi-pause-circle");
+			playIcon.classList.add("bi-play-circle");
+			}
 		}
-	}
+	})
 </script>
 <Layout title="Welcome to Prince Collection" description="Prince Collection">
 		<div class="container-fluid px-0 pt-3 bg-gold-2" data-aos="fade">
@@ -114,9 +117,9 @@ const verticalSlide = {
 						</a>
 					</nav>
 				</div>
-				<div class="col-lg-12 px-5 pb-5 position-relative animate-in">
-					<button class="btn btn-link position-absolute top-0 start-25 m-3 z-1">
-						<i id="playbutton" class="bi bi-play-circle display-1 text-pc" style="filter:drop-shadow(2px 2px 5px #222222); transition: all 0.3s ease-in-out"></i>
+				<div class="col-lg-12 px-0 px-md-5 pb-0 pb-md-5 position-relative animate-in">
+					<button id="playButton" class="btn btn-link position-absolute top-0 start-25 m-3 z-1">
+						<i id="playIcon" class="bi bi-play-circle text-pc" style="font-size: 90px; filter:drop-shadow(2px 2px 5px #222222); transition: all 0.3s ease-in-out"></i>
 					</button>
 					<video id="heroVideo" preload="none" class="w-100 object-fit position-relative shadow rounded-4 min-vh-50" width="100%" height="600" poster="/images/video/pc-video-placeholder.png" muted loop >
 						<source src="/images/video/pc-hero-video-min.mp4" type="video/mp4">
@@ -169,7 +172,8 @@ const verticalSlide = {
 					<h2 class="display-4 fw-bold lh-1 mb-2 mt-3" data-aos="fade-up" data-aos-delay="200">{data.home.news.title}</h2>
 					<p class="fs-5 col-lg-8 text-balance mb-0" data-aos="fade-up" data-aos-delay="400">{data.home.news.content}</p>
 				</div>
-				<div class="row g-4 px-5">
+				</div>
+				<div class="row g-4 px-4 px-lg-5">
 					{ 
 					filterPost(newsPosts).slice(0,3).map((item, index) => (
 					<div class:list={[index === 2 ? 'col-md-12 col-lg-4' : 'col-md-6 col-lg-4']} data-aos="fade-up" data-aos-delay={index * 100}>
@@ -188,7 +192,6 @@ const verticalSlide = {
 					</div>
 					))}
 				</div>
-			</div>
 
 			<!--book -->
 
@@ -200,7 +203,7 @@ const verticalSlide = {
 				</div>
 			</div>
 			
-			<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 text-body-secondary px-5 pb-5">
+			<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 text-body-secondary px-4 px-lg-5 pb-5">
 				{data.home.book.list.map((item, index) => (
 					<div class="col" data-aos="fade-up" data-aos-delay={index * 100}>
 						<div class="p-5 rounded-4 bg-pc-20 shadow" style="min-height: 320px">
@@ -223,7 +226,7 @@ const verticalSlide = {
 				</div>
 			</div>
 
-			<div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 p-5 bg-pc-10">
+			<div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 p-5 bg-pc-10 g-4 mt-0 mt-lg-3">
 				{
 					data.home.logos2.map((item, index) => (
 					<div class="col d-flex my-auto text-center p-3" style="filter: brightness(0);" data-aos="fade-up" data-aos-delay={index * 100}>
@@ -234,7 +237,7 @@ const verticalSlide = {
 
 			<div class="p-4"></div>
 
-			<div class="row px-5">
+			<div class="row px-4 px-lg-5">
 				<div class="col-lg-12 col-xl-3">
 					<div class="d-flex flex-column justify-content-center align-items-start bg-pc-dark-80 h-100 min-vh-50 rounded-5 p-5">
 					<span class="badge rounded-pill fw-bold bg-pc-60 text-pc-dark py-2 px-3 mb-3">{data.home.reviews.badge}</span>
@@ -270,7 +273,7 @@ const verticalSlide = {
 
 			<div class="py-0 py-lg-4"></div>
 
-			<div class="row px-5">
+			<div class="row px-4 px-lg-5">
 				<div class="col-lg-6 p-5">
 					<span class="badge rounded-pill fw-bold bg-pc-60 text-pc-dark py-2 px-3 mb-3" data-aos="fade-up">{data.home.concierge.badge}</span>
 					<h3 class="fw-bold display-4 lh-1" data-aos="fade-up" data-aos-delay="200">{data.home.concierge.title}</h3>
@@ -284,7 +287,7 @@ const verticalSlide = {
 				</div>
 			</div>
 
-			<div class="row p-5">
+			<div class="row p-4 p-lg-5">
 				<div class="col-lg-12 col-xl-3 order-2 order-xl-1">
 					<div class="d-flex flex-column justify-content-center align-items-start bg-pale-dogwood text-body-secondary h-100 min-vh-50 rounded-5 p-5 shadow">
 					<span class="badge rounded-pill fw-bold bg-pc-dark text-pc-light py-2 px-3 mb-3">{data.home.guides.badge}</span>
