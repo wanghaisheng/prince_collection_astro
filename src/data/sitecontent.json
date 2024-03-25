@@ -255,7 +255,7 @@
         },
         "section2": {
             "badge": "What we do",
-            "title": "What does <span class='text-pc-dark-80'>Concierge by Prince Collection</span> offer?",
+            "title": "What does <span class='text-pc-dark-80'>Concierge<br> by Prince Collection</span> offer?",
             "content": "With our unparalleled travel expertise and world-class service principles, we deliver optimized travel outcomes for our clients over the course of a comprehensive annual engagement. ",
             "list": [
                 {
@@ -281,6 +281,11 @@
             "title": "Our Guarantee",
             "content": "Concierge by Prince Collection is tailored specifically for high net-worth individuals and businesses in pursuit of unique and exclusive experiences. Recognizing that time is your most precious asset, our specialty is navigating the intricacies of travel to guarantee a smooth and remarkable adventure from beginning to end.",
             "list": [
+                {
+                    "badge": "",
+                    "title": "The Prince<br> Collection<br> Guarantee",
+                    "content": ""
+                },
                 {
                     "badge": "01",
                     "title": "Save time",

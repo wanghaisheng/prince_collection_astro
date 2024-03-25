@@ -74,31 +74,36 @@ import BookingFormConcierge from '../components/BookingFormConcierge.astro';
 		</div>
 	</div>
 
-	<!--guarantee-->
-
-	<div class="row row-cols-1 g-5 px-5 pt-5 pb-3">
+<!--	<div class="row row-cols-1 g-5 px-5 pt-5 pb-3">
 		<div class="col">
 			<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3" data-aos="fade-up">{data.concierge.section3.badge}</span>
 			<h2 class="display-4 fw-bold my-3" data-aos="fade-up" data-aos-delay="200">{data.concierge.section3.title}</h2>
 			<p class="col-md-11 col-lg-8 fs-5 text-body-secondary" data-aos="fade-up" data-aos-delay="400">{data.concierge.section3.content}</p>
 		</div>
-	</div>
+	</div>-->
 
-	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 px-5" data-aos="fade-up">
+	<!--guarantee-->
+
+	<div class="py-1 py-lg-3"></div>
+
+	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 g-3 p-5 bg-gold-1" data-aos="fade-up">
+	
 		{data.concierge.section3.list.map((item, index) => (
+
 			<div class="col">
-				<div class="p-5 rounded-5 bg-light shadow-lg h-100">
+				<div class:list={["p-5 rounded-5 shadow-lg h-100 w-100", index === 0 ? 'd-flex flex-column justify-content-end align-items-start bg-pc-dark text-light border' : 'bg-pc']}>
 				<h2 class="text-pc-dark fw-bold" data-aos="fade-up" data-aos-delay={index * 100}>{item.badge}</h2>
-				<h4 class="mt-1 mb-3 fw-900" data-aos="fade-up" data-aos-delay={index * 100}>{item.title}</h4> 
-				<p data-aos="fade-up" data-aos-delay={index * 100}>{item.content}</p>
+				<h4 class:list={["mt-1 mb-3 fw-900", index === 0 ? 'fs-2 lh-1' : '']} data-aos="fade-up" data-aos-delay={index * 100}><Fragment set:html={item.title} /></h4> 
+				<p class:list={[index === 0 ? "d-none" : '']} data-aos="fade-up" data-aos-delay={index * 100}>{item.content}</p>
 				</div>
-			</div>
+			</div>		
+
 		))}
 	</div>
+	<div class="py-1 py-lg-3"></div>
 
 	<!--book-->
 
-	<div class="py-5"></div>
 
 	<div class="row min-vh-100 bg-pc-dark bg-gold-1" data-aos="fade-up">
 		<div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center min-vh-50 text-center p-5 mt-4 mt-lg-0">
