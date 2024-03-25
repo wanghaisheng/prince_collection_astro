@@ -76,18 +76,18 @@ import BookingFormConcierge from '../components/BookingFormConcierge.astro';
 
 	<!--guarantee-->
 
-	<div class="row row-cols-1 g-5 p-5">
+	<div class="row row-cols-1 g-5 px-5 pt-5 pb-3">
 		<div class="col">
 			<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3" data-aos="fade-up">{data.concierge.section3.badge}</span>
 			<h2 class="display-4 fw-bold my-3" data-aos="fade-up" data-aos-delay="200">{data.concierge.section3.title}</h2>
-			<p class="col-md-11 col-lg-6 fs-5 text-body-secondary" data-aos="fade-up" data-aos-delay="400">{data.concierge.section3.content}</p>
+			<p class="col-md-11 col-lg-8 fs-5 text-body-secondary" data-aos="fade-up" data-aos-delay="400">{data.concierge.section3.content}</p>
 		</div>
 	</div>
 
 	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 px-5" data-aos="fade-up">
 		{data.concierge.section3.list.map((item, index) => (
 			<div class="col">
-				<div class="p-5 rounded-5 shadow-lg h-100">
+				<div class="p-5 rounded-5 bg-light shadow-lg h-100">
 				<h2 class="text-pc-dark fw-bold" data-aos="fade-up" data-aos-delay={index * 100}>{item.badge}</h2>
 				<h4 class="mt-1 mb-3 fw-900" data-aos="fade-up" data-aos-delay={index * 100}>{item.title}</h4> 
 				<p data-aos="fade-up" data-aos-delay={index * 100}>{item.content}</p>

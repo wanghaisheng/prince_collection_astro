@@ -217,10 +217,10 @@
             "description": "Prince Collection Concierge services"
         },
         "hero": {
-            "badge": "Where will you go next?",
+            "badge": "Concierge by Prince Collection",
             "title": "Your <span class='text-pc-dark'>luxury</span> travel concierge",
-            "content": "Prince Collection’s Travel Concierge is designed exclusively for companies and individuals who require exclusive travel arrangements handled for them. Our expertise lies in handling the nuances of travel, ensuring a seamless and extraordinary journey from start to finish.",
-            "button": "Book your hotel"
+            "content": "Built for those seeking the world’s best travel experiences, Concierge by Prince Collection is a white-glove service designed exclusively for the most discerning travellers. Our Concierge team seamlessly handles all aspects of your experience, helping unlock an extraordinary journey without lifting a finger.",
+            "button": "Get in touch"
         },
         "logos": [
             {
@@ -249,19 +249,19 @@
             }
         ],
         "section1": {
-            "badge": "What sets us apart",
-            "title": "We're <span class='text-pc-dark'>more</span> than a travel agency",
-            "content": "The Prince Collection Concierge is different from traditional travel agencies. Our services are more unique, complex and are personally tailored to the needs of each and every client. The PC Concierge does not rely on commissions or referrals, and as such we are always able to focus solely on our clients’ needs and best interests. We care for our clients and handle their travel arrangements from start to finish."
+            "badge": "The Prince Collection difference",
+            "title": "Your travel <span class='text-pc-dark'>optimized</span>",
+            "content": "Concierge by Prince Collection is different from traditional concierge services. Our travel support is personally tailored to the needs of every client. We handle travel arrangements from start to finish, while offering the added advantage of optimizing loyalty programs and elite status on the client’s behalf."
         },
         "section2": {
             "badge": "What we do",
-            "title": "What does <span class='text-pc-dark-80'>Prince Collection</span> offer?",
-            "content": "We conduct a thorough evaluation of clients' credit cards, Elite status, and travel habits. This process aids us in developing a full travel strategy document to optimize the client's travel experiences. Our account managers also gain access to client's loyalty accounts to manage bookings, monitor progress to elite status, and ensure all optimized strategies are being implemented.",
+            "title": "What does <span class='text-pc-dark-80'>Concierge by Prince Collection</span> offer?",
+            "content": "With our unparalleled travel expertise and world-class service principles, we deliver optimized travel outcomes for our clients over the course of a comprehensive annual engagement. ",
             "list": [
                 {
                     "icon": "bi-circle-square",
                     "title": "Comprehensive onboarding & annual travel strategy",
-                    "content": "We conduct a thorough evaluation of clients' credit cards, Elite status, and travel habits. This process aids us in developing a full travel strategy document to optimize the clients' travel experiences."
+                    "content": "We conduct a thorough evaluation of clients' credit cards, elite status, and travel preferences. This process aids us in developing a full travel strategy to optimize clients' travel experiences over the course of the year."
                 },
                 {
 
@@ -277,24 +277,24 @@
             ]
         },
         "section3": {
-            "badge": "Here for you",
+            "badge": "Unique & exclusive",
             "title": "Our Guarantee",
-            "content": "The Travel Concierge at Prince Collection is tailored specifically for high net-worth individuals and businesses in pursuit of unique and exclusive experiences, managed on their behalf. Recognizing that time is your most precious asset, our specialty is navigating the intricacies of travel to guarantee a smooth and remarkable adventure from beginning to end.",
+            "content": "Concierge by Prince Collection is tailored specifically for high net-worth individuals and businesses in pursuit of unique and exclusive experiences. Recognizing that time is your most precious asset, our specialty is navigating the intricacies of travel to guarantee a smooth and remarkable adventure from beginning to end.",
             "list": [
                 {
                     "badge": "01",
                     "title": "Save time",
-                    "content": "We take over the time-consuming task of planning, optimizing, and managing travel, allowing clients to focus on other priorities."
+                    "content": "We take over the time-consuming task of planning, optimizing, and managing travel, allowing you to focus on other priorities."
                 },
                 {
                     "badge": "02",
                     "title": "Maximize loyalty",
-                    "content": "With our expertise in points, elite status, etc., we ensure clients make the most of their travels while flying the world’s best airlines and staying at world-class hotels."
+                    "content": "With our expertise in loyalty points and elite status, we ensure you make the most of your travels while flying the world’s best airlines and staying at world-class hotels."
                 },
                 {
                     "badge": "03",
                     "title": "Peace of mind",
-                    "content": "Our 24/7 emergency support gives you the assurance that help is always available, no matter what unexpected situations arise during their travels."
+                    "content": "Our 24/7 emergency support gives you the assurance that help is always available, no matter what unexpected situations arise during your travels."
                 },
                 {
                     "badge": "04",
@@ -305,8 +305,8 @@
         },
         "book": {
             "badge": "Your travel concierge",
-            "title": "Book with Us",
-            "content": "Discover unparalleled luxury with Prince Collection’s Concierge service, where we specialize in arranging exclusive hotel stays. Tailored for discerning guests, we offer additional benefits at no extra cost. Begin by sharing a few preferences and travel habits, and our experts will promptly get back to you about your next exquisite getaway."
+            "title": "Submit an Inquiry",
+            "content": "Interested in Concierge by Prince Collection? Fill in the form below and one of our specialists will get in touch with you."
         }
     },
     "about": {
