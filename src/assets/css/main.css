@@ -61,8 +61,8 @@ p {
 img {
   width: 100%;
   margin-inline: auto;
-  -webkit-animation: fade-in 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-  animation: fade-in 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  /* -webkit-animation: fade-in 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation: fade-in 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both; */
   transition: all .3s ease-in-out;
 }
 
