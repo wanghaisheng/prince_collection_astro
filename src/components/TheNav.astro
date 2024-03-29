@@ -48,7 +48,8 @@ formSubmit();
 
 ---
 <header>
-	<nav id="nav" class="navbar fixed-top animate-in">
+	<!-- animating nav can cause probs with modal/drawer -->
+	<nav id="nav" class="navbar fixed-top">
 		<div class="container-fluid">
 			<a class="navbar-brand me-auto mt-1 ms-2 text-body-secondary d-flex align-items-center" href="/">
 				<img style="width: 30px;" class="logo h-auto me-1" src="/images/logos/logo-crown.png" alt="Prince Collection crown logo">
@@ -95,10 +96,58 @@ formSubmit();
 				<i class="bi bi-justify-left fs-5"></i>
 			</button>
 
-			<Drawer drawerClass="bg-pc" drawerTitle="Prince Collection" drawerId="navDrawer" drawerAriaLabel="Prince Collection Menu">
+			<div class:list={["offcanvas offcanvas-bottom h-100 bg-pc"]} tabindex="-1" id="navDrawer" aria-labelledby="Prince Collection Menu">
+				<div class="offcanvas-header">
+					<div class="d-flex justify-content-center align-items-center">
+						<img class="logo m-0 me-1" style="width: 30px; height: 30px;" src="/images/logos/logo-crown.png" alt="Prince of Travel crown logo">
+						<a href="/">
+							<h3 class="fw-900 text-uppercase text-body-secondary fs-4 mb-0 mt-2">Prince<span style="font-family: 'Helvetica Neue', helvetica, Arial, sans-serif; font-weight: 100">Collection</span></h3>
+						</a>
+					</div>
+					<i class="bi bi-x-circle-fill position-absolute top-0 end-0 fs-1 me-3 mt-3 mt-lg-2 text-pc-dark" role="button" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+				</div>
+				<div class="offcanvas-body min-vh-100 bg-pc">
+					<div class="container-fluid px-0">
+						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 p-0">
+					{
+						navData.navData.map((item) => (
+							<div class="col d-none d-lg-flex position-relative">
+								<a href={item.path}>
+									<div class="p-4 w-100 h-100 bg-pc-light rounded-4 shadow bg-gold-1" style="min-height: 350px;">
+										<div class="p-3 w-100 h-100 bg-pc-10 rounded-4">
+										<i class:list={["bi me-3 fs-2 text-pc-dark position-absolute end-0 top-0 me-4 mt-2", item.icon || ""]}></i>
+										<h3 class="fs-2 fw-bold mt-3">{item.title}</h3>
+										<p>{item.description}</p>
+										<button class="btn btn-sm btn-pc-dark rounded-pill px-3 shadow" style="border: 3px solid var(--pc-light)">Go <i class="bi bi-arrow-up-right"></i></button>
+										</div>
+									</div>
+								</a>
+							</div>
+							
+							<div class="col d-flex d-lg-none position-relative">
+								<a href={item.path}>
+									<div class="p-4 w-100 h-100 bg-pc-light rounded-4 shadow">
+										<div class="p-3 w-100 h-100 bg-pc-10 rounded-4">
+										<i class:list={["bi me-3 fs-2 text-pc-dark position-absolute end-0 top-0 me-4 mt-2", item.icon || ""]}></i>
+										<span class="badge bg-pc-dark text-pc-10">{item.badge}</span>
+										<h3 class="fs-2 fw-bold mt-3">{item.title}</h3>
+										<p>{item.description}</p>
+										<button class="btn btn-sm btn-pc-dark rounded-pill shadow">Go <i class="bi bi-arrow-up-right"></i></button>
+										</div>
+									</div>
+								</a>
+							</div>
+							))
+						}
+						</div>
+						</div>
+				</div>
+			</div>
+
+			<!-- <Drawer drawerClass="bg-pc" drawerTitle="Prince Collection" drawerId="navDrawer" drawerAriaLabel="Prince Collection Menu">
 				<div class="container-fluid px-0">
 					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 p-0">
-						<!-- <span class="badge bg-pc-dark text-pc-10">{item.badge}</span> -->
+						<span class="badge bg-pc-dark text-pc-10">{item.badge}</span>
 						{
 						navData.navData.map((item) => (
 							<div class="col d-none d-lg-flex position-relative">
@@ -131,7 +180,7 @@ formSubmit();
 						}
 					</div>
 				</div>
-			</Drawer>
+			</Drawer> -->
 
 			<!-- title-only menu -->
 			
