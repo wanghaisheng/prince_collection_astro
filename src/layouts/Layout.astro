@@ -113,12 +113,6 @@ interface Props {
 
 		function lazyLoad() {
 		// lazyload images
-
-		let options = {
-			rootMargin: '100px',
-			threshold: 0
-		};
-
 		const observer = new IntersectionObserver(callback);
 		var lazyImages = [].slice.call(document.querySelectorAll("img"));
 
@@ -127,7 +121,7 @@ interface Props {
 			lazyImage.classList.add("invisible");
 			// check if image contains logo class so it loads immediately
 			if (lazyImage.classList.contains('logo')) {
-				lazyImage.classList.remove("invisible");
+				return;
 			} else if (lazyImage.hasAttribute("data-src")) {
 				// add placeholder until src is replaced
 				lazyImage.src = '/images/general/pc-placeholder-light.png';
