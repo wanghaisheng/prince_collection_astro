@@ -113,7 +113,7 @@ interface Props {
 
 		const options = {
 			root: null, // The element that is used as the viewport for checking visibility of the target. Defaults to the browser viewport when null.
-			rootMargin: '300px', // The margin value to be used along the sides of the root element to compute intersection.
+			rootMargin: '500px', // The margin value to be used along the sides of the root element to compute intersection.
 			threshold: 0  // Indicates at what % of target's visibility the observer's callback should be executed.
 		};
 
@@ -122,13 +122,14 @@ interface Props {
 		// lazyload images
 		const observer = new IntersectionObserver(callback, options);
 		var lazyImages = [].slice.call(document.querySelectorAll("img"));
+		const imageLazy = document.querySelectorAll("#content > img");
 		const noLazy = lazyImages.slice(0,2);
 
 		lazyImages.forEach((lazyImage)=> {
 			// add animate-in class to all images
 			lazyImage.classList.add('invisible');
 			// check if image contains logo class so it loads immediately
-			if ((lazyImage.classList.contains('logo') && noLazy)) {
+			if (lazyImage.classList.contains('logo')) {
 				lazyImage.classList.remove('invisible');
 			} else if (lazyImage.hasAttribute("data-src")) {
 				// add placeholder until src is replaced
@@ -137,6 +138,7 @@ interface Props {
 			} else {
 				// add loading attribute to post images
 				lazyImage.setAttribute('loading', 'lazy');
+				lazyImage.classList.remove('invisible');
 			}
 		});
 
