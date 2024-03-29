@@ -121,7 +121,7 @@ interface Props {
 			lazyImage.classList.add("invisible");
 			// check if image contains logo class so it loads immediately
 			if (lazyImage.classList.contains('logo')) {
-				return;
+				lazyImage.classList.remove("invisible");
 			} else if (lazyImage.hasAttribute("data-src")) {
 				// add placeholder until src is replaced
 				lazyImage.src = '/images/general/pc-placeholder-light.png';
