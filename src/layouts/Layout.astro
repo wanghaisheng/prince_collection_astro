@@ -111,16 +111,24 @@ interface Props {
 			});
 		}
 
+		const options = {
+			root: null, // The element that is used as the viewport for checking visibility of the target. Defaults to the browser viewport when null.
+			rootMargin: '300px', // The margin value to be used along the sides of the root element to compute intersection.
+			threshold: 0  // Indicates at what % of target's visibility the observer's callback should be executed.
+		};
+
 		function lazyLoad() {
+
 		// lazyload images
-		const observer = new IntersectionObserver(callback);
+		const observer = new IntersectionObserver(callback, options);
 		var lazyImages = [].slice.call(document.querySelectorAll("img"));
+		const noLazy = lazyImages.slice(0,2);
 
 		lazyImages.forEach((lazyImage)=> {
 			// add animate-in class to all images
 			lazyImage.classList.add('invisible');
 			// check if image contains logo class so it loads immediately
-			if (lazyImage.classList.contains('logo')) {
+			if ((lazyImage.classList.contains('logo') && noLazy)) {
 				lazyImage.classList.remove('invisible');
 			} else if (lazyImage.hasAttribute("data-src")) {
 				// add placeholder until src is replaced
