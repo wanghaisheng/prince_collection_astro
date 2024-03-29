@@ -4,7 +4,7 @@ import netlify from "@astrojs/netlify";
 import mdx from "@astrojs/mdx";
 
 export default defineConfig({
-  output: "server",
+  output: "static",
   adapter: netlify(),
   integrations: [mdx()]
 } 
