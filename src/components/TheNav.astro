@@ -69,28 +69,6 @@ formSubmit();
 					</button>
 				</li>
 
-				<!-- animated dropdown -->
-				<!-- <ul>
-				<li class="nav-item dropdown">
-					
-					<button class="btn btn-dark dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-water" viewBox="0 0 16 16">
-						<path d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65m0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65"/>
-						</svg>
-					</button>
-				
-					<div class="dropdown-menu dropdown-menu-end rounded-4 shadow-lg bg-pc p-3 animate slideIn" aria-labelledby="navbarDropdown" style="top: 50px; width: 350px; height: 75vh;">
-						<div class="text-pc-dark fw-bold">Menu</div>
-					  {
-						navData.map((item) => (
-							<a class="dropdown-item shadow rounded-4 p-3 mt-2 text-dark bg-pc" href={item.path}><i class="bi-grid text-dark" style=""></i>{item.title}</a>
-						))
-					  }
-					</div>
-				  </li>
-			</ul> -->
-
 			<!-- main menu drawer -->
 			<button data-bs-toggle="offcanvas" data-bs-target="#navDrawer" aria-controls="offcanvasBottom" class="btn btn-dark me-2 rounded-3 px-3">
 				<i class="bi bi-justify-left fs-5"></i>
@@ -144,44 +122,6 @@ formSubmit();
 				</div>
 			</div>
 
-			<!-- <Drawer drawerClass="bg-pc" drawerTitle="Prince Collection" drawerId="navDrawer" drawerAriaLabel="Prince Collection Menu">
-				<div class="container-fluid px-0">
-					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 p-0">
-						<span class="badge bg-pc-dark text-pc-10">{item.badge}</span>
-						{
-						navData.navData.map((item) => (
-							<div class="col d-none d-lg-flex position-relative">
-								<a href={item.path}>
-									<div class="p-4 w-100 h-100 bg-pc-light rounded-4 shadow bg-gold-1" style="min-height: 350px;">
-										<div class="p-3 w-100 h-100 bg-pc-10 rounded-4">
-										<i class:list={["bi me-3 fs-2 text-pc-dark position-absolute end-0 top-0 me-4 mt-2", item.icon || ""]}></i>
-										<h3 class="fs-2 fw-bold mt-3">{item.title}</h3>
-										<p>{item.description}</p>
-										<button class="btn btn-sm btn-pc-dark rounded-pill px-3 shadow" style="border: 3px solid var(--pc-light)">Go <i class="bi bi-arrow-up-right"></i></button>
-										</div>
-									</div>
-								</a>
-							</div>
-							
-							<div class="col d-flex d-lg-none position-relative">
-								<a href={item.path}>
-									<div class="p-4 w-100 h-100 bg-pc-light rounded-4 shadow">
-										<div class="p-3 w-100 h-100 bg-pc-10 rounded-4">
-										<i class:list={["bi me-3 fs-2 text-pc-dark position-absolute end-0 top-0 me-4 mt-2", item.icon || ""]}></i>
-										<span class="badge bg-pc-dark text-pc-10">{item.badge}</span>
-										<h3 class="fs-2 fw-bold mt-3">{item.title}</h3>
-										<p>{item.description}</p>
-										<button class="btn btn-sm btn-pc-dark rounded-pill shadow">Go <i class="bi bi-arrow-up-right"></i></button>
-										</div>
-									</div>
-								</a>
-							</div>
-							))
-						}
-					</div>
-				</div>
-			</Drawer> -->
-
 			<!-- title-only menu -->
 			
 			<Drawer drawerTitle="PrinceCollection" drawerId="navDrawer2" drawerAriaLabel="Prince Collection">
@@ -202,38 +142,6 @@ formSubmit();
 					</div>
 				</div>
 			</Drawer>
-			
-		<!-- <button class="btn btn-dark" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#navModal">
-			<i class="bi bi-justify-left fs-5"></i>
-		</button>
-		 
-		  <div class="offcanvas offcanvas-end bg-indigo" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-			<div class="offcanvas-header">
-			  <Image class="ms-2" style="width: 30px; height: 30px" src={crown} alt="Prince Collection logo"/>
-			  <button type="button" class="btn p-0" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-circle-fill fs-2 text-pc-dark"></i></button>
-			</div>
-			<div class="offcanvas-body offcanvas-body d-flex flex-column justify-content-end align-items-start p-4">
-			  <ul class="navbar-nav justify-content-end flex-grow-1 text-lightblue pe-3 text-pc-dark-60">
-				{
-					navData.navData.map((item) => (
-					<li class="nav-item fw-bold pb-3">
-						<a class="" href={item.path}>
-							<i class:list={["bi me-3", item.icon || ""]} ></i>
-							{item.title}
-						</a>
-					</li>
-					))
-				  }
-				  <li><hr class="border border-top my-2"></li>
-				  <li class="">
-					<p class="mb-0 mt-2 fw-bold">Subscribe to the Prince Collection newsletter</p>
-					<p class="mt-3 mb-4 small">Receive priority information about the newest luxury properties worldwide, exclusive reservations and deals through <span class="fw-bold">Prince Collection</span>, and unique destinations across the globe.</p>
-					<NewsletterForm newsletterClass="bg-indigo text-lightblue" newsletterBtn="btn-primary" />
-				</li>
-			  </ul>
-			</div>
-		  </div> -->
-
 		</div>
 	</nav>
 
@@ -308,43 +216,6 @@ formSubmit();
 	</div>
 </header>
 
-<script is:inline>
-	const modalTrigger = document.getElementById('modalTrigger');
-	modalTrigger.addEventListener('click', navThanks, false);
-	function navThanks() {
-	  const inpObj = document.getElementById("navSignupInput");
-	  if (inpObj.checkValidity() === false) {
-		// alert("Please include a valid email address");
-	  return false;
-	  } else {
-		var modal1 = new bootstrap.Modal(document.getElementById('navSuccess')); 
-		function showhide() { 
-			// show Modal 
-			modal1.show(); 
-			// hide the modal after 5 seconds 
-			setTimeout(() => { 
-				modal1.hide(); 
-			}, 5500) 
-		} 
-		showhide();
-	  }
-	}
-</script>
-	
-
-<!-- <script>
-	window.onscroll = function() {scrollFunction()};
-
-	function scrollFunction() {
-	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-		document.getElementById("nav").classList.add("bg-light");
-
-	} else {
-		document.getElementById("nav").classList.remove("bg-light");
-	}
-	}
-</script> -->
-
 <style>
 
 nav {
@@ -359,14 +230,3 @@ nav {
 }
 </style>
 
-<!-- 
-<script>
-	var modal1 = document.getElementById('thankYou')
-	function showhide() { 
-setTimeout(() => { 
-	modal1.hide(); 
-}, 5000) 
-} 
-
-showhide();
-</script> -->
