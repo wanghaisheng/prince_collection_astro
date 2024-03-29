@@ -111,6 +111,60 @@ interface Props {
 			});
 		}
 
+		function lazyLoad() {
+		// lazyload images
+
+		let options = {
+			rootMargin: '100px',
+			threshold: 0
+		};
+
+		const observer = new IntersectionObserver(callback);
+		var lazyImages = [].slice.call(document.querySelectorAll("img"));
+
+		lazyImages.forEach((lazyImage) => {
+			// add animate-in and opacity-0 classes to all images
+			lazyImage.classList.add("invisible");
+			// check if image contains logo class so it loads immediately
+			if (lazyImage.classList.contains('logo')) {
+				lazyImage.classList.remove("invisible");
+			} else if (lazyImage.hasAttribute("data-src")) {
+				// add placeholder until src is replaced
+				lazyImage.src = '/images/general/pc-placeholder-light.png';
+				observer.observe(lazyImage);
+			} else {
+				// add loading attribute to post images
+				lazyImage.setAttribute('loading', 'lazy');
+			}
+		});
+
+		function callback(entries, observer) {
+			entries.forEach((entry) => {
+				const target = entry.target;
+				const dataSrc = target.getAttribute('data-src');        
+				if (entry.isIntersecting) {
+					// put the desired url(dataSrc) as the src          
+					target.setAttribute('src', dataSrc);
+					target.classList.add('animate-in');
+					target.classList.remove('invisible');
+				// stop observing the element
+				observer.unobserve(target);
+				}        
+			});   
+		};
+		}
+
+		function addLazyAttr() {
+			const imageLazy = document.querySelectorAll("#content > img");
+			imageLazy.forEach((image)=> {
+				image.setAttribute('loading', 'lazy');
+				console.log('post img loaded!')
+			});
+		}
+
+		lazyLoad();
+		// addLazyAttr();
+
 		function thanks(inputID, modalID) {
 			const inpObj = document.getElementById(inputID);
 			if (inpObj.checkValidity() === false) {
