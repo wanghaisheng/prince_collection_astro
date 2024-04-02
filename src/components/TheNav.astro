@@ -2,50 +2,6 @@
 import Drawer from './TheDrawer.astro';
 import Modal from '../components/TheModal.astro';
 import navData from '../data/sitecontent.json';
-// import NewsletterForm from './NewsletterForm.astro';
-// POST on the form has to match "POST" above
-
-if (Astro.request.method === "POST") {
-async function formSubmit() {
-try {
-  const data = await Astro.request.formData();
-  const email = data.get("email");
-  const response = await fetch('https://a.klaviyo.com/client/subscriptions/?company_id=Rsd4T6', {
-	method: 'POST',
-headers: {revision: '2024-02-15', 'content-type': 'application/json'},
-body: JSON.stringify({
-  data: {
-	type: 'subscription',
-	attributes: {
-	  custom_source: 'Prince Collection newsletter signup form',
-	  profile: {
-		data: {
-		  type: 'profile',
-		  id: '01GDDKASAP8TKDDA2GRZDSVP4H',
-		  attributes: {
-			email: email,
-			properties: {newKey: 'New Value'}
-		  },
-		  meta: {
-			patch_properties: {append: {newKey: 'New Value'}, unappend: {newKey: 'New Value'}, unset: 'skus'}
-		  }
-		}
-	  }
-	},
-	relationships: {list: {data: {type: 'list', id: 'WJRt59'}}}
-  }
-})
-  });
-  console.log('status code: ', response.status); // 👉️ 200
-  const json = await response.json();
-  console.log(json);
-} catch (error) {
-  console.log(error);
-}
-}
-// formSubmit();
-}
-
 ---
 <header>
 	<nav id="nav" class="navbar fixed-top animate-in">
