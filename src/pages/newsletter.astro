@@ -6,11 +6,11 @@ import data from '../data/sitecontent.json';
     <div class="container-fluid px-0 bg-gold-1">
         <div class="row min-vh-100">
             <div class="col-lg-7 d-flex flex-column justify-content-end align-items-start min-vh-50 text-start p-5 mb-0 mb-lg-4 mt-5 mt-lg-0">
-                <span class="badge rounded-pill fw-bold text-bg-dark py-2 px-3">{data.newsletter.badge}</span>
-                <h1 class="display-3 fw-bold lh-1 mb-2 mt-3"><Fragment set:html={data.newsletter.title}/></h1>
-                <p class="fs-4 my-3">{data.newsletter.content}</p>
-                <div class="col-lg-9">
-                  <div class="klaviyo-form-UGQNyX"></div>
+                <span class="badge rounded-pill fw-bold text-bg-dark py-2 px-3 animate-in">{data.newsletter.badge}</span>
+                <h1 class="display-3 fw-bold lh-1 mb-2 mt-3 animate-in"><Fragment set:html={data.newsletter.title}/></h1>
+                <p class="fs-4 my-3 animate-in">{data.newsletter.content}</p>
+                <div class="col-lg-9 animate-in">
+                  <div class="klaviyo-form-UGQNyX animate-in"></div>
                     <!-- <form method="post" class="w-100">
                         <div class="input-group my-2 px-0">
                           <input id="newsletterInputID" type="email" name="email" class:list={["form-control form-control-lg rounded-start-2 border-secondary"]} placeholder="name@example.com" aria-label="Sign up for our newsletter" aria-describedby="button-addon1" required>
@@ -44,7 +44,75 @@ import data from '../data/sitecontent.json';
         </div>
 </Layout>
 
-<script is:inline>
+<!-- <script>
+	const form = document.querySelector("#navNewsletter");
+
+async function sendData() {
+  // Associate the FormData object with the form element
+  	const formData = new FormData(form);
+	const emailField = form.elements['email'];
+	const emailValue = emailField.value;
+
+	try {
+    	const response = await fetch("https://a.klaviyo.com/client/subscriptions/?company_id=Rsd4T6", {
+      	method: "POST",
+      	headers: {revision: '2024-02-15', 'content-type': 'application/json'},
+		  body: JSON.stringify({
+    data: {
+      type: 'subscription',
+      attributes: {
+        custom_source: 'Homepage footer signup form',
+        profile: {
+          data: {
+            type: 'profile',
+            id: '01GDDKASAP8TKDDA2GRZDSVP4H',
+            attributes: {
+              email: emailValue,
+              phone_number: '+15005550006',
+              external_id: '63f64a2b-c6bf-40c7-b81f-bed08162edbe',
+              anonymous_id: '01GDDKASAP8TKDDA2GRZDSVP4H',
+              _kx: 'J8fjcn003Wy6b-3ILNlOyZXabW6dcFwTyeuxrowMers%3D.McN66',
+              first_name: '',
+              last_name: '',
+              organization: '',
+              title: '',
+              image: '',
+              location: {
+                address1: '',
+                address2: '',
+                city: 'New York',
+                country: 'United States',
+                region: 'NY',
+                zip: '10017',
+                timezone: 'America/New_York',
+                ip: '127.0.0.1'
+              },
+              properties: {newKey: 'New Value'}
+            },
+            meta: {
+              patch_properties: {append: {newKey: 'New Value'}, unappend: {newKey: 'New Value'}, unset: 'skus'}
+            }
+          }
+        }
+      },
+      relationships: {list: {data: {type: 'list', id: 'WJRt59'}}}
+    }
+  })
+    });
+    console.log(await response.json(), response.status);
+  } catch (e) {
+    // console.log(e);
+  }
+}
+
+// Take over form submission
+form.addEventListener("submit", (event) => {
+	sendData();
+	event.preventDefault();
+});
+</script> -->
+
+<!-- <script is:inline>
 function thanks() {
   const inpObj = document.getElementById("newsletterInputID");
   if (inpObj.checkValidity() === false) {
@@ -63,4 +131,4 @@ function thanks() {
     showhide();
   }
 }
-</script>
+</script> -->
