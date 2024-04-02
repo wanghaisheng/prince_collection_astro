@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
-import NewsletterForm from '../../components/NewsletterForm.astro';
+// import NewsletterForm from '../../components/NewsletterForm.astro';
 
 export const prerender = true;
 export async function getStaticPaths() {
@@ -166,7 +166,7 @@ function shorten(text, max) {
                 <div>
                     <h4 class="fs-5 fw-bold text-pc-dark">Newsletter</h4>
                     <p>Join the Prince Collection newsletter to get weekly updates delivered straight to your inbox.</p>
-                    <NewsletterForm newsletterBtn="btn-pc" />
+                    <div class="klaviyo-form-UGQNyX"></div>
                 </div>
                 <hr>
                 <div>
@@ -253,7 +253,7 @@ function shorten(text, max) {
                 <div class="py-2">
                     <h4 class="fs-5 fw-bold text-pc-dark">Newsletter</h4>
                     <p>Join the Prince Collection newsletter to get weekly updates delivered straight to your inbox.</p>
-                    <NewsletterForm newsletterBtn="btn-pc px-4" />
+                    <div class="klaviyo-form-UGQNyX"></div>
                 </div>
                 <hr>
                 <div class="py-2">

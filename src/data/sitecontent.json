@@ -57,8 +57,8 @@
         "background": "bg-periwinkle"
       },
       {
-        "title": "Contact",
-        "description": "Reach out to the Prince Collection team for personalized support on how we can elevate your travel experiences.",
+        "title": "Newsletter",
+        "description": "Sign up and receive priority information about the newest luxury properties worldwide, exclusive deals, and unique destinations across the globe.",
         "path": "/newsletter",
         "icon": "bi-envelope-at",
         "badge": "Get in touch",
@@ -410,7 +410,7 @@
         },
         "badge": "Newsletter",
         "title": "It’s travel <span class='text-pc-dark'>reimagined</span>",
-        "content": "Stories that move the world in your inbox. We focus on inspiration, innovation, and solutions, presenting a balanced take on the latest news, ideas, and technology shaping the future of travel.",
+        "content": "Sign up for the Prince Collection newsletter and receive priority information about the newest luxury properties worldwide, exclusive reservations and deals, and unique destinations across the globe.",
         "privacy": "By providing your email, you agree to the Prince Collection Privacy Policy"
     },
     "faq": {
