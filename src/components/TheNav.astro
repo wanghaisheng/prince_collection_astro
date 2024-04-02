@@ -43,7 +43,7 @@ body: JSON.stringify({
   console.log(error);
 }
 }
-formSubmit();
+// formSubmit();
 }
 
 ---
@@ -141,10 +141,10 @@ formSubmit();
 		<p class="mt-2 mb-3 text-balance">You'll receive priority information about the newest luxury properties worldwide, exclusive reservations and deals through <span class="text-pc fw-bold">Prince Collection</span>, and unique destinations across the globe.</p>
 		<div class="col-lg-8">
 			<!-- <NewsletterForm newsletterBtn="btn-pc px-4 px-lg-5" /> -->
-			<form method="POST" class="w-100">
+			<form id="navNewsletter" class="w-100">
 				<div class="input-group my-2 px-0">
 				  <input id="navSignupInput" type="email" name="email" class:list={["form-control rounded-start-2 border-secondary"]} placeholder="name@example.com" aria-label="Sign up for our newsletter" aria-describedby="button-addon1" required>
-				  <button class:list={["btn rounded-0 fw-bold rounded-end-2 btn-pc px-4 px-lg-5"]}
+				  <button class="btn rounded-0 fw-bold rounded-end-2 btn-pc px-4 px-lg-5"
 				  >I'm in!</button>
 				</div>
 			</form>
@@ -202,6 +202,74 @@ formSubmit();
 		</div>
 	</div>
 </header>
+
+<script>
+	const form = document.querySelector("#navNewsletter");
+
+async function sendData() {
+  // Associate the FormData object with the form element
+  	const formData = new FormData(form);
+	const emailField = form.elements['email'];
+	const emailValue = emailField.value;
+
+	try {
+    	const response = await fetch("https://a.klaviyo.com/client/subscriptions/?company_id=Rsd4T6", {
+      	method: "POST",
+      	headers: {revision: '2024-02-15', 'content-type': 'application/json'},
+		  body: JSON.stringify({
+    data: {
+      type: 'subscription',
+      attributes: {
+        custom_source: 'Homepage footer signup form',
+        profile: {
+          data: {
+            type: 'profile',
+            id: '01GDDKASAP8TKDDA2GRZDSVP4H',
+            attributes: {
+              email: emailValue,
+              phone_number: '+15005550006',
+              external_id: '63f64a2b-c6bf-40c7-b81f-bed08162edbe',
+              anonymous_id: '01GDDKASAP8TKDDA2GRZDSVP4H',
+              _kx: 'J8fjcn003Wy6b-3ILNlOyZXabW6dcFwTyeuxrowMers%3D.McN66',
+              first_name: 'Sarah',
+              last_name: 'Mason',
+              organization: 'Example Corporation',
+              title: 'Regional Manager',
+              image: 'https://images.pexels.com/photos/3760854/pexels-photo-3760854.jpeg',
+              location: {
+                address1: '89 E 42nd St',
+                address2: '1st floor',
+                city: 'New York',
+                country: 'United States',
+                region: 'NY',
+                zip: '10017',
+                timezone: 'America/New_York',
+                ip: '127.0.0.1'
+              },
+              properties: {newKey: 'New Value'}
+            },
+            meta: {
+              patch_properties: {append: {newKey: 'New Value'}, unappend: {newKey: 'New Value'}, unset: 'skus'}
+            }
+          }
+        }
+      },
+      relationships: {list: {data: {type: 'list', id: 'WJRt59'}}}
+    }
+  })
+    });
+    console.log(await response.json(), response.status);
+  } catch (e) {
+    // console.log(e);
+  }
+}
+
+// Take over form submission
+form.addEventListener("submit", (event) => {
+	sendData();
+	event.preventDefault();
+});
+</script>
 
 <style>
 
