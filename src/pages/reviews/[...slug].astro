@@ -96,14 +96,14 @@ function shorten(text, max) {
         <div class="row min-vh-500 bg-gold-2 pt-5">
             <div class="col-lg-9 d-flex flex-column justify-content-end align-items-start text-start p-5">
                 <a href="/reviews">
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center" data-aos="fade-up">
                         <i class="bi bi-arrow-left text-black-50 fs-1"></i>
                         <h6 class="ms-2 my-0 text-black-50 fw-light">Back to reviews</h6>
                     </div>
                 </a>
-                <h1 class="font-windsong text-secondary fw-900 my-3" style="font-size: 12vmin;">{post.data.title}</h1>
-                <p class="fs-5 col-md-7 text-body-secondary mb-3 mt-3">{post.data.description}</p>
-                <div>
+                <h1 class="font-windsong text-secondary fw-bold my-3" style="font-size: 12vmin;" data-aos="fade-up" data-aos-delay="200">{post.data.title}</h1>
+                <p class="fs-5 col-md-7 text-body-secondary mb-3 mt-3" data-aos="fade-up" data-aos-delay="400">{post.data.description}</p>
+                <div data-aos="fade-up" data-aos-delay="600">
                     <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Written by</span> {post.data.author}</p>
                     <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {post.data.pubDate.toString().slice(0,10)}</p>
                     <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Read time </span>  {wordCount(post.body)} mins</p>
@@ -140,7 +140,7 @@ function shorten(text, max) {
                       <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <i class="bi bi-arrow-right-circle-fill display-1 text-pc-light shadow" aria-hidden="true"></i>
+                        <i class="bi bi-arrow-right-circle-fill display-2 opacity-100" aria-hidden="true"></i>
                       <span class="visually-hidden">Next</span>
                     </button>
                 </div>

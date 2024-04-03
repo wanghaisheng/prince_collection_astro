@@ -95,9 +95,9 @@ function shorten(text, max) {
                         <h6 class="ms-2 my-0 text-black-50 fw-light">Back to news</h6>
                     </div>
                 </a>
-                <h1 class="font-windsong text-secondary fw-bold my-3" style="font-size: 12vmin;" data-aos="fade-up">{post.data.title}</h1>
-                <p class="fs-5 col-md-7 text-body-secondary mb-3 mt-3" data-aos="fade-up">{post.data.description}</p>
-                <div>
+                <h1 class="font-windsong text-secondary fw-bold my-3" style="font-size: 12vmin;" data-aos="fade-up" data-aos-delay="200">{post.data.title}</h1>
+                <p class="fs-5 col-md-7 text-body-secondary mb-3 mt-3" data-aos="fade-up" data-aos-delay="400">{post.data.description}</p>
+                <div data-aos="fade-up" data-aos-delay="600">
                     <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Written by</span> {post.data.author}</p>
                     <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">On</span> {post.data.pubDate.toString().slice(0,10)}</p>
                     <p class="small text-pc-dark text-uppercase fw-bold my-0"><span class="fw-light text-secondary">Read time </span>  {wordCount(post.body)} mins</p>
@@ -125,7 +125,7 @@ function shorten(text, max) {
                     {post.data.carousel.map((item, index) => (
                         <div style="height: 600px"
                         class:list={["carousel-item min-vw-100", index === 0 ? 'active' : '']}>
-                            <img src={item.url} class="d-block w-100 h-100 object-fit" alt="...">
+                            <img src={item.url} class="d-block w-100 h-100 object-fit" alt={post.data.SEOdescription}>
                       </div>
                     ))}
                     </div>
@@ -134,7 +134,7 @@ function shorten(text, max) {
                       <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <i class="bi bi-arrow-right-circle-fill display-1 text-pc-light shadow" aria-hidden="true"></i>
+                        <i class="bi bi-arrow-right-circle-fill display-2 opacity-100" aria-hidden="true"></i>
                       <span class="visually-hidden">Next</span>
                     </button>
                 </div>
