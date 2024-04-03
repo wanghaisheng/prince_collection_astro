@@ -9,7 +9,7 @@ SEOdescription: The Waldorf Astoria Costa Rica Cacique is scheduled to open its
   doors to guests in November 2024, adding an exciting new location to the
   brand’s 30+ luxury properties worldwide.
 pubDate: 2024-03-15T02:11:55.809Z
-imageUrl: /images/uploads/waldorf-astoria-costa-rica-3.avif
+imageUrl: /images/uploads/waldorf-astoria-costa-rica-3.jpeg
 imageAlt: The Waldorf Astoria Costa Rica Cacique is scheduled to open its doors
   to guests in November 2024, adding an exciting new location to the brand’s 30+
   luxury properties worldwide.
@@ -18,9 +18,9 @@ tags:
   - news
 featured: false
 carousel:
-  - url: /images/uploads/waldorf-astoria-costa-rica-3.avif
-  - url: /images/uploads/waldorf-astoria-costa-rica-1.avif
-  - url: /images/uploads/waldorf-astoria-costa-rica-6.avif
+  - url: /images/uploads/waldorf-astoria-costa-rica-3.jpeg
+  - url: /images/uploads/waldorf-astoria-costa-rica-1.jpeg
+  - url: /images/uploads/waldorf-astoria-costa-rica-6.jpeg
 contents:
   - Waldorf Astoria Costa Rica Cacique
   - Opening in November 2024
@@ -32,13 +32,13 @@ Hilton is set to open its first Waldorf Astoria property in Costa Rica, further 
 
 <div class="one-big-two-small">
   <figure>
-        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-5.avif" alt="" />
+        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-5.jpeg" alt="" />
     </figure>
     <figure>
-        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-1.avif" alt="" />
+        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-1.jpeg" alt="" />
     </figure>
     <figure>
-        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-3.avif" alt="" />
+        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-3.jpeg" alt="" />
     </figure>
 </div>
 
@@ -52,13 +52,13 @@ Located on a dramatic cliffside peninsula and overlooking the secluded Playa Pen
 
 <div class="one-big-two-small">
   <figure>
-        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-6.avif" alt="" />
+        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-6.jpeg" alt="" />
     </figure>
     <figure>
-        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-8.avif" alt="" />
+        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-8.jpeg" alt="" />
     </figure>
     <figure>
-        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-7.avif" alt="" />
+        <img class="grid-image" src="/images/uploads/waldorf-astoria-costa-rica-7.jpeg" alt="" />
     </figure>
 </div>
 
@@ -68,11 +68,11 @@ The hotel’s use of wood and light-coloured stone elements imbues the indoor sp
 
 Additionally, the layout of the hotel has been designed to fit naturally within the landscape’s terrain as it angles towards the ocean, and wildlife corridors have been incorporated to ensure the safety of the local fauna.
 
-![](/images/uploads/waldorf-astoria-costa-rica-4.avif)
+![](/images/uploads/waldorf-astoria-costa-rica-4.jpeg)
 
 This newest Waldorf Astoria property has been in development for over 10 years, so the excitement and anticipation has certainly had time to grow. With any luck, an official opening date will be announced shortly, and travellers can begin to plan their stays.
 
-![](/images/uploads/waldorf-astoria-costa-rica-2.avif)
+![](/images/uploads/waldorf-astoria-costa-rica-2.jpeg)
 
 ## Conclusion
 

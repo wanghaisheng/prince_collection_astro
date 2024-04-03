@@ -206,8 +206,8 @@
         },
         "newsletter_cta": {
             "badge": "Prince Collection Newsletter",
-            "title": "Be in the <span class='text-pc-dark'>know</span>",
-            "content": "Join the Prince Collection newsletter and stay informed of new property openings, unique experiences, and exclusive promotions.",
+            "title": "Join the <span class='text-pc-dark'>Prince Collection</span> newsletter",
+            "content": "Sign up and get the best travel information delivered straight to your inbox. You'll receive updates about new property openings, unique experiences, exclusive promotions, and much more.",
             "button": "Sign up"
         }
     },
