@@ -57,17 +57,25 @@ const verticalSlide = {
 
 	[videoElem, playButton].forEach(item => {
 		item.addEventListener("click", loadVideoOnce, false);
+		item.addEventListener("click", detectPlay, false);
+	});
+
+	function detectPlay() {
 		videoElem.addEventListener("playing", () => {
 			playIcon.classList.remove("bi-play-circle");
 			playIcon.classList.add("opacity-25", "bi-pause-circle");
-			item.addEventListener("click", () => { videoElem.pause()});
+			[videoElem, playButton].forEach(item => {
+				item.addEventListener("click", () => { videoElem.pause()});
+			})
 		});
 		videoElem.addEventListener("pause", () => {
 			playIcon.classList.remove("opacity-25", "bi-pause-circle");
 			playIcon.classList.add("bi-play-circle");
-			item.addEventListener("click", () => { videoElem.play()});
+			[videoElem, playButton].forEach(item => {
+				item.addEventListener("click", () => { videoElem.play()});
+			})
 		});
-	});
+	}
 
 
 	// [videoElem, playButton].forEach(item => {
@@ -114,7 +122,7 @@ const verticalSlide = {
 					<button id="playButton" class="btn btn-link position-absolute top-0 start-25 m-3" style="z-index: 100">
 						<i id="playIcon" class="bi bi-play-circle text-pc" style="font-size: 90px; filter:drop-shadow(2px 2px 5px #222222); transition: all 0.3s ease-in-out"></i>
 					</button>
-					<video id="heroVideo" preload="none" class="w-100 h-100 min-vh-50 object-fit position-relative bottom-0 start-0 z-1" style="background: url('/images/video/pc-video-placeholder.png') center; background-size: cover; aspect-ratio: 16/9" width="100%" height="auto" muted loop>
+					<video id="heroVideo" preload="none" class="w-100 h-100 min-vh-75 object-fit position-relative bottom-0 start-0 z-1" style="background: url('/images/video/pc-video-placeholder.png') center; background-size: cover; aspect-ratio: 16/9" width="100%" height="auto" muted loop>
 						<source id="videoSource" type="video/mp4">
 					  	Your browser does not support the video tag. Please update your browser or try Chrome, Firefox, or Safari.
 					</video>

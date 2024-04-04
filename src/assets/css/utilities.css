@@ -1,5 +1,9 @@
 /* height */
 
+.min-vh-75 {
+    min-height: 75dvh;
+}
+
 .min-vh-50 {
     min-height: 50dvh;
 }
