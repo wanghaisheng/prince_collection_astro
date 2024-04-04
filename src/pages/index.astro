@@ -40,28 +40,60 @@ const verticalSlide = {
 	const playIcon = document.getElementById("playIcon");
 	const playButton = document.getElementById("playButton");
 
-	[videoElem, playButton].forEach(item => {
-		item.addEventListener("click", handlePlayButton, false);
-			async function playVideo() {
-		try {
-			await videoElem.play();
-			playIcon.classList.remove("bi-play-circle");
-			playIcon.classList.add("opacity-25", "bi-pause-circle");
-		} catch (err) {
-			playIcon.classList.remove("opacity-25");
-		}
+	let videoLoaded = false;
+
+	function sayHello() {
+		var video = document.getElementById('heroVideo');
+		var source = document.getElementById('videoSource');
+		source.src = "/images/video/pc-hero-video-min.mp4"; // Update the video source
+		video.load(); // Load the video
+		video.play(); 
+		videoLoaded = true;
 	}
 
-	function handlePlayButton() {
-		if (videoElem.paused) {
-			playVideo();
-		} else {
-			videoElem.pause();
+	function loadVideoOnce() {
+		if (!videoLoaded) sayHello();
+	}
+
+	[videoElem, playButton].forEach(item => {
+		item.addEventListener("click", loadVideoOnce, false);
+		videoElem.addEventListener("playing", () => {
+			playIcon.classList.remove("bi-play-circle");
+			playIcon.classList.add("opacity-25", "bi-pause-circle");
+			item.addEventListener("click", () => { videoElem.pause()});
+		});
+		videoElem.addEventListener("pause", () => {
 			playIcon.classList.remove("opacity-25", "bi-pause-circle");
 			playIcon.classList.add("bi-play-circle");
-			}
-		}
-	})
+			item.addEventListener("click", () => { videoElem.play()});
+		});
+	});
+
+
+	// [videoElem, playButton].forEach(item => {
+	// 	item.addEventListener("click", loadVideoOnce, false);
+	// 	item.addEventListener("click", handlePlayButton, false);
+	// 		async function playVideo() {
+	// 	try {
+	// 		await videoElem.play();
+	// 		playIcon.classList.remove("bi-play-circle");
+	// 		playIcon.classList.add("opacity-25", "bi-pause-circle");
+	// 	} catch (err) {
+	// 		playIcon.classList.remove("opacity-25");
+	// 	}
+	// }
+
+	// function handlePlayButton() {
+	// 	if (videoElem.paused) {
+	// 		playVideo();
+	// 	} else {
+	// 		videoElem.pause();
+	// 		playIcon.classList.remove("opacity-25", "bi-pause-circle");
+	// 		playIcon.classList.add("bi-play-circle");
+	// 		}
+	// 	}
+	// });
+
 </script>
 <Layout title="Welcome to Prince Collection" description="Prince Collection">
 		<div class="container-fluid px-0 pt-3 bg-gold-2" data-aos="fade">
@@ -83,7 +115,7 @@ const verticalSlide = {
 						<i id="playIcon" class="bi bi-play-circle text-pc" style="font-size: 90px; filter:drop-shadow(2px 2px 5px #222222); transition: all 0.3s ease-in-out"></i>
 					</button>
 					<video id="heroVideo" preload="none" class="w-100 object-fit position-relative shadow rounded-4 min-vh-50" width="100%" height="600" poster="/images/video/pc-video-placeholder.png" muted loop >
-						<source src="/images/video/pc-hero-video-min.mp4" type="video/mp4">
+						<source id="videoSource" type="video/mp4">
 					  	Your browser does not support the video tag. Please update your browser or try Chrome, Firefox, or Safari.
 					</video>
 				</div>
