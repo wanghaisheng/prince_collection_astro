@@ -39,7 +39,7 @@ filteredPosts.sort((a, b) => b.data.pubDate - a.data.pubDate);
 const [firstArticle, ...allArticles] = filteredPosts;
 ---
 
-<Layout title="Prince Collection | News" description="Prince Collection latest news and developments.">
+<Layout title="Prince Collection | News" description="Prince Collection's latest news, deals, and happenings in the travel space." image={firstArticle.data.imageUrl}>
 	<div class="container-fluid px-0">
 		<div class="row min-vh-100 bg-dutch-white">
 			<div class="col-lg-6 d-flex flex-column justify-content-center align-items-center min-vh-500 text-center p-5 mt-5 mt-lg-0 animate-in">
