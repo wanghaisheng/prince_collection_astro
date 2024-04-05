@@ -69,14 +69,14 @@ interface Props {
 		<meta property="og:url" content={`https://princecollection.com${Astro.url.pathname}`}/>
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
-		<meta property="og:image" content={image || '/images/video/pc-social-banner.jpeg'} />
+		<meta property="og:image" content={image || 'https://princecollection.com/images/video/pc-social-banner.jpeg'} />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content={Astro.url} />
 		<meta property="twitter:title" content={title} />
 		<meta property="twitter:description" content={description} />
-		<meta property="twitter:image" content={image || '/images/video/pc-social-banner.jpeg'} />
+		<meta property="twitter:image" content={image || 'https://princecollection.com/images/video/pc-social-banner.jpeg'} />
 		
 		<!-- Netlify CMS -->
 		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js" is:inline></script>
