@@ -289,9 +289,12 @@ function shorten(text, max) {
     </div>
 </Layout>
 
+// var targetParagraph = document.querySelector('#content .content-body p:nth-of-type(3)');
+// var dynamicContent = '<div id="custom-div" class="bg-primary text-light">Nostrud elit qui amet nisi nulla ea ullamco. Nulla aliqua aute et deserunt mollit et deserunt dolor duis Lorem nulla aliquip. Veniam sit voluptate velit quis dolor pariatur anim culpa reprehenderit irure qui sint. Veniam qui sunt proident velit incididunt tempor Lorem in sit laborum officia exercitation culpa dolor.</div>';
+// targetParagraph.insertAdjacentHTML('afterend', dynamicContent);
 <script>
-    const toastTrigger = document.getElementById('liveToastBtn')
-    const toastLiveExample = document.getElementById('liveToast')
+    const toastTrigger = document.getElementById('liveToastBtn');
+    const toastLiveExample = document.getElementById('liveToast');
         if (toastTrigger) {
         toastTrigger.addEventListener('click', () => {
             const toast = new bootstrap.Toast(toastLiveExample)

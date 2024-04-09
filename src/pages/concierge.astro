@@ -11,7 +11,7 @@ import BookingFormConcierge from '../components/BookingFormConcierge.astro';
 			<span class="badge rounded-pill fw-bold bg-pc-dark-80 text-light py-2 px-3">{data.concierge.hero.badge}</span>
 			<h1 class="display-3 fw-bold lh-1 mb-2 mt-3"><Fragment set:html={data.concierge.hero.title}/></h1>
 			<p class="col-lg-6 col-md-8 fs-5 text-body-secondary mt-3 mb-4">{data.concierge.hero.content}</p>
-			<a href="/book">
+			<a href="#book">
 				<button class="btn btn-pc fw-bold rounded-pill px-4 shadow">{data.concierge.hero.button}</button>
 			</a>
 		</div>
@@ -100,7 +100,7 @@ import BookingFormConcierge from '../components/BookingFormConcierge.astro';
 
 		))}
 	</div>
-	<div class="py-1 py-lg-3"></div>
+	<div id="book" class="py-1 py-lg-3"></div>
 
 	<!--book-->
 
