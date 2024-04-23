@@ -55,7 +55,7 @@ import data from '../data/sitecontent.json';
                                 <i class="bi bi-star-fill text-secondary"></i> 4.5
                             </p>
                             <h5 class="card-title fs-4 fw-900 text-secondary">Venice</h5>
-                            <p class="small text-secondary mt-1">Capital city of Veneto, Italy • <a href="comune.venezia.it">comune.venezia.it</a></p>
+                            <p class="small text-secondary mt-1">Capital city of Veneto, Italy • comune.venezia.it</p>
                             <p class="card-text my-3">Venice is a city in northeastern Italy and the capital of the Veneto region. It is built on a group of 126 islands that are separated by expanses of open water and by canals; portions of the city are linked by 472 bridges.</p>
                             <a href="/book">
                                 <button class="btn btn-sm small btn-secondary rounded-pill px-4 m-0 mt-2 mb-0">Reserve</button>
@@ -68,40 +68,48 @@ import data from '../data/sitecontent.json';
                 </div>
             </div>
 
-            <div class="masonry bg-light position-relative">
+            <!-- <div class="masonry bg-light position-relative">
                 {data.ta_landing_page.masonry.map((item, index) => (
                     <div class="item mt-0 mb-2">
                         <img src="" data-src={item} class="animate-in" data-aos="fade-up" data-aos-delay={index * 100}>
                     </div>
                 ))}
+            </div> -->
+
+            <div class="row min-vh-100 mt-2 mb-3 mx-1">
+                <div class="col-lg-12 p-0" data-aos="fade">
+                    <img class="w-100 h-100 object-fit rounded-4" src="" data-src="/images/general/pc_ta_landing_masonry.jpeg" alt="">
+                </div>
             </div>
 
             <div class="container-fluid">
                 <div class="row min-vh-500 text-light bg-gold-1 px-5 position-relative" style="background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1541417904950-b855846fe074?q=80&w=2882&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center top; background-size: 130%;">
-                <div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center px-5 pt-5" data-aos="fade-up">
-                    <h1 class="display-3 fw-bold lh-1 mb-2 mt-3">Book your next hotel stay with us</h1> 
-                    <p class="fs-5 mt-3 mb-0">Through Prince Collection’s access to the world’s best hotel preferred partner programs, you’ll enjoy exclusive benefits on your next luxury hotel stay at no additional cost. By booking with us, you receive:</p>
-                </div>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3 text-body-secondary px-4 px-lg-5 pb-5">
-                    {data.ta_landing_page.book.list.map((item, index) => (
-                        <div class="col text-black-50" data-aos="fade-up" data-aos-delay={index * 100}>
-                        <div class="card w-100 mb-3 rounded-5 bg-pc-light border-0 shadow" style="min-height: 300px">
-                        <img src="" data-src={`https://loremflickr.com/320/240/hotel,sky?lock=${index}`} class="card-img-top w-100 object-fit rounded-top-5 p-2" style="height: 120px" data-aos="fade" />
-                        <div class="card-body p-4">
-                            <h5 class="card-title fs-4 fw-900 text-secondary">{item.title}</h5>
-                            <p class="small">{item.content}</p>
-                            <a href="/book">
-                                <i class="bi bi-heart-fill text-danger fs-4 position-absolute top-0 end-0 m-3"></i>
-                            </a>
-                            <i class="bi bi-arrow-up-right-circle-fill text-secondary fs-2 position-absolute bottom-0 end-0 m-3"></i>
-                        </div>
+                    <div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center px-5 pt-5" data-aos="fade-up">
+                        <h1 class="display-3 fw-bold lh-1 mb-2 mt-3">Book your next hotel stay with us</h1> 
+                        <p class="fs-5 mt-3 mb-0">Through Prince Collection’s access to the world’s best hotel preferred partner programs, you’ll enjoy exclusive benefits on your next luxury hotel stay at no additional cost. By booking with us, you receive:</p>
                     </div>
-
-                        </div>
-                    ))}
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3 text-body-secondary px-4 px-lg-5 pb-5">
+                        {data.ta_landing_page.book.list.map((item, index) => (
+                        <div class="col text-black-50" data-aos="fade-up" data-aos-delay={index * 100}>
+                            <div class="card w-100 mb-3 rounded-5 bg-pc-light border-0 shadow" style="min-height: 300px">
+                                <img src="" data-src={item.img} class="card-img-top w-100 object-fit rounded-top-5 p-2" style="height: 120px" data-aos="fade" />
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fs-4 fw-900 text-secondary">{item.title}</h5>
+                                    <p class="small">{item.content}</p>
+                                    <a href="/book">
+                                        <i class="bi bi-heart-fill text-danger fs-4 position-absolute top-0 end-0 m-3"></i>
+                                    </a>
+                                    <i class="bi bi-arrow-up-right-circle-fill text-secondary fs-2 position-absolute bottom-0 end-0 m-3"></i>
+                                </div>
+                            </div>
+                        </div>))}
+                    </div>
                 </div>
             </div>
-            </div>
+                    
+            <!--  <img src="" data-src={`https://picsum.photos/700/300?grayscale?random=${index}`} class="card-img-top w-100 object-fit rounded-top-5 p-2" style="height: 120px" data-aos="fade" />
+            
+            <img src="" data-src={`https://loremflickr.com/800/400/hotel,travel,sky?lock=${index}`} class="card-img-top w-100 object-fit rounded-top-5 p-2" style="height: 120px" data-aos="fade" />-->
 
             <div class="row p-5 min-vh-100 bg-pc-light">
                 <div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center px-5 pt-5" data-aos="fade-up">
@@ -123,7 +131,7 @@ import data from '../data/sitecontent.json';
                                 </svg>
                             </div>
                             <div class="p-2 d-flex flex-column justify-content-center align-items-start">
-                                <p class="my-0 fs-5">Marci</p>
+                                <p class="my-0 fs-5">Yuanlin</p>
                                 <p class="fs-italic text-secondary my-0">Prince Collection valued client</p>    
                             </div>
                         </div>
@@ -144,7 +152,7 @@ import data from '../data/sitecontent.json';
                                 </svg>
                             </div>
                             <div class="p-2 d-flex flex-column justify-content-center align-items-start">
-                                <p class="my-0 fs-5">Marci</p>
+                                <p class="my-0 fs-5">Sanjay</p>
                                 <p class="fs-italic text-secondary my-0">Prince Collection valued client</p>    
                             </div>
                         </div>
@@ -182,7 +190,7 @@ import data from '../data/sitecontent.json';
                                 <i class="bi bi-star-fill text-secondary"></i> 4.9
                             </p>
                             <h5 class="card-title fs-4 fw-900 text-secondary">Maldives</h5>
-                            <p class="small text-secondary mt-1">Sovereign state in South Asia, situated on an archipelago in the Arabian Sea • <a href="visitmaldives.com">visitmaldives.com</a></p>
+                            <p class="small text-secondary mt-1">Sovereign state in South Asia, situated on an archipelago in the Arabian Sea • visitmaldives.com</p>
                             <p class="card-text my-3">The Maldives, officially the Republic of Maldives, and historically known as Maldive Islands, is a country and archipelagic state in South Asia in the Indian Ocean.</p>
                             <a href="/book">
                                 <button class="btn btn-sm small btn-secondary rounded-pill px-4 m-0 mt-2 mb-0">Reserve</button>

@@ -434,32 +434,38 @@
                 {
                     "icon": "bi-sunrise",
                     "title": "Daily breakfast for two",
-                    "content": "Enjoy complimentary breakfast for two at the hotel restaurant, lounge, or via in-room dining. Switch it up on consecutive mornings to experience them all."
+                    "content": "Enjoy complimentary breakfast for two at the hotel restaurant, lounge, or via in-room dining. Switch it up on consecutive mornings to experience them all.",
+                    "img": "https://images.unsplash.com/photo-1464306208223-e0b4495a5553?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 },
                 {
                     "icon": "bi-cash-coin",
                     "title": "$100 (USD) hotel credit",
-                    "content": "Use your $100 (USD) hotel credit towards dining, drinks, spa bookings, or other hotel facilities. Don’t worry – we’ll help you secure reservations in advance."
+                    "content": "Use your $100 (USD) hotel credit towards dining, drinks, spa bookings, or other hotel facilities. Don’t worry – we’ll help you secure reservations in advance.",
+                    "img": "https://plus.unsplash.com/premium_photo-1661879252375-7c1db1932572?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 },
                 {
                     "icon": "bi-house-heart",
                     "title": "Welcome amenity",
-                    "content": "A complimentary bottle of wine, snacks, or a local gift will be awaiting your arrival, entirely customizable for your special occasion."
+                    "content": "A complimentary bottle of wine, snacks, or a local gift will be awaiting your arrival, entirely customizable for your special occasion.",
+                    "img": "https://images.unsplash.com/photo-1451443700141-5ddb6d85a8fc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 },
                 {
                     "icon": "bi-patch-check",
                     "title": "One-category room upgrade",
-                    "content": "Either at time of booking or upon arrival, we will take care of your upgrade from start to finish. You can be as hands-on as you prefer."
+                    "content": "Either at time of booking or upon arrival, we will take care of your upgrade from start to finish. You can be as hands-on as you prefer.",
+                    "img": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 },
                 {
                     "icon": "bi-calendar-check",
                     "title": "Early check-in/late check-out",
-                    "content": "Early arrival or late flight? Have your room be ready for you and enjoy it until you leave for the airport."
+                    "content": "Early arrival or late flight? Have your room be ready for you and enjoy it until you leave for the airport.",
+                    "img": "https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=2825&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 },
                 {
                     "icon": "bi-moon-stars",
                     "title": "Exclusive promotions",
-                    "content": "Get exclusive free night offers when booking with us. Qualifying hotels and promotions may vary, but we’ll always help you secure the best rate."
+                    "content": "Get exclusive free night offers when booking with us. Qualifying hotels and promotions may vary, but we’ll always help you secure the best rate.",
+                    "img": "https://images.unsplash.com/photo-1610643875911-61395c0d7cf5?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 }
             ]
         }
