@@ -468,7 +468,21 @@
                     "img": "https://images.unsplash.com/photo-1610643875911-61395c0d7cf5?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 }
             ]
-        }
+        },
+        "testimonials": [
+            {
+                "name": "Yuanlin",
+                "content": "Hi Prince collection, thanks for the info. Really appreciated the help from your team to get me the 3 nights for 2 deal at the time of booking."
+            },
+            {
+                "name": "Sanjay",
+                "content": "I wanted to thank you for all your help on my current trip. You made the experience amazing and I really appreciated your support when we ran into that hiccup and had to cancel Bali. Thanks again."
+            },
+            {
+                "name": "Marci",
+                "content": "Hi Nancy, you are so amazing. Thank you for your fabulous reassurance! Thank you for EVERYTHING and for helping me save a substantial amount of $$. Thank you thank you!"
+            }
+        ]
     },
     "faq": {
         "badge": "FAQ",
