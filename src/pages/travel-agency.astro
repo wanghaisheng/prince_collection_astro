@@ -69,83 +69,117 @@ import data from '../data/sitecontent.json';
             </div>
 
             <div class="masonry bg-light position-relative">
-                <div class="masonry-card row min-vh-500 position-absolute z-1 start-50 top-50 translate-middle mx-auto px-5">
-                    <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center text-center bg-light bg-gold-1 p-5 rounded-5 shadow position-relative" data-aos="fade-up">
-					<h1 class="display-3 fw-bold lh-1 mb-2 mt-3" data-aos="fade-up">Book your next hotel stay with us</h1> 
-					<p class="fs-5 mt-3 mb-0 text-black-50" data-aos="fade-up" data-aos-delay="200">Through Prince Collection’s access to the world’s best hotel preferred partner programs, you’ll enjoy exclusive benefits on your next luxury hotel stay at no additional cost. By booking with us, you receive:</p>
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 mt-3 text-body-secondary">
-                        <div class="col">
-                            <span class="badge rounded-pill border border-secondary text-secondary px-3 py-2">
-                            <i class="bi bi-house-check-fill"></i> Hotel credits
-                            </span>
+                {data.ta_landing_page.masonry.map((item, index) => (
+                    <div class="item mt-0 mb-2">
+                        <img src="" data-src={item} class="animate-in" data-aos="fade-up" data-aos-delay={index * 100}>
+                    </div>
+                ))}
+            </div>
+
+            <div class="container-fluid">
+                <div class="row min-vh-500 text-light bg-gold-1 px-5 position-relative" style="background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1541417904950-b855846fe074?q=80&w=2882&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center top; background-size: 130%;">
+                <div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center px-5 pt-5" data-aos="fade-up">
+                    <h1 class="display-3 fw-bold lh-1 mb-2 mt-3">Book your next hotel stay with us</h1> 
+                    <p class="fs-5 mt-3 mb-0">Through Prince Collection’s access to the world’s best hotel preferred partner programs, you’ll enjoy exclusive benefits on your next luxury hotel stay at no additional cost. By booking with us, you receive:</p>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3 text-body-secondary px-4 px-lg-5 pb-5">
+                    {data.ta_landing_page.book.list.map((item, index) => (
+                        <div class="col text-black-50" data-aos="fade-up" data-aos-delay={index * 100}>
+                        <div class="card w-100 mb-3 rounded-5 bg-pc-light border-0 shadow" style="min-height: 300px">
+                        <img src="" data-src={`https://loremflickr.com/320/240/hotel,sky?lock=${index}`} class="card-img-top w-100 object-fit rounded-top-5 p-2" style="height: 120px" data-aos="fade" />
+                        <div class="card-body p-4">
+                            <h5 class="card-title fs-4 fw-900 text-secondary">{item.title}</h5>
+                            <p class="small">{item.content}</p>
+                            <a href="/book">
+                                <i class="bi bi-heart-fill text-danger fs-4 position-absolute top-0 end-0 m-3"></i>
+                            </a>
+                            <i class="bi bi-arrow-up-right-circle-fill text-secondary fs-2 position-absolute bottom-0 end-0 m-3"></i>
+                        </div>
+                    </div>
+
+                        </div>
+                    ))}
+                </div>
+            </div>
+            </div>
+
+            <div class="row p-5 min-vh-100 bg-pc-light">
+                <div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-center align-items-center text-center px-5 pt-5" data-aos="fade-up">
+                    <span class="badge rounded-pill fw-bold text-bg-secondary py-2 px-3" data-aos="fade-up">Testimonials</span>
+                    <h1 class="display-3 fw-bold lh-1 mb-2 mt-3">What people are saying</h1> 
+                    <p class="fs-5 mt-3 mb-0">Read about the experiences of some of Prince Collection's most valued customers. We appreciate all the feedback we get from our community and do our best to ensure our clients get the highest level of support, before, during and after their trips.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="p-3 d-flex flex-column justify-content-center align-items-start text-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" fill="currentColor" class="bi bi-quote text-secondary" viewBox="0 0 16 16">
+                            <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                        </svg>
+                        <p class="fs-3">Hi Prince collection, thanks for the info. Really appreciated the help from your team to get me the 3 nights for 2 deal at the time of booking.</p>
+                        <div class="d-flex border rounded-4 px-3">
+                            <div class="p-2 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-person-circle text-secondary" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                </svg>
+                            </div>
+                            <div class="p-2 d-flex flex-column justify-content-center align-items-start">
+                                <p class="my-0 fs-5">Marci</p>
+                                <p class="fs-italic text-secondary my-0">Prince Collection valued client</p>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-lg-4">
+                    <div class="p-3 d-flex flex-column justify-content-center align-items-start text-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" fill="currentColor" class="bi bi-quote text-secondary" viewBox="0 0 16 16">
+                            <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                        </svg>
+                        <p class="fs-3">I wanted to thank you for all your help on my current trip. You made the experience amazing and I really appreciated your support when we ran into that hiccup and had to cancel Bali. Thanks again.</p>
+                        <div class="d-flex border rounded-4 px-3">
+                            <div class="p-2 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-person-circle text-secondary" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                </svg>
+                            </div>
+                            <div class="p-2 d-flex flex-column justify-content-center align-items-start">
+                                <p class="my-0 fs-5">Marci</p>
+                                <p class="fs-italic text-secondary my-0">Prince Collection valued client</p>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="p-3 d-flex flex-column justify-content-center align-items-start text-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" fill="currentColor" class="bi bi-quote text-secondary" viewBox="0 0 16 16">
+                            <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                        </svg>
+                        <p class="fs-3">Hi Nancy, you are so amazing. Thank you for your fabulous reassurance! Thank you for EVERYTHING and for helping me save a substantial amount of $$. Thank you thank you!</p>
+                        <div class="d-flex border rounded-4 px-3">
+                            <div class="p-2 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-person-circle text-secondary" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                </svg>
+                            </div>
+                            <div class="p-2 d-flex flex-column justify-content-center align-items-start">
+                                <p class="my-0 fs-5">Marci</p>
+                                <p class="fs-italic text-secondary my-0">Prince Collection valued client</p>    
+                            </div>
                         </div>
                        
-                        
-                        <div class="col">
-                            <span class="badge rounded-pill border border-secondary text-secondary px-3 py-2">
-                            <i class="bi bi-suitcase-lg-fill"></i> Early check-in
-                            </span>
-                        </div>
-                        <div class="col">
-                            <span class="badge rounded-pill border border-secondary text-secondary px-3 py-2">
-                            <i class="bi bi-bookmark-star-fill"></i> Promotions
-                            </span>
-                        </div>
-                        <div class="col">
-                            <span class="badge rounded-pill border border-secondary text-secondary px-3 py-2">
-                                <i class="bi bi-award-fill"></i> Deals & Benefits
-                            </span>
-                        </div>
-                    </div>
-                    <a href="/book" data-aos="fade-up" data-aos-delay="400">
-                        <button class="btn btn-dark rounded-pill d-inline px-4 mt-4">Learn more</button>
-                    </a>
-                    <i class="bi bi-arrow-up-right-circle-fill text-secondary fs-1 position-absolute bottom-0 end-0 m-3"></i>
-                    <i class="bi bi-heart-fill text-danger fs-3 position-absolute top-0 end-0 m-3"></i>
                     </div>
                 </div>
-                <div class="item mt-0">
-                    <img src="" data-src="https://images.unsplash.com/photo-1590602390809-a890807193ec?q=80&w=2899&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                </div>
-                <div class="item">
-                    <img src="" data-src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?q=80&w=2507&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                </div>
-                <div class="item">
-                    <img src="" data-src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                </div>
-                <div class="item">
-                    <img src="" data-src="https://images.unsplash.com/photo-1541417904950-b855846fe074?q=80&w=2882&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                </div>
-                <div class="item">
-                    <img src="" data-src="https://images.unsplash.com/photo-1528913775512-624d24b27b96?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
-                </div>
-                <div class="item">
-                    <img style="width: 100%" src="" data-src="https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                </div>
-                <div class="item">
-                    <img src="" data-src="https://images.unsplash.com/photo-1590602391458-7aaa83454938?q=80&w=2250&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                </div>
-                <div class="item">
-                    <img src="" data-src="https://images.unsplash.com/photo-1534445867742-43195f401b6c?q=80&w=2454&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                </div>
-                <!-- <div class="item">
-                    <img src="" data-src="https://images.unsplash.com/photo-1601465470925-d6e9eb3c34df?q=80&w=2825&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                </div> -->
-                <div class="item">
-                    <img src="" data-src="https://images.unsplash.com/photo-1482635334133-de0ee55e5864?q=80&w=2734&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                </div>
-                <div class="item">
-                    <img src="" data-src="https://images.unsplash.com/photo-1600435335786-d74d2bb6de37?q=80&w=2920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                </div>
-              </div>
+            </div>
 
-              <div class="row min-vh-100">
-                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center p-0 position-relative">
+              <div class="row min-vh-100 bg-pc-light">
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center p-0 position-relative min-vh-100">
                     <div class="card mb-3 rounded-5 bg-pc-light border-0 shadow position-absolute z-1 top-50 start-50 translate-middle">
                         <img src="" data-src="https://images.unsplash.com/photo-1670752617062-e1c4087a346d?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top w-100 object-fit rounded-top-5" style="height: 250px;" alt="..." data-aos="fade" />
                         <div class="card-body p-4">
                             <p class="small mb-2 mt-0">
-                                <i class="bi bi-star-fill text-secondary"></i> 4.5
+                                <i class="bi bi-star-fill text-secondary"></i> 4.9
                             </p>
                             <h5 class="card-title fs-4 fw-900 text-secondary">Maldives</h5>
                             <p class="small text-secondary mt-1">Sovereign state in South Asia, situated on an archipelago in the Arabian Sea • <a href="visitmaldives.com">visitmaldives.com</a></p>
@@ -157,7 +191,7 @@ import data from '../data/sitecontent.json';
                             <i class="bi bi-heart-fill text-danger fs-3 position-absolute top-0 end-0 m-3"></i>
                         </div>
                     </div>
-					<img class="w-100 h-100 shadow" style="object-fit: cover; aspect-ratio: 1;" src="" data-src="https://images.unsplash.com/photo-1590602390809-a890807193ec?q=80&w=2899&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" data-aos="fade">
+					<img class="w-100 h-100" style="object-fit: cover; aspect-ratio: 1; border-radius: 0 33px 0 0" src="" data-src="https://images.unsplash.com/photo-1590602390809-a890807193ec?q=80&w=2899&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" data-aos="fade">
                 </div>
 				<div class="col-lg-6 d-flex flex-column justify-content-end align-items-start text-start p-5 mb-0 mb-lg-4 mt-5 mt-lg-0">
                     <div class="mt-auto p-5">

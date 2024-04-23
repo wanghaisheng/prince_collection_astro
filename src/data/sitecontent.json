@@ -413,6 +413,57 @@
         "content": "Sign up for the Prince Collection newsletter and receive priority information about the newest luxury properties worldwide, exclusive reservations and deals, and unique destinations across the globe.",
         "privacy": "By providing your email, you agree to the Prince Collection Privacy Policy"
     },
+    "ta_landing_page": {
+        "masonry": [
+                    "https://images.unsplash.com/photo-1590602390809-a890807193ec?q=80&w=2899&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "https://images.unsplash.com/photo-1512100356356-de1b84283e18?q=80&w=2507&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "https://images.unsplash.com/photo-1541417904950-b855846fe074?q=80&w=2882&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "https://images.unsplash.com/photo-1528913775512-624d24b27b96?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "https://images.unsplash.com/photo-1590602391458-7aaa83454938?q=80&w=2250&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "https://images.unsplash.com/photo-1534445867742-43195f401b6c?q=80&w=2454&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "https://images.unsplash.com/photo-1482635334133-de0ee55e5864?q=80&w=2734&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "https://images.unsplash.com/photo-1600435335786-d74d2bb6de37?q=80&w=2920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
+        "book": {
+            "badge": "Book your hotel",
+            "title": "Book your next hotel stay with us",
+            "content": "Through Prince Collection’s access to the world’s best hotel preferred partner programs, you’ll enjoy exclusive benefits on your next luxury hotel stay at no additional cost. By <a class='text-pc-dark fw-bold' href='/book'>booking with us</a>, you receive:",
+            "list": [
+                {
+                    "icon": "bi-sunrise",
+                    "title": "Daily breakfast for two",
+                    "content": "Enjoy complimentary breakfast for two at the hotel restaurant, lounge, or via in-room dining. Switch it up on consecutive mornings to experience them all."
+                },
+                {
+                    "icon": "bi-cash-coin",
+                    "title": "$100 (USD) hotel credit",
+                    "content": "Use your $100 (USD) hotel credit towards dining, drinks, spa bookings, or other hotel facilities. Don’t worry – we’ll help you secure reservations in advance."
+                },
+                {
+                    "icon": "bi-house-heart",
+                    "title": "Welcome amenity",
+                    "content": "A complimentary bottle of wine, snacks, or a local gift will be awaiting your arrival, entirely customizable for your special occasion."
+                },
+                {
+                    "icon": "bi-patch-check",
+                    "title": "One-category room upgrade",
+                    "content": "Either at time of booking or upon arrival, we will take care of your upgrade from start to finish. You can be as hands-on as you prefer."
+                },
+                {
+                    "icon": "bi-calendar-check",
+                    "title": "Early check-in/late check-out",
+                    "content": "Early arrival or late flight? Have your room be ready for you and enjoy it until you leave for the airport."
+                },
+                {
+                    "icon": "bi-moon-stars",
+                    "title": "Exclusive promotions",
+                    "content": "Get exclusive free night offers when booking with us. Qualifying hotels and promotions may vary, but we’ll always help you secure the best rate."
+                }
+            ]
+        }
+    },
     "faq": {
         "badge": "FAQ",
         "title": "Answers to our most <span class='text-pc-dark'>Frequently Asked Questions</span>",
