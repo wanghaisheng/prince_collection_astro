@@ -1,10 +1,9 @@
 ---
 draft: true
-title: Prince Collection CMS guide + widgets
-author: Post author
-description: Short, 1-2 sentence description for post thumbnail/card and
-  individual post page
-SEOdescription: 150 character SEO focused description
+title: Boeing 737 Max - Update and Implications
+author: T.J. Dunn
+description: Nisi sint et ullamco sunt enim quis nisi ad.
+SEOdescription: Ipsum Lorem velit eu deserunt magna cupidatat eiusmod esse elit in.
 pubDate: 2024-03-01T18:44:56.087Z
 imageUrl: https://masonmedia.github.io/json-server/images/pc-hotel-bed-blue.avif
 imageAlt: Add image alt text = this same text will be applied to the carousel if used
@@ -25,15 +24,14 @@ contents:
   - faucibus-nisl-tincidunt
   - another-h2
 ---
-# Big time
 
-Officia anim mollit commodo commodo ipsum aliquip excepteur Lorem. Veniam aliquip sit ipsum proident velit nulla sunt mollit aliqua deserunt excepteur cupidatat. Labore dolore aute do aliquip esse officia aliqua qui sunt ullamco excepteur tempor non quis. Irure enim laboris ut mollit adipisicing nisi veniam cillum do id nostrud. Mollit ut in Lorem culpa cillum anim. Amet cupidatat ullamco pariatur occaecat cillum. Et incididunt aute Lorem deserunt irure.
+# Main post title
 
-### Headline 2
+Make title heading H1 and all subsequent headings H2. If using an unordered (bullet) list subtitles can be h4.
 
-Nostrud minim commodo dolor reprehenderit velit. Sint commodo amet tempor non incididunt cillum non amet. Incididunt aliqua elit ex in enim culpa enim. Sit elit nostrud amet velit nostrud ut sunt voluptate laboris consectetur. Amet anim nostrud ullamco culpa nisi. Quis ea ad aliquip in cillum sit.
+### Adding image grids
 
-Est nisi amet ad deserunt. Aliqua fugiat consequat ex consectetur laboris ullamco sit pariatur. Magna cillum id cupidatat esse ex nisi. Ipsum qui sunt enim cillum enim commodo duis id labore enim voluptate.
+Copying and pasting the code snippets below allow writers to add image galleries to posts. **Care must be taken when using code and/or markdown to ensure there are no errors or typos to prevent breaks in the frontend of the production site.**
 
 ### Steps
 
@@ -67,7 +65,11 @@ Est nisi amet ad deserunt. Aliqua fugiat consequat ex consectetur laboris ullamc
 * final image url should look like: 
   **/images/uploads/waldorf-astoria-cabo-san-lucas-1.jpeg**
 
-Voluptate eiusmod velit qui officia. Aliqua reprehenderit eu labore eiusmod tempor aute aute amet quis pariatur cupidatat. Ullamco proident laborum consequat duis ad sunt est Lorem minim in. Velit laborum excepteur nostrud ad ex duis eu fugiat. Eiusmod ex minim reprehenderit occaecat laborum qui.
+**<img src="/images/uploads/waldorf-astoria-cabo-san-lucas-1.jpeg" />**
+
+<figure>
+   <img class="grid-image" **src="/images/uploads/waldorf-astoria-cabo-san-lucas-1.jpeg"** alt="" />
+</figure>
 
 ### 2-column grid
 

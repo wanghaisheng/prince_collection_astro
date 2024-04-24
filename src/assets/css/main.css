@@ -3,7 +3,7 @@
 @import './animations.css';
 @import './buttons.css';
 @import './utilities.css';
-/* @import './fonts.css'; */
+
 
 html {
     scroll-behavior: smooth;
@@ -45,8 +45,7 @@ h1, h2, h3, h4, p {
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  font-family: 'Gloock', 'Times New Roman', Times, serif;
-  /* font-family: 'Red Hat Display', Helvetica, Arial, sans-serif; */
+  font-family: 'Inter Tight', Helvetica, Arial, sans-serif;
   font-weight: 900;
   letter-spacing: 0;
 }
@@ -97,15 +96,78 @@ video:hover {
   line-height: 32px;
 }
 
+/* images */
+
 #content .content-body p > img { 
   margin: 10px 0;
 }
 
-#content > .content-body img {
+#content > .content-body img, 
+#content > .content-body figure img,
+#content > .content-body p img {
   border-radius: 23px;
-  width: 100%;
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
   margin: 20px auto;
 }
+
+.wp-caption, .wp-caption img {
+  border-radius: 23px;
+  width: 100% !important;
+  height: auto;
+  object-fit: cover;
+  margin: 20px auto;
+}
+
+#content .attachment-post-thumbnail {
+  border-radius: 23px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 20px auto;
+}
+
+/* wordpress api post styling */
+
+.cc-multi-row {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 20px 50px;
+}
+
+.cc-multi-row .cc-multi--cardname {
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.cc-multi-row a img {
+  width: 100%;
+  height: auto;
+  padding: 5px 0 20px;
+}
+
+.cc-multi--btns > a {
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+#content .potbox-posts {
+  /* display: flex; */
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  /* flex-wrap: wrap; */
+}
+
+/* #content .potbox-posts li {
+  flex: 1 0 300px;
+} */
+
+
 
 #content .grid-image {
   margin: 0 !important;
