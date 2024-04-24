@@ -196,9 +196,8 @@ interface Props {
 
 		</script>
 		<script is:inline>
-			//$Id$
 			function getValue(p_n, ix){
-				
+	
 				var q_s = '';
 				if  (p_n == 'q'){
 					var ref = document.referrer;
@@ -217,9 +216,10 @@ interface Props {
 				var pa_n = p_n +'='; 
 				var p_v = '';
 				if(q_s!=undefined && q_s.length > 0 ){
-					begin = q_s.indexOf( pa_n );
+					var begin = q_s.indexOf( pa_n );
 					if ( begin != -1 ){
-						begin += pa_n.length;end = q_s.indexOf( '&' , begin );
+						begin += pa_n.length; 
+						var end = q_s.indexOf( '&' , begin );
 						if ( end == -1 ){
 							end = q_s.length
 						}
@@ -235,10 +235,11 @@ interface Props {
 				return p_v;
 			}
 
+
 			GAd.prop=GAd.prop || [];
 			GAd.indexValueArr=new Array('gclid');
-			function GAd(){
-			
+			function GAd(){ 
+
 			}
 			GAd.prototype.initialize=function(){
 				
@@ -275,7 +276,7 @@ interface Props {
 			}
 			GAd.prototype.s_c=function(index,path,domain,secure)
 			{
-				value = GAd.prop[index];
+				var value = GAd.prop[index];
 				var c_str = GAd.indexValueArr[index] + "=" + escape( value[1] );
 				var exp_d=30;
 				var exdate=new Date();
@@ -301,7 +302,7 @@ interface Props {
 					if (cVals[0] === c_name && cVals[1]){
 						return unescape(cVals[1]);
 					}
-				}
+					}
 			}
 
 			/* Iframe support goes here */
@@ -345,10 +346,15 @@ interface Props {
 			/* Download Html support goes here */
 			function downloadHtmlGclid() {
 				var gclid = g_c(GAd.indexValueArr[0]);
-				var fieldObj = document.forms.form.zc_gad;
-				if(fieldObj){
-					fieldObj.value = gclid;
+				if(typeof(document.forms.form) != 'undefined'){
+					if(typeof(document.forms.form.zc_gad) != 'undefined'){
+						var fieldObj = document.forms.form.zc_gad;
+						if(fieldObj){
+							fieldObj.value = gclid;
+						}
+					}
 				}
+			
 			}
 			downloadHtmlGclid();
 		</script>
