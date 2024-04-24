@@ -18,10 +18,12 @@
 
 /* text */
 
-.font-windsong {
-    font-family: 'WindSong', cursive, 'Helvetica Neue';
-    /* font-weight: 500;  */
-    line-height: 79%;
+.ls-1 {
+    letter-spacing: -2px;
+}
+
+.lh-2 {
+    line-height: 90%;
 }
 
 /* text-wrap */
@@ -36,8 +38,28 @@
 
 .font-inter {
     font-family: 'Inter Tight', Helvetica, Arial, sans-serif;
-
+    font-optical-sizing: auto;
+    font-style: normal;
 }
+
+.font-oswald {
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.font-public {
+    font-family: "Public Sans", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.font-archivo {
+    font-family: "Archivo", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 /* position */
 
 .z-0 {
