@@ -156,7 +156,7 @@
         },
         "exclusive": {
             "badge": "Exclusive access",
-            "title": " Exclusive deals and benefits though <span class='text-pc-dark-80'>Prince Collection</span>",
+            "title": " Exclusive deals and benefits through <span class='text-pc-dark-80'>Prince Collection</span>",
             "content": "Book with Prince Collection and enjoy access to exclusive deals and benefits at luxury hotel brands, including Four Seasons, Rosewood, Mandarin Oriental, St. Regis, Waldorf Astoria, and Park Hyatt, as well as a wide range of independent boutique luxury properties.",
             "button": "Book your hotel"
         },
@@ -539,15 +539,6 @@
                 "content": [
                     "Yes! The benefits you receive when booking hotels with Prince Collection are in addition to the benefits you’d get as an elite member of a hotel loyalty program.",
                     "Furthermore, Prince Collection bookings are eligible to earn points and qualifying nights within hotel elite status programs, helping you get closer to your next points redemption or a higher elite tier."
-                ]
-            },
-            {
-                "title": "Will I get elite status benefits, points, and qualifying nights?",
-                "content": [
-                    "Submit an inquiry via the booking form to get started.",
-                    "Our travel advisors will work with you to identify the best property for your needs and help you understand the benefits you’ll receive.",
-                    "When you’re ready to book, we will collect your credit card information via a PCI-compliant submission process and pass it along to the property to guarantee your booking.",
-                    "After your booking is confirmed, we will communicate with the hotel on your behalf with respect to room preferences, upgrade requests, special occasions, etc., to ensure you have the best possible experience during your stay."
                 ]
             },
             {
