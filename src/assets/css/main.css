@@ -45,7 +45,8 @@ h1, h2, h3, h4, p {
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  font-family: 'Inter Tight', Helvetica, Arial, sans-serif;
+  font-family: 'Gloock', 'Times New Roman', Times, serif;
+  /* font-family: 'Red Hat Display', Helvetica, Arial, sans-serif; */
   font-weight: 900;
   letter-spacing: 0;
 }

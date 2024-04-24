@@ -32,19 +32,22 @@ const verticalSlide = {
   backwards: slideAnim,
 }
 ---
-<Layout title="Welcome to Prince of Travel" description="Prince of Travel" image="/images/video/pc-social-banner.jpeg">
-		<div class="container-fluid px-0 pt-3" data-aos="fade">
+<Layout title="Welcome to Prince Collection" description="Prince Collection" image="/images/video/pc-social-banner.jpeg">
+		<div class="container-fluid px-0 pt-3 bg-gold-2" data-aos="fade">
 			<div class="row min-vh-100 text-light rounded-4">
 				<div class="col-lg-10 offset-lg-1 d-flex flex-column justify-content-center align-items-center text-center text-dark p-5 min-vh-500">
-					<img class="logo mb-4 animate-in bg-dark p-4 rounded-4" style="width: 100px;" src="/images/logos/pot-crown-white.png" alt="Prince collection logo" />					
-					<h1 class="lh-1 ls-1 mb-1 mt-0 animate-in" style="font-size: 13vmin;">{data.home.hero.title}</h1>
-					<p class="fs-3 col-lg-8">{data.home.hero.content}</p>
+					<img class="logo mb-4 pb-2 pb-lg-0 animate-in" style="width: 200px;" src="/images/logos/pc-logo-black-min-trans.png" alt="Prince collection logo" />					
+					<h1 class="mb-5 mt-0 font-windsong text-secondary animate-in" style="font-size: 13vmin;">{data.home.hero.title}</h1>
+					<nav class="nav nav-fill d-flex mx-auto animate-in">
+						<a class="nav-link p-0 me-2" href="/book">
+							<button class="btn btn-light text-pc-dark bg-pc-10 rounded-pill fw-bold px-4 slideIn">{data.home.hero.button1}</button>
+						</a>
+						<a class="nav-link p-0 me-2" href="/about">
+							<button class="btn btn-light text-pc-dark bg-pc-10 rounded-pill fw-bold px-4 slideIn">{data.home.hero.button2}</button>
+						</a>
+					</nav>
 				</div>
-				<div class="col-lg-12 min-vh-500 p-0">
-					<img class="w-100 h-100 object-fit" src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*K33udAYnNTBvaNZY_tM3UQ.jpeg" alt="">
-				</div>
-
-				<!-- <div class="col-lg-12 p-0 position-relative animate-in bg-pc-60">
+				<div class="col-lg-12 p-0 position-relative animate-in bg-pc-60">
 					<button id="playButton" class="btn btn-link position-absolute top-0 start-25 m-3" style="z-index: 100">
 						<i id="playIcon" class="bi bi-play-circle text-pc" style="font-size: 90px; filter:drop-shadow(2px 2px 5px #222222); transition: all 0.3s ease-in-out"></i>
 					</button>
@@ -52,7 +55,7 @@ const verticalSlide = {
 						<source id="videoSource" type="video/mp4">
 					  	Your browser does not support the video tag. Please update your browser or try Chrome, Firefox, or Safari.
 					</video>
-				</div> -->
+				</div>
 			</div>
 
 			<!-- get more -->
@@ -294,4 +297,3 @@ const verticalSlide = {
 	});
 
 </script>
-
