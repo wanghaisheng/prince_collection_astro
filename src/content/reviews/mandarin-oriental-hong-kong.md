@@ -91,8 +91,6 @@ The lobby pays homage to the Mandarin Oriental’s Chinese roots through the soa
 
 The Mandarin Oriental Hong Kong offers many different room types, ranging from simple guest rooms to palatial suites. No matter which room you book, you’ll encounter rooms with old-school charm marked by traditional jade-green finishes, splashes of red lacquer colour, and copper accents.
 
-(Gallery of intriguing room photos)
-
 <div class="row row-cols-1 row-cols-lg-3 g-3 py-3 px-0">
   <div class="col">
     <figure>
