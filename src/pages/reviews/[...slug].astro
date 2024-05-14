@@ -193,7 +193,9 @@ function shorten(text, max) {
                     ))
                 }
             </div>
+            
             <div class="content-body col-lg-12 col-xl-9 p-4 p-lg-5">
+
                 <!--table of contents check and loop-->
                 { post.data.contents &&
                 <details class="bg-body-secondary p-3 mb-4 rounded-3" style="transition: all .3s ease-in-out;">
@@ -207,6 +209,15 @@ function shorten(text, max) {
                     </div>
                 </details>
                 }
+                
+                { post.data?.blockquote &&
+                <div>
+                    <blockquote>
+                        <p>{post.data?.blockquote}</p>    
+                    </blockquote>                    
+                </div>
+                }
+
                 <Content />
                 <!-- share -->
                 <div class="d-flex border-top py-3 mt-4">
