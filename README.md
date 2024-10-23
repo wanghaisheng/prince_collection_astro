@@ -1,6 +1,6 @@
 # 🚀 Prince Collection 
 
-<img src="public/pc_screen_masonmedia.png"
+<img src="public/images/general/pc_screen_masonmedia.png"
      alt="Prince Collection homepage banner photo"
      style="width: 100%; float: left; margin: 0 auto;" />
 
